@@ -11,19 +11,25 @@ export function Companies() {
   const { data, loading, error } = useData()
   const [q, setQ] = useState('')
   const [sector, setSector] = useState('Todos')
+  const [region, setRegion] = useState('Todas')
 
   const sectors = useMemo(
     () => (data ? ['Todos', ...Array.from(new Set(data.companies.map((c) => c.sector)))] : ['Todos']),
+    [data],
+  )
+  const regions = useMemo(
+    () => (data ? ['Todas', ...Array.from(new Set(data.companies.map((c) => c.region))).sort()] : ['Todas']),
     [data],
   )
   const list = useMemo(() => {
     if (!data) return []
     return data.companies.filter((c) => {
       const okSector = sector === 'Todos' || c.sector === sector
-      const okQ = !q || (c.name + c.acronym + c.sector).toLowerCase().includes(q.toLowerCase())
-      return okSector && okQ
+      const okRegion = region === 'Todas' || c.region === region
+      const okQ = !q || (c.name + c.acronym + c.sector + c.region).toLowerCase().includes(q.toLowerCase())
+      return okSector && okRegion && okQ
     })
-  }, [data, q, sector])
+  }, [data, q, sector, region])
 
   if (loading) return <Loading />
   if (error || !data) return <ErrorState error={error || 'sin datos'} />
@@ -49,6 +55,13 @@ export function Companies() {
         >
           {sectors.map((s) => <option key={s}>{s}</option>)}
         </select>
+        <select
+          value={region}
+          onChange={(e) => setRegion(e.target.value)}
+          className="h-9 rounded-md border border-border bg-card px-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+        >
+          {regions.map((r) => <option key={r}>{r}</option>)}
+        </select>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -62,7 +75,10 @@ export function Companies() {
                     <div className="text-base font-bold">{c.acronym}</div>
                     <div className="text-xs text-muted-foreground">{c.name}</div>
                   </div>
-                  <Badge variant="outline">{c.sector}</Badge>
+                  <div className="flex flex-col items-end gap-1">
+                    <Badge variant="outline">{c.sector}</Badge>
+                    {c.region !== 'Nacional' && <Badge variant="default">{c.region}</Badge>}
+                  </div>
                 </div>
                 <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
                   <div className="rounded-md bg-muted/50 p-2">

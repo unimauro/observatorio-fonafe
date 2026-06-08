@@ -241,6 +241,39 @@ COMPANIES = [
          desc="Distribución eléctrica en Tacna y Moquegua."),
 ]
 
+# --- Empresas estatales REGIONALES: EPS de saneamiento (una por región) ---
+# Municipales (no FONAFE), reguladas por SUNASS. Datos ILUSTRATIVOS; RUC vacío -> match OCDS por nombre.
+# (slug, nombre, sigla, region, empleados, ingresos2024_MM)
+_EPS = [
+    ("sedapar", "Servicio de Agua Potable y Alcantarillado de Arequipa", "SEDAPAR", "Arequipa", 1100, 520),
+    ("sedalib", "Servicio de Agua Potable y Alcantarillado de La Libertad", "SEDALIB", "La Libertad", 900, 410),
+    ("epsel", "Entidad Prestadora de Servicios de Saneamiento de Lambayeque", "EPSEL", "Lambayeque", 780, 360),
+    ("eps-grau", "EPS Grau", "EPS Grau", "Piura", 1050, 470),
+    ("sedacusco", "Empresa Prestadora de Servicios de Saneamiento del Cusco", "SEDACUSCO", "Cusco", 520, 240),
+    ("sedacaj", "Servicio de Agua Potable y Alcantarillado de Cajamarca", "SEDACAJ", "Cajamarca", 320, 130),
+    ("epsasa", "Entidad Prestadora de Servicios de Saneamiento Ayacucho", "EPSASA", "Ayacucho", 280, 95),
+    ("emapica", "Empresa Municipal de Agua Potable y Alcantarillado de Ica", "EMAPICA", "Ica", 360, 150),
+    ("sedam-huancayo", "Servicio de Agua Potable y Alcantarillado Municipal de Huancayo", "SEDAM Huancayo", "Junín", 480, 200),
+    ("eps-tacna", "Empresa Prestadora de Servicios Tacna", "EPS Tacna", "Tacna", 360, 160),
+    ("seda-huanuco", "Empresa de Servicio de Agua Potable y Alcantarillado de Huánuco", "SEDA Huánuco", "Huánuco", 300, 110),
+    ("emapa-sanmartin", "Empresa Municipal de Agua Potable y Alcantarillado San Martín", "EMAPA San Martín", "San Martín", 340, 130),
+    ("emsapuno", "Empresa Municipal de Saneamiento Básico de Puno", "EMSAPUNO", "Puno", 260, 90),
+    ("eps-loreto", "Empresa Prestadora de Servicios de Saneamiento de Loreto", "EPS Loreto", "Loreto", 380, 140),
+    ("emapacop", "Empresa Municipal de Agua Potable y Alcantarillado de Coronel Portillo", "EMAPACOP", "Ucayali", 240, 80),
+    ("emapat", "Empresa Municipal de Agua Potable y Alcantarillado de Tambopata", "EMAPAT", "Madre de Dios", 160, 55),
+    ("eps-moquegua", "Empresa Prestadora de Servicios de Saneamiento Moquegua", "EPS Moquegua", "Moquegua", 180, 70),
+    ("emusap-amazonas", "Empresa Municipal de Servicios de Agua Potable Amazonas", "EMUSAP Amazonas", "Amazonas", 140, 48),
+]
+for _slug, _name, _acr, _region, _emp, _rev in _EPS:
+    COMPANIES.append(dict(
+        slug=_slug, name=_name, acronym=_acr, sector="Saneamiento", holding="EPS Municipal",
+        ruc="", web="https://www.sunass.gob.pe/", employees=_emp, region=_region,
+        rev=_rev, net=round(_rev * 0.03, 1), ebitda=round(_rev * 0.18, 1),
+        inv=round(_rev * 0.22, 1), budget=round(_rev * 0.6, 1),
+        trend=[0.9, 0.87, 0.93, 0.97, 0.99, 1.0],
+        directors=[("Gerente General", "—")], transp=(True, False, False, False),
+        desc=f"Empresa prestadora de servicios de saneamiento (EPS) de la región {_region}. Regulada por SUNASS."))
+
 NEWS_TEMPLATES = [
     ("Convenio de Gestión {y} con FONAFE", "https://www.fonafe.gob.pe/"),
     ("Memoria anual {y} publicada", "https://www.fonafe.gob.pe/"),

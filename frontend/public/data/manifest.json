@@ -14,9 +14,9 @@
       "status": "pendiente"
     },
     {
-      "name": "OECE/SEACE — API OCDS",
+      "name": "OECE/SEACE — API OCDS (contrataciones)",
       "url": "https://contratacionesabiertas.oece.gob.pe/api/v1",
-      "status": "pendiente"
+      "status": "activo (parcial — SEACE/OCDS reciente)"
     },
     {
       "name": "MEF — Consulta Amigable",

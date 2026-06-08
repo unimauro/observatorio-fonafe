@@ -149,12 +149,45 @@ def build_contracts(companies):
     return dict(
         summary=dict(totalAmount=total, totalContracts=len(items),
                      topProviderShare=round(top[0]["total"] / total * 100, 1) if total else 0),
-        topProviders=top[:8], items=items)
+        topProviders=top[:8], items=items, isReal=False)
+
+
+def build_real_contracts(real, name_by_slug):
+    """Arma el bloque de contrataciones desde datos REALES del OCDS/OECE."""
+    items, by_provider = [], {}
+    for r in real:
+        slug = r.get("companySlug")
+        items.append(dict(
+            id=r.get("ocid", ""), company=name_by_slug.get(slug, r.get("entity", "")),
+            companySlug=slug, provider=r.get("provider") or "—",
+            amount=round(r.get("amount", 0) or 0, 3), year=r.get("year"),
+            object=r.get("object", ""), method=r.get("method", ""),
+            amountType=r.get("amountType", ""), source="OECE-OCDS"))
+        prov = r.get("provider")
+        amt = r.get("amount", 0) or 0
+        if prov and amt:
+            by_provider.setdefault(prov, {"provider": prov, "total": 0.0, "count": 0})
+            by_provider[prov]["total"] += amt
+            by_provider[prov]["count"] += 1
+    top = sorted(by_provider.values(), key=lambda x: x["total"], reverse=True)
+    for t in top:
+        t["total"] = round(t["total"], 3)
+    total = round(sum(i["amount"] for i in items), 2)
+    coverage = sorted(set(i["companySlug"] for i in items))
+    return dict(
+        summary=dict(totalAmount=total, totalContracts=len(items),
+                     topProviderShare=round(top[0]["total"] / total * 100, 1) if (total and top) else 0,
+                     entitiesCovered=len(coverage)),
+        topProviders=top[:10], items=items, isReal=True, coverage=coverage)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.date.today().isoformat())
+    ap.add_argument("--with-contracts", action="store_true",
+                    help="usa contrataciones REALES del OCDS/OECE desde la caché")
+    ap.add_argument("--scrape-pages", type=int, default=0,
+                    help="si >0, escanea ese nº de páginas del OCDS y actualiza la caché antes de construir")
     args = ap.parse_args()
     gen_date = args.date
 
@@ -183,7 +216,8 @@ def main():
                 for j, (t, u) in enumerate(NEWS_TEMPLATES)]
         companies.append(dict(
             slug=c["slug"], name=c["name"], acronym=c["acronym"], sector=c["sector"],
-            holding=c["holding"], ruc=c["ruc"], website=c["web"], employees=c["employees"],
+            holding=c["holding"], region=c.get("region", "Nacional"),
+            ruc=c["ruc"], website=c["web"], employees=c["employees"],
             description=c["desc"],
             directors=[dict(role=r, name=n) for r, n in c["directors"]],
             financials=fin, periodic=build_periodic(fin), news=news,
@@ -226,7 +260,24 @@ def main():
     all_recs = [dict(company=c["name"], companySlug=c["slug"], **r)
                 for c in companies for r in c["recommendations"]]
 
-    contracts = build_contracts(COMPANIES)
+    # --- Contrataciones: REALES (OCDS/OECE) si se pide, o ilustrativas ---
+    name_by_slug = {c["slug"]: c["name"] for c in companies}
+    real = []
+    if args.scrape_pages > 0 or args.with_contracts:
+        try:
+            from sources import oece_ocds
+            if args.scrape_pages > 0:
+                real = oece_ocds.update_cache(max_pages=args.scrape_pages)
+            else:
+                real = oece_ocds.load_cache()
+        except Exception as e:  # noqa: BLE001
+            print(f"[etl] aviso OCDS: {e}")
+    if real:
+        contracts = build_real_contracts(real, name_by_slug)
+        contracts_status = "activo (parcial — SEACE/OCDS reciente)"
+    else:
+        contracts = build_contracts(COMPANIES)
+        contracts_status = "pendiente"
 
     transparency = dict(items=[dict(company=c["name"], slug=c["slug"], score=c["transparency"]["score"],
                                     financials=c["transparency"]["financials"], memoria=c["transparency"]["memoria"],
@@ -239,7 +290,7 @@ def main():
                   latest_year=last_year, years=YEARS,
                   sources=[
                       dict(name="FONAFE — Portal de Transparencia", url="https://www.fonafe.gob.pe/", status="pendiente"),
-                      dict(name="OECE/SEACE — API OCDS", url="https://contratacionesabiertas.oece.gob.pe/api/v1", status="pendiente"),
+                      dict(name="OECE/SEACE — API OCDS (contrataciones)", url="https://contratacionesabiertas.oece.gob.pe/api/v1", status=contracts_status),
                       dict(name="MEF — Consulta Amigable", url="https://apps5.mineco.gob.pe/transparencia/", status="pendiente"),
                       dict(name="SMV — Estados financieros", url="https://www.smv.gob.pe/", status="pendiente"),
                   ],

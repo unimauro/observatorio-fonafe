@@ -68,6 +68,7 @@ export interface Company {
   acronym: string
   sector: string
   holding: string
+  region: string
   ruc: string
   website: string
   employees: number
@@ -85,13 +86,16 @@ export interface RankRow { slug: string; name: string; acronym: string; value: n
 export interface Rankings { profitability: RankRow[]; efficiency: RankRow[]; transparency: RankRow[] }
 export interface Contract {
   id: string; company: string; companySlug: string; provider: string
-  amount: number; year: number; object: string; method: string
+  amount: number; year: number | null; object: string; method: string
+  amountType?: string; source?: string
 }
 export interface Provider { provider: string; total: number; count: number }
 export interface Contracts {
-  summary: { totalAmount: number; totalContracts: number; topProviderShare: number }
+  summary: { totalAmount: number; totalContracts: number; topProviderShare: number; entitiesCovered?: number }
   topProviders: Provider[]
   items: Contract[]
+  isReal?: boolean
+  coverage?: string[]
 }
 export interface TransparencyItem {
   company: string; slug: string; score: number

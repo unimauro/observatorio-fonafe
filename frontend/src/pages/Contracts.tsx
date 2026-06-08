@@ -36,11 +36,23 @@ export function Contracts() {
 
   return (
     <div>
-      <PageTitle title="Contrataciones públicas" subtitle="Proveedores, montos y concentración · base lista para datos reales OCDS/OECE (Fase 1)" />
+      <PageTitle
+        title="Contrataciones públicas"
+        subtitle={data.contracts.isReal
+          ? 'Datos REALES del OCDS/OECE (SEACE) — entidades del portafolio, contrataciones recientes'
+          : 'Proveedores, montos y concentración · base lista para datos reales OCDS/OECE'}
+      />
 
-      <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
+      <div className="mb-2">
+        {data.contracts.isReal
+          ? <Badge variant="success">✓ datos reales · OCDS/OECE · {s.entitiesCovered} entidades</Badge>
+          : <Badge variant="warning">ilustrativo</Badge>}
+      </div>
+
+      <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Kpi label="Monto contratado" value={soles(s.totalAmount)} />
         <Kpi label="N° de contratos" value={num(s.totalContracts)} />
+        <Kpi label="Entidades cubiertas" value={num(s.entitiesCovered || 0)} tone="accent" />
         <Kpi label="Concentración top proveedor" value={pct(s.topProviderShare)} tone={s.topProviderShare > 30 ? 'bad' : 'default'} />
       </div>
 
@@ -66,16 +78,18 @@ export function Contracts() {
         <CardContent className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="border-b border-border text-left text-muted-foreground">
-              <th className="py-2">ID</th><th>Empresa</th><th>Proveedor</th><th>Objeto</th><th>Año</th><th className="text-right">Monto</th></tr></thead>
+              <th className="py-2">Empresa</th><th>Proveedor / objeto</th><th>Etapa</th><th>Año</th><th className="text-right">Monto</th></tr></thead>
             <tbody>
               {items.slice(0, 200).map((c) => (
-                <tr key={c.id} className="border-b border-border/60">
-                  <td className="py-2 font-mono text-xs">{c.id}</td>
-                  <td>{c.company}</td>
-                  <td>{c.provider}</td>
-                  <td className="text-muted-foreground">{c.object}</td>
-                  <td>{c.year}</td>
-                  <td className="text-right font-medium">{soles(c.amount)}</td>
+                <tr key={c.id} className="border-b border-border/60 align-top">
+                  <td className="py-2 font-medium">{c.company}</td>
+                  <td>
+                    <div>{c.provider}</div>
+                    <div className="max-w-[340px] truncate text-xs text-muted-foreground" title={c.object}>{c.object}</div>
+                  </td>
+                  <td className="text-xs text-muted-foreground">{c.amountType || c.method || '—'}</td>
+                  <td>{c.year ?? '—'}</td>
+                  <td className="text-right font-medium">{c.amount > 0 ? soles(c.amount) : '—'}</td>
                 </tr>
               ))}
             </tbody>
@@ -85,8 +99,9 @@ export function Contracts() {
       </Card>
 
       <p className="mt-4 text-xs text-muted-foreground">
-        <Badge variant="warning" className="mr-2">ilustrativo</Badge>
-        Datos de ejemplo. La Fase 1 los reemplaza con la API OCDS del OECE por RUC de cada empresa.
+        {data.contracts.isReal
+          ? 'Datos reales del estándar OCDS publicado por el OECE (SEACE). Los montos en "—" corresponden a procesos en convocatoria sin adjudicación registrada. La cobertura crece en cada corrida semanal del ETL.'
+          : 'Datos de ejemplo. La Fase 1 los reemplaza con la API OCDS del OECE.'}
       </p>
     </div>
   )
