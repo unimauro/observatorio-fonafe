@@ -1,15 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect width="1200" height="10" fill="#D91023"/>
-  <rect y="620" width="1200" height="10" fill="#D91023"/>
-  <text x="80" y="200" fill="#ffffff" font-family="Inter, sans-serif" font-size="64" font-weight="800">Observatorio de Empresas</text>
-  <text x="80" y="280" fill="#ffffff" font-family="Inter, sans-serif" font-size="64" font-weight="800">Públicas del Perú</text>
-  <text x="80" y="350" fill="#9aa4b2" font-family="Inter, sans-serif" font-size="34" font-weight="500">FONAFE · Transparencia · Datos abiertos · Gestión pública</text>
-  <g transform="translate(80,420)">
-    <rect x="0" y="60" width="40" height="120" rx="4" fill="#D91023"/>
-    <rect x="60" y="30" width="40" height="150" rx="4" fill="#ffffff"/>
-    <rect x="120" y="80" width="40" height="100" rx="4" fill="#3b82f6"/>
-    <rect x="180" y="10" width="40" height="170" rx="4" fill="#D91023"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1320"/>
+      <stop offset="1" stop-color="#1b2a44"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="12" fill="#D91023"/>
+  <rect y="618" width="1200" height="12" fill="#D91023"/>
+
+  <text x="80" y="150" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="62" font-weight="bold">Observatorio de Empresas</text>
+  <text x="80" y="222" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="62" font-weight="bold">Públicas del Perú</text>
+  <rect x="80" y="252" width="120" height="6" rx="3" fill="#D91023"/>
+  <text x="80" y="312" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="32">Transparencia · Datos · Diagnóstico · Gestión pública</text>
+
+  <!-- barras estilo dashboard -->
+  <g transform="translate(80,360)">
+    <rect x="0"   y="120" width="48" height="120" rx="6" fill="#D91023"/>
+    <rect x="68"  y="70"  width="48" height="170" rx="6" fill="#ffffff"/>
+    <rect x="136" y="150" width="48" height="90"  rx="6" fill="url(#bar)"/>
+    <rect x="204" y="40"  width="48" height="200" rx="6" fill="#D91023"/>
+    <rect x="272" y="100" width="48" height="140" rx="6" fill="#ffffff"/>
+    <rect x="340" y="170" width="48" height="70"  rx="6" fill="url(#bar)"/>
   </g>
-  <text x="80" y="585" fill="#6b7280" font-family="Inter, sans-serif" font-size="26">unimauro.github.io/observatorio-fonafe</text>
+
+  <!-- chips -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="bold">
+    <rect x="640" y="380" width="210" height="56" rx="28" fill="#16233a" stroke="#2a3a55"/>
+    <text x="745" y="417" fill="#cfe0f0" text-anchor="middle">FONAFE + EPS</text>
+    <rect x="870" y="380" width="250" height="56" rx="28" fill="#16233a" stroke="#2a3a55"/>
+    <text x="995" y="417" fill="#cfe0f0" text-anchor="middle">Datos abiertos</text>
+    <rect x="640" y="452" width="300" height="56" rx="28" fill="#16233a" stroke="#2a3a55"/>
+    <text x="790" y="489" fill="#cfe0f0" text-anchor="middle">Contrataciones OCDS</text>
+  </g>
+
+  <text x="80" y="588" fill="#6b7e96" font-family="Helvetica, Arial, sans-serif" font-size="26">unimauro.github.io/observatorio-fonafe</text>
 </svg>
