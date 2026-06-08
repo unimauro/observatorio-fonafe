@@ -206,13 +206,23 @@ def build_real_contracts(real, name_by_slug):
     for v in by_entity.values():
         v["amount"] = round(v["amount"], 2)
 
+    # por método de contratación y por etapa (datos reales OCDS)
+    by_method, by_stage = {}, {}
+    for i in items:
+        meth = (i.get("method") or "No especificado").strip() or "No especificado"
+        by_method[meth] = by_method.get(meth, 0) + 1
+        st = i.get("amountType") or "sin_monto"
+        by_stage[st] = by_stage.get(st, 0) + 1
+
     return dict(
         summary=dict(totalAmount=total, totalContracts=len(items),
                      topProviderShare=round(top[0]["total"] / total * 100, 1) if (total and top) else 0,
                      entitiesCovered=len(coverage)),
         topProviders=top[:10], items=items, isReal=True, coverage=coverage,
         byYear=sorted(by_year.values(), key=lambda x: x["year"]),
-        byEntity=sorted(by_entity.values(), key=lambda x: x["count"], reverse=True))
+        byEntity=sorted(by_entity.values(), key=lambda x: x["count"], reverse=True),
+        byMethod=sorted([{"method": k, "count": v} for k, v in by_method.items()], key=lambda x: x["count"], reverse=True),
+        byStage=sorted([{"stage": k, "count": v} for k, v in by_stage.items()], key=lambda x: x["count"], reverse=True))
 
 
 def main():

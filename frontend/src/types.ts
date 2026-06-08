@@ -98,6 +98,8 @@ export interface Contracts {
   coverage?: string[]
   byYear?: { year: number; count: number; amount: number }[]
   byEntity?: { slug: string; name: string; count: number; amount: number }[]
+  byMethod?: { method: string; count: number }[]
+  byStage?: { stage: string; count: number }[]
 }
 export interface TransparencyItem {
   company: string; slug: string; score: number

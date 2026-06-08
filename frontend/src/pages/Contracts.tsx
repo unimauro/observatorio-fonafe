@@ -94,6 +94,41 @@ export function Contracts() {
         </div>
       )}
 
+      {data.contracts.isReal && data.contracts.byMethod && data.contracts.byStage && (
+        <div className="mb-6 grid gap-6 lg:grid-cols-2">
+          <Card>
+            <CardHeader><CardTitle>Por método de contratación</CardTitle></CardHeader>
+            <CardContent>
+              <Chart height={300} option={{
+                tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+                grid: { left: 200, right: 20, top: 10, bottom: 24 },
+                xAxis: { type: 'value', name: 'N°' },
+                yAxis: { type: 'category', data: data.contracts.byMethod.slice(0, 8).map((m) => m.method).reverse() },
+                series: [{ type: 'bar', data: data.contracts.byMethod.slice(0, 8).map((m) => m.count).reverse(), itemStyle: { borderRadius: [0, 4, 4, 0] } }],
+              }} />
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader><CardTitle>Por etapa</CardTitle></CardHeader>
+            <CardContent>
+              <Chart height={300} option={{
+                tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+                legend: { bottom: 0 },
+                series: [{
+                  type: 'pie', radius: ['45%', '70%'], center: ['50%', '44%'],
+                  itemStyle: { borderRadius: 6, borderWidth: 2, borderColor: 'transparent' },
+                  label: { show: false },
+                  data: data.contracts.byStage.map((s) => ({
+                    name: { adjudicado: 'Adjudicado', convocatoria: 'Convocatoria', presupuesto: 'Presupuesto', sin_monto: 'Sin monto' }[s.stage] || s.stage,
+                    value: s.count,
+                  })),
+                }],
+              }} />
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
       <Card>
         <CardHeader className="flex-row flex-wrap items-center justify-between gap-3">
           <CardTitle>Contratos ({items.length})</CardTitle>

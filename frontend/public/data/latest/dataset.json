@@ -17665,6 +17665,94 @@
         "count": 1,
         "amount": 0.0
       }
+    ],
+    "byMethod": [
+      {
+        "method": "Concurso Público Abreviado",
+        "count": 36
+      },
+      {
+        "method": "Concurso Público de Servicios",
+        "count": 26
+      },
+      {
+        "method": "Licitación Pública Abreviada",
+        "count": 16
+      },
+      {
+        "method": "Adjudicación Selectiva",
+        "count": 14
+      },
+      {
+        "method": "Licitación Pública",
+        "count": 11
+      },
+      {
+        "method": "Adjudicación Simplificada",
+        "count": 7
+      },
+      {
+        "method": "Adjudicación Abreviada",
+        "count": 5
+      },
+      {
+        "method": "Concurso Público para Consultoría",
+        "count": 5
+      },
+      {
+        "method": "Adjudicación de Menor Cuantía",
+        "count": 4
+      },
+      {
+        "method": "Contratación Directa (Petroperú)",
+        "count": 4
+      },
+      {
+        "method": "Contratación por Competencia Menor",
+        "count": 3
+      },
+      {
+        "method": "Contratación Directa",
+        "count": 2
+      },
+      {
+        "method": "Regímen Especial",
+        "count": 2
+      },
+      {
+        "method": "Adjudicación para Contrato Marco",
+        "count": 2
+      },
+      {
+        "method": "Comparación de Precios",
+        "count": 1
+      },
+      {
+        "method": "Subasta Inversa Electrónica",
+        "count": 1
+      },
+      {
+        "method": "Concurso Público",
+        "count": 1
+      },
+      {
+        "method": "Adjudicación Directa Selectiva",
+        "count": 1
+      }
+    ],
+    "byStage": [
+      {
+        "stage": "sin_monto",
+        "count": 90
+      },
+      {
+        "stage": "adjudicado",
+        "count": 34
+      },
+      {
+        "stage": "convocatoria",
+        "count": 17
+      }
     ]
   },
   "transparency": {
