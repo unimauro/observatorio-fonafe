@@ -15763,15 +15763,30 @@
   },
   "contracts": {
     "summary": {
-      "totalAmount": 134.88,
-      "totalContracts": 141,
-      "topProviderShare": 28.5,
-      "entitiesCovered": 20
+      "totalAmount": 288.02,
+      "totalContracts": 249,
+      "topProviderShare": 15.5,
+      "entitiesCovered": 22
     },
     "topProviders": [
       {
+        "provider": "CONSORCIO A&E",
+        "total": 44.715,
+        "count": 1
+      },
+      {
         "provider": "Consorcio Corporación Peruana de Mantenimiento Eléctrico - COPEMANE",
         "total": 38.382,
+        "count": 1
+      },
+      {
+        "provider": "CONSORCIO: STORAGEDATA S.A.C.  -  OPTICAL TECHNOLOGIES S.A.C.",
+        "total": 17.601,
+        "count": 1
+      },
+      {
+        "provider": "NSF INASSA S.A.C.",
+        "total": 11.987,
         "count": 1
       },
       {
@@ -15790,33 +15805,18 @@
         "count": 1
       },
       {
+        "provider": "SERVICIOS GENERALES KRISDA E.I.R.L.",
+        "total": 5.098,
+        "count": 1
+      },
+      {
+        "provider": "ABALI CONTRATISTAS S.A.C.",
+        "total": 4.803,
+        "count": 1
+      },
+      {
         "provider": "DATA SERVIG S.A.C.",
         "total": 4.774,
-        "count": 1
-      },
-      {
-        "provider": "ENERGIA",
-        "total": 3.54,
-        "count": 1
-      },
-      {
-        "provider": "ELMER PASCUAL CONTRATISTAS S.A.C.",
-        "total": 2.404,
-        "count": 1
-      },
-      {
-        "provider": "PROYECTOS E INVERSIONES MULTIPLES S.A.C.",
-        "total": 2.197,
-        "count": 1
-      },
-      {
-        "provider": "CONSULTORIA ENERGETICA & AMBIENTAL S.A.C",
-        "total": 2.185,
-        "count": 1
-      },
-      {
-        "provider": "SECURITAS S.A.C.",
-        "total": 0.334,
         "count": 1
       }
     ],
@@ -17512,6 +17512,1302 @@
         "method": "Concurso Público para Consultoría",
         "amountType": "sin_monto",
         "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1222479",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "INDRA PERU S.A.",
+        "amount": 0.043,
+        "year": 2026,
+        "object": "ABR-PROC-2-2026-OFP / PETROPERU-1",
+        "method": "Adjudicación Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200190-122",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-SM-2-2026-ELECTRONOROESTE SA (ENOSA)-1",
+        "method": "Licitación Pública",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2525-87",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-8-2026-BN-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2383-54",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "AS-SM-3-2026-SEDAPAL-1",
+        "method": "Adjudicación Simplificada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2384-12",
+        "company": "Servicio de Agua Potable y Alcantarillado de Arequipa",
+        "companySlug": "sedapar",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-SM-3-2026-SEDAPAR-1",
+        "method": "Licitación Pública",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2525-57",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-2-2026-BN.-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1209996",
+        "company": "Fondo MIVIVIENDA",
+        "companySlug": "fondo-mivivienda",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-6-2026-FMV-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1217502",
+        "company": "Empresa de Generación Eléctrica Machupicchu",
+        "companySlug": "egemsa",
+        "provider": "—",
+        "amount": 0.421,
+        "year": 2026,
+        "object": "LP-ABR-1-2026-EGEMSA-2",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1220362",
+        "company": "Sociedad Eléctrica del Sur Oeste",
+        "companySlug": "seal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-6-2026-SEAL-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200192-121",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-13-2026-ELCTO-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1222401",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "SIE-SIE-1-2026-BN-2",
+        "method": "Subasta Inversa Electrónica",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1216376",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-7-2026-BN-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2525-66",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-4-2026-BN-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2430-38",
+        "company": "Activos Mineros",
+        "companySlug": "amsac",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-5-2026-AMSAC-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2430-17",
+        "company": "Activos Mineros",
+        "companySlug": "amsac",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-2-2026-AMSAC-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200191-72",
+        "company": "Empresa Regional de Servicio Público de Electricidad",
+        "companySlug": "hidrandina",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-11-2026-HDNA-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1209421",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-SM-3-2025-SEDAPAL-1",
+        "method": "Concurso Público",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2409-125",
+        "company": "Sociedad Eléctrica del Sur Oeste",
+        "companySlug": "seal",
+        "provider": "KELLY'S SHOES S.R.L.",
+        "amount": 0.17,
+        "year": 2026,
+        "object": "LP-ABR-4-2026-SEAL-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2393-9",
+        "company": "Empresa de Generación Eléctrica de Arequipa",
+        "companySlug": "egasa",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-3-2026-EGASA-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2391-113",
+        "company": "Electroperú",
+        "companySlug": "electroperu",
+        "provider": "ENGINEERING AND QUALITY SOCIEDAD ANONIMA CERRADA - ENGINEERING AND QUALITY S.A.C.",
+        "amount": 0.086,
+        "year": 2026,
+        "object": "LP-ABR-2-2025-ELECTROPERU-2",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1203184",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "SEL-PROC-2-2026-OFP / PETROPERU-1",
+        "method": "Adjudicación Selectiva",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200190-9",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-4-2026-ELECTRONOROESTE SA (ENOSA)-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200191-91",
+        "company": "Empresa Regional de Servicio Público de Electricidad",
+        "companySlug": "hidrandina",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-1-2026-HDNA-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-200190-202",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "ABALI CONTRATISTAS S.A.C.",
+        "amount": 4.803,
+        "year": 2026,
+        "object": "CP SER-SM-20-2025-ELECTRONOROESTE SA (ENOSA)-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-200190-201",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "SERVICIOS GENERALES KRISDA E.I.R.L.",
+        "amount": 5.098,
+        "year": 2026,
+        "object": "CP SER-SM-21-2025-ELECTRONOROESTE SA (ENOSA)-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-200191-48",
+        "company": "Empresa Regional de Servicio Público de Electricidad",
+        "companySlug": "hidrandina",
+        "provider": "GRUP CIVILTEL SOCIEDAD ANONIMA CERRADA",
+        "amount": 0.3,
+        "year": 2026,
+        "object": "CP-ABR-18-2025-HDNA-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-1899-39",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "CONSORCIO PABELLONES SATIPO",
+        "amount": 4.384,
+        "year": 2026,
+        "object": "AS-SM-16-2025-UNCP-1",
+        "method": "Adjudicación Simplificada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1015047",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "EMPRESA DE TRANSPORTES ROMERO SRLTDA",
+        "amount": 0.131,
+        "year": 2026,
+        "object": "ABR-PROC-35-2024-OTL / PETROPERU-1",
+        "method": "Adjudicación Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2024-2408-25",
+        "company": "Electrosur",
+        "companySlug": "electrosur",
+        "provider": "INVERSIONES GENERALES LOS NOGALES S.A.C.",
+        "amount": 1.056,
+        "year": 2026,
+        "object": "CP-SM-3-2024-ES-1",
+        "method": "Concurso Público",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-184472",
+        "company": "Activos Mineros",
+        "companySlug": "amsac",
+        "provider": "BOOM CONTRATISTAS GENERALES E.I.R.L.",
+        "amount": 0.15,
+        "year": 2026,
+        "object": "ADS-CLASICO-29-2015-AMSAC-1",
+        "method": "Adjudicación Directa Selectiva",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-32894",
+        "company": "Servicios Postales del Perú",
+        "companySlug": "serpost",
+        "provider": "—",
+        "amount": 0.001,
+        "year": 2026,
+        "object": "AMC-CLASICO-19-2014-SERPOST S.A.-1",
+        "method": "Adjudicación de Menor Cuantía",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2017-2433-247",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "J.S. INDUSTRIAL S.A.C.",
+        "amount": 0.401,
+        "year": 2026,
+        "object": "CME-PROC-80-2017-OTL / PETROPERU-1",
+        "method": "Contratación por Competencia Menor",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-353496",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "JOLUCAVA IMPORT EXPORT EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+        "amount": 0.02,
+        "year": 2026,
+        "object": "CME-PROC-25-2017-OFP / PETROPERU-1",
+        "method": "Contratación por Competencia Menor",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-343972",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "JHORVAC CORPORATION SOCIEDAD ANONIMA CERRADA",
+        "amount": 0.045,
+        "year": 2026,
+        "object": "CME-PROC-52-2017-OTL / PETROPERU-1",
+        "method": "Contratación por Competencia Menor",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-344107",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "MAN TRADING CORP S.A.",
+        "amount": 0.065,
+        "year": 2026,
+        "object": "CME-PROC-48-2017-OTL / PETROPERU-1",
+        "method": "Contratación por Competencia Menor",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-40226",
+        "company": "Servicios Postales del Perú",
+        "companySlug": "serpost",
+        "provider": "AUTOMOTRIZ HUAMANGA E.I.R.L.",
+        "amount": 0.14,
+        "year": 2026,
+        "object": "AMC-CLASICO-23-2014-SERPOST S.A.-1",
+        "method": "Adjudicación de Menor Cuantía",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200192-13",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-8-2026-ELCTO S.A.-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2408-127",
+        "company": "Electrosur",
+        "companySlug": "electrosur",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-64-2026-ES-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1214429",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0.132,
+        "year": 2026,
+        "object": "RES-PROC-7-2026-SEDAPAL-1",
+        "method": "Regímen Especial",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1212955",
+        "company": "Empresa Regional de Servicio Público de Electricidad",
+        "companySlug": "hidrandina",
+        "provider": "CONSORCIO PROVEEDOR",
+        "amount": 0.216,
+        "year": 2026,
+        "object": "LP-ABR-1-2026-HDNA-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1212632",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-5-2026-ELECTRONOROESTE SA (ENOSA)-2",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2409-89",
+        "company": "Sociedad Eléctrica del Sur Oeste",
+        "companySlug": "seal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-9-2026-SEAL-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200190-55",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-11-2026-ELECTRONOROESTE SA (ENOSA)-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2384-14",
+        "company": "Servicio de Agua Potable y Alcantarillado de Arequipa",
+        "companySlug": "sedapar",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-13-2026-SEDAPAR-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1214997",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "SEL-PROC-24-2026-OTL / PETROPERU-1",
+        "method": "Adjudicación Selectiva",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1220313",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "SEL-PROC-25-2026-OTL / PETROPERU-1",
+        "method": "Adjudicación Selectiva",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1220884",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "DIRECTA-DIRECTA-4-2026-BN-1",
+        "method": "Contratación Directa",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2341-28",
+        "company": "Corporación Financiera de Desarrollo",
+        "companySlug": "cofide",
+        "provider": "OLC INGENIEROS E I R L",
+        "amount": 0.198,
+        "year": 2026,
+        "object": "CP-ABR-5-2026-COFIDE-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200190-117",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "GONZALES PISFIL ANGEL IVAN",
+        "amount": 0.19,
+        "year": 2026,
+        "object": "CP-ABR-14-2026-ELECTRONOROESTE SA (ENOSA)-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2383-129",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 16.281,
+        "year": 2026,
+        "object": "CP SER-SM-5-2026-SEDAPAL-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-2409-178",
+        "company": "Sociedad Eléctrica del Sur Oeste",
+        "companySlug": "seal",
+        "provider": "ZAVATEC SA",
+        "amount": 3.047,
+        "year": 2026,
+        "object": "LP-ABR-20-2025-SEAL-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-2383-73",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "PERU PROCESS AUTOMATION SOCIEDAD ANONIMA CERRADA",
+        "amount": 1.699,
+        "year": 2026,
+        "object": "CP SER-SM-22-2025-SEDAPAL-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1009129",
+        "company": "Electroperú",
+        "companySlug": "electroperu",
+        "provider": "CONSORCIO AFRY PERU SAC - AFRY SWITZERLAND LTD.",
+        "amount": 3.355,
+        "year": 2026,
+        "object": "CONV-PROC-202348294-2023-RFP_2023_48294--1",
+        "method": "Convenio",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-189294",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0.799,
+        "year": 2026,
+        "object": "CP-CLASICO-57-2015-SEDAPAL-1",
+        "method": "Concurso Público",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-188749",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "REFRACTARIOS PERUANOS S A",
+        "amount": 0.044,
+        "year": 2026,
+        "object": "DIR-PROC-225-2015-OTL / PETROPERU-1",
+        "method": "Contratación Directa (Petroperú)",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1210920",
+        "company": "Empresa de Generación Eléctrica del Sur",
+        "companySlug": "egesur",
+        "provider": "REPRESENTACIONES PACIFICO G Y M S.A.C.",
+        "amount": 0.298,
+        "year": 2026,
+        "object": "SIE-SIE-1-2026-EGESUR-1",
+        "method": "Subasta Inversa Electrónica",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2393-23",
+        "company": "Empresa de Generación Eléctrica de Arequipa",
+        "companySlug": "egasa",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-1-2026-EGASA-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1212162",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-22-2025-ELECTROCENTRO S.A.-2",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1222467",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "SEL-PROC-17-2026-OTL / PETROPERU-2",
+        "method": "Adjudicación Selectiva",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2383-47",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-13-2026-SEDAPAL-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200192-272",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-17-2026-ELECTROCENTRO S.A.-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1210262",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "REPRESENTACIONES Y SERVICIOS TECNICOS SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA-RESERTEC S.R.L.",
+        "amount": 0.067,
+        "year": 2026,
+        "object": "SEL-PROC-6-2026-OPS / PETROPERU-1",
+        "method": "Adjudicación Selectiva",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1214713",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "CONSATEK MEDICAL S.A.C.",
+        "amount": 0.099,
+        "year": 2026,
+        "object": "LP-ABR-6-2026-UNCP-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2383-184",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "QUIMICA REGASA S.A.C.",
+        "amount": 0.25,
+        "year": 2026,
+        "object": "SIE-SIE-1-2026-SEDAPAL-1",
+        "method": "Subasta Inversa Electrónica",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1213876",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-8-2026-UNCP-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1190700",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "COM-PROC-2-2025-OTL / PETROPERU-2",
+        "method": "Proceso por Competencia",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200190-11",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "GRUPO WILQUI RS E.I.R.L.",
+        "amount": 0.11,
+        "year": 2026,
+        "object": "LP-ABR-2-2026-ELECTRONOROESTE SA (ENOSA)-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-2383-70",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "NSF INASSA S.A.C.",
+        "amount": 11.987,
+        "year": 2026,
+        "object": "CP SER-SM-26-2025-SEDAPAL-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1032784",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "INGENIERIA QUIMICA Y SERVICIOS SOCIEDAD ANONIMA CERRADA",
+        "amount": 0.528,
+        "year": 2026,
+        "object": "SEL-PROC-42-2024-OFP / PETROPERU-1",
+        "method": "Adjudicación Selectiva",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2024-2407-92",
+        "company": "Electro Sur Este",
+        "companySlug": "electro-sur-este",
+        "provider": "GTD PERÚ S.A",
+        "amount": 0.33,
+        "year": 2026,
+        "object": "CP-SM-60-2024-ELSE-1",
+        "method": "Concurso Público",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2022-200191-37",
+        "company": "Empresa Regional de Servicio Público de Electricidad",
+        "companySlug": "hidrandina",
+        "provider": "SERVICIOS GENER. Y COMUNICACIONES S.R.L.",
+        "amount": 0.844,
+        "year": 2026,
+        "object": "CP-SM-26-2022-HDNA-1",
+        "method": "Concurso Público",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-188395",
+        "company": "Sociedad Eléctrica del Sur Oeste",
+        "companySlug": "seal",
+        "provider": "Baum Ingenieros E.I.R.L - Laborum Outsourcing S.A.C",
+        "amount": 0.229,
+        "year": 2026,
+        "object": "ADP-CLASICO-86-2015-SEAL-1",
+        "method": "Adjudicación Directa Pública",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-181963",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "CORPORACION INDUSTRIAL METAL MECANICA Y DE LA CONSTRUCCION CONTRATISTAS GENERALES SRL",
+        "amount": 0.053,
+        "year": 2026,
+        "object": "CME-PROC-113-2015-OFP / PETROPERU-1",
+        "method": "Contratación por Competencia Menor",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-182814",
+        "company": "Corporación Peruana de Aeropuertos y Aviación Comercial",
+        "companySlug": "corpac",
+        "provider": "—",
+        "amount": 0.045,
+        "year": 2026,
+        "object": "ADS-CLASICO-3-2015-SPST-CORPAC S.A-1",
+        "method": "Adjudicación Directa Selectiva",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-63528",
+        "company": "Servicio de Agua Potable y Alcantarillado de Arequipa",
+        "companySlug": "sedapar",
+        "provider": "PACHECO BAUTISTA ARNULFO FELIPE",
+        "amount": 2.426,
+        "year": 2026,
+        "object": "LP-CLASICO-5-2014-SEDAPAR-1",
+        "method": "Licitación Pública",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1211747",
+        "company": "Empresa Regional de Servicio Público de Electricidad",
+        "companySlug": "hidrandina",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "DIRECTA-DIRECTA-1-2026-HDNA-1",
+        "method": "Contratación Directa",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2383-114",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-3-2026-SEDAPAL-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1218827",
+        "company": "Empresa Regional de Servicio Público de Electricidad",
+        "companySlug": "hidrandina",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-2-2026-HDNA-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2391-76",
+        "company": "Electroperú",
+        "companySlug": "electroperu",
+        "provider": "MACHACA MAMANI NERY NOEMI",
+        "amount": 0.193,
+        "year": 2026,
+        "object": "LP-ABR-3-2026-ELECTROPERU-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2525-64",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-5-2026-BN-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2383-103",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP-ABR-7-2026-SEDAPAL-1",
+        "method": "Concurso Público Abreviado",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1222309",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "SEL-PROC-11-2026-OLE / PETROPERU-1",
+        "method": "Adjudicación Selectiva",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1220581",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-21-2026-SEDAPAL-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2383-187",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "RG SOLUCIONES TECNOLOGICAS INDUSTRIALES S.A.C.",
+        "amount": 0.275,
+        "year": 2026,
+        "object": "AS-SM-1-2026-SEDAPAL-1",
+        "method": "Adjudicación Simplificada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2525-58",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-SM-2-2026-BN.-1",
+        "method": "Licitación Pública",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1195513",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "SEL-PROC-37-2025-OFP / PETROPERU-1",
+        "method": "Adjudicación Selectiva",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1204527",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "SEL-PROC-16-2026-OTL / PETROPERU-1",
+        "method": "Adjudicación Selectiva",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-200192-202",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "CONSORCIO A&E",
+        "amount": 44.715,
+        "year": 2026,
+        "object": "CP SER-SM-2-2025-ELCTO S.A.-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1176495",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "CONSORCIO DISA",
+        "amount": 1.34,
+        "year": 2026,
+        "object": "ABR-PROC-105-2025-OTL / PETROPERU-1",
+        "method": "Adjudicación Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2025-200192-263",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "—",
+        "amount": 13.113,
+        "year": 2026,
+        "object": "CP SER-SM-16-2025-ELCTO S.A.-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-68471",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "—",
+        "amount": 0.198,
+        "year": 2026,
+        "object": "CP-CLASICO-39-2014-BN-1",
+        "method": "Concurso Público",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-189554",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "CONSORCIO: STORAGEDATA S.A.C.  -  OPTICAL TECHNOLOGIES S.A.C.",
+        "amount": 17.601,
+        "year": 2026,
+        "object": "LP-CLASICO-12-2015-BN-1",
+        "method": "Licitación Pública",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-6998",
+        "company": "Activos Mineros",
+        "companySlug": "amsac",
+        "provider": "LAURA LOPEZ OLIVIA",
+        "amount": 0.012,
+        "year": 2026,
+        "object": "AMC-CLASICO-15-2014-AMSAC-1",
+        "method": "Adjudicación de Menor Cuantía",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-151552",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "CONSORCIO SEÑOR CAUTIVO IQUITOS",
+        "amount": 4.676,
+        "year": 2026,
+        "object": "CMA-PROC-8-2015-OPS / PETROPERU-1",
+        "method": "Contratación por Competencia Mayor",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-351547",
+        "company": "Fábrica de Armas y Municiones del Ejército",
+        "companySlug": "fame",
+        "provider": "—",
+        "amount": 0.203,
+        "year": 2026,
+        "object": "AS-SM-1-2017-FAME SAC-1",
+        "method": "Adjudicación Simplificada",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2017-200192-84",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "TURBINAS HIDRAULICAS S.A.C.",
+        "amount": 0.018,
+        "year": 2026,
+        "object": "RES-PROC-18-2017-ELECTROCENTRO S.A.-1",
+        "method": "Regímen Especial",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-175869",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "—",
+        "amount": 0.348,
+        "year": 2026,
+        "object": "CME-PROC-198-2015-OTL / PETROPERU-1",
+        "method": "Contratación por Competencia Menor",
+        "amountType": "convocatoria",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1222399",
+        "company": "Petróleos del Perú",
+        "companySlug": "petroperu",
+        "provider": "CLEAN PACIFIC S.A.C.",
+        "amount": 1.331,
+        "year": 2026,
+        "object": "ABR-PROC-6-2026-OFP / PETROPERU-1",
+        "method": "Adjudicación Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2409-58",
+        "company": "Sociedad Eléctrica del Sur Oeste",
+        "companySlug": "seal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-12-2026-SEAL-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1218554",
+        "company": "Sociedad Eléctrica del Sur Oeste",
+        "companySlug": "seal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-13-2025-SEAL-2",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2024-2408-85",
+        "company": "Electrosur",
+        "companySlug": "electrosur",
+        "provider": "CONSORCIO NAJUKATEC",
+        "amount": 3.406,
+        "year": 2026,
+        "object": "AS-SM-43-2023-ES-1",
+        "method": "Adjudicación Simplificada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200192-95",
+        "company": "Electrocentro",
+        "companySlug": "electrocentro",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-SM-2-2026-ELCTO S.A.-1",
+        "method": "Licitación Pública",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1218916",
+        "company": "Servicio de Agua Potable y Alcantarillado de Arequipa",
+        "companySlug": "sedapar",
+        "provider": "CONSORCIO PALKIA",
+        "amount": 1.618,
+        "year": 2026,
+        "object": "LP-ABR-1-2026-SEDAPAR-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1216915",
+        "company": "Sociedad Eléctrica del Sur Oeste",
+        "companySlug": "seal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "LP-ABR-1-2026-HBT-1",
+        "method": "Licitación Pública Abreviada",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-200190-54",
+        "company": "Electronoroeste",
+        "companySlug": "enosa",
+        "provider": "BEJO MULTISERVICIOS",
+        "amount": 3.27,
+        "year": 2026,
+        "object": "CP SER-SM-6-2026-ELECTRONOROESTE SA (ENOSA)-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2026-2383-132",
+        "company": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "companySlug": "sedapal",
+        "provider": "—",
+        "amount": 0,
+        "year": 2026,
+        "object": "CP SER-SM-12-2026-SEDAPAL-1",
+        "method": "Concurso Público de Servicios",
+        "amountType": "sin_monto",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-1161007",
+        "company": "Banco de la Nación",
+        "companySlug": "banco-nacion",
+        "provider": "PROINSAT TITULACION S.A.C.",
+        "amount": 0.075,
+        "year": 2026,
+        "object": "CP-ABR-1-2025-BN-2",
+        "method": "Concurso Público Abreviado",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
+      },
+      {
+        "id": "ocds-dgv273-seacev3-2024-2407-111",
+        "company": "Electro Sur Este",
+        "companySlug": "electro-sur-este",
+        "provider": "CVK ELECTRONICS SOCIEDAD ANONIMA CERRADA",
+        "amount": 0.21,
+        "year": 2026,
+        "object": "AS-SM-36-2024-ELSE-1",
+        "method": "Adjudicación Simplificada",
+        "amountType": "adjudicado",
+        "source": "OECE-OCDS"
       }
     ],
     "isReal": true,
@@ -17530,6 +18826,8 @@
       "enapu",
       "enosa",
       "ensa",
+      "fame",
+      "fondo-mivivienda",
       "hidrandina",
       "petroperu",
       "seal",
@@ -17540,82 +18838,88 @@
     "byYear": [
       {
         "year": 2026,
-        "count": 141,
-        "amount": 134.88
+        "count": 249,
+        "amount": 288.02
       }
     ],
     "byEntity": [
       {
         "slug": "petroperu",
         "name": "Petróleos del Perú",
-        "count": 28,
-        "amount": 4.88
+        "count": 50,
+        "amount": 13.98
       },
       {
         "slug": "sedapal",
         "name": "Servicio de Agua Potable y Alcantarillado de Lima",
-        "count": 18,
-        "amount": 24.44
+        "count": 32,
+        "amount": 55.86
       },
       {
         "slug": "hidrandina",
         "name": "Empresa Regional de Servicio Público de Electricidad",
-        "count": 14,
-        "amount": 55.94
-      },
-      {
-        "slug": "sedapar",
-        "name": "Servicio de Agua Potable y Alcantarillado de Arequipa",
-        "count": 10,
-        "amount": 11.97
+        "count": 21,
+        "amount": 57.3
       },
       {
         "slug": "electrocentro",
         "name": "Electrocentro",
-        "count": 10,
-        "amount": 0.23
+        "count": 21,
+        "amount": 62.56
       },
       {
         "slug": "banco-nacion",
         "name": "Banco de la Nación",
-        "count": 7,
-        "amount": 13.29
+        "count": 18,
+        "amount": 31.16
       },
       {
         "slug": "enosa",
         "name": "Electronoroeste",
-        "count": 7,
-        "amount": 8.84
+        "count": 16,
+        "amount": 22.31
       },
       {
         "slug": "seal",
         "name": "Sociedad Eléctrica del Sur Oeste",
-        "count": 6,
-        "amount": 0.62
+        "count": 14,
+        "amount": 4.06
+      },
+      {
+        "slug": "sedapar",
+        "name": "Servicio de Agua Potable y Alcantarillado de Arequipa",
+        "count": 14,
+        "amount": 16.02
       },
       {
         "slug": "amsac",
         "name": "Activos Mineros",
-        "count": 6,
-        "amount": 4.72
-      },
-      {
-        "slug": "electro-sur-este",
-        "name": "Electro Sur Este",
-        "count": 5,
-        "amount": 3.54
+        "count": 10,
+        "amount": 4.89
       },
       {
         "slug": "electroperu",
         "name": "Electroperú",
-        "count": 5,
-        "amount": 1.99
+        "count": 8,
+        "amount": 5.63
       },
       {
         "slug": "electrosur",
         "name": "Electrosur",
-        "count": 4,
-        "amount": 0.2
+        "count": 7,
+        "amount": 4.66
+      },
+      {
+        "slug": "electro-sur-este",
+        "name": "Electro Sur Este",
+        "count": 7,
+        "amount": 4.08
+      },
+      {
+        "slug": "egasa",
+        "name": "Empresa de Generación Eléctrica de Arequipa",
+        "count": 6,
+        "amount": 0.0
       },
       {
         "slug": "enapu",
@@ -17624,10 +18928,22 @@
         "amount": 0.33
       },
       {
-        "slug": "egasa",
-        "name": "Empresa de Generación Eléctrica de Arequipa",
+        "slug": "egemsa",
+        "name": "Empresa de Generación Eléctrica Machupicchu",
         "count": 4,
-        "amount": 0.0
+        "amount": 0.54
+      },
+      {
+        "slug": "serpost",
+        "name": "Servicios Postales del Perú",
+        "count": 4,
+        "amount": 0.14
+      },
+      {
+        "slug": "corpac",
+        "name": "Corporación Peruana de Aeropuertos y Aviación Comercial",
+        "count": 4,
+        "amount": 1.99
       },
       {
         "slug": "ensa",
@@ -17636,63 +18952,73 @@
         "amount": 1.82
       },
       {
-        "slug": "egemsa",
-        "name": "Empresa de Generación Eléctrica Machupicchu",
-        "count": 3,
-        "amount": 0.12
-      },
-      {
-        "slug": "corpac",
-        "name": "Corporación Peruana de Aeropuertos y Aviación Comercial",
-        "count": 3,
-        "amount": 1.95
-      },
-      {
-        "slug": "serpost",
-        "name": "Servicios Postales del Perú",
-        "count": 2,
-        "amount": 0.0
-      },
-      {
         "slug": "egesur",
         "name": "Empresa de Generación Eléctrica del Sur",
-        "count": 1,
-        "amount": 0.0
+        "count": 2,
+        "amount": 0.3
       },
       {
         "slug": "cofide",
         "name": "Corporación Financiera de Desarrollo",
+        "count": 2,
+        "amount": 0.2
+      },
+      {
+        "slug": "fondo-mivivienda",
+        "name": "Fondo MIVIVIENDA",
         "count": 1,
         "amount": 0.0
+      },
+      {
+        "slug": "fame",
+        "name": "Fábrica de Armas y Municiones del Ejército",
+        "count": 1,
+        "amount": 0.2
       }
     ],
     "byMethod": [
       {
         "method": "Concurso Público Abreviado",
-        "count": 36
+        "count": 54
       },
       {
         "method": "Concurso Público de Servicios",
-        "count": 26
+        "count": 44
       },
       {
         "method": "Licitación Pública Abreviada",
-        "count": 16
+        "count": 34
       },
       {
         "method": "Adjudicación Selectiva",
-        "count": 14
+        "count": 23
       },
       {
         "method": "Licitación Pública",
-        "count": 11
+        "count": 17
       },
       {
         "method": "Adjudicación Simplificada",
-        "count": 7
+        "count": 13
+      },
+      {
+        "method": "Contratación por Competencia Menor",
+        "count": 9
       },
       {
         "method": "Adjudicación Abreviada",
+        "count": 9
+      },
+      {
+        "method": "Adjudicación de Menor Cuantía",
+        "count": 7
+      },
+      {
+        "method": "Concurso Público",
+        "count": 7
+      },
+      {
+        "method": "Contratación Directa (Petroperú)",
         "count": 5
       },
       {
@@ -17700,24 +19026,20 @@
         "count": 5
       },
       {
-        "method": "Adjudicación de Menor Cuantía",
-        "count": 4
-      },
-      {
-        "method": "Contratación Directa (Petroperú)",
-        "count": 4
-      },
-      {
-        "method": "Contratación por Competencia Menor",
-        "count": 3
-      },
-      {
         "method": "Contratación Directa",
-        "count": 2
+        "count": 4
       },
       {
         "method": "Regímen Especial",
-        "count": 2
+        "count": 4
+      },
+      {
+        "method": "Subasta Inversa Electrónica",
+        "count": 4
+      },
+      {
+        "method": "Adjudicación Directa Selectiva",
+        "count": 3
       },
       {
         "method": "Adjudicación para Contrato Marco",
@@ -17728,30 +19050,34 @@
         "count": 1
       },
       {
-        "method": "Subasta Inversa Electrónica",
+        "method": "Convenio",
         "count": 1
       },
       {
-        "method": "Concurso Público",
+        "method": "Proceso por Competencia",
         "count": 1
       },
       {
-        "method": "Adjudicación Directa Selectiva",
+        "method": "Adjudicación Directa Pública",
+        "count": 1
+      },
+      {
+        "method": "Contratación por Competencia Mayor",
         "count": 1
       }
     ],
     "byStage": [
       {
         "stage": "sin_monto",
-        "count": 90
+        "count": 140
       },
       {
         "stage": "adjudicado",
-        "count": 34
+        "count": 83
       },
       {
         "stage": "convocatoria",
-        "count": 17
+        "count": 26
       }
     ]
   },

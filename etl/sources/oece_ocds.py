@@ -141,9 +141,9 @@ def normalize(rel):
     )
 
 
-def scan_recent(max_pages=120, sleep=0.15):
-    """Pagina el feed reciente y devuelve contratos de empresas del portafolio."""
-    out, url, pages = [], BASE + "?page=1", 0
+def scan_recent(max_pages=120, sleep=0.15, start_page=1):
+    """Pagina el feed (desde start_page) y devuelve contratos del portafolio."""
+    out, url, pages = [], BASE + f"?page={start_page}", 0
     while url and pages < max_pages:
         try:
             d = _get(url)
@@ -162,7 +162,7 @@ def scan_recent(max_pages=120, sleep=0.15):
     return out
 
 
-def update_cache(max_pages=120):
+def update_cache(max_pages=120, start_page=1):
     """Acumula (dedupe por ocid) en la caché versionada. Devuelve la lista total."""
     os.makedirs(os.path.dirname(CACHE), exist_ok=True)
     existing = {}
@@ -170,7 +170,7 @@ def update_cache(max_pages=120):
         for r in json.load(open(CACHE, encoding="utf-8")):
             existing[r["ocid"]] = r
     before = len(existing)
-    for rec in scan_recent(max_pages=max_pages):
+    for rec in scan_recent(max_pages=max_pages, start_page=start_page):
         existing[rec["ocid"]] = rec
     data = list(existing.values())
     json.dump(data, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
@@ -187,4 +187,5 @@ def load_cache():
 if __name__ == "__main__":
     import sys
     pages = int(sys.argv[1]) if len(sys.argv) > 1 else 120
-    update_cache(max_pages=pages)
+    start = int(sys.argv[2]) if len(sys.argv) > 2 else 1
+    update_cache(max_pages=pages, start_page=start)
