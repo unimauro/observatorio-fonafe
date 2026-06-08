@@ -17,7 +17,7 @@ Filosofía: del dato al diagnóstico, y del diagnóstico a la RECOMENDACIÓN.
 Uso:  python3 etl/build_dataset.py
 """
 import json, os, datetime, argparse
-from seed_data import COMPANIES, YEARS, NEWS_TEMPLATES
+from seed_data import COMPANIES, YEARS, NEWS_TEMPLATES, TREND_YEARS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "frontend", "public", "data")
@@ -38,18 +38,32 @@ ACTION_CAT = {
 }
 
 
-def full_trend(trend, n_years):
-    """Extiende el `trend` (últimos 6 años) hacia atrás hasta cubrir n_years.
+def full_trend(trend, n_years):  # compat (no usado directamente)
+    return trend
 
-    Los años previos se extrapolan con una rampa suave que sube hasta trend[0],
-    de modo que el histórico tenga crecimiento plausible antes del tramo conocido.
+
+def full_multipliers(trend, years):
+    """Multiplicadores por año para `years`, anclados a TREND_YEARS (2019–2024).
+
+    - 2019–2024: usa `trend` directamente.
+    - <2019: extrapola hacia atrás con rampa suave hasta trend[0].
+    - >2024 (p. ej. 2025): extrapola hacia adelante continuando la pendiente reciente.
     """
-    if len(trend) >= n_years:
-        return trend[-n_years:]
-    extra = n_years - len(trend)
+    m = {ty: trend[i] for i, ty in enumerate(TREND_YEARS)}
+    # adelante (2025+)
+    slope = (trend[-1] / trend[-2]) if trend[-2] else 1.0
+    slope = min(max(slope, 0.95), 1.08)
+    last, y = trend[-1], TREND_YEARS[-1]
+    while y + 1 <= max(years):
+        y += 1
+        last = round(last * slope, 3)
+        m[y] = last
+    # atrás (<2019)
+    pre = sorted(y for y in years if y < TREND_YEARS[0])
     start = trend[0] * 0.82
-    pre = [round(start + (trend[0] - start) * (i / extra), 3) for i in range(extra)]
-    return pre + list(trend)
+    for k, y in enumerate(pre):
+        m[y] = round(start + (trend[0] - start) * (k / max(1, len(pre))), 3)
+    return [m[y] for y in years]
 
 
 def series(base, trend):
@@ -214,7 +228,7 @@ def main():
     companies = []
     for c in COMPANIES:
         fin = []
-        ft = full_trend(c["trend"], len(YEARS))
+        ft = full_multipliers(c["trend"], YEARS)
         rev_s = series(c["rev"], ft)
         net_s = series(c["net"], ft)
         ebi_s = series(c["ebitda"], ft)

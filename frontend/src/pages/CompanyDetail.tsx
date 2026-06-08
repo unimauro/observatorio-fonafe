@@ -18,6 +18,7 @@ const TABS = [
   { id: 'contrataciones', label: 'Contrataciones' },
   { id: 'directorio', label: 'Directorio' },
   { id: 'indicadores', label: 'Indicadores' },
+  { id: 'simulador', label: 'Simulador' },
   { id: 'noticias', label: 'Noticias' },
 ]
 type Gran = 'year' | 'quarterly' | 'monthly'
@@ -28,11 +29,31 @@ export function CompanyDetail() {
   const [tab, setTab] = useState('general')
   const [gran, setGran] = useState<Gran>('year')
 
+  const [simCut, setSimCut] = useState(8)
+  const [simGrowth, setSimGrowth] = useState(4)
+  const [simYears, setSimYears] = useState(4)
+
   const company = useMemo(() => data?.companies.find((c) => c.slug === slug), [data, slug])
   const contracts = useMemo(
     () => (data && company ? data.contracts.items.filter((i) => i.companySlug === company.slug) : []),
     [data, company],
   )
+  const sim = useMemo(() => {
+    if (!company) return null
+    const f = company.financials[company.financials.length - 1]
+    const R0 = f.revenue, N0 = f.netIncome, cost0 = R0 - N0
+    const labels = ['Hoy'], statusNet = [N0], scenNet = [N0]
+    let rs = R0, cs = cost0, r = R0, c = cost0 * (1 - simCut / 100), be = -1
+    for (let i = 1; i <= simYears; i++) {
+      labels.push(`+${i}`)
+      rs *= 1.01; cs *= 1.015; statusNet.push(+(rs - cs).toFixed(1))
+      r *= 1 + simGrowth / 100; c *= 1 + (simGrowth / 100) * 0.5
+      const n = +(r - c).toFixed(1); scenNet.push(n)
+      if (be < 0 && N0 < 0 && n >= 0) be = i
+    }
+    const fiscalImpact = scenNet.slice(1).reduce((a, v, i) => a + (v - statusNet[i + 1]), 0)
+    return { labels, statusNet, scenNet, be, fiscalImpact, N0 }
+  }, [company, simCut, simGrowth, simYears])
 
   if (loading) return <Loading />
   if (error || !data) return <ErrorState error={error || 'sin datos'} />
@@ -230,6 +251,54 @@ export function CompanyDetail() {
           <Kpi label="Transparencia" value={`${company.metrics.transparencyScore}/100`} tone="accent" />
           <Kpi label="Ejecución presup." value={pct(company.metrics.budgetExecution, 0)} />
         </div>
+      )}
+
+      {tab === 'simulador' && sim && (
+        <Card>
+          <CardHeader><CardTitle>Simulador de reflotamiento · {company.acronym}</CardTitle></CardHeader>
+          <CardContent>
+            <div className="grid gap-6 lg:grid-cols-[260px_1fr]">
+              <div className="space-y-4">
+                {[
+                  { l: 'Reducción de costos', v: simCut, set: setSimCut, min: 0, max: 30, s: '%' },
+                  { l: 'Crecimiento ingresos/año', v: simGrowth, set: setSimGrowth, min: -5, max: 15, s: '%' },
+                  { l: 'Horizonte', v: simYears, set: setSimYears, min: 1, max: 6, s: ' años' },
+                ].map((sl) => (
+                  <div key={sl.l}>
+                    <div className="mb-1 flex justify-between text-sm">
+                      <span className="text-muted-foreground">{sl.l}</span><span className="font-semibold">{sl.v}{sl.s}</span>
+                    </div>
+                    <input type="range" min={sl.min} max={sl.max} step={1} value={sl.v}
+                      onChange={(e) => sl.set(Number(e.target.value))} className="w-full accent-[hsl(var(--primary))]" />
+                  </div>
+                ))}
+                <div className="rounded-lg border border-border p-3 text-xs text-muted-foreground">
+                  Utilidad actual: <span className={sim.N0 < 0 ? 'text-red-500' : 'text-emerald-500'}>{soles(sim.N0)}</span>
+                </div>
+              </div>
+              <div>
+                <div className="mb-3 grid grid-cols-3 gap-3">
+                  <Kpi label={`Utilidad año +${simYears}`} value={soles(sim.scenNet[sim.scenNet.length - 1])} tone={sim.scenNet[sim.scenNet.length - 1] >= 0 ? 'good' : 'bad'} />
+                  <Kpi label="Equilibrio" value={sim.be > 0 ? `Año +${sim.be}` : sim.N0 >= 0 ? 'Ya rentable' : 'No alcanza'} tone={sim.be > 0 || sim.N0 >= 0 ? 'good' : 'bad'} />
+                  <Kpi label="Impacto fiscal" value={soles(+sim.fiscalImpact.toFixed(1))} tone={sim.fiscalImpact >= 0 ? 'good' : 'bad'} />
+                </div>
+                <Chart height={280} option={{
+                  tooltip: { trigger: 'axis' },
+                  legend: { data: ['Sin cambios', 'Escenario'], top: 0 },
+                  grid: { left: 50, right: 16, top: 36, bottom: 28 },
+                  xAxis: { type: 'category', data: sim.labels },
+                  yAxis: { type: 'value', name: 'Utilidad S/ MM' },
+                  series: [
+                    { name: 'Sin cambios', type: 'line', smooth: true, lineStyle: { type: 'dashed' }, data: sim.statusNet },
+                    { name: 'Escenario', type: 'line', smooth: true, areaStyle: { opacity: 0.12 }, data: sim.scenNet,
+                      markLine: { silent: true, symbol: 'none', data: [{ yAxis: 0 }], lineStyle: { color: '#ef4444' } } },
+                  ],
+                }} />
+              </div>
+            </div>
+            <p className="mt-3 text-xs text-muted-foreground">Modelo simplificado e ilustrativo, educativo. No es proyección oficial.</p>
+          </CardContent>
+        </Card>
       )}
 
       {tab === 'noticias' && (

@@ -10,9 +10,10 @@ Unidades: millones de soles (S/ MM), salvo employees (personas).
 Años cubiertos: 2019–2024.
 """
 
-YEARS = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
-# Nota: cada `trend` define los ÚLTIMOS 6 años (2019–2024, con el efecto pandemia).
-# build_dataset.py extrapola hacia atrás los años previos (2015–2018).
+YEARS = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+# Nota: cada `trend` define el tramo 2019–2024 (con el efecto pandemia).
+# build_dataset.py extrapola hacia atrás (2015–2018) y hacia adelante (2025).
+TREND_YEARS = [2019, 2020, 2021, 2022, 2023, 2024]
 
 # trend = multiplicadores por año aplicados al valor base de 2024 (último = 1.0)
 # permite series deterministas y reproducibles (sin aleatoriedad -> versionado estable)

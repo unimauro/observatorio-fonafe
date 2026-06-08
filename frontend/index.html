@@ -33,14 +33,50 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Dataset",
-      "name": "Observatorio de Empresas Públicas del Perú (FONAFE)",
-      "description": "Datos de transparencia, finanzas y contrataciones de las empresas estatales del Perú (holding FONAFE y otras). Incluye KPIs, rankings, anomalías y recomendaciones.",
-      "url": "https://unimauro.github.io/observatorio-fonafe/",
-      "inLanguage": "es",
-      "creator": { "@type": "Person", "name": "Carlos Mauro Cárdenas", "url": "https://unimauro.github.io/" },
-      "license": "https://opendatacommons.org/licenses/odbl/",
-      "keywords": ["FONAFE", "empresas públicas", "Perú", "transparencia", "datos abiertos", "contrataciones"]
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://unimauro.github.io/observatorio-fonafe/#website",
+          "name": "Observatorio de Empresas Públicas del Perú",
+          "url": "https://unimauro.github.io/observatorio-fonafe/",
+          "inLanguage": "es-PE",
+          "publisher": { "@id": "https://unimauro.github.io/#person" }
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Observatorio de Empresas Públicas del Perú",
+          "url": "https://unimauro.github.io/observatorio-fonafe/",
+          "applicationCategory": "GovernmentApplication",
+          "operatingSystem": "Web",
+          "browserRequirements": "Requires JavaScript",
+          "isAccessibleForFree": true,
+          "inLanguage": "es-PE",
+          "image": "https://unimauro.github.io/observatorio-fonafe/og.png",
+          "description": "Plataforma de transparencia, monitoreo y diagnóstico de las empresas estatales del Perú (FONAFE y EPS regionales): KPIs, finanzas, contrataciones, rankings y recomendaciones.",
+          "author": { "@id": "https://unimauro.github.io/#person" }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Datos de empresas públicas del Perú (FONAFE + EPS)",
+          "description": "Finanzas, contrataciones (OCDS/OECE), transparencia, KPIs, rankings, anomalías y recomendaciones de las empresas estatales del Perú. Datos versionados; financieros ilustrativos hasta cargar fuentes oficiales.",
+          "url": "https://unimauro.github.io/observatorio-fonafe/",
+          "inLanguage": "es",
+          "creator": { "@id": "https://unimauro.github.io/#person" },
+          "license": "https://opendatacommons.org/licenses/odbl/",
+          "isAccessibleForFree": true,
+          "distribution": [
+            { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://unimauro.github.io/observatorio-fonafe/data/latest/dataset.json" }
+          ],
+          "spatialCoverage": "Perú",
+          "keywords": ["FONAFE", "empresas públicas", "empresas estatales", "Perú", "transparencia", "datos abiertos", "contrataciones", "SEACE", "OCDS", "EPS", "saneamiento", "gestión pública"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://unimauro.github.io/#person",
+          "name": "Carlos Mauro Cárdenas",
+          "url": "https://unimauro.github.io/"
+        }
+      ]
     }
     </script>
 
