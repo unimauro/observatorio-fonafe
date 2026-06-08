@@ -38,6 +38,20 @@ ACTION_CAT = {
 }
 
 
+def full_trend(trend, n_years):
+    """Extiende el `trend` (últimos 6 años) hacia atrás hasta cubrir n_years.
+
+    Los años previos se extrapolan con una rampa suave que sube hasta trend[0],
+    de modo que el histórico tenga crecimiento plausible antes del tramo conocido.
+    """
+    if len(trend) >= n_years:
+        return trend[-n_years:]
+    extra = n_years - len(trend)
+    start = trend[0] * 0.82
+    pre = [round(start + (trend[0] - start) * (i / extra), 3) for i in range(extra)]
+    return pre + list(trend)
+
+
 def series(base, trend):
     """Serie por año = base(2024) * trend[i]; redondeada a 1 decimal."""
     return [round(base * t, 1) for t in trend]
@@ -147,11 +161,12 @@ def main():
     companies = []
     for c in COMPANIES:
         fin = []
-        rev_s = series(c["rev"], c["trend"])
-        net_s = series(c["net"], c["trend"])
-        ebi_s = series(c["ebitda"], c["trend"])
-        inv_s = series(c["inv"], c["trend"])
-        bud_s = series(c["budget"], c["trend"])
+        ft = full_trend(c["trend"], len(YEARS))
+        rev_s = series(c["rev"], ft)
+        net_s = series(c["net"], ft)
+        ebi_s = series(c["ebitda"], ft)
+        inv_s = series(c["inv"], ft)
+        bud_s = series(c["budget"], ft)
         exec_factor = 0.72 + (len(c["slug"]) % 5) * 0.05  # 0.72–0.92 determinista
         for i, y in enumerate(YEARS):
             fin.append(dict(year=y, revenue=rev_s[i], netIncome=net_s[i], ebitda=ebi_s[i],

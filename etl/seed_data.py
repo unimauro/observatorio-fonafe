@@ -10,7 +10,9 @@ Unidades: millones de soles (S/ MM), salvo employees (personas).
 Años cubiertos: 2019–2024.
 """
 
-YEARS = [2019, 2020, 2021, 2022, 2023, 2024]
+YEARS = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# Nota: cada `trend` define los ÚLTIMOS 6 años (2019–2024, con el efecto pandemia).
+# build_dataset.py extrapola hacia atrás los años previos (2015–2018).
 
 # trend = multiplicadores por año aplicados al valor base de 2024 (último = 1.0)
 # permite series deterministas y reproducibles (sin aleatoriedad -> versionado estable)
@@ -217,6 +219,26 @@ COMPANIES = [
          trend=[0.93, 0.91, 0.96, 0.99, 1.0, 1.0],
          directors=[("Presidente del Directorio", "—")], transp=(False, False, False, False),
          desc="Servicios de vigilancia y seguridad para el sector público."),
+
+    # --- Más empresas del portafolio ---
+    dict(slug="banmat", name="Banco de Materiales (en liquidación)", acronym="BANMAT", sector="Finanzas", holding="FONAFE",
+         ruc="20101024645", web="https://www.gob.pe/", employees=80,
+         rev=20, net=-18, ebitda=-15, inv=2, budget=30,
+         trend=[1.8, 1.6, 1.4, 1.2, 1.05, 1.0],
+         directors=[("Liquidador", "—")], transp=(False, False, False, False),
+         desc="Entidad en proceso de liquidación; arrastra cartera incobrable de créditos de vivienda."),
+    dict(slug="san-gabriel", name="Empresa de Generación Eléctrica San Gabriel", acronym="San Gabriel", sector="Energía", holding="FONAFE",
+         ruc="20603000001", web="https://www.electroperu.com.pe", employees=60,
+         rev=40, net=-5, ebitda=8, inv=520, budget=600,
+         trend=[0.2, 0.4, 0.7, 0.9, 0.97, 1.0],
+         directors=[("Presidente del Directorio", "—")], transp=(True, False, False, False),
+         desc="Proyecto hidroeléctrico en construcción (afluente del Mantaro); alta inversión, aún sin operación plena."),
+    dict(slug="electrosur", name="Electrosur", acronym="Electrosur", sector="Energía", holding="FONAFE",
+         ruc="20131367008", web="https://www.electrosur.com.pe", employees=360,
+         rev=420, net=30, ebitda=92, inv=60, budget=140,
+         trend=[0.88, 0.85, 0.92, 0.97, 0.99, 1.0],
+         directors=[("Presidente del Directorio", "—")], transp=(True, True, False, False),
+         desc="Distribución eléctrica en Tacna y Moquegua."),
 ]
 
 NEWS_TEMPLATES = [

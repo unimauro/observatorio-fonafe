@@ -5,6 +5,10 @@
     "is_illustrative": true,
     "latest_year": 2024,
     "years": [
+      2015,
+      2016,
+      2017,
+      2018,
       2019,
       2020,
       2021,
@@ -37,16 +41,16 @@
     "note": "Cifras ILUSTRATIVAS para demostración. Reemplazables por el ETL con datos oficiales."
   },
   "kpis": {
-    "companies": 30,
-    "totalRevenue": 48220.0,
-    "totalNetIncome": -787.0,
-    "totalEbitda": 5565.0,
-    "totalInvestment": 5268.0,
-    "totalBudget": 12472.0,
-    "totalBudgetExecuted": 10476.9,
-    "employees": 38595,
-    "withLosses": 5,
-    "withProfits": 25,
+    "companies": 33,
+    "totalRevenue": 48700.0,
+    "totalNetIncome": -780.0,
+    "totalEbitda": 5650.0,
+    "totalInvestment": 5850.0,
+    "totalBudget": 13242.0,
+    "totalBudgetExecuted": 11062.8,
+    "employees": 39095,
+    "withLosses": 7,
+    "withProfits": 26,
     "year": 2024
   },
   "companies": [
@@ -71,6 +75,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 2587.2,
+          "netIncome": 551.0,
+          "ebitda": 793.0,
+          "investment": 161.3,
+          "budget": 739.2,
+          "budgetExecuted": 606.1
+        },
+        {
+          "year": 2016,
+          "revenue": 2729.6,
+          "netIncome": 581.4,
+          "ebitda": 836.6,
+          "investment": 170.2,
+          "budget": 779.9,
+          "budgetExecuted": 639.5
+        },
+        {
+          "year": 2017,
+          "revenue": 2872.1,
+          "netIncome": 611.7,
+          "ebitda": 880.3,
+          "investment": 179.0,
+          "budget": 820.6,
+          "budgetExecuted": 672.9
+        },
+        {
+          "year": 2018,
+          "revenue": 3014.6,
+          "netIncome": 642.1,
+          "ebitda": 923.9,
+          "investment": 187.9,
+          "budget": 861.3,
+          "budgetExecuted": 706.3
+        },
         {
           "year": 2019,
           "revenue": 3157.0,
@@ -303,6 +343,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 457.6,
+          "netIncome": 70.1,
+          "ebitda": 155.0,
+          "investment": 29.5,
+          "budget": 132.8,
+          "budgetExecuted": 102.3
+        },
+        {
+          "year": 2016,
+          "revenue": 482.4,
+          "netIncome": 73.9,
+          "ebitda": 163.4,
+          "investment": 31.1,
+          "budget": 140.0,
+          "budgetExecuted": 107.8
+        },
+        {
+          "year": 2017,
+          "revenue": 507.8,
+          "netIncome": 77.8,
+          "ebitda": 172.0,
+          "investment": 32.8,
+          "budget": 147.4,
+          "budgetExecuted": 113.5
+        },
+        {
+          "year": 2018,
+          "revenue": 533.2,
+          "netIncome": 81.7,
+          "ebitda": 180.6,
+          "investment": 34.4,
+          "budget": 154.8,
+          "budgetExecuted": 119.2
+        },
+        {
           "year": 2019,
           "revenue": 558.0,
           "netIncome": 85.5,
@@ -533,6 +609,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 206.6,
+          "netIncome": -51.7,
+          "ebitda": -13.8,
+          "investment": 17.2,
+          "budget": 109.1,
+          "budgetExecuted": 100.4
+        },
+        {
+          "year": 2016,
+          "revenue": 218.0,
+          "netIncome": -54.5,
+          "ebitda": -14.5,
+          "investment": 18.2,
+          "budget": 115.0,
+          "budgetExecuted": 105.8
+        },
+        {
+          "year": 2017,
+          "revenue": 229.3,
+          "netIncome": -57.3,
+          "ebitda": -15.3,
+          "investment": 19.1,
+          "budget": 121.0,
+          "budgetExecuted": 111.3
+        },
+        {
+          "year": 2018,
+          "revenue": 240.7,
+          "netIncome": -60.2,
+          "ebitda": -16.0,
+          "investment": 20.1,
+          "budget": 127.0,
+          "budgetExecuted": 116.8
+        },
         {
           "year": 2019,
           "revenue": 252.0,
@@ -789,6 +901,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 380.7,
+          "netIncome": 112.8,
+          "ebitda": 169.2,
+          "investment": 21.1,
+          "budget": 148.0,
+          "budgetExecuted": 114.0
+        },
+        {
+          "year": 2016,
+          "revenue": 401.8,
+          "netIncome": 119.0,
+          "ebitda": 178.6,
+          "investment": 22.3,
+          "budget": 156.2,
+          "budgetExecuted": 120.3
+        },
+        {
+          "year": 2017,
+          "revenue": 422.8,
+          "netIncome": 125.3,
+          "ebitda": 187.9,
+          "investment": 23.5,
+          "budget": 164.4,
+          "budgetExecuted": 126.6
+        },
+        {
+          "year": 2018,
+          "revenue": 443.3,
+          "netIncome": 131.4,
+          "ebitda": 197.0,
+          "investment": 24.6,
+          "budget": 172.4,
+          "budgetExecuted": 132.7
+        },
+        {
           "year": 2019,
           "revenue": 464.4,
           "netIncome": 137.6,
@@ -1019,6 +1167,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 1429.6,
+          "netIncome": 296.0,
+          "ebitda": 519.8,
+          "investment": 231.0,
+          "budget": 404.3,
+          "budgetExecuted": 311.3
+        },
+        {
+          "year": 2016,
+          "revenue": 1506.8,
+          "netIncome": 312.0,
+          "ebitda": 547.9,
+          "investment": 243.5,
+          "budget": 426.2,
+          "budgetExecuted": 328.2
+        },
+        {
+          "year": 2017,
+          "revenue": 1586.0,
+          "netIncome": 328.4,
+          "ebitda": 576.7,
+          "investment": 256.3,
+          "budget": 448.6,
+          "budgetExecuted": 345.4
+        },
+        {
+          "year": 2018,
+          "revenue": 1663.2,
+          "netIncome": 344.4,
+          "ebitda": 604.8,
+          "investment": 268.8,
+          "budget": 470.4,
+          "budgetExecuted": 362.2
+        },
         {
           "year": 2019,
           "revenue": 1742.4,
@@ -1251,6 +1435,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 310.0,
+          "netIncome": 57.6,
+          "ebitda": 110.7,
+          "investment": 51.7,
+          "budget": 88.6,
+          "budgetExecuted": 63.8
+        },
+        {
+          "year": 2016,
+          "revenue": 326.8,
+          "netIncome": 60.7,
+          "ebitda": 116.7,
+          "investment": 54.5,
+          "budget": 93.4,
+          "budgetExecuted": 67.2
+        },
+        {
+          "year": 2017,
+          "revenue": 344.0,
+          "netIncome": 63.9,
+          "ebitda": 122.8,
+          "investment": 57.3,
+          "budget": 98.3,
+          "budgetExecuted": 70.8
+        },
+        {
+          "year": 2018,
+          "revenue": 361.2,
+          "netIncome": 67.1,
+          "ebitda": 129.0,
+          "investment": 60.2,
+          "budget": 103.2,
+          "budgetExecuted": 74.3
+        },
+        {
           "year": 2019,
           "revenue": 378.0,
           "netIncome": 70.2,
@@ -1482,6 +1702,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 223.8,
+          "netIncome": 46.3,
+          "ebitda": 89.5,
+          "investment": 41.0,
+          "budget": 67.1,
+          "budgetExecuted": 51.7
+        },
+        {
+          "year": 2016,
+          "revenue": 236.1,
+          "netIncome": 48.8,
+          "ebitda": 94.4,
+          "investment": 43.3,
+          "budget": 70.8,
+          "budgetExecuted": 54.5
+        },
+        {
+          "year": 2017,
+          "revenue": 248.4,
+          "netIncome": 51.3,
+          "ebitda": 99.4,
+          "investment": 45.5,
+          "budget": 74.5,
+          "budgetExecuted": 57.4
+        },
+        {
+          "year": 2018,
+          "revenue": 260.7,
+          "netIncome": 53.9,
+          "ebitda": 104.3,
+          "investment": 47.8,
+          "budget": 78.2,
+          "budgetExecuted": 60.2
+        },
+        {
           "year": 2019,
           "revenue": 273.0,
           "netIncome": 56.4,
@@ -1712,6 +1968,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 84.8,
+          "netIncome": 6.2,
+          "ebitda": 21.6,
+          "investment": 13.9,
+          "budget": 32.4,
+          "budgetExecuted": 24.9
+        },
+        {
+          "year": 2016,
+          "revenue": 89.4,
+          "netIncome": 6.5,
+          "ebitda": 22.8,
+          "investment": 14.6,
+          "budget": 34.1,
+          "budgetExecuted": 26.3
+        },
+        {
+          "year": 2017,
+          "revenue": 94.0,
+          "netIncome": 6.8,
+          "ebitda": 23.9,
+          "investment": 15.4,
+          "budget": 35.9,
+          "budgetExecuted": 27.6
+        },
+        {
+          "year": 2018,
+          "revenue": 98.8,
+          "netIncome": 7.2,
+          "ebitda": 25.1,
+          "investment": 16.2,
+          "budget": 37.7,
+          "budgetExecuted": 29.0
+        },
         {
           "year": 2019,
           "revenue": 103.4,
@@ -1957,6 +2249,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 1010.6,
+          "netIncome": 90.6,
+          "ebitda": 237.0,
+          "investment": 146.4,
+          "budget": 278.8,
+          "budgetExecuted": 200.7
+        },
+        {
+          "year": 2016,
+          "revenue": 1065.8,
+          "netIncome": 95.5,
+          "ebitda": 249.9,
+          "investment": 154.3,
+          "budget": 294.0,
+          "budgetExecuted": 211.7
+        },
+        {
+          "year": 2017,
+          "revenue": 1120.9,
+          "netIncome": 100.5,
+          "ebitda": 262.8,
+          "investment": 162.3,
+          "budget": 309.2,
+          "budgetExecuted": 222.6
+        },
+        {
+          "year": 2018,
+          "revenue": 1177.4,
+          "netIncome": 105.6,
+          "ebitda": 276.1,
+          "investment": 170.5,
+          "budget": 324.8,
+          "budgetExecuted": 233.9
+        },
+        {
           "year": 2019,
           "revenue": 1232.5,
           "netIncome": 110.5,
@@ -2187,6 +2515,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 767.5,
+          "netIncome": -40.5,
+          "ebitda": 101.3,
+          "investment": 191.9,
+          "budget": 373.1,
+          "budgetExecuted": 287.3
+        },
+        {
+          "year": 2016,
+          "revenue": 810.0,
+          "netIncome": -42.8,
+          "ebitda": 106.9,
+          "investment": 202.5,
+          "budget": 393.8,
+          "budgetExecuted": 303.2
+        },
+        {
+          "year": 2017,
+          "revenue": 851.8,
+          "netIncome": -45.0,
+          "ebitda": 112.4,
+          "investment": 212.9,
+          "budget": 414.1,
+          "budgetExecuted": 318.9
+        },
+        {
+          "year": 2018,
+          "revenue": 894.2,
+          "netIncome": -47.2,
+          "ebitda": 118.0,
+          "investment": 223.6,
+          "budget": 434.7,
+          "budgetExecuted": 334.7
+        },
         {
           "year": 2019,
           "revenue": 936.0,
@@ -2432,6 +2796,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 309.1,
+          "netIncome": 33.2,
+          "ebitda": 82.9,
+          "investment": 64.1,
+          "budget": 181.0,
+          "budgetExecuted": 130.3
+        },
+        {
+          "year": 2016,
+          "revenue": 326.4,
+          "netIncome": 35.0,
+          "ebitda": 87.6,
+          "investment": 67.7,
+          "budget": 191.0,
+          "budgetExecuted": 137.5
+        },
+        {
+          "year": 2017,
+          "revenue": 343.2,
+          "netIncome": 36.8,
+          "ebitda": 92.1,
+          "investment": 71.1,
+          "budget": 200.9,
+          "budgetExecuted": 144.6
+        },
+        {
+          "year": 2018,
+          "revenue": 360.4,
+          "netIncome": 38.7,
+          "ebitda": 96.7,
+          "investment": 74.7,
+          "budget": 211.0,
+          "budgetExecuted": 151.9
+        },
+        {
           "year": 2019,
           "revenue": 377.2,
           "netIncome": 40.5,
@@ -2662,6 +3062,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 179.2,
+          "netIncome": -20.7,
+          "ebitda": -3.8,
+          "investment": 11.3,
+          "budget": 113.2,
+          "budgetExecuted": 92.8
+        },
+        {
+          "year": 2016,
+          "revenue": 189.1,
+          "netIncome": -21.9,
+          "ebitda": -4.0,
+          "investment": 11.9,
+          "budget": 119.4,
+          "budgetExecuted": 97.9
+        },
+        {
+          "year": 2017,
+          "revenue": 198.7,
+          "netIncome": -23.0,
+          "ebitda": -4.2,
+          "investment": 12.6,
+          "budget": 125.5,
+          "budgetExecuted": 102.9
+        },
+        {
+          "year": 2018,
+          "revenue": 208.6,
+          "netIncome": -24.2,
+          "ebitda": -4.4,
+          "investment": 13.2,
+          "budget": 131.8,
+          "budgetExecuted": 108.1
+        },
         {
           "year": 2019,
           "revenue": 218.5,
@@ -2929,6 +3365,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 2693.7,
+          "netIncome": 88.6,
+          "ebitda": 723.2,
+          "investment": 1070.1,
+          "budget": 1549.8,
+          "budgetExecuted": 1270.8
+        },
+        {
+          "year": 2016,
+          "revenue": 2839.7,
+          "netIncome": 93.4,
+          "ebitda": 762.4,
+          "investment": 1128.1,
+          "budget": 1633.8,
+          "budgetExecuted": 1339.7
+        },
+        {
+          "year": 2017,
+          "revenue": 2989.3,
+          "netIncome": 98.3,
+          "ebitda": 802.6,
+          "investment": 1187.5,
+          "budget": 1719.9,
+          "budgetExecuted": 1410.3
+        },
+        {
+          "year": 2018,
+          "revenue": 3139.0,
+          "netIncome": 103.2,
+          "ebitda": 842.8,
+          "investment": 1247.0,
+          "budget": 1806.0,
+          "budgetExecuted": 1480.9
+        },
+        {
           "year": 2019,
           "revenue": 3285.0,
           "netIncome": 108.0,
@@ -3160,6 +3632,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 491.0,
+          "netIncome": 25.3,
+          "ebitda": 86.6,
+          "investment": 65.0,
+          "budget": 216.6,
+          "budgetExecuted": 199.3
+        },
+        {
+          "year": 2016,
+          "revenue": 517.5,
+          "netIncome": 26.6,
+          "ebitda": 91.3,
+          "investment": 68.5,
+          "budget": 228.3,
+          "budgetExecuted": 210.0
+        },
+        {
+          "year": 2017,
+          "revenue": 544.7,
+          "netIncome": 28.0,
+          "ebitda": 96.1,
+          "investment": 72.1,
+          "budget": 240.3,
+          "budgetExecuted": 221.1
+        },
+        {
+          "year": 2018,
+          "revenue": 571.2,
+          "netIncome": 29.4,
+          "ebitda": 100.8,
+          "investment": 75.6,
+          "budget": 252.0,
+          "budgetExecuted": 231.8
+        },
+        {
           "year": 2019,
           "revenue": 598.4,
           "netIncome": 30.8,
@@ -3390,6 +3898,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 103.3,
+          "netIncome": -7.7,
+          "ebitda": 8.6,
+          "investment": 18.9,
+          "budget": 68.9,
+          "budgetExecuted": 63.4
+        },
+        {
+          "year": 2016,
+          "revenue": 109.0,
+          "netIncome": -8.2,
+          "ebitda": 9.1,
+          "investment": 20.0,
+          "budget": 72.6,
+          "budgetExecuted": 66.8
+        },
+        {
+          "year": 2017,
+          "revenue": 114.7,
+          "netIncome": -8.6,
+          "ebitda": 9.6,
+          "investment": 21.0,
+          "budget": 76.5,
+          "budgetExecuted": 70.4
+        },
+        {
+          "year": 2018,
+          "revenue": 120.4,
+          "netIncome": -9.0,
+          "ebitda": 10.0,
+          "investment": 22.1,
+          "budget": 80.2,
+          "budgetExecuted": 73.8
+        },
         {
           "year": 2019,
           "revenue": 126.0,
@@ -3646,6 +4190,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 831.9,
+          "netIncome": 64.9,
+          "ebitda": 190.3,
+          "investment": 112.8,
+          "budget": 232.6,
+          "budgetExecuted": 202.4
+        },
+        {
+          "year": 2016,
+          "revenue": 877.9,
+          "netIncome": 68.4,
+          "ebitda": 200.9,
+          "investment": 119.0,
+          "budget": 245.5,
+          "budgetExecuted": 213.6
+        },
+        {
+          "year": 2017,
+          "revenue": 923.9,
+          "netIncome": 72.0,
+          "ebitda": 211.4,
+          "investment": 125.3,
+          "budget": 258.4,
+          "budgetExecuted": 224.8
+        },
+        {
+          "year": 2018,
+          "revenue": 968.8,
+          "netIncome": 75.5,
+          "ebitda": 221.7,
+          "investment": 131.4,
+          "budget": 270.9,
+          "budgetExecuted": 235.7
+        },
+        {
           "year": 2019,
           "revenue": 1014.8,
           "netIncome": 79.1,
@@ -3876,6 +4456,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 684.5,
+          "netIncome": 49.9,
+          "ebitda": 149.7,
+          "investment": 85.6,
+          "budget": 185.4,
+          "budgetExecuted": 133.5
+        },
+        {
+          "year": 2016,
+          "revenue": 722.9,
+          "netIncome": 52.7,
+          "ebitda": 158.1,
+          "investment": 90.4,
+          "budget": 195.8,
+          "budgetExecuted": 141.0
+        },
+        {
+          "year": 2017,
+          "revenue": 760.3,
+          "netIncome": 55.4,
+          "ebitda": 166.3,
+          "investment": 95.0,
+          "budget": 205.9,
+          "budgetExecuted": 148.2
+        },
+        {
+          "year": 2018,
+          "revenue": 797.8,
+          "netIncome": 58.2,
+          "ebitda": 174.5,
+          "investment": 99.7,
+          "budget": 216.1,
+          "budgetExecuted": 155.6
+        },
         {
           "year": 2019,
           "revenue": 835.2,
@@ -4108,6 +4724,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 641.7,
+          "netIncome": 47.1,
+          "ebitda": 142.6,
+          "investment": 78.4,
+          "budget": 171.1,
+          "budgetExecuted": 157.4
+        },
+        {
+          "year": 2016,
+          "revenue": 677.7,
+          "netIncome": 49.7,
+          "ebitda": 150.6,
+          "investment": 82.8,
+          "budget": 180.7,
+          "budgetExecuted": 166.2
+        },
+        {
+          "year": 2017,
+          "revenue": 712.8,
+          "netIncome": 52.3,
+          "ebitda": 158.4,
+          "investment": 87.1,
+          "budget": 190.1,
+          "budgetExecuted": 174.9
+        },
+        {
+          "year": 2018,
+          "revenue": 747.9,
+          "netIncome": 54.8,
+          "ebitda": 166.2,
+          "investment": 91.4,
+          "budget": 199.4,
+          "budgetExecuted": 183.4
+        },
+        {
           "year": 2019,
           "revenue": 783.0,
           "netIncome": 57.4,
@@ -4338,6 +4990,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 710.9,
+          "netIncome": 40.4,
+          "ebitda": 153.3,
+          "investment": 125.5,
+          "budget": 209.1,
+          "budgetExecuted": 150.6
+        },
+        {
+          "year": 2016,
+          "revenue": 749.7,
+          "netIncome": 42.6,
+          "ebitda": 161.7,
+          "investment": 132.3,
+          "budget": 220.5,
+          "budgetExecuted": 158.8
+        },
+        {
+          "year": 2017,
+          "revenue": 788.5,
+          "netIncome": 44.8,
+          "ebitda": 170.1,
+          "investment": 139.1,
+          "budget": 231.9,
+          "budgetExecuted": 167.0
+        },
+        {
+          "year": 2018,
+          "revenue": 828.2,
+          "netIncome": 47.1,
+          "ebitda": 178.6,
+          "investment": 146.2,
+          "budget": 243.6,
+          "budgetExecuted": 175.4
+        },
         {
           "year": 2019,
           "revenue": 867.0,
@@ -4570,6 +5258,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 662.7,
+          "netIncome": 50.8,
+          "ebitda": 144.5,
+          "investment": 98.7,
+          "budget": 190.3,
+          "budgetExecuted": 146.5
+        },
+        {
+          "year": 2016,
+          "revenue": 699.4,
+          "netIncome": 53.6,
+          "ebitda": 152.5,
+          "investment": 104.2,
+          "budget": 200.9,
+          "budgetExecuted": 154.7
+        },
+        {
+          "year": 2017,
+          "revenue": 736.0,
+          "netIncome": 56.4,
+          "ebitda": 160.5,
+          "investment": 109.6,
+          "budget": 211.4,
+          "budgetExecuted": 162.8
+        },
+        {
+          "year": 2018,
+          "revenue": 771.7,
+          "netIncome": 59.1,
+          "ebitda": 168.3,
+          "investment": 114.9,
+          "budget": 221.7,
+          "budgetExecuted": 170.7
+        },
+        {
           "year": 2019,
           "revenue": 808.4,
           "netIncome": 61.9,
@@ -4800,6 +5524,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 346.6,
+          "netIncome": 17.3,
+          "ebitda": 66.4,
+          "investment": 50.5,
+          "budget": 108.3,
+          "budgetExecuted": 88.8
+        },
+        {
+          "year": 2016,
+          "revenue": 365.3,
+          "netIncome": 18.3,
+          "ebitda": 70.0,
+          "investment": 53.3,
+          "budget": 114.2,
+          "budgetExecuted": 93.6
+        },
+        {
+          "year": 2017,
+          "revenue": 384.5,
+          "netIncome": 19.2,
+          "ebitda": 73.7,
+          "investment": 56.1,
+          "budget": 120.2,
+          "budgetExecuted": 98.6
+        },
+        {
+          "year": 2018,
+          "revenue": 403.2,
+          "netIncome": 20.2,
+          "ebitda": 77.3,
+          "investment": 58.8,
+          "budget": 126.0,
+          "budgetExecuted": 103.3
+        },
         {
           "year": 2019,
           "revenue": 422.4,
@@ -5045,6 +5805,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 219.0,
+          "netIncome": 10.2,
+          "ebitda": 42.3,
+          "investment": 30.7,
+          "budget": 69.3,
+          "budgetExecuted": 49.9
+        },
+        {
+          "year": 2016,
+          "revenue": 231.0,
+          "netIncome": 10.8,
+          "ebitda": 44.7,
+          "investment": 32.3,
+          "budget": 73.2,
+          "budgetExecuted": 52.7
+        },
+        {
+          "year": 2017,
+          "revenue": 243.0,
+          "netIncome": 11.3,
+          "ebitda": 47.0,
+          "investment": 34.0,
+          "budget": 77.0,
+          "budgetExecuted": 55.4
+        },
+        {
+          "year": 2018,
+          "revenue": 255.0,
+          "netIncome": 11.9,
+          "ebitda": 49.3,
+          "investment": 35.7,
+          "budget": 80.8,
+          "budgetExecuted": 58.2
+        },
+        {
           "year": 2019,
           "revenue": 267.0,
           "netIncome": 12.5,
@@ -5289,6 +6085,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 902.4,
+          "netIncome": 73.3,
+          "ebitda": 211.5,
+          "investment": 133.9,
+          "budget": 253.8,
+          "budgetExecuted": 233.5
+        },
+        {
+          "year": 2016,
+          "revenue": 952.3,
+          "netIncome": 77.4,
+          "ebitda": 223.2,
+          "investment": 141.4,
+          "budget": 267.8,
+          "budgetExecuted": 246.4
+        },
+        {
+          "year": 2017,
+          "revenue": 1002.2,
+          "netIncome": 81.4,
+          "ebitda": 234.9,
+          "investment": 148.8,
+          "budget": 281.9,
+          "budgetExecuted": 259.3
+        },
+        {
+          "year": 2018,
+          "revenue": 1050.9,
+          "netIncome": 85.4,
+          "ebitda": 246.3,
+          "investment": 156.0,
+          "budget": 295.6,
+          "budgetExecuted": 272.0
+        },
+        {
           "year": 2019,
           "revenue": 1100.8,
           "netIncome": 89.4,
@@ -5519,6 +6351,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 118.1,
+          "netIncome": 13.3,
+          "ebitda": 31.0,
+          "investment": 44.3,
+          "budget": 81.2,
+          "budgetExecuted": 70.6
+        },
+        {
+          "year": 2016,
+          "revenue": 124.5,
+          "netIncome": 14.0,
+          "ebitda": 32.7,
+          "investment": 46.7,
+          "budget": 85.6,
+          "budgetExecuted": 74.5
+        },
+        {
+          "year": 2017,
+          "revenue": 131.0,
+          "netIncome": 14.7,
+          "ebitda": 34.4,
+          "investment": 49.1,
+          "budget": 90.1,
+          "budgetExecuted": 78.4
+        },
+        {
+          "year": 2018,
+          "revenue": 137.6,
+          "netIncome": 15.5,
+          "ebitda": 36.1,
+          "investment": 51.6,
+          "budget": 94.6,
+          "budgetExecuted": 82.3
+        },
         {
           "year": 2019,
           "revenue": 144.0,
@@ -5754,6 +6622,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 15872.0,
+          "netIncome": -2048.0,
+          "ebitda": -288.0,
+          "investment": 768.0,
+          "budget": 2432.0,
+          "budgetExecuted": 2237.4
+        },
+        {
+          "year": 2016,
+          "revenue": 16740.0,
+          "netIncome": -2160.0,
+          "ebitda": -303.8,
+          "investment": 810.0,
+          "budget": 2565.0,
+          "budgetExecuted": 2359.8
+        },
+        {
+          "year": 2017,
+          "revenue": 17608.0,
+          "netIncome": -2272.0,
+          "ebitda": -319.5,
+          "investment": 852.0,
+          "budget": 2698.0,
+          "budgetExecuted": 2482.2
+        },
+        {
+          "year": 2018,
+          "revenue": 18476.0,
+          "netIncome": -2384.0,
+          "ebitda": -335.2,
+          "investment": 894.0,
+          "budget": 2831.0,
+          "budgetExecuted": 2604.5
+        },
         {
           "year": 2019,
           "revenue": 19344.0,
@@ -6010,6 +6914,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 191.9,
+          "netIncome": 16.2,
+          "ebitda": 35.4,
+          "investment": 13.3,
+          "budget": 88.6,
+          "budgetExecuted": 72.7
+        },
+        {
+          "year": 2016,
+          "revenue": 202.3,
+          "netIncome": 17.1,
+          "ebitda": 37.3,
+          "investment": 14.0,
+          "budget": 93.4,
+          "budgetExecuted": 76.6
+        },
+        {
+          "year": 2017,
+          "revenue": 212.9,
+          "netIncome": 18.0,
+          "ebitda": 39.3,
+          "investment": 14.7,
+          "budget": 98.3,
+          "budgetExecuted": 80.6
+        },
+        {
+          "year": 2018,
+          "revenue": 223.6,
+          "netIncome": 18.9,
+          "ebitda": 41.3,
+          "investment": 15.5,
+          "budget": 103.2,
+          "budgetExecuted": 84.6
+        },
+        {
           "year": 2019,
           "revenue": 234.0,
           "netIncome": 19.8,
@@ -6241,6 +7181,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 132.8,
+          "netIncome": 8.9,
+          "ebitda": 29.5,
+          "investment": 88.6,
+          "budget": 155.0,
+          "budgetExecuted": 111.6
+        },
+        {
+          "year": 2016,
+          "revenue": 140.0,
+          "netIncome": 9.3,
+          "ebitda": 31.1,
+          "investment": 93.4,
+          "budget": 163.4,
+          "budgetExecuted": 117.6
+        },
+        {
+          "year": 2017,
+          "revenue": 147.4,
+          "netIncome": 9.8,
+          "ebitda": 32.8,
+          "investment": 98.3,
+          "budget": 172.0,
+          "budgetExecuted": 123.8
+        },
+        {
+          "year": 2018,
+          "revenue": 154.8,
+          "netIncome": 10.3,
+          "ebitda": 34.4,
+          "investment": 103.2,
+          "budget": 180.6,
+          "budgetExecuted": 130.0
+        },
+        {
           "year": 2019,
           "revenue": 162.0,
           "netIncome": 10.8,
@@ -6471,6 +7447,42 @@
         }
       ],
       "financials": [
+        {
+          "year": 2015,
+          "revenue": 105.6,
+          "netIncome": 4.5,
+          "ebitda": 13.6,
+          "investment": 7.5,
+          "budget": 52.8,
+          "budgetExecuted": 38.0
+        },
+        {
+          "year": 2016,
+          "revenue": 111.4,
+          "netIncome": 4.8,
+          "ebitda": 14.3,
+          "investment": 8.0,
+          "budget": 55.7,
+          "budgetExecuted": 40.1
+        },
+        {
+          "year": 2017,
+          "revenue": 117.2,
+          "netIncome": 5.0,
+          "ebitda": 15.1,
+          "investment": 8.4,
+          "budget": 58.6,
+          "budgetExecuted": 42.2
+        },
+        {
+          "year": 2018,
+          "revenue": 123.1,
+          "netIncome": 5.3,
+          "ebitda": 15.8,
+          "investment": 8.8,
+          "budget": 61.5,
+          "budgetExecuted": 44.3
+        },
         {
           "year": 2019,
           "revenue": 128.8,
@@ -6716,6 +7728,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 160.2,
+          "netIncome": 3.1,
+          "ebitda": 10.7,
+          "investment": 4.6,
+          "budget": 68.7,
+          "budgetExecuted": 49.5
+        },
+        {
+          "year": 2016,
+          "revenue": 168.8,
+          "netIncome": 3.2,
+          "ebitda": 11.3,
+          "investment": 4.8,
+          "budget": 72.4,
+          "budgetExecuted": 52.1
+        },
+        {
+          "year": 2017,
+          "revenue": 177.7,
+          "netIncome": 3.4,
+          "ebitda": 11.8,
+          "investment": 5.1,
+          "budget": 76.1,
+          "budgetExecuted": 54.8
+        },
+        {
+          "year": 2018,
+          "revenue": 186.5,
+          "netIncome": 3.6,
+          "ebitda": 12.4,
+          "investment": 5.3,
+          "budget": 79.9,
+          "budgetExecuted": 57.5
+        },
+        {
           "year": 2019,
           "revenue": 195.3,
           "netIncome": 3.7,
@@ -6960,6 +8008,42 @@
       ],
       "financials": [
         {
+          "year": 2015,
+          "revenue": 145.0,
+          "netIncome": 2.3,
+          "ebitda": 8.4,
+          "investment": 3.8,
+          "budget": 61.0,
+          "budgetExecuted": 53.1
+        },
+        {
+          "year": 2016,
+          "revenue": 152.8,
+          "netIncome": 2.4,
+          "ebitda": 8.8,
+          "investment": 4.0,
+          "budget": 64.3,
+          "budgetExecuted": 55.9
+        },
+        {
+          "year": 2017,
+          "revenue": 160.7,
+          "netIncome": 2.5,
+          "ebitda": 9.3,
+          "investment": 4.2,
+          "budget": 67.7,
+          "budgetExecuted": 58.9
+        },
+        {
+          "year": 2018,
+          "revenue": 168.7,
+          "netIncome": 2.7,
+          "ebitda": 9.8,
+          "investment": 4.4,
+          "budget": 71.0,
+          "budgetExecuted": 61.8
+        },
+        {
           "year": 2019,
           "revenue": 176.7,
           "netIncome": 2.8,
@@ -7185,6 +8269,866 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ]
+    },
+    {
+      "slug": "banmat",
+      "name": "Banco de Materiales (en liquidación)",
+      "acronym": "BANMAT",
+      "sector": "Finanzas",
+      "holding": "FONAFE",
+      "ruc": "20101024645",
+      "website": "https://www.gob.pe/",
+      "employees": 80,
+      "description": "Entidad en proceso de liquidación; arrastra cartera incobrable de créditos de vivienda.",
+      "directors": [
+        {
+          "role": "Liquidador",
+          "name": "—"
+        }
+      ],
+      "financials": [
+        {
+          "year": 2015,
+          "revenue": 29.5,
+          "netIncome": -26.6,
+          "ebitda": -22.1,
+          "investment": 3.0,
+          "budget": 44.3,
+          "budgetExecuted": 34.1
+        },
+        {
+          "year": 2016,
+          "revenue": 31.1,
+          "netIncome": -28.0,
+          "ebitda": -23.4,
+          "investment": 3.1,
+          "budget": 46.7,
+          "budgetExecuted": 36.0
+        },
+        {
+          "year": 2017,
+          "revenue": 32.8,
+          "netIncome": -29.5,
+          "ebitda": -24.6,
+          "investment": 3.3,
+          "budget": 49.1,
+          "budgetExecuted": 37.8
+        },
+        {
+          "year": 2018,
+          "revenue": 34.4,
+          "netIncome": -30.9,
+          "ebitda": -25.8,
+          "investment": 3.4,
+          "budget": 51.6,
+          "budgetExecuted": 39.7
+        },
+        {
+          "year": 2019,
+          "revenue": 36.0,
+          "netIncome": -32.4,
+          "ebitda": -27.0,
+          "investment": 3.6,
+          "budget": 54.0,
+          "budgetExecuted": 41.6
+        },
+        {
+          "year": 2020,
+          "revenue": 32.0,
+          "netIncome": -28.8,
+          "ebitda": -24.0,
+          "investment": 3.2,
+          "budget": 48.0,
+          "budgetExecuted": 37.0
+        },
+        {
+          "year": 2021,
+          "revenue": 28.0,
+          "netIncome": -25.2,
+          "ebitda": -21.0,
+          "investment": 2.8,
+          "budget": 42.0,
+          "budgetExecuted": 32.3
+        },
+        {
+          "year": 2022,
+          "revenue": 24.0,
+          "netIncome": -21.6,
+          "ebitda": -18.0,
+          "investment": 2.4,
+          "budget": 36.0,
+          "budgetExecuted": 27.7
+        },
+        {
+          "year": 2023,
+          "revenue": 21.0,
+          "netIncome": -18.9,
+          "ebitda": -15.8,
+          "investment": 2.1,
+          "budget": 31.5,
+          "budgetExecuted": 24.3
+        },
+        {
+          "year": 2024,
+          "revenue": 20.0,
+          "netIncome": -18.0,
+          "ebitda": -15.0,
+          "investment": 2.0,
+          "budget": 30.0,
+          "budgetExecuted": 23.1
+        }
+      ],
+      "periodic": {
+        "quarterly": [
+          {
+            "period": "2023-Q1",
+            "revenue": 4.8,
+            "netIncome": -4.3,
+            "ebitda": -3.6
+          },
+          {
+            "period": "2023-Q2",
+            "revenue": 5.2,
+            "netIncome": -4.7,
+            "ebitda": -4.0
+          },
+          {
+            "period": "2023-Q3",
+            "revenue": 5.5,
+            "netIncome": -4.9,
+            "ebitda": -4.1
+          },
+          {
+            "period": "2023-Q4",
+            "revenue": 5.5,
+            "netIncome": -4.9,
+            "ebitda": -4.1
+          },
+          {
+            "period": "2024-Q1",
+            "revenue": 4.6,
+            "netIncome": -4.1,
+            "ebitda": -3.5
+          },
+          {
+            "period": "2024-Q2",
+            "revenue": 5.0,
+            "netIncome": -4.5,
+            "ebitda": -3.8
+          },
+          {
+            "period": "2024-Q3",
+            "revenue": 5.2,
+            "netIncome": -4.7,
+            "ebitda": -3.9
+          },
+          {
+            "period": "2024-Q4",
+            "revenue": 5.2,
+            "netIncome": -4.7,
+            "ebitda": -3.9
+          }
+        ],
+        "monthly": [
+          {
+            "period": "2024-01",
+            "revenue": 1.5,
+            "netIncome": -1.3,
+            "ebitda": -1.1
+          },
+          {
+            "period": "2024-02",
+            "revenue": 1.4,
+            "netIncome": -1.3,
+            "ebitda": -1.1
+          },
+          {
+            "period": "2024-03",
+            "revenue": 1.7,
+            "netIncome": -1.5,
+            "ebitda": -1.3
+          },
+          {
+            "period": "2024-04",
+            "revenue": 1.6,
+            "netIncome": -1.4,
+            "ebitda": -1.2
+          },
+          {
+            "period": "2024-05",
+            "revenue": 1.7,
+            "netIncome": -1.5,
+            "ebitda": -1.3
+          },
+          {
+            "period": "2024-06",
+            "revenue": 1.7,
+            "netIncome": -1.5,
+            "ebitda": -1.3
+          },
+          {
+            "period": "2024-07",
+            "revenue": 1.8,
+            "netIncome": -1.6,
+            "ebitda": -1.3
+          },
+          {
+            "period": "2024-08",
+            "revenue": 1.7,
+            "netIncome": -1.5,
+            "ebitda": -1.3
+          },
+          {
+            "period": "2024-09",
+            "revenue": 1.7,
+            "netIncome": -1.5,
+            "ebitda": -1.3
+          },
+          {
+            "period": "2024-10",
+            "revenue": 1.8,
+            "netIncome": -1.6,
+            "ebitda": -1.3
+          },
+          {
+            "period": "2024-11",
+            "revenue": 1.7,
+            "netIncome": -1.5,
+            "ebitda": -1.3
+          },
+          {
+            "period": "2024-12",
+            "revenue": 1.7,
+            "netIncome": -1.5,
+            "ebitda": -1.3
+          }
+        ]
+      },
+      "news": [
+        {
+          "date": "2024-01-15",
+          "title": "Convenio de Gestión 2024 con FONAFE",
+          "url": "https://www.fonafe.gob.pe/"
+        },
+        {
+          "date": "2024-02-15",
+          "title": "Memoria anual 2024 publicada",
+          "url": "https://www.fonafe.gob.pe/"
+        },
+        {
+          "date": "2024-03-15",
+          "title": "Sesión de directorio — acuerdos 2024",
+          "url": "https://www.gob.pe/"
+        }
+      ],
+      "metrics": {
+        "netMargin": -90.0,
+        "revenuePerEmployee": 250000.0,
+        "transparencyScore": 0,
+        "budgetExecution": 77.0
+      },
+      "transparency": {
+        "score": 0,
+        "financials": false,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      "anomalies": [
+        {
+          "type": "recurring_losses",
+          "severity": "alta",
+          "description": "Pérdidas netas en 3 de los últimos 3 años."
+        },
+        {
+          "type": "negative_ebitda",
+          "severity": "alta",
+          "description": "EBITDA negativo en el último año: la operación no cubre sus costos."
+        },
+        {
+          "type": "low_transparency",
+          "severity": "media",
+          "description": "Bajo cumplimiento de transparencia (score 0/100)."
+        }
+      ],
+      "recommendations": [
+        {
+          "category": "Reflotamiento / reestructuración",
+          "priority": "alta",
+          "action": "Plan de reflotamiento con metas trimestrales; evaluar fusión, venta de activos o liquidación según viabilidad.",
+          "norma": "D.L. 1031 (eficiencia de la actividad empresarial del Estado) · Ley 27170 (FONAFE)"
+        },
+        {
+          "category": "Eficiencia operativa",
+          "priority": "alta",
+          "action": "Reducir costos operativos no esenciales y revisar tarifas/subsidios cruzados; meta de EBITDA positivo en 12 meses.",
+          "norma": "Convenio de Gestión FONAFE"
+        },
+        {
+          "category": "Transparencia",
+          "priority": "media",
+          "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
+          "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
+        }
+      ]
+    },
+    {
+      "slug": "san-gabriel",
+      "name": "Empresa de Generación Eléctrica San Gabriel",
+      "acronym": "San Gabriel",
+      "sector": "Energía",
+      "holding": "FONAFE",
+      "ruc": "20603000001",
+      "website": "https://www.electroperu.com.pe",
+      "employees": 60,
+      "description": "Proyecto hidroeléctrico en construcción (afluente del Mantaro); alta inversión, aún sin operación plena.",
+      "directors": [
+        {
+          "role": "Presidente del Directorio",
+          "name": "—"
+        }
+      ],
+      "financials": [
+        {
+          "year": 2015,
+          "revenue": 6.6,
+          "netIncome": -0.8,
+          "ebitda": 1.3,
+          "investment": 85.3,
+          "budget": 98.4,
+          "budgetExecuted": 75.8
+        },
+        {
+          "year": 2016,
+          "revenue": 6.9,
+          "netIncome": -0.9,
+          "ebitda": 1.4,
+          "investment": 90.0,
+          "budget": 103.8,
+          "budgetExecuted": 79.9
+        },
+        {
+          "year": 2017,
+          "revenue": 7.3,
+          "netIncome": -0.9,
+          "ebitda": 1.5,
+          "investment": 94.6,
+          "budget": 109.2,
+          "budgetExecuted": 84.1
+        },
+        {
+          "year": 2018,
+          "revenue": 7.6,
+          "netIncome": -1.0,
+          "ebitda": 1.5,
+          "investment": 99.3,
+          "budget": 114.6,
+          "budgetExecuted": 88.2
+        },
+        {
+          "year": 2019,
+          "revenue": 8.0,
+          "netIncome": -1.0,
+          "ebitda": 1.6,
+          "investment": 104.0,
+          "budget": 120.0,
+          "budgetExecuted": 92.4
+        },
+        {
+          "year": 2020,
+          "revenue": 16.0,
+          "netIncome": -2.0,
+          "ebitda": 3.2,
+          "investment": 208.0,
+          "budget": 240.0,
+          "budgetExecuted": 184.8
+        },
+        {
+          "year": 2021,
+          "revenue": 28.0,
+          "netIncome": -3.5,
+          "ebitda": 5.6,
+          "investment": 364.0,
+          "budget": 420.0,
+          "budgetExecuted": 323.4
+        },
+        {
+          "year": 2022,
+          "revenue": 36.0,
+          "netIncome": -4.5,
+          "ebitda": 7.2,
+          "investment": 468.0,
+          "budget": 540.0,
+          "budgetExecuted": 415.8
+        },
+        {
+          "year": 2023,
+          "revenue": 38.8,
+          "netIncome": -4.8,
+          "ebitda": 7.8,
+          "investment": 504.4,
+          "budget": 582.0,
+          "budgetExecuted": 448.1
+        },
+        {
+          "year": 2024,
+          "revenue": 40.0,
+          "netIncome": -5.0,
+          "ebitda": 8.0,
+          "investment": 520.0,
+          "budget": 600.0,
+          "budgetExecuted": 462.0
+        }
+      ],
+      "periodic": {
+        "quarterly": [
+          {
+            "period": "2023-Q1",
+            "revenue": 8.9,
+            "netIncome": -1.1,
+            "ebitda": 1.8
+          },
+          {
+            "period": "2023-Q2",
+            "revenue": 9.7,
+            "netIncome": -1.2,
+            "ebitda": 1.9
+          },
+          {
+            "period": "2023-Q3",
+            "revenue": 10.1,
+            "netIncome": -1.2,
+            "ebitda": 2.0
+          },
+          {
+            "period": "2023-Q4",
+            "revenue": 10.1,
+            "netIncome": -1.2,
+            "ebitda": 2.0
+          },
+          {
+            "period": "2024-Q1",
+            "revenue": 9.2,
+            "netIncome": -1.2,
+            "ebitda": 1.8
+          },
+          {
+            "period": "2024-Q2",
+            "revenue": 10.0,
+            "netIncome": -1.2,
+            "ebitda": 2.0
+          },
+          {
+            "period": "2024-Q3",
+            "revenue": 10.4,
+            "netIncome": -1.3,
+            "ebitda": 2.1
+          },
+          {
+            "period": "2024-Q4",
+            "revenue": 10.4,
+            "netIncome": -1.3,
+            "ebitda": 2.1
+          }
+        ],
+        "monthly": [
+          {
+            "period": "2024-01",
+            "revenue": 3.0,
+            "netIncome": -0.4,
+            "ebitda": 0.6
+          },
+          {
+            "period": "2024-02",
+            "revenue": 2.8,
+            "netIncome": -0.4,
+            "ebitda": 0.6
+          },
+          {
+            "period": "2024-03",
+            "revenue": 3.4,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          },
+          {
+            "period": "2024-04",
+            "revenue": 3.2,
+            "netIncome": -0.4,
+            "ebitda": 0.6
+          },
+          {
+            "period": "2024-05",
+            "revenue": 3.4,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          },
+          {
+            "period": "2024-06",
+            "revenue": 3.4,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          },
+          {
+            "period": "2024-07",
+            "revenue": 3.6,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          },
+          {
+            "period": "2024-08",
+            "revenue": 3.4,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          },
+          {
+            "period": "2024-09",
+            "revenue": 3.4,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          },
+          {
+            "period": "2024-10",
+            "revenue": 3.6,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          },
+          {
+            "period": "2024-11",
+            "revenue": 3.4,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          },
+          {
+            "period": "2024-12",
+            "revenue": 3.4,
+            "netIncome": -0.4,
+            "ebitda": 0.7
+          }
+        ]
+      },
+      "news": [
+        {
+          "date": "2024-01-15",
+          "title": "Convenio de Gestión 2024 con FONAFE",
+          "url": "https://www.fonafe.gob.pe/"
+        },
+        {
+          "date": "2024-02-15",
+          "title": "Memoria anual 2024 publicada",
+          "url": "https://www.fonafe.gob.pe/"
+        },
+        {
+          "date": "2024-03-15",
+          "title": "Sesión de directorio — acuerdos 2024",
+          "url": "https://www.gob.pe/"
+        }
+      ],
+      "metrics": {
+        "netMargin": -12.5,
+        "revenuePerEmployee": 666667.0,
+        "transparencyScore": 30,
+        "budgetExecution": 77.0
+      },
+      "transparency": {
+        "score": 30,
+        "financials": true,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      "anomalies": [
+        {
+          "type": "recurring_losses",
+          "severity": "alta",
+          "description": "Pérdidas netas en 3 de los últimos 3 años."
+        },
+        {
+          "type": "low_transparency",
+          "severity": "media",
+          "description": "Bajo cumplimiento de transparencia (score 30/100)."
+        }
+      ],
+      "recommendations": [
+        {
+          "category": "Reflotamiento / reestructuración",
+          "priority": "alta",
+          "action": "Plan de reflotamiento con metas trimestrales; evaluar fusión, venta de activos o liquidación según viabilidad.",
+          "norma": "D.L. 1031 (eficiencia de la actividad empresarial del Estado) · Ley 27170 (FONAFE)"
+        },
+        {
+          "category": "Transparencia",
+          "priority": "media",
+          "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
+          "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
+        }
+      ]
+    },
+    {
+      "slug": "electrosur",
+      "name": "Electrosur",
+      "acronym": "Electrosur",
+      "sector": "Energía",
+      "holding": "FONAFE",
+      "ruc": "20131367008",
+      "website": "https://www.electrosur.com.pe",
+      "employees": 360,
+      "description": "Distribución eléctrica en Tacna y Moquegua.",
+      "directors": [
+        {
+          "role": "Presidente del Directorio",
+          "name": "—"
+        }
+      ],
+      "financials": [
+        {
+          "year": 2015,
+          "revenue": 303.2,
+          "netIncome": 21.7,
+          "ebitda": 66.4,
+          "investment": 43.3,
+          "budget": 101.1,
+          "budgetExecuted": 72.8
+        },
+        {
+          "year": 2016,
+          "revenue": 319.6,
+          "netIncome": 22.8,
+          "ebitda": 70.0,
+          "investment": 45.7,
+          "budget": 106.5,
+          "budgetExecuted": 76.7
+        },
+        {
+          "year": 2017,
+          "revenue": 336.4,
+          "netIncome": 24.0,
+          "ebitda": 73.7,
+          "investment": 48.1,
+          "budget": 112.1,
+          "budgetExecuted": 80.7
+        },
+        {
+          "year": 2018,
+          "revenue": 352.8,
+          "netIncome": 25.2,
+          "ebitda": 77.3,
+          "investment": 50.4,
+          "budget": 117.6,
+          "budgetExecuted": 84.7
+        },
+        {
+          "year": 2019,
+          "revenue": 369.6,
+          "netIncome": 26.4,
+          "ebitda": 81.0,
+          "investment": 52.8,
+          "budget": 123.2,
+          "budgetExecuted": 88.7
+        },
+        {
+          "year": 2020,
+          "revenue": 357.0,
+          "netIncome": 25.5,
+          "ebitda": 78.2,
+          "investment": 51.0,
+          "budget": 119.0,
+          "budgetExecuted": 85.7
+        },
+        {
+          "year": 2021,
+          "revenue": 386.4,
+          "netIncome": 27.6,
+          "ebitda": 84.6,
+          "investment": 55.2,
+          "budget": 128.8,
+          "budgetExecuted": 92.7
+        },
+        {
+          "year": 2022,
+          "revenue": 407.4,
+          "netIncome": 29.1,
+          "ebitda": 89.2,
+          "investment": 58.2,
+          "budget": 135.8,
+          "budgetExecuted": 97.8
+        },
+        {
+          "year": 2023,
+          "revenue": 415.8,
+          "netIncome": 29.7,
+          "ebitda": 91.1,
+          "investment": 59.4,
+          "budget": 138.6,
+          "budgetExecuted": 99.8
+        },
+        {
+          "year": 2024,
+          "revenue": 420.0,
+          "netIncome": 30.0,
+          "ebitda": 92.0,
+          "investment": 60.0,
+          "budget": 140.0,
+          "budgetExecuted": 100.8
+        }
+      ],
+      "periodic": {
+        "quarterly": [
+          {
+            "period": "2023-Q1",
+            "revenue": 95.6,
+            "netIncome": 6.8,
+            "ebitda": 21.0
+          },
+          {
+            "period": "2023-Q2",
+            "revenue": 104.0,
+            "netIncome": 7.4,
+            "ebitda": 22.8
+          },
+          {
+            "period": "2023-Q3",
+            "revenue": 108.1,
+            "netIncome": 7.7,
+            "ebitda": 23.7
+          },
+          {
+            "period": "2023-Q4",
+            "revenue": 108.1,
+            "netIncome": 7.7,
+            "ebitda": 23.7
+          },
+          {
+            "period": "2024-Q1",
+            "revenue": 96.6,
+            "netIncome": 6.9,
+            "ebitda": 21.2
+          },
+          {
+            "period": "2024-Q2",
+            "revenue": 105.0,
+            "netIncome": 7.5,
+            "ebitda": 23.0
+          },
+          {
+            "period": "2024-Q3",
+            "revenue": 109.2,
+            "netIncome": 7.8,
+            "ebitda": 23.9
+          },
+          {
+            "period": "2024-Q4",
+            "revenue": 109.2,
+            "netIncome": 7.8,
+            "ebitda": 23.9
+          }
+        ],
+        "monthly": [
+          {
+            "period": "2024-01",
+            "revenue": 31.5,
+            "netIncome": 2.2,
+            "ebitda": 6.9
+          },
+          {
+            "period": "2024-02",
+            "revenue": 29.4,
+            "netIncome": 2.1,
+            "ebitda": 6.4
+          },
+          {
+            "period": "2024-03",
+            "revenue": 35.7,
+            "netIncome": 2.6,
+            "ebitda": 7.8
+          },
+          {
+            "period": "2024-04",
+            "revenue": 33.6,
+            "netIncome": 2.4,
+            "ebitda": 7.4
+          },
+          {
+            "period": "2024-05",
+            "revenue": 35.7,
+            "netIncome": 2.6,
+            "ebitda": 7.8
+          },
+          {
+            "period": "2024-06",
+            "revenue": 35.7,
+            "netIncome": 2.6,
+            "ebitda": 7.8
+          },
+          {
+            "period": "2024-07",
+            "revenue": 37.8,
+            "netIncome": 2.7,
+            "ebitda": 8.3
+          },
+          {
+            "period": "2024-08",
+            "revenue": 35.7,
+            "netIncome": 2.6,
+            "ebitda": 7.8
+          },
+          {
+            "period": "2024-09",
+            "revenue": 35.7,
+            "netIncome": 2.6,
+            "ebitda": 7.8
+          },
+          {
+            "period": "2024-10",
+            "revenue": 37.8,
+            "netIncome": 2.7,
+            "ebitda": 8.3
+          },
+          {
+            "period": "2024-11",
+            "revenue": 35.7,
+            "netIncome": 2.6,
+            "ebitda": 7.8
+          },
+          {
+            "period": "2024-12",
+            "revenue": 35.7,
+            "netIncome": 2.6,
+            "ebitda": 7.8
+          }
+        ]
+      },
+      "news": [
+        {
+          "date": "2024-01-15",
+          "title": "Convenio de Gestión 2024 con FONAFE",
+          "url": "https://www.fonafe.gob.pe/"
+        },
+        {
+          "date": "2024-02-15",
+          "title": "Memoria anual 2024 publicada",
+          "url": "https://www.fonafe.gob.pe/"
+        },
+        {
+          "date": "2024-03-15",
+          "title": "Sesión de directorio — acuerdos 2024",
+          "url": "https://www.gob.pe/"
+        }
+      ],
+      "metrics": {
+        "netMargin": 7.1,
+        "revenuePerEmployee": 1166667.0,
+        "transparencyScore": 55,
+        "budgetExecution": 72.0
+      },
+      "transparency": {
+        "score": 55,
+        "financials": true,
+        "memoria": true,
+        "directory": false,
+        "budget": false
+      },
+      "anomalies": [],
+      "recommendations": []
     }
   ],
   "rankings": {
@@ -7302,6 +9246,13 @@
         "unit": "% margen neto"
       },
       {
+        "slug": "electrosur",
+        "name": "Electrosur",
+        "acronym": "Electrosur",
+        "value": 7.1,
+        "unit": "% margen neto"
+      },
+      {
         "slug": "amsac",
         "name": "Activos Mineros",
         "acronym": "AMSAC",
@@ -7386,6 +9337,13 @@
         "unit": "% margen neto"
       },
       {
+        "slug": "san-gabriel",
+        "name": "Empresa de Generación Eléctrica San Gabriel",
+        "acronym": "San Gabriel",
+        "value": -12.5,
+        "unit": "% margen neto"
+      },
+      {
         "slug": "petroperu",
         "name": "Petróleos del Perú",
         "acronym": "PETROPERÚ",
@@ -7397,6 +9355,13 @@
         "name": "Banco Agropecuario",
         "acronym": "Agrobanco",
         "value": -25.0,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "banmat",
+        "name": "Banco de Materiales (en liquidación)",
+        "acronym": "BANMAT",
+        "value": -90.0,
         "unit": "% margen neto"
       }
     ],
@@ -7448,6 +9413,13 @@
         "name": "Electronoroeste",
         "acronym": "ENOSA",
         "value": 1170732.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "electrosur",
+        "name": "Electrosur",
+        "acronym": "Electrosur",
+        "value": 1166667.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -7542,6 +9514,13 @@
         "unit": "S/ por trabajador"
       },
       {
+        "slug": "san-gabriel",
+        "name": "Empresa de Generación Eléctrica San Gabriel",
+        "acronym": "San Gabriel",
+        "value": 666667.0,
+        "unit": "S/ por trabajador"
+      },
+      {
         "slug": "agrobanco",
         "name": "Banco Agropecuario",
         "acronym": "Agrobanco",
@@ -7574,6 +9553,13 @@
         "name": "Empresa Nacional de Puertos",
         "acronym": "ENAPU",
         "value": 282759.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "banmat",
+        "name": "Banco de Materiales (en liquidación)",
+        "acronym": "BANMAT",
+        "value": 250000.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -7768,6 +9754,13 @@
         "unit": "/100"
       },
       {
+        "slug": "electrosur",
+        "name": "Electrosur",
+        "acronym": "Electrosur",
+        "value": 55,
+        "unit": "/100"
+      },
+      {
         "slug": "egesur",
         "name": "Empresa de Generación Eléctrica del Sur",
         "acronym": "EGESUR",
@@ -7810,6 +9803,13 @@
         "unit": "/100"
       },
       {
+        "slug": "san-gabriel",
+        "name": "Empresa de Generación Eléctrica San Gabriel",
+        "acronym": "San Gabriel",
+        "value": 30,
+        "unit": "/100"
+      },
+      {
         "slug": "fame",
         "name": "Fábrica de Armas y Municiones del Ejército",
         "acronym": "FAME",
@@ -7822,55 +9822,62 @@
         "acronym": "ESVICSAC",
         "value": 0,
         "unit": "/100"
+      },
+      {
+        "slug": "banmat",
+        "name": "Banco de Materiales (en liquidación)",
+        "acronym": "BANMAT",
+        "value": 0,
+        "unit": "/100"
       }
     ]
   },
   "contracts": {
     "summary": {
-      "totalAmount": 2606.11,
-      "totalContracts": 172,
-      "topProviderShare": 25.5
+      "totalAmount": 2643.51,
+      "totalContracts": 183,
+      "topProviderShare": 25.3
     },
     "topProviders": [
       {
         "provider": "Tecnología y Sistemas SAC",
-        "total": 665.37,
-        "count": 23
+        "total": 669.37,
+        "count": 24
       },
       {
         "provider": "Constructora del Pacífico",
-        "total": 432.5,
-        "count": 21
+        "total": 440.9,
+        "count": 22
       },
       {
         "provider": "Servicios Generales Lima SAC",
-        "total": 338.43,
-        "count": 17
+        "total": 344.73,
+        "count": 19
       },
       {
         "provider": "Suministros Industriales EIRL",
-        "total": 292.62,
-        "count": 21
+        "total": 299.72,
+        "count": 23
       },
       {
         "provider": "Ingeniería & Montaje SA",
-        "total": 253.75,
-        "count": 23
+        "total": 256.62,
+        "count": 24
       },
       {
         "provider": "Logística Integral SAC",
-        "total": 246.73,
-        "count": 23
+        "total": 248.23,
+        "count": 24
       },
       {
         "provider": "Soluciones Energéticas Perú",
-        "total": 189.51,
-        "count": 22
+        "total": 194.01,
+        "count": 24
       },
       {
         "provider": "Consorcio Vial Andino",
-        "total": 187.2,
-        "count": 22
+        "total": 189.93,
+        "count": 23
       }
     ],
     "items": [
@@ -9593,6 +11600,116 @@
         "year": 2022,
         "object": "Adquisición / servicio 6",
         "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0173",
+        "company": "Banco de Materiales (en liquidación)",
+        "companySlug": "banmat",
+        "provider": "Soluciones Energéticas Perú",
+        "amount": 0.4,
+        "year": 2024,
+        "object": "Adquisición / servicio 1",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0174",
+        "company": "Banco de Materiales (en liquidación)",
+        "companySlug": "banmat",
+        "provider": "Logística Integral SAC",
+        "amount": 1.5,
+        "year": 2023,
+        "object": "Adquisición / servicio 2",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0175",
+        "company": "Banco de Materiales (en liquidación)",
+        "companySlug": "banmat",
+        "provider": "Consorcio Vial Andino",
+        "amount": 2.73,
+        "year": 2022,
+        "object": "Adquisición / servicio 3",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0176",
+        "company": "Banco de Materiales (en liquidación)",
+        "companySlug": "banmat",
+        "provider": "Tecnología y Sistemas SAC",
+        "amount": 4.0,
+        "year": 2024,
+        "object": "Adquisición / servicio 4",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0177",
+        "company": "Empresa de Generación Eléctrica San Gabriel",
+        "companySlug": "san-gabriel",
+        "provider": "Servicios Generales Lima SAC",
+        "amount": 0.8,
+        "year": 2024,
+        "object": "Adquisición / servicio 1",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0178",
+        "company": "Empresa de Generación Eléctrica San Gabriel",
+        "companySlug": "san-gabriel",
+        "provider": "Suministros Industriales EIRL",
+        "amount": 1.7,
+        "year": 2023,
+        "object": "Adquisición / servicio 2",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0179",
+        "company": "Empresa de Generación Eléctrica San Gabriel",
+        "companySlug": "san-gabriel",
+        "provider": "Ingeniería & Montaje SA",
+        "amount": 2.87,
+        "year": 2022,
+        "object": "Adquisición / servicio 3",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0180",
+        "company": "Empresa de Generación Eléctrica San Gabriel",
+        "companySlug": "san-gabriel",
+        "provider": "Soluciones Energéticas Perú",
+        "amount": 4.1,
+        "year": 2024,
+        "object": "Adquisición / servicio 4",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0181",
+        "company": "Electrosur",
+        "companySlug": "electrosur",
+        "provider": "Constructora del Pacífico",
+        "amount": 8.4,
+        "year": 2024,
+        "object": "Adquisición / servicio 1",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0182",
+        "company": "Electrosur",
+        "companySlug": "electrosur",
+        "provider": "Servicios Generales Lima SAC",
+        "amount": 5.5,
+        "year": 2023,
+        "object": "Adquisición / servicio 2",
+        "method": "Procedimiento clásico"
+      },
+      {
+        "id": "C-0183",
+        "company": "Electrosur",
+        "companySlug": "electrosur",
+        "provider": "Suministros Industriales EIRL",
+        "amount": 5.4,
+        "year": 2022,
+        "object": "Adquisición / servicio 3",
+        "method": "Procedimiento clásico"
       }
     ]
   },
@@ -9867,9 +11984,36 @@
         "memoria": false,
         "directory": false,
         "budget": false
+      },
+      {
+        "company": "Banco de Materiales (en liquidación)",
+        "slug": "banmat",
+        "score": 0,
+        "financials": false,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      {
+        "company": "Empresa de Generación Eléctrica San Gabriel",
+        "slug": "san-gabriel",
+        "score": 30,
+        "financials": true,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      {
+        "company": "Electrosur",
+        "slug": "electrosur",
+        "score": 55,
+        "financials": true,
+        "memoria": true,
+        "directory": false,
+        "budget": false
       }
     ],
-    "avgScore": 62.7
+    "avgScore": 59.5
   },
   "anomalies": [
     {
@@ -9983,6 +12127,41 @@
       "type": "low_transparency",
       "severity": "media",
       "description": "Bajo cumplimiento de transparencia (score 0/100)."
+    },
+    {
+      "company": "Banco de Materiales (en liquidación)",
+      "companySlug": "banmat",
+      "type": "recurring_losses",
+      "severity": "alta",
+      "description": "Pérdidas netas en 3 de los últimos 3 años."
+    },
+    {
+      "company": "Banco de Materiales (en liquidación)",
+      "companySlug": "banmat",
+      "type": "negative_ebitda",
+      "severity": "alta",
+      "description": "EBITDA negativo en el último año: la operación no cubre sus costos."
+    },
+    {
+      "company": "Banco de Materiales (en liquidación)",
+      "companySlug": "banmat",
+      "type": "low_transparency",
+      "severity": "media",
+      "description": "Bajo cumplimiento de transparencia (score 0/100)."
+    },
+    {
+      "company": "Empresa de Generación Eléctrica San Gabriel",
+      "companySlug": "san-gabriel",
+      "type": "recurring_losses",
+      "severity": "alta",
+      "description": "Pérdidas netas en 3 de los últimos 3 años."
+    },
+    {
+      "company": "Empresa de Generación Eléctrica San Gabriel",
+      "companySlug": "san-gabriel",
+      "type": "low_transparency",
+      "severity": "media",
+      "description": "Bajo cumplimiento de transparencia (score 30/100)."
     }
   ],
   "recommendations": [
@@ -10109,6 +12288,46 @@
     {
       "company": "Empresa de Servicios de Vigilancia Ciudadana",
       "companySlug": "esvicsac",
+      "category": "Transparencia",
+      "priority": "media",
+      "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
+      "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
+    },
+    {
+      "company": "Banco de Materiales (en liquidación)",
+      "companySlug": "banmat",
+      "category": "Reflotamiento / reestructuración",
+      "priority": "alta",
+      "action": "Plan de reflotamiento con metas trimestrales; evaluar fusión, venta de activos o liquidación según viabilidad.",
+      "norma": "D.L. 1031 (eficiencia de la actividad empresarial del Estado) · Ley 27170 (FONAFE)"
+    },
+    {
+      "company": "Banco de Materiales (en liquidación)",
+      "companySlug": "banmat",
+      "category": "Eficiencia operativa",
+      "priority": "alta",
+      "action": "Reducir costos operativos no esenciales y revisar tarifas/subsidios cruzados; meta de EBITDA positivo en 12 meses.",
+      "norma": "Convenio de Gestión FONAFE"
+    },
+    {
+      "company": "Banco de Materiales (en liquidación)",
+      "companySlug": "banmat",
+      "category": "Transparencia",
+      "priority": "media",
+      "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
+      "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
+    },
+    {
+      "company": "Empresa de Generación Eléctrica San Gabriel",
+      "companySlug": "san-gabriel",
+      "category": "Reflotamiento / reestructuración",
+      "priority": "alta",
+      "action": "Plan de reflotamiento con metas trimestrales; evaluar fusión, venta de activos o liquidación según viabilidad.",
+      "norma": "D.L. 1031 (eficiencia de la actividad empresarial del Estado) · Ley 27170 (FONAFE)"
+    },
+    {
+      "company": "Empresa de Generación Eléctrica San Gabriel",
+      "companySlug": "san-gabriel",
       "category": "Transparencia",
       "priority": "media",
       "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",

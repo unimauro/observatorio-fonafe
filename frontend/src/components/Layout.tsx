@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Outlet, Link } from 'react-router-dom'
 import {
-  LayoutDashboard, Building2, FileText, ShieldCheck, BrainCircuit, Database,
+  LayoutDashboard, Building2, FileText, ShieldCheck, BrainCircuit, Database, SlidersHorizontal,
   Sun, Moon, Github, Menu, X,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -15,6 +15,7 @@ const NAV = [
   { to: '/contrataciones', label: 'Contrataciones', icon: FileText },
   { to: '/transparencia', label: 'Transparencia', icon: ShieldCheck },
   { to: '/decisiones', label: 'Decisiones · IA', icon: BrainCircuit },
+  { to: '/simuladores', label: 'Simuladores', icon: SlidersHorizontal },
   { to: '/datos', label: 'Datos abiertos', icon: Database },
 ]
 
