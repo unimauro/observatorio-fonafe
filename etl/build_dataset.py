@@ -174,11 +174,31 @@ def build_real_contracts(real, name_by_slug):
         t["total"] = round(t["total"], 3)
     total = round(sum(i["amount"] for i in items), 2)
     coverage = sorted(set(i["companySlug"] for i in items))
+
+    # analítica real: por año y por entidad
+    by_year, by_entity = {}, {}
+    for i in items:
+        y = i.get("year")
+        if y:
+            by_year.setdefault(y, {"year": y, "count": 0, "amount": 0.0})
+            by_year[y]["count"] += 1
+            by_year[y]["amount"] += i["amount"]
+        s = i["companySlug"]
+        by_entity.setdefault(s, {"slug": s, "name": i["company"], "count": 0, "amount": 0.0})
+        by_entity[s]["count"] += 1
+        by_entity[s]["amount"] += i["amount"]
+    for v in by_year.values():
+        v["amount"] = round(v["amount"], 2)
+    for v in by_entity.values():
+        v["amount"] = round(v["amount"], 2)
+
     return dict(
         summary=dict(totalAmount=total, totalContracts=len(items),
                      topProviderShare=round(top[0]["total"] / total * 100, 1) if (total and top) else 0,
                      entitiesCovered=len(coverage)),
-        topProviders=top[:10], items=items, isReal=True, coverage=coverage)
+        topProviders=top[:10], items=items, isReal=True, coverage=coverage,
+        byYear=sorted(by_year.values(), key=lambda x: x["year"]),
+        byEntity=sorted(by_entity.values(), key=lambda x: x["count"], reverse=True))
 
 
 def main():

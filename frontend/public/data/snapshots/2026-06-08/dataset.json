@@ -16308,6 +16308,135 @@
       "sedapal",
       "sedapar",
       "serpost"
+    ],
+    "byYear": [
+      {
+        "year": 2026,
+        "count": 77,
+        "amount": 64.84
+      }
+    ],
+    "byEntity": [
+      {
+        "slug": "sedapal",
+        "name": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "count": 13,
+        "amount": 24.44
+      },
+      {
+        "slug": "petroperu",
+        "name": "Petróleos del Perú",
+        "count": 10,
+        "amount": 1.23
+      },
+      {
+        "slug": "hidrandina",
+        "name": "Empresa Regional de Servicio Público de Electricidad",
+        "count": 8,
+        "amount": 10.58
+      },
+      {
+        "slug": "sedapar",
+        "name": "Servicio de Agua Potable y Alcantarillado de Arequipa",
+        "count": 6,
+        "amount": 11.04
+      },
+      {
+        "slug": "electrocentro",
+        "name": "Electrocentro",
+        "count": 6,
+        "amount": 0.07
+      },
+      {
+        "slug": "banco-nacion",
+        "name": "Banco de la Nación",
+        "count": 5,
+        "amount": 5.22
+      },
+      {
+        "slug": "enosa",
+        "name": "Electronoroeste",
+        "count": 5,
+        "amount": 8.39
+      },
+      {
+        "slug": "seal",
+        "name": "Sociedad Eléctrica del Sur Oeste",
+        "count": 4,
+        "amount": 0.32
+      },
+      {
+        "slug": "electroperu",
+        "name": "Electroperú",
+        "count": 3,
+        "amount": 0.0
+      },
+      {
+        "slug": "egasa",
+        "name": "Empresa de Generación Eléctrica de Arequipa",
+        "count": 3,
+        "amount": 0.0
+      },
+      {
+        "slug": "electrosur",
+        "name": "Electrosur",
+        "count": 2,
+        "amount": 0.0
+      },
+      {
+        "slug": "egemsa",
+        "name": "Empresa de Generación Eléctrica Machupicchu",
+        "count": 2,
+        "amount": 0.0
+      },
+      {
+        "slug": "electro-sur-este",
+        "name": "Electro Sur Este",
+        "count": 2,
+        "amount": 3.54
+      },
+      {
+        "slug": "amsac",
+        "name": "Activos Mineros",
+        "count": 2,
+        "amount": 0.0
+      },
+      {
+        "slug": "enapu",
+        "name": "Empresa Nacional de Puertos",
+        "count": 1,
+        "amount": 0.0
+      },
+      {
+        "slug": "ensa",
+        "name": "Electronorte",
+        "count": 1,
+        "amount": 0.0
+      },
+      {
+        "slug": "serpost",
+        "name": "Servicios Postales del Perú",
+        "count": 1,
+        "amount": 0.0
+      },
+      {
+        "slug": "egesur",
+        "name": "Empresa de Generación Eléctrica del Sur",
+        "count": 1,
+        "amount": 0.0
+      },
+      {
+        "slug": "cofide",
+        "name": "Corporación Financiera de Desarrollo",
+        "count": 1,
+        "amount": 0.0
+      },
+      {
+        "slug": "corpac",
+        "name": "Corporación Peruana de Aeropuertos y Aviación Comercial",
+        "count": 1,
+        "amount": 0.0
+      }
     ]
   },
   "transparency": {

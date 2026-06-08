@@ -61,6 +61,39 @@ export function Contracts() {
         <CardContent><Chart option={providerOption} height={360} /></CardContent>
       </Card>
 
+      {data.contracts.isReal && data.contracts.byYear && data.contracts.byEntity && (
+        <div className="mb-6 grid gap-6 lg:grid-cols-2">
+          <Card>
+            <CardHeader><CardTitle>Contrataciones por año</CardTitle></CardHeader>
+            <CardContent>
+              <Chart height={300} option={{
+                tooltip: { trigger: 'axis' },
+                legend: { data: ['N° contratos', 'Monto S/ MM'], top: 0 },
+                grid: { left: 44, right: 50, top: 36, bottom: 24 },
+                xAxis: { type: 'category', data: data.contracts.byYear.map((y) => y.year) },
+                yAxis: [{ type: 'value', name: 'N°' }, { type: 'value', name: 'S/ MM' }],
+                series: [
+                  { name: 'N° contratos', type: 'bar', data: data.contracts.byYear.map((y) => y.count), itemStyle: { borderRadius: [4, 4, 0, 0] } },
+                  { name: 'Monto S/ MM', type: 'line', yAxisIndex: 1, smooth: true, data: data.contracts.byYear.map((y) => y.amount) },
+                ],
+              }} />
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader><CardTitle>Entidades con más contrataciones</CardTitle></CardHeader>
+            <CardContent>
+              <Chart height={300} option={{
+                tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+                grid: { left: 110, right: 20, top: 10, bottom: 24 },
+                xAxis: { type: 'value', name: 'N° contratos' },
+                yAxis: { type: 'category', data: data.contracts.byEntity.slice(0, 10).map((e) => e.name).reverse() },
+                series: [{ type: 'bar', data: data.contracts.byEntity.slice(0, 10).map((e) => e.count).reverse(), itemStyle: { borderRadius: [0, 4, 4, 0] } }],
+              }} />
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
       <Card>
         <CardHeader className="flex-row flex-wrap items-center justify-between gap-3">
           <CardTitle>Contratos ({items.length})</CardTitle>

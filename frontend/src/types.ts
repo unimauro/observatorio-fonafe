@@ -96,6 +96,8 @@ export interface Contracts {
   items: Contract[]
   isReal?: boolean
   coverage?: string[]
+  byYear?: { year: number; count: number; amount: number }[]
+  byEntity?: { slug: string; name: string; count: number; amount: number }[]
 }
 export interface TransparencyItem {
   company: string; slug: string; score: number
