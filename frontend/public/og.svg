@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <rect width="1200" height="10" fill="#D91023"/>
+  <rect y="620" width="1200" height="10" fill="#D91023"/>
+  <text x="80" y="200" fill="#ffffff" font-family="Inter, sans-serif" font-size="64" font-weight="800">Observatorio de Empresas</text>
+  <text x="80" y="280" fill="#ffffff" font-family="Inter, sans-serif" font-size="64" font-weight="800">Públicas del Perú</text>
+  <text x="80" y="350" fill="#9aa4b2" font-family="Inter, sans-serif" font-size="34" font-weight="500">FONAFE · Transparencia · Datos abiertos · Gestión pública</text>
+  <g transform="translate(80,420)">
+    <rect x="0" y="60" width="40" height="120" rx="4" fill="#D91023"/>
+    <rect x="60" y="30" width="40" height="150" rx="4" fill="#ffffff"/>
+    <rect x="120" y="80" width="40" height="100" rx="4" fill="#3b82f6"/>
+    <rect x="180" y="10" width="40" height="170" rx="4" fill="#D91023"/>
+  </g>
+  <text x="80" y="585" fill="#6b7280" font-family="Inter, sans-serif" font-size="26">unimauro.github.io/observatorio-fonafe</text>
+</svg>

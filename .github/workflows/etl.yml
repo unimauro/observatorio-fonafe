@@ -1,0 +1,35 @@
+name: ETL — actualizar datos (scraping)
+
+# Corre el pipeline de datos y, si hay cambios, los commitea.
+# El push a main dispara el deploy a GitHub Pages.
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # lunes 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  etl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias
+        run: pip install -r etl/requirements.txt
+      - name: Ejecutar ETL
+        run: python etl/build_dataset.py
+      - name: Commit de datos (si cambian)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data
+          if git diff --quiet --cached; then
+            echo "Sin cambios en los datos."
+          else
+            git commit -m "chore(etl): actualizar datos $(date +%F)"
+            git push
+          fi

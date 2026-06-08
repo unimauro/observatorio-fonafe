@@ -1,0 +1,28 @@
+# Node / frontend
+node_modules/
+dist/
+.vite/
+*.local
+.env
+.env.*
+!.env.example
+
+# Python / backend
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# DB / data dumps
+*.sqlite3
+postgres-data/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.log

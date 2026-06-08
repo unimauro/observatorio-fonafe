@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observatorio de Empresas Públicas del Perú — FONAFE | Transparencia y datos</title>
+    <meta name="description" content="Plataforma pública de transparencia y monitoreo de las empresas estatales del Perú (FONAFE): finanzas, contrataciones, eficiencia, transparencia, diagnóstico y recomendaciones para mejorar la gestión pública. Datos abiertos." />
+    <meta name="keywords" content="FONAFE, empresas públicas Perú, empresas estatales, transparencia, datos abiertos, contrataciones, SEACE, OECE, gestión pública, Petroperú, Sedapal, Electroperú, Banco de la Nación, dashboard, observatorio" />
+    <meta name="author" content="Carlos Mauro Cárdenas" />
+    <link rel="canonical" href="https://unimauro.github.io/observatorio-fonafe/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Observatorio de Empresas Públicas del Perú — FONAFE" />
+    <meta property="og:description" content="Transparencia, datos y diagnóstico de las empresas estatales del Perú para mejorar la gestión pública. Datos abiertos." />
+    <meta property="og:url" content="https://unimauro.github.io/observatorio-fonafe/" />
+    <meta property="og:image" content="https://unimauro.github.io/observatorio-fonafe/og.svg" />
+    <meta property="og:locale" content="es_PE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Observatorio de Empresas Públicas del Perú — FONAFE" />
+    <meta name="twitter:description" content="Transparencia, datos y diagnóstico de las empresas estatales del Perú. Datos abiertos." />
+    <meta name="twitter:image" content="https://unimauro.github.io/observatorio-fonafe/og.svg" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Observatorio de Empresas Públicas del Perú (FONAFE)",
+      "description": "Datos de transparencia, finanzas y contrataciones de las empresas estatales del Perú (holding FONAFE y otras). Incluye KPIs, rankings, anomalías y recomendaciones.",
+      "url": "https://unimauro.github.io/observatorio-fonafe/",
+      "inLanguage": "es",
+      "creator": { "@type": "Person", "name": "Carlos Mauro Cárdenas", "url": "https://unimauro.github.io/" },
+      "license": "https://opendatacommons.org/licenses/odbl/",
+      "keywords": ["FONAFE", "empresas públicas", "Perú", "transparencia", "datos abiertos", "contrataciones"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <script>
+      // tema sin parpadeo (por defecto oscuro, estilo terminal financiera)
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          if (t === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) { document.documentElement.classList.add('dark'); }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
