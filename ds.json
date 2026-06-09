@@ -1,0 +1,31 @@
+{
+   "oObj" : {
+      "help" : "https://api.datosabiertos.mef.gob.pe/?/DatosAbiertos/v1/datastore_search",
+      "records" : null,
+      "result" : {
+         "records_format" : "objects",
+         "include_total" : null,
+         "total_estimation_threshold" : "null",
+         "limit" : "1",
+         "resource_id" : null
+      },
+      "next" : "https://api.datosabiertos.mef.gob.pe/DatosAbiertos/v1/datastore_search?resource_id=&offset=1&limit=1",
+      "sucess" : "true"
+   },
+   "srcIP" : "200.39.148.203",
+   "iPet" : "/DatosAbiertos/v1/datastore_search",
+   "iObj" : "limit=1",
+   "oCod" : "409",
+   "iURI" : "/DatosAbiertos/v1/datastore_search",
+   "pPM" : "../WebService/DatosAbiertos/v1/datastore_search.pm",
+   "oDes" : [
+      {
+         "err" : "42601",
+         "sql" : "SELECT  FROM public.\"\"  order by \"_id\"  LIMIT 1"
+      },
+      {
+         "sql" : "SELECT count(_id) FROM public.\"\" ",
+         "err" : "42601"
+      }
+   ]
+}

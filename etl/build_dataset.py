@@ -323,6 +323,23 @@ def main():
         contracts = build_contracts(COMPANIES)
         contracts_status = "pendiente"
 
+    # --- Indicadores REALES con META y % de alcance (FONAFE Observatorio Digital) ---
+    indicators = {"items": [], "isReal": False}
+    indicators_status = "pendiente"
+    try:
+        from sources import fonafe_obd
+        pts = fonafe_obd.load_cache()
+        if pts:
+            indicators = dict(
+                isReal=True, source="FONAFE Observatorio Digital",
+                items=pts,
+                indicatorList=sorted(set(p["indicator"] for p in pts)),
+                sectorList=sorted(set(p["sector"] for p in pts)),
+            )
+            indicators_status = "activo (real · FONAFE)"
+    except Exception as e:  # noqa: BLE001
+        print(f"[etl] aviso indicadores FONAFE: {e}")
+
     transparency = dict(items=[dict(company=c["name"], slug=c["slug"], score=c["transparency"]["score"],
                                     financials=c["transparency"]["financials"], memoria=c["transparency"]["memoria"],
                                     directory=c["transparency"]["directory"], budget=c["transparency"]["budget"])
@@ -335,12 +352,13 @@ def main():
                   sources=[
                       dict(name="FONAFE — Portal de Transparencia", url="https://www.fonafe.gob.pe/", status="pendiente"),
                       dict(name="OECE/SEACE — API OCDS (contrataciones)", url="https://contratacionesabiertas.oece.gob.pe/api/v1", status=contracts_status),
+                      dict(name="FONAFE Observatorio Digital (indicadores con metas)", url="https://observatoriodigital.fonafe.gob.pe/", status=indicators_status),
                       dict(name="MEF — Consulta Amigable", url="https://apps5.mineco.gob.pe/transparencia/", status="pendiente"),
                       dict(name="SMV — Estados financieros", url="https://www.smv.gob.pe/", status="pendiente"),
                   ],
                   note="Cifras ILUSTRATIVAS para demostración. Reemplazables por el ETL con datos oficiales."),
         kpis=kpis, companies=companies, rankings=rankings,
-        contracts=contracts, transparency=transparency,
+        contracts=contracts, transparency=transparency, indicators=indicators,
         anomalies=all_anom, recommendations=all_recs,
     )
 

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Outlet, Link } from 'react-router-dom'
 import {
-  LayoutDashboard, Building2, FileText, ShieldCheck, BrainCircuit, Database, SlidersHorizontal,
+  LayoutDashboard, Building2, FileText, ShieldCheck, BrainCircuit, Database, SlidersHorizontal, Target,
   Sun, Moon, Github, Menu, X,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -14,6 +14,7 @@ const NAV = [
   { to: '/empresas', label: 'Empresas', icon: Building2 },
   { to: '/contrataciones', label: 'Contrataciones', icon: FileText },
   { to: '/transparencia', label: 'Transparencia', icon: ShieldCheck },
+  { to: '/desempeno', label: 'Metas & Desempeño', icon: Target },
   { to: '/decisiones', label: 'Decisiones · IA', icon: BrainCircuit },
   { to: '/simuladores', label: 'Simuladores', icon: SlidersHorizontal },
   { to: '/datos', label: 'Datos abiertos', icon: Database },
@@ -72,7 +73,7 @@ export function Layout() {
             <div className="rounded-lg border border-border p-2">
               <div>Versión {meta.version}</div>
               <div>Datos al {meta.generated_at}</div>
-              {meta.is_illustrative && <Badge variant="warning" className="mt-1">datos ilustrativos</Badge>}
+              {meta.is_illustrative && <Badge variant="warning" className="mt-1">financieros ilustrativos · contratos reales</Badge>}
             </div>
           )}
         </div>
@@ -85,7 +86,8 @@ export function Layout() {
         </button>
         <div className="lg:hidden"><Brand /></div>
         <div className="ml-auto flex items-center gap-2">
-          {meta?.is_illustrative && <Badge variant="warning" className="hidden sm:inline-flex">demo · datos ilustrativos</Badge>}
+          {data?.contracts?.isReal && <Badge variant="success" className="hidden md:inline-flex">contratos: reales</Badge>}
+          {meta?.is_illustrative && <Badge variant="warning" className="hidden sm:inline-flex">financieros: ilustrativos</Badge>}
           <button onClick={toggleTheme} aria-label="Tema" className="rounded-md p-2 hover:bg-muted">
             {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>

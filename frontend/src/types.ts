@@ -106,6 +106,17 @@ export interface TransparencyItem {
   financials: boolean; memoria: boolean; directory: boolean; budget: boolean
 }
 export interface TransparencyBlock { items: TransparencyItem[]; avgScore: number }
+export interface IndicatorPoint {
+  indicator: string; unit: string; sector: string; year: number
+  month: string; idFecha: number; value: number; meta: number | null; alcance: number | null
+}
+export interface Indicators {
+  isReal?: boolean
+  source?: string
+  items: IndicatorPoint[]
+  indicatorList?: string[]
+  sectorList?: string[]
+}
 export interface Dataset {
   meta: Meta
   kpis: Kpis
@@ -113,6 +124,7 @@ export interface Dataset {
   rankings: Rankings
   contracts: Contracts
   transparency: TransparencyBlock
+  indicators?: Indicators
   anomalies: Anomaly[]
   recommendations: Recommendation[]
 }

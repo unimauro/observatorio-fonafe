@@ -1,11 +1,12 @@
 {
   "current": {
     "version": "0.1.0",
-    "generated_at": "2026-06-08",
+    "generated_at": "2026-06-09",
     "is_illustrative": true
   },
   "snapshots": [
-    "2026-06-08"
+    "2026-06-08",
+    "2026-06-09"
   ],
   "sources": [
     {
@@ -17,6 +18,11 @@
       "name": "OECE/SEACE — API OCDS (contrataciones)",
       "url": "https://contratacionesabiertas.oece.gob.pe/api/v1",
       "status": "activo (parcial — SEACE/OCDS reciente)"
+    },
+    {
+      "name": "FONAFE Observatorio Digital (indicadores con metas)",
+      "url": "https://observatoriodigital.fonafe.gob.pe/",
+      "status": "activo (real · FONAFE)"
     },
     {
       "name": "MEF — Consulta Amigable",

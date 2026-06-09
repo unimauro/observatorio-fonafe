@@ -6,6 +6,7 @@ import { CompanyDetail } from './pages/CompanyDetail'
 import { Contracts } from './pages/Contracts'
 import { Transparency } from './pages/Transparency'
 import { Decisions } from './pages/Decisions'
+import { Performance } from './pages/Performance'
 import { Simulations } from './pages/Simulations'
 import { OpenData } from './pages/OpenData'
 
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/empresa/:slug" element={<CompanyDetail />} />
         <Route path="/contrataciones" element={<Contracts />} />
         <Route path="/transparencia" element={<Transparency />} />
+        <Route path="/desempeno" element={<Performance />} />
         <Route path="/decisiones" element={<Decisions />} />
         <Route path="/simuladores" element={<Simulations />} />
         <Route path="/datos" element={<OpenData />} />
