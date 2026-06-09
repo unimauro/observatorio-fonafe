@@ -296,6 +296,66 @@ def main():
                            "Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales.",
         ))
 
+    # --- Datos REALES por empresa (FONAFE Observatorio Digital, último ejercicio) ---
+    try:
+        from sources import fonafe_obd
+        comp_pts = fonafe_obd.load_company_cache()
+    except Exception as e:  # noqa: BLE001
+        comp_pts = []
+        print(f"[etl] aviso FONAFE empresas: {e}")
+    if comp_pts:
+        import unicodedata
+
+        def _norm(s):
+            return "".join(ch for ch in unicodedata.normalize("NFD", s or "")
+                           if unicodedata.category(ch) != "Mn").upper().strip()
+
+        NAME2SLUG = {_norm(k): v for k, v in {
+            "ACTIVOS MINEROS": "amsac", "ADINELSA": "adinelsa", "AGROBANCO": "agrobanco",
+            "BANCO DE LA NACION": "banco-nacion", "COFIDE": "cofide", "CORPAC": "corpac",
+            "EDITORA PERU": "editora-peru", "EGASA": "egasa", "EGEMSA": "egemsa", "EGESUR": "egesur",
+            "ELECTRO ORIENTE": "electro-oriente", "ELECTRO PUNO": "electro-puno",
+            "ELECTRO SUR ESTE": "electro-sur-este", "ELECTRO UCAYALI": "electro-ucayali",
+            "ELECTROCENTRO": "electrocentro", "ELECTRONOROESTE": "enosa", "ELECTRONORTE": "ensa",
+            "ELECTROPERU": "electroperu", "ELECTROSUR": "electrosur", "ENACO": "enaco", "ENAPU": "enapu",
+            "ESVICSAC": "esvicsac", "FONDO MIVIVIENDA": "fondo-mivivienda", "HIDRANDINA": "hidrandina",
+            "SEAL": "seal", "SEDAPAL": "sedapal", "SERPOST": "serpost", "SILSA": "silsa",
+        }.items()}
+        by_slug = {}
+        for p in comp_pts:
+            slug = NAME2SLUG.get(_norm(p["empresa"]))
+            if not slug or p.get("value") is None:
+                continue
+            by_slug.setdefault(slug, {})[p["indicator"]] = dict(
+                value=p["value"], meta=p.get("meta"), alcance=p.get("alcance"),
+                period=p.get("idFecha"), unit=p.get("unit", ""))
+        matched = 0
+        for c in companies:
+            ri = by_slug.get(c["slug"])
+            if not ri:
+                continue
+            matched += 1
+            c["realIndicators"] = ri
+            c["provenance"] = "real-fonafe"
+            c["provenanceNote"] = ("Último ejercicio con datos REALES de FONAFE (valor, meta y % de "
+                                   "cumplimiento). Los años previos son modelo, marcados como estimado.")
+            for f in c["financials"]:
+                f["revenueReal"] = False
+                f["netIncomeReal"] = False
+            last = c["financials"][-1]
+            ing, uti, ebi = ri.get("Ingresos"), ri.get("Utilidad Neta"), ri.get("EBITDA")
+            if ing and ing["value"] is not None:
+                last["revenue"] = ing["value"]; last["revenueReal"] = True
+            if uti and uti["value"] is not None:
+                last["netIncome"] = uti["value"]; last["netIncomeReal"] = True
+            if ebi and ebi["value"] is not None:
+                last["ebitda"] = ebi["value"]
+            if last["revenue"] and last["netIncome"] is not None and last["revenue"] != 0:
+                c["metrics"]["netMargin"] = round(last["netIncome"] / last["revenue"] * 100, 1)
+            if last["revenue"] and c.get("employees"):
+                c["metrics"]["revenuePerEmployee"] = round(last["revenue"] * 1_000_000 / c["employees"], 0)
+        print(f"[etl] FONAFE real por empresa: {matched} empresas enriquecidas (último ejercicio)")
+
     # --- Conciliación FFAA: SIMA/FAME/SEMAN desde el Observatorio de Defensa (fuente de verdad) ---
     try:
         from sources import defensa

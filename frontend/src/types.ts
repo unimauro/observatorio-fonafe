@@ -79,6 +79,7 @@ export interface Company {
   provenanceNote?: string
   provenance?: string
   sources?: { name: string; url: string }[]
+  realIndicators?: Record<string, { value: number; meta: number | null; alcance: number | null; period: number | null; unit: string }>
   website: string
   employees: number
   description: string

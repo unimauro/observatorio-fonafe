@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { ArrowLeft, ExternalLink, AlertTriangle, Lightbulb } from 'lucide-react'
+import { ArrowLeft, ExternalLink, AlertTriangle, Lightbulb, Target } from 'lucide-react'
 import { useData } from '@/data'
 import { Chart } from '@/components/Chart'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -130,6 +130,14 @@ export function CompanyDetail() {
             {company.provenanceNote || 'Años marcados como estimado no son oficiales; vacío = sin datos.'}
           </span>
         </a>
+      ) : company.provenance === 'real-fonafe' ? (
+        <div className="mb-5 flex items-start gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 p-3 text-sm">
+          <Target className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+          <span>
+            <b>Último ejercicio: datos reales de FONAFE</b> (Observatorio Digital), con meta y % de cumplimiento.{' '}
+            {company.provenanceNote || 'Los años previos son modelo (estimado).'}
+          </span>
+        </div>
       ) : company.provenance === 'simulado' && (
         <div className="mb-5 flex items-start gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 p-3 text-sm">
           <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-amber-500" />
@@ -150,6 +158,33 @@ export function CompanyDetail() {
             <Kpi label="Margen neto" value={company.metrics.netMargin == null ? 's/d' : pct(company.metrics.netMargin)} tone={company.metrics.netMargin == null ? 'default' : company.metrics.netMargin < 0 ? 'bad' : 'good'} />
             <Kpi label="Transparencia" value={company.metrics.transparencyScore == null ? 's/d' : `${company.metrics.transparencyScore}/100`} tone="accent" />
           </div>
+          {company.realIndicators && (
+            <Card>
+              <CardHeader><CardTitle className="flex items-center gap-2"><Target className="h-4 w-4 text-emerald-500" />Indicadores reales · FONAFE (último ejercicio)</CardTitle></CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+                  {Object.entries(company.realIndicators).map(([name, v]) => {
+                    const isPct = v.unit === '%'
+                    const val = `${(+v.value).toLocaleString('es-PE', { maximumFractionDigits: 2 })}${isPct ? '%' : ' MM'}`
+                    return (
+                      <div key={name} className="rounded-lg border border-border p-3">
+                        <div className="text-xs text-muted-foreground">{name}</div>
+                        <div className="mt-1 text-lg font-bold">{val}</div>
+                        {v.meta != null && (
+                          <div className="mt-1 flex items-center gap-1 text-xs">
+                            <span className="text-muted-foreground">meta {(+v.meta).toLocaleString('es-PE', { maximumFractionDigits: 2 })}{isPct ? '%' : ''}</span>
+                            {v.alcance != null && (
+                              <Badge variant={v.alcance >= 90 ? 'success' : v.alcance >= 60 ? 'accent' : 'danger'}>{v.alcance.toFixed(0)}%</Badge>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              </CardContent>
+            </Card>
+          )}
           {(company.anomalies.length > 0 || company.recommendations.length > 0) && (
             <div className="grid gap-4 lg:grid-cols-2">
               <Card>

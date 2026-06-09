@@ -48,15 +48,15 @@
   },
   "kpis": {
     "companies": 52,
-    "totalRevenue": 52998.0,
-    "totalNetIncome": -597.0,
-    "totalEbitda": 6229.2,
+    "totalRevenue": 49605.7,
+    "totalNetIncome": 857.1,
+    "totalEbitda": 6917.8,
     "totalInvestment": 6538.3,
     "totalBudget": 14984.9,
     "totalBudgetExecuted": 12453.9,
     "employees": 45567,
-    "withLosses": 7,
-    "withProfits": 45,
+    "withLosses": 5,
+    "withProfits": 47,
     "year": 2025
   },
   "companies": [
@@ -89,7 +89,9 @@
           "ebitda": 793.0,
           "investment": 161.3,
           "budget": 739.2,
-          "budgetExecuted": 606.1
+          "budgetExecuted": 606.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -98,7 +100,9 @@
           "ebitda": 836.6,
           "investment": 170.2,
           "budget": 779.9,
-          "budgetExecuted": 639.5
+          "budgetExecuted": 639.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -107,7 +111,9 @@
           "ebitda": 880.3,
           "investment": 179.0,
           "budget": 820.6,
-          "budgetExecuted": 672.9
+          "budgetExecuted": 672.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -116,7 +122,9 @@
           "ebitda": 923.9,
           "investment": 187.9,
           "budget": 861.3,
-          "budgetExecuted": 706.3
+          "budgetExecuted": 706.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -125,7 +133,9 @@
           "ebitda": 967.6,
           "investment": 196.8,
           "budget": 902.0,
-          "budgetExecuted": 739.6
+          "budgetExecuted": 739.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -134,7 +144,9 @@
           "ebitda": 932.2,
           "investment": 189.6,
           "budget": 869.0,
-          "budgetExecuted": 712.6
+          "budgetExecuted": 712.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -143,7 +155,9 @@
           "ebitda": 1038.4,
           "investment": 211.2,
           "budget": 968.0,
-          "budgetExecuted": 793.8
+          "budgetExecuted": 793.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -152,7 +166,9 @@
           "ebitda": 1121.0,
           "investment": 228.0,
           "budget": 1045.0,
-          "budgetExecuted": 856.9
+          "budgetExecuted": 856.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -161,7 +177,9 @@
           "ebitda": 1156.4,
           "investment": 235.2,
           "budget": 1078.0,
-          "budgetExecuted": 884.0
+          "budgetExecuted": 884.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -170,16 +188,20 @@
           "ebitda": 1180.0,
           "investment": 240.0,
           "budget": 1100.0,
-          "budgetExecuted": 902.0
+          "budgetExecuted": 902.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
           "revenue": 3927.0,
-          "netIncome": 836.4,
-          "ebitda": 1203.6,
+          "netIncome": 1336.3,
+          "ebitda": 1900.2,
           "investment": 244.8,
           "budget": 1122.0,
-          "budgetExecuted": 920.0
+          "budgetExecuted": 920.0,
+          "revenueReal": false,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -326,7 +348,7 @@
         }
       ],
       "metrics": {
-        "netMargin": 21.3,
+        "netMargin": 34.0,
         "revenuePerEmployee": 818125.0,
         "transparencyScore": 100,
         "budgetExecution": 82.0
@@ -340,8 +362,66 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "ROE": {
+          "value": 33.51,
+          "meta": 30.33,
+          "alcance": 110.47,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROA": {
+          "value": 2.78,
+          "meta": 2.48,
+          "alcance": 112.36,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 45.14,
+          "meta": 38.37,
+          "alcance": 117.65,
+          "period": 202512,
+          "unit": "%"
+        },
+        "EBITDA": {
+          "value": 1900.2,
+          "meta": 1629.5,
+          "alcance": 116.61,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 1336.3,
+          "meta": 1127.7,
+          "alcance": 118.5,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Liquidez": {
+          "value": 35.06,
+          "meta": 35.3,
+          "alcance": 99.33,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 91.7,
+          "meta": 91.84,
+          "alcance": 99.85,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Endeudamiento": {
+          "value": 1104.33,
+          "meta": 1124.89,
+          "alcance": 98.17,
+          "period": 202512,
+          "unit": "Ratio"
+        }
+      }
     },
     {
       "slug": "cofide",
@@ -368,7 +448,9 @@
           "ebitda": 155.0,
           "investment": 29.5,
           "budget": 132.8,
-          "budgetExecuted": 102.3
+          "budgetExecuted": 102.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -377,7 +459,9 @@
           "ebitda": 163.4,
           "investment": 31.1,
           "budget": 140.0,
-          "budgetExecuted": 107.8
+          "budgetExecuted": 107.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -386,7 +470,9 @@
           "ebitda": 172.0,
           "investment": 32.8,
           "budget": 147.4,
-          "budgetExecuted": 113.5
+          "budgetExecuted": 113.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -395,7 +481,9 @@
           "ebitda": 180.6,
           "investment": 34.4,
           "budget": 154.8,
-          "budgetExecuted": 119.2
+          "budgetExecuted": 119.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -404,7 +492,9 @@
           "ebitda": 189.0,
           "investment": 36.0,
           "budget": 162.0,
-          "budgetExecuted": 124.7
+          "budgetExecuted": 124.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -413,7 +503,9 @@
           "ebitda": 178.5,
           "investment": 34.0,
           "budget": 153.0,
-          "budgetExecuted": 117.8
+          "budgetExecuted": 117.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -422,7 +514,9 @@
           "ebitda": 193.2,
           "investment": 36.8,
           "budget": 165.6,
-          "budgetExecuted": 127.5
+          "budgetExecuted": 127.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -431,7 +525,9 @@
           "ebitda": 203.7,
           "investment": 38.8,
           "budget": 174.6,
-          "budgetExecuted": 134.4
+          "budgetExecuted": 134.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -440,7 +536,9 @@
           "ebitda": 207.9,
           "investment": 39.6,
           "budget": 178.2,
-          "budgetExecuted": 137.2
+          "budgetExecuted": 137.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -449,16 +547,20 @@
           "ebitda": 210.0,
           "investment": 40.0,
           "budget": 180.0,
-          "budgetExecuted": 138.6
+          "budgetExecuted": 138.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
           "revenue": 626.2,
-          "netIncome": 96.0,
-          "ebitda": 212.1,
+          "netIncome": 100.2,
+          "ebitda": 128.9,
           "investment": 40.4,
           "budget": 181.8,
-          "budgetExecuted": 140.0
+          "budgetExecuted": 140.0,
+          "revenueReal": false,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -605,7 +707,7 @@
         }
       ],
       "metrics": {
-        "netMargin": 15.3,
+        "netMargin": 16.0,
         "revenuePerEmployee": 1204231.0,
         "transparencyScore": 80,
         "budgetExecution": 77.0
@@ -619,8 +721,66 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "ROE": {
+          "value": 4.34,
+          "meta": 2.02,
+          "alcance": 215.23,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROA": {
+          "value": 0.84,
+          "meta": 0.36,
+          "alcance": 235.61,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 16.25,
+          "meta": 7.12,
+          "alcance": 228.22,
+          "period": 202512,
+          "unit": "%"
+        },
+        "EBITDA": {
+          "value": 128.9,
+          "meta": 73.2,
+          "alcance": 176.09,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 100.2,
+          "meta": 45.3,
+          "alcance": 221.19,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Liquidez": {
+          "value": 3.56,
+          "meta": 4.74,
+          "alcance": 75.22,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 80.58,
+          "meta": 82.26,
+          "alcance": 97.96,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Endeudamiento": {
+          "value": 414.87,
+          "meta": 463.61,
+          "alcance": 89.49,
+          "period": 202512,
+          "unit": "Ratio"
+        }
+      }
     },
     {
       "slug": "agrobanco",
@@ -647,7 +807,9 @@
           "ebitda": -13.8,
           "investment": 17.2,
           "budget": 109.1,
-          "budgetExecuted": 100.4
+          "budgetExecuted": 100.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -656,7 +818,9 @@
           "ebitda": -14.5,
           "investment": 18.2,
           "budget": 115.0,
-          "budgetExecuted": 105.8
+          "budgetExecuted": 105.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -665,7 +829,9 @@
           "ebitda": -15.3,
           "investment": 19.1,
           "budget": 121.0,
-          "budgetExecuted": 111.3
+          "budgetExecuted": 111.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -674,7 +840,9 @@
           "ebitda": -16.0,
           "investment": 20.1,
           "budget": 127.0,
-          "budgetExecuted": 116.8
+          "budgetExecuted": 116.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -683,7 +851,9 @@
           "ebitda": -16.8,
           "investment": 21.0,
           "budget": 133.0,
-          "budgetExecuted": 122.4
+          "budgetExecuted": 122.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -692,7 +862,9 @@
           "ebitda": -15.0,
           "investment": 18.8,
           "budget": 118.8,
-          "budgetExecuted": 109.3
+          "budgetExecuted": 109.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -701,7 +873,9 @@
           "ebitda": -13.2,
           "investment": 16.5,
           "budget": 104.5,
-          "budgetExecuted": 96.1
+          "budgetExecuted": 96.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -710,7 +884,9 @@
           "ebitda": -12.6,
           "investment": 15.8,
           "budget": 99.8,
-          "budgetExecuted": 91.8
+          "budgetExecuted": 91.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -719,7 +895,9 @@
           "ebitda": -12.2,
           "investment": 15.3,
           "budget": 96.9,
-          "budgetExecuted": 89.1
+          "budgetExecuted": 89.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -728,16 +906,20 @@
           "ebitda": -12.0,
           "investment": 15.0,
           "budget": 95.0,
-          "budgetExecuted": 87.4
+          "budgetExecuted": 87.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
           "revenue": 176.4,
-          "netIncome": -44.1,
-          "ebitda": -11.8,
+          "netIncome": 63.4,
+          "ebitda": 74.1,
           "investment": 14.7,
           "budget": 93.1,
-          "budgetExecuted": 85.7
+          "budgetExecuted": 85.7,
+          "revenueReal": false,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -884,7 +1066,7 @@
         }
       ],
       "metrics": {
-        "netMargin": -25.0,
+        "netMargin": 35.9,
         "revenuePerEmployee": 464211.0,
         "transparencyScore": 55,
         "budgetExecution": 92.0
@@ -922,8 +1104,66 @@
           "norma": "Convenio de Gestión FONAFE"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "ROE": {
+          "value": 10.84,
+          "meta": 10.22,
+          "alcance": 106.0,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROA": {
+          "value": 9.62,
+          "meta": 8.97,
+          "alcance": 107.22,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 47.99,
+          "meta": 44.93,
+          "alcance": 106.81,
+          "period": 202512,
+          "unit": "%"
+        },
+        "EBITDA": {
+          "value": 74.1,
+          "meta": 71.2,
+          "alcance": 104.07,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 63.4,
+          "meta": 59.4,
+          "alcance": 106.73,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Liquidez": {
+          "value": 26.38,
+          "meta": 25.45,
+          "alcance": 103.67,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 11.26,
+          "meta": 12.26,
+          "alcance": 91.8,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Endeudamiento": {
+          "value": 12.68,
+          "meta": 13.98,
+          "alcance": 90.75,
+          "period": 202512,
+          "unit": "Ratio"
+        }
+      }
     },
     {
       "slug": "fondo-mivivienda",
@@ -950,7 +1190,9 @@
           "ebitda": 169.2,
           "investment": 21.1,
           "budget": 148.0,
-          "budgetExecuted": 114.0
+          "budgetExecuted": 114.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -959,7 +1201,9 @@
           "ebitda": 178.6,
           "investment": 22.3,
           "budget": 156.2,
-          "budgetExecuted": 120.3
+          "budgetExecuted": 120.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -968,7 +1212,9 @@
           "ebitda": 187.9,
           "investment": 23.5,
           "budget": 164.4,
-          "budgetExecuted": 126.6
+          "budgetExecuted": 126.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -977,7 +1223,9 @@
           "ebitda": 197.0,
           "investment": 24.6,
           "budget": 172.4,
-          "budgetExecuted": 132.7
+          "budgetExecuted": 132.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -986,7 +1234,9 @@
           "ebitda": 206.4,
           "investment": 25.8,
           "budget": 180.6,
-          "budgetExecuted": 139.1
+          "budgetExecuted": 139.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -995,7 +1245,9 @@
           "ebitda": 216.0,
           "investment": 27.0,
           "budget": 189.0,
-          "budgetExecuted": 145.5
+          "budgetExecuted": 145.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -1004,7 +1256,9 @@
           "ebitda": 225.6,
           "investment": 28.2,
           "budget": 197.4,
-          "budgetExecuted": 152.0
+          "budgetExecuted": 152.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -1013,7 +1267,9 @@
           "ebitda": 232.8,
           "investment": 29.1,
           "budget": 203.7,
-          "budgetExecuted": 156.8
+          "budgetExecuted": 156.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -1022,7 +1278,9 @@
           "ebitda": 237.6,
           "investment": 29.7,
           "budget": 207.9,
-          "budgetExecuted": 160.1
+          "budgetExecuted": 160.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -1031,16 +1289,20 @@
           "ebitda": 240.0,
           "investment": 30.0,
           "budget": 210.0,
-          "budgetExecuted": 161.7
+          "budgetExecuted": 161.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
           "revenue": 545.4,
-          "netIncome": 161.6,
-          "ebitda": 242.4,
+          "netIncome": 120.6,
+          "ebitda": 179.4,
           "investment": 30.3,
           "budget": 212.1,
-          "budgetExecuted": 163.3
+          "budgetExecuted": 163.3,
+          "revenueReal": false,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -1187,7 +1449,7 @@
         }
       ],
       "metrics": {
-        "netMargin": 29.6,
+        "netMargin": 22.1,
         "revenuePerEmployee": 1160426.0,
         "transparencyScore": 100,
         "budgetExecution": 77.0
@@ -1201,8 +1463,66 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "ROE": {
+          "value": 3.23,
+          "meta": 2.26,
+          "alcance": 142.74,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROA": {
+          "value": 0.92,
+          "meta": 0.63,
+          "alcance": 146.24,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 14.87,
+          "meta": 10.09,
+          "alcance": 147.33,
+          "period": 202512,
+          "unit": "%"
+        },
+        "EBITDA": {
+          "value": 179.4,
+          "meta": 119.5,
+          "alcance": 150.13,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 120.6,
+          "meta": 83.5,
+          "alcance": 144.43,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Liquidez": {
+          "value": 11.42,
+          "meta": 7.65,
+          "alcance": 149.27,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 71.51,
+          "meta": 72.19,
+          "alcance": 99.05,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Endeudamiento": {
+          "value": 251.01,
+          "meta": 259.63,
+          "alcance": 96.68,
+          "period": 202512,
+          "unit": "Ratio"
+        }
+      }
     },
     {
       "slug": "electroperu",
@@ -1229,7 +1549,9 @@
           "ebitda": 519.8,
           "investment": 231.0,
           "budget": 404.3,
-          "budgetExecuted": 311.3
+          "budgetExecuted": 311.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -1238,7 +1560,9 @@
           "ebitda": 547.9,
           "investment": 243.5,
           "budget": 426.2,
-          "budgetExecuted": 328.2
+          "budgetExecuted": 328.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -1247,7 +1571,9 @@
           "ebitda": 576.7,
           "investment": 256.3,
           "budget": 448.6,
-          "budgetExecuted": 345.4
+          "budgetExecuted": 345.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -1256,7 +1582,9 @@
           "ebitda": 604.8,
           "investment": 268.8,
           "budget": 470.4,
-          "budgetExecuted": 362.2
+          "budgetExecuted": 362.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -1265,7 +1593,9 @@
           "ebitda": 633.6,
           "investment": 281.6,
           "budget": 492.8,
-          "budgetExecuted": 379.5
+          "budgetExecuted": 379.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -1274,7 +1604,9 @@
           "ebitda": 576.0,
           "investment": 256.0,
           "budget": 448.0,
-          "budgetExecuted": 345.0
+          "budgetExecuted": 345.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -1283,7 +1615,9 @@
           "ebitda": 662.4,
           "investment": 294.4,
           "budget": 515.2,
-          "budgetExecuted": 396.7
+          "budgetExecuted": 396.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -1292,7 +1626,9 @@
           "ebitda": 705.6,
           "investment": 313.6,
           "budget": 548.8,
-          "budgetExecuted": 422.6
+          "budgetExecuted": 422.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -1301,7 +1637,9 @@
           "ebitda": 712.8,
           "investment": 316.8,
           "budget": 554.4,
-          "budgetExecuted": 426.9
+          "budgetExecuted": 426.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -1310,16 +1648,20 @@
           "ebitda": 720.0,
           "investment": 320.0,
           "budget": 560.0,
-          "budgetExecuted": 431.2
+          "budgetExecuted": 431.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 1999.8,
-          "netIncome": 414.1,
-          "ebitda": 727.2,
+          "revenue": 2569.2,
+          "netIncome": 566.6,
+          "ebitda": 819.0,
           "investment": 323.2,
           "budget": 565.6,
-          "budgetExecuted": 435.5
+          "budgetExecuted": 435.5,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -1466,8 +1808,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 20.7,
-        "revenuePerEmployee": 3225484.0,
+        "netMargin": 22.1,
+        "revenuePerEmployee": 4143871.0,
         "transparencyScore": 100,
         "budgetExecution": 77.0
       },
@@ -1480,8 +1822,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 1.78,
+          "meta": 1.97,
+          "alcance": 90.24,
+          "period": 202412,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 3.79,
+          "meta": 4.08,
+          "alcance": 92.81,
+          "period": 202412,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 14.23,
+          "meta": 13.95,
+          "alcance": 101.98,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 18.69,
+          "meta": 18.4,
+          "alcance": 101.57,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 22.05,
+          "meta": 21.02,
+          "alcance": 104.93,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 1.16,
+          "meta": 1.16,
+          "alcance": 99.68,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 2569.2,
+          "meta": 2660.3,
+          "alcance": 96.58,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 3013.6,
+          "meta": 2954.9,
+          "alcance": 101.99,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 4095.0,
+          "meta": 3914.4,
+          "alcance": 104.61,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 819.0,
+          "meta": 832.2,
+          "alcance": 98.41,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 1131.5,
+          "meta": 1029.2,
+          "alcance": 109.94,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 566.6,
+          "meta": 559.1,
+          "alcance": 101.34,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 1081.4,
+          "meta": 959.4,
+          "alcance": 112.72,
+          "period": 202412,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "egasa",
@@ -1508,7 +1943,9 @@
           "ebitda": 110.7,
           "investment": 51.7,
           "budget": 88.6,
-          "budgetExecuted": 63.8
+          "budgetExecuted": 63.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -1517,7 +1954,9 @@
           "ebitda": 116.7,
           "investment": 54.5,
           "budget": 93.4,
-          "budgetExecuted": 67.2
+          "budgetExecuted": 67.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -1526,7 +1965,9 @@
           "ebitda": 122.8,
           "investment": 57.3,
           "budget": 98.3,
-          "budgetExecuted": 70.8
+          "budgetExecuted": 70.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -1535,7 +1976,9 @@
           "ebitda": 129.0,
           "investment": 60.2,
           "budget": 103.2,
-          "budgetExecuted": 74.3
+          "budgetExecuted": 74.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -1544,7 +1987,9 @@
           "ebitda": 135.0,
           "investment": 63.0,
           "budget": 108.0,
-          "budgetExecuted": 77.8
+          "budgetExecuted": 77.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -1553,7 +1998,9 @@
           "ebitda": 129.0,
           "investment": 60.2,
           "budget": 103.2,
-          "budgetExecuted": 74.3
+          "budgetExecuted": 74.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -1562,7 +2009,9 @@
           "ebitda": 139.5,
           "investment": 65.1,
           "budget": 111.6,
-          "budgetExecuted": 80.4
+          "budgetExecuted": 80.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -1571,7 +2020,9 @@
           "ebitda": 145.5,
           "investment": 67.9,
           "budget": 116.4,
-          "budgetExecuted": 83.8
+          "budgetExecuted": 83.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -1580,7 +2031,9 @@
           "ebitda": 148.5,
           "investment": 69.3,
           "budget": 118.8,
-          "budgetExecuted": 85.5
+          "budgetExecuted": 85.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -1589,16 +2042,20 @@
           "ebitda": 150.0,
           "investment": 70.0,
           "budget": 120.0,
-          "budgetExecuted": 86.4
+          "budgetExecuted": 86.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 424.2,
-          "netIncome": 78.8,
-          "ebitda": 151.5,
+          "revenue": 201.3,
+          "netIncome": 101.2,
+          "ebitda": 153.8,
           "investment": 70.7,
           "budget": 121.2,
-          "budgetExecuted": 87.3
+          "budgetExecuted": 87.3,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -1745,8 +2202,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 18.6,
-        "revenuePerEmployee": 2020000.0,
+        "netMargin": 50.3,
+        "revenuePerEmployee": 958571.0,
         "transparencyScore": 80,
         "budgetExecution": 72.0
       },
@@ -1759,8 +2216,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 9.5,
+          "meta": 12.55,
+          "alcance": 75.76,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 9.66,
+          "meta": 9.86,
+          "alcance": 97.99,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 13.9,
+          "meta": 11.59,
+          "alcance": 119.87,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 15.5,
+          "meta": 12.9,
+          "alcance": 120.17,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 50.27,
+          "meta": 40.55,
+          "alcance": 123.99,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 0.49,
+          "meta": 0.57,
+          "alcance": 86.53,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 201.3,
+          "meta": 201.5,
+          "alcance": 99.9,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 652.8,
+          "meta": 633.3,
+          "alcance": 103.08,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 728.3,
+          "meta": 704.8,
+          "alcance": 103.33,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 153.8,
+          "meta": 126.2,
+          "alcance": 121.87,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 316.5,
+          "meta": 303.6,
+          "alcance": 104.25,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 101.2,
+          "meta": 81.7,
+          "alcance": 123.87,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 75.4,
+          "meta": 71.5,
+          "alcance": 105.45,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "egemsa",
@@ -1787,7 +2337,9 @@
           "ebitda": 89.5,
           "investment": 41.0,
           "budget": 67.1,
-          "budgetExecuted": 51.7
+          "budgetExecuted": 51.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -1796,7 +2348,9 @@
           "ebitda": 94.4,
           "investment": 43.3,
           "budget": 70.8,
-          "budgetExecuted": 54.5
+          "budgetExecuted": 54.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -1805,7 +2359,9 @@
           "ebitda": 99.4,
           "investment": 45.5,
           "budget": 74.5,
-          "budgetExecuted": 57.4
+          "budgetExecuted": 57.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -1814,7 +2370,9 @@
           "ebitda": 104.3,
           "investment": 47.8,
           "budget": 78.2,
-          "budgetExecuted": 60.2
+          "budgetExecuted": 60.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -1823,7 +2381,9 @@
           "ebitda": 109.2,
           "investment": 50.1,
           "budget": 81.9,
-          "budgetExecuted": 63.1
+          "budgetExecuted": 63.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -1832,7 +2392,9 @@
           "ebitda": 104.4,
           "investment": 47.9,
           "budget": 78.3,
-          "budgetExecuted": 60.3
+          "budgetExecuted": 60.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -1841,7 +2403,9 @@
           "ebitda": 112.8,
           "investment": 51.7,
           "budget": 84.6,
-          "budgetExecuted": 65.1
+          "budgetExecuted": 65.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -1850,7 +2414,9 @@
           "ebitda": 117.6,
           "investment": 53.9,
           "budget": 88.2,
-          "budgetExecuted": 67.9
+          "budgetExecuted": 67.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -1859,7 +2425,9 @@
           "ebitda": 118.8,
           "investment": 54.5,
           "budget": 89.1,
-          "budgetExecuted": 68.6
+          "budgetExecuted": 68.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -1868,16 +2436,20 @@
           "ebitda": 120.0,
           "investment": 55.0,
           "budget": 90.0,
-          "budgetExecuted": 69.3
+          "budgetExecuted": 69.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 303.0,
-          "netIncome": 62.6,
-          "ebitda": 121.2,
+          "revenue": 211.5,
+          "netIncome": 106.5,
+          "ebitda": 159.7,
           "investment": 55.5,
           "budget": 90.9,
-          "budgetExecuted": 70.0
+          "budgetExecuted": 70.0,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -2024,8 +2596,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 20.7,
-        "revenuePerEmployee": 1683333.0,
+        "netMargin": 50.4,
+        "revenuePerEmployee": 1175000.0,
         "transparencyScore": 55,
         "budgetExecution": 77.0
       },
@@ -2038,8 +2610,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 6.18,
+          "meta": 6.13,
+          "alcance": 100.74,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 6.4,
+          "meta": 6.61,
+          "alcance": 96.78,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 10.64,
+          "meta": 10.04,
+          "alcance": 106.03,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 12.61,
+          "meta": 11.83,
+          "alcance": 106.65,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 50.35,
+          "meta": 48.33,
+          "alcance": 104.19,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 0.98,
+          "meta": 0.99,
+          "alcance": 98.85,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 211.5,
+          "meta": 206.5,
+          "alcance": 102.42,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 844.4,
+          "meta": 843.9,
+          "alcance": 100.06,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 1000.6,
+          "meta": 994.2,
+          "alcance": 100.64,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 159.7,
+          "meta": 151.8,
+          "alcance": 105.2,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 319.3,
+          "meta": 319.4,
+          "alcance": 99.97,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 106.5,
+          "meta": 99.8,
+          "alcance": 106.71,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 156.3,
+          "meta": 150.3,
+          "alcance": 103.99,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "egesur",
@@ -2066,7 +2731,9 @@
           "ebitda": 21.6,
           "investment": 13.9,
           "budget": 32.4,
-          "budgetExecuted": 24.9
+          "budgetExecuted": 24.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -2075,7 +2742,9 @@
           "ebitda": 22.8,
           "investment": 14.6,
           "budget": 34.1,
-          "budgetExecuted": 26.3
+          "budgetExecuted": 26.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -2084,7 +2753,9 @@
           "ebitda": 23.9,
           "investment": 15.4,
           "budget": 35.9,
-          "budgetExecuted": 27.6
+          "budgetExecuted": 27.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -2093,7 +2764,9 @@
           "ebitda": 25.1,
           "investment": 16.2,
           "budget": 37.7,
-          "budgetExecuted": 29.0
+          "budgetExecuted": 29.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -2102,7 +2775,9 @@
           "ebitda": 26.3,
           "investment": 16.9,
           "budget": 39.5,
-          "budgetExecuted": 30.4
+          "budgetExecuted": 30.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -2111,7 +2786,9 @@
           "ebitda": 25.2,
           "investment": 16.2,
           "budget": 37.8,
-          "budgetExecuted": 29.1
+          "budgetExecuted": 29.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -2120,7 +2797,9 @@
           "ebitda": 26.6,
           "investment": 17.1,
           "budget": 39.9,
-          "budgetExecuted": 30.7
+          "budgetExecuted": 30.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -2129,7 +2808,9 @@
           "ebitda": 27.4,
           "investment": 17.6,
           "budget": 41.2,
-          "budgetExecuted": 31.7
+          "budgetExecuted": 31.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -2138,7 +2819,9 @@
           "ebitda": 27.7,
           "investment": 17.8,
           "budget": 41.6,
-          "budgetExecuted": 32.0
+          "budgetExecuted": 32.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -2147,16 +2830,20 @@
           "ebitda": 28.0,
           "investment": 18.0,
           "budget": 42.0,
-          "budgetExecuted": 32.3
+          "budgetExecuted": 32.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 111.1,
-          "netIncome": 8.1,
-          "ebitda": 28.3,
+          "revenue": 80.4,
+          "netIncome": 22.9,
+          "ebitda": 39.6,
           "investment": 18.2,
           "budget": 42.4,
-          "budgetExecuted": 32.6
+          "budgetExecuted": 32.6,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -2303,8 +2990,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 7.3,
-        "revenuePerEmployee": 1169474.0,
+        "netMargin": 28.5,
+        "revenuePerEmployee": 846316.0,
         "transparencyScore": 30,
         "budgetExecution": 77.0
       },
@@ -2330,8 +3017,101 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 3.85,
+          "meta": 4.06,
+          "alcance": 94.94,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 5.62,
+          "meta": 6.85,
+          "alcance": 82.03,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 11.46,
+          "meta": 12.92,
+          "alcance": 88.69,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 13.94,
+          "meta": 15.12,
+          "alcance": 92.2,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 28.48,
+          "meta": 29.93,
+          "alcance": 95.17,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 0.9,
+          "meta": 0.7,
+          "alcance": 129.33,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 80.4,
+          "meta": 84.2,
+          "alcance": 95.49,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 164.3,
+          "meta": 166.7,
+          "alcance": 98.56,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 199.9,
+          "meta": 195.1,
+          "alcance": 102.46,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 39.6,
+          "meta": 41.0,
+          "alcance": 96.59,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 94.4,
+          "meta": 90.5,
+          "alcance": 104.31,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 22.9,
+          "meta": 25.2,
+          "alcance": 90.87,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 35.6,
+          "meta": 28.5,
+          "alcance": 124.91,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "hidrandina",
@@ -2358,7 +3138,9 @@
           "ebitda": 237.0,
           "investment": 146.4,
           "budget": 278.8,
-          "budgetExecuted": 200.7
+          "budgetExecuted": 200.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -2367,7 +3149,9 @@
           "ebitda": 249.9,
           "investment": 154.3,
           "budget": 294.0,
-          "budgetExecuted": 211.7
+          "budgetExecuted": 211.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -2376,7 +3160,9 @@
           "ebitda": 262.8,
           "investment": 162.3,
           "budget": 309.2,
-          "budgetExecuted": 222.6
+          "budgetExecuted": 222.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -2385,7 +3171,9 @@
           "ebitda": 276.1,
           "investment": 170.5,
           "budget": 324.8,
-          "budgetExecuted": 233.9
+          "budgetExecuted": 233.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -2394,7 +3182,9 @@
           "ebitda": 289.0,
           "investment": 178.5,
           "budget": 340.0,
-          "budgetExecuted": 244.8
+          "budgetExecuted": 244.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -2403,7 +3193,9 @@
           "ebitda": 278.8,
           "investment": 172.2,
           "budget": 328.0,
-          "budgetExecuted": 236.2
+          "budgetExecuted": 236.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -2412,7 +3204,9 @@
           "ebitda": 306.0,
           "investment": 189.0,
           "budget": 360.0,
-          "budgetExecuted": 259.2
+          "budgetExecuted": 259.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -2421,7 +3215,9 @@
           "ebitda": 326.4,
           "investment": 201.6,
           "budget": 384.0,
-          "budgetExecuted": 276.5
+          "budgetExecuted": 276.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -2430,7 +3226,9 @@
           "ebitda": 336.6,
           "investment": 207.9,
           "budget": 396.0,
-          "budgetExecuted": 285.1
+          "budgetExecuted": 285.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -2439,16 +3237,20 @@
           "ebitda": 340.0,
           "investment": 210.0,
           "budget": 400.0,
-          "budgetExecuted": 288.0
+          "budgetExecuted": 288.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 1464.5,
-          "netIncome": 131.3,
-          "ebitda": 343.4,
+          "revenue": 1387.9,
+          "netIncome": 39.2,
+          "ebitda": 175.2,
           "investment": 212.1,
           "budget": 404.0,
-          "budgetExecuted": 290.9
+          "budgetExecuted": 290.9,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -2595,8 +3397,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 9.0,
-        "revenuePerEmployee": 1084815.0,
+        "netMargin": 2.8,
+        "revenuePerEmployee": 1028074.0,
         "transparencyScore": 80,
         "budgetExecution": 72.0
       },
@@ -2609,8 +3411,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 0.64,
+          "meta": 0.64,
+          "alcance": 99.93,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 1.8,
+          "meta": 1.77,
+          "alcance": 101.67,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 1.76,
+          "meta": 2.23,
+          "alcance": 78.82,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 3.97,
+          "meta": 5.15,
+          "alcance": 77.17,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 2.82,
+          "meta": 3.65,
+          "alcance": 77.28,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 7.08,
+          "meta": 7.03,
+          "alcance": 100.75,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 1387.9,
+          "meta": 1411.8,
+          "alcance": 98.31,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 986.3,
+          "meta": 1001.9,
+          "alcance": 98.44,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 2226.6,
+          "meta": 2310.3,
+          "alcance": 96.38,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 175.2,
+          "meta": 186.2,
+          "alcance": 94.09,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 409.6,
+          "meta": 439.4,
+          "alcance": 93.22,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 39.2,
+          "meta": 51.6,
+          "alcance": 75.97,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 1240.3,
+          "meta": 1308.4,
+          "alcance": 94.8,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "corpac",
@@ -2637,7 +3532,9 @@
           "ebitda": 101.3,
           "investment": 191.9,
           "budget": 373.1,
-          "budgetExecuted": 287.3
+          "budgetExecuted": 287.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -2646,7 +3543,9 @@
           "ebitda": 106.9,
           "investment": 202.5,
           "budget": 393.8,
-          "budgetExecuted": 303.2
+          "budgetExecuted": 303.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -2655,7 +3554,9 @@
           "ebitda": 112.4,
           "investment": 212.9,
           "budget": 414.1,
-          "budgetExecuted": 318.9
+          "budgetExecuted": 318.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -2664,7 +3565,9 @@
           "ebitda": 118.0,
           "investment": 223.6,
           "budget": 434.7,
-          "budgetExecuted": 334.7
+          "budgetExecuted": 334.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -2673,7 +3576,9 @@
           "ebitda": 123.5,
           "investment": 234.0,
           "budget": 455.0,
-          "budgetExecuted": 350.4
+          "budgetExecuted": 350.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -2682,7 +3587,9 @@
           "ebitda": 147.2,
           "investment": 279.0,
           "budget": 542.5,
-          "budgetExecuted": 417.7
+          "budgetExecuted": 417.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -2691,7 +3598,9 @@
           "ebitda": 114.0,
           "investment": 216.0,
           "budget": 420.0,
-          "budgetExecuted": 323.4
+          "budgetExecuted": 323.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -2700,7 +3609,9 @@
           "ebitda": 99.8,
           "investment": 189.0,
           "budget": 367.5,
-          "budgetExecuted": 283.0
+          "budgetExecuted": 283.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -2709,7 +3620,9 @@
           "ebitda": 95.0,
           "investment": 180.0,
           "budget": 350.0,
-          "budgetExecuted": 269.5
+          "budgetExecuted": 269.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -2718,16 +3631,20 @@
           "ebitda": 95.0,
           "investment": 180.0,
           "budget": 350.0,
-          "budgetExecuted": 269.5
+          "budgetExecuted": 269.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 720.0,
-          "netIncome": -38.0,
-          "ebitda": 95.0,
+          "revenue": 465.5,
+          "netIncome": 12.0,
+          "ebitda": 110.7,
           "investment": 180.0,
           "budget": 350.0,
-          "budgetExecuted": 269.5
+          "budgetExecuted": 269.5,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -2874,8 +3791,8 @@
         }
       ],
       "metrics": {
-        "netMargin": -5.3,
-        "revenuePerEmployee": 342857.0,
+        "netMargin": 2.6,
+        "revenuePerEmployee": 221667.0,
         "transparencyScore": 55,
         "budgetExecution": 77.0
       },
@@ -2901,8 +3818,101 @@
           "norma": "D.L. 1031 (eficiencia de la actividad empresarial del Estado) · Ley 27170 (FONAFE)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 3.36,
+          "meta": 4.37,
+          "alcance": 76.9,
+          "period": 202412,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 4.54,
+          "meta": 3.35,
+          "alcance": 135.4,
+          "period": 202412,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 1.04,
+          "meta": 1.97,
+          "alcance": 52.6,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 1.29,
+          "meta": 2.41,
+          "alcance": 53.43,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 2.58,
+          "meta": 4.95,
+          "alcance": 52.03,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 2.06,
+          "meta": 2.45,
+          "alcance": 83.9,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 465.5,
+          "meta": 470.3,
+          "alcance": 98.98,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 936.8,
+          "meta": 820.4,
+          "alcance": 114.19,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 1201.8,
+          "meta": 1169.6,
+          "alcance": 102.75,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 110.7,
+          "meta": 88.8,
+          "alcance": 124.66,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 415.8,
+          "meta": 468.5,
+          "alcance": 88.75,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 12.0,
+          "meta": 23.3,
+          "alcance": 51.5,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 265.0,
+          "meta": 349.2,
+          "alcance": 75.89,
+          "period": 202412,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "enapu",
@@ -2929,7 +3939,9 @@
           "ebitda": 82.9,
           "investment": 64.1,
           "budget": 181.0,
-          "budgetExecuted": 130.3
+          "budgetExecuted": 130.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -2938,7 +3950,9 @@
           "ebitda": 87.6,
           "investment": 67.7,
           "budget": 191.0,
-          "budgetExecuted": 137.5
+          "budgetExecuted": 137.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -2947,7 +3961,9 @@
           "ebitda": 92.1,
           "investment": 71.1,
           "budget": 200.9,
-          "budgetExecuted": 144.6
+          "budgetExecuted": 144.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -2956,7 +3972,9 @@
           "ebitda": 96.7,
           "investment": 74.7,
           "budget": 211.0,
-          "budgetExecuted": 151.9
+          "budgetExecuted": 151.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -2965,7 +3983,9 @@
           "ebitda": 101.2,
           "investment": 78.2,
           "budget": 220.8,
-          "budgetExecuted": 159.0
+          "budgetExecuted": 159.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -2974,7 +3994,9 @@
           "ebitda": 96.8,
           "investment": 74.8,
           "budget": 211.2,
-          "budgetExecuted": 152.1
+          "budgetExecuted": 152.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -2983,7 +4005,9 @@
           "ebitda": 104.5,
           "investment": 80.8,
           "budget": 228.0,
-          "budgetExecuted": 164.2
+          "budgetExecuted": 164.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -2992,7 +4016,9 @@
           "ebitda": 107.8,
           "investment": 83.3,
           "budget": 235.2,
-          "budgetExecuted": 169.3
+          "budgetExecuted": 169.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -3001,7 +4027,9 @@
           "ebitda": 108.9,
           "investment": 84.2,
           "budget": 237.6,
-          "budgetExecuted": 171.1
+          "budgetExecuted": 171.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -3010,16 +4038,20 @@
           "ebitda": 110.0,
           "investment": 85.0,
           "budget": 240.0,
-          "budgetExecuted": 172.8
+          "budgetExecuted": 172.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 414.1,
-          "netIncome": 44.4,
-          "ebitda": 111.1,
+          "revenue": 11.4,
+          "netIncome": 43.6,
+          "ebitda": 47.3,
           "investment": 85.8,
           "budget": 242.4,
-          "budgetExecuted": 174.5
+          "budgetExecuted": 174.5,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -3166,8 +4198,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 10.7,
-        "revenuePerEmployee": 285586.0,
+        "netMargin": 382.5,
+        "revenuePerEmployee": 7862.0,
         "transparencyScore": 55,
         "budgetExecution": 72.0
       },
@@ -3180,8 +4212,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 4.82,
+          "meta": 5.04,
+          "alcance": 95.7,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 5.62,
+          "meta": 5.45,
+          "alcance": 103.08,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 13.43,
+          "meta": 13.93,
+          "alcance": 96.45,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 16.34,
+          "meta": 17.06,
+          "alcance": 95.81,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 382.46,
+          "meta": 337.5,
+          "alcance": 113.32,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 1.22,
+          "meta": 1.2,
+          "alcance": 101.8,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 11.4,
+          "meta": 13.6,
+          "alcance": 83.82,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 266.8,
+          "meta": 269.1,
+          "alcance": 99.15,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 324.6,
+          "meta": 329.6,
+          "alcance": 98.48,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 47.3,
+          "meta": 50.4,
+          "alcance": 93.85,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 157.1,
+          "meta": 156.1,
+          "alcance": 100.64,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 43.6,
+          "meta": 45.9,
+          "alcance": 94.99,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 57.8,
+          "meta": 60.5,
+          "alcance": 95.54,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "serpost",
@@ -3208,7 +4333,9 @@
           "ebitda": -3.8,
           "investment": 11.3,
           "budget": 113.2,
-          "budgetExecuted": 92.8
+          "budgetExecuted": 92.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -3217,7 +4344,9 @@
           "ebitda": -4.0,
           "investment": 11.9,
           "budget": 119.4,
-          "budgetExecuted": 97.9
+          "budgetExecuted": 97.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -3226,7 +4355,9 @@
           "ebitda": -4.2,
           "investment": 12.6,
           "budget": 125.5,
-          "budgetExecuted": 102.9
+          "budgetExecuted": 102.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -3235,7 +4366,9 @@
           "ebitda": -4.4,
           "investment": 13.2,
           "budget": 131.8,
-          "budgetExecuted": 108.1
+          "budgetExecuted": 108.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -3244,7 +4377,9 @@
           "ebitda": -4.6,
           "investment": 13.8,
           "budget": 138.0,
-          "budgetExecuted": 113.2
+          "budgetExecuted": 113.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -3253,7 +4388,9 @@
           "ebitda": -4.4,
           "investment": 13.2,
           "budget": 132.0,
-          "budgetExecuted": 108.2
+          "budgetExecuted": 108.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -3262,7 +4399,9 @@
           "ebitda": -4.2,
           "investment": 12.6,
           "budget": 126.0,
-          "budgetExecuted": 103.3
+          "budgetExecuted": 103.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -3271,7 +4410,9 @@
           "ebitda": -4.1,
           "investment": 12.2,
           "budget": 122.4,
-          "budgetExecuted": 100.4
+          "budgetExecuted": 100.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -3280,7 +4421,9 @@
           "ebitda": -4.0,
           "investment": 12.0,
           "budget": 120.0,
-          "budgetExecuted": 98.4
+          "budgetExecuted": 98.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -3289,16 +4432,20 @@
           "ebitda": -4.0,
           "investment": 12.0,
           "budget": 120.0,
-          "budgetExecuted": 98.4
+          "budgetExecuted": 98.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 190.0,
-          "netIncome": -22.0,
-          "ebitda": -4.0,
+          "revenue": 78.3,
+          "netIncome": -11.8,
+          "ebitda": -7.4,
           "investment": 12.0,
           "budget": 120.0,
-          "budgetExecuted": 98.4
+          "budgetExecuted": 98.4,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -3445,8 +4592,8 @@
         }
       ],
       "metrics": {
-        "netMargin": -11.6,
-        "revenuePerEmployee": 118750.0,
+        "netMargin": -15.1,
+        "revenuePerEmployee": 48938.0,
         "transparencyScore": 30,
         "budgetExecution": 82.0
       },
@@ -3494,8 +4641,101 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 1.13,
+          "meta": 0.89,
+          "alcance": 127.48,
+          "period": 202412,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 3.64,
+          "meta": 2.67,
+          "alcance": 136.35,
+          "period": 202412,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": -4.54,
+          "meta": -3.13,
+          "alcance": 145.12,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": -6.01,
+          "meta": -4.21,
+          "alcance": 142.91,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": -15.07,
+          "meta": -8.99,
+          "alcance": 167.57,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": -8.62,
+          "meta": 16.43,
+          "alcance": -52.48,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 78.3,
+          "meta": 93.4,
+          "alcance": 83.83,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 203.6,
+          "meta": 184.1,
+          "alcance": 110.59,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 281.0,
+          "meta": 294.6,
+          "alcance": 95.38,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": -7.4,
+          "meta": 4.2,
+          "alcance": -176.19,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 37.3,
+          "meta": 57.1,
+          "alcance": 65.32,
+          "period": 202412,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": -11.8,
+          "meta": -8.4,
+          "alcance": 140.48,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 77.3,
+          "meta": 110.5,
+          "alcance": 69.95,
+          "period": 202412,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "sedapal",
@@ -3522,7 +4762,9 @@
           "ebitda": 723.2,
           "investment": 1070.1,
           "budget": 1549.8,
-          "budgetExecuted": 1270.8
+          "budgetExecuted": 1270.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -3531,7 +4773,9 @@
           "ebitda": 762.4,
           "investment": 1128.1,
           "budget": 1633.8,
-          "budgetExecuted": 1339.7
+          "budgetExecuted": 1339.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -3540,7 +4784,9 @@
           "ebitda": 802.6,
           "investment": 1187.5,
           "budget": 1719.9,
-          "budgetExecuted": 1410.3
+          "budgetExecuted": 1410.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -3549,7 +4795,9 @@
           "ebitda": 842.8,
           "investment": 1247.0,
           "budget": 1806.0,
-          "budgetExecuted": 1480.9
+          "budgetExecuted": 1480.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -3558,7 +4806,9 @@
           "ebitda": 882.0,
           "investment": 1305.0,
           "budget": 1890.0,
-          "budgetExecuted": 1549.8
+          "budgetExecuted": 1549.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -3567,7 +4817,9 @@
           "ebitda": 842.8,
           "investment": 1247.0,
           "budget": 1806.0,
-          "budgetExecuted": 1480.9
+          "budgetExecuted": 1480.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -3576,7 +4828,9 @@
           "ebitda": 901.6,
           "investment": 1334.0,
           "budget": 1932.0,
-          "budgetExecuted": 1584.2
+          "budgetExecuted": 1584.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -3585,7 +4839,9 @@
           "ebitda": 940.8,
           "investment": 1392.0,
           "budget": 2016.0,
-          "budgetExecuted": 1653.1
+          "budgetExecuted": 1653.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -3594,7 +4850,9 @@
           "ebitda": 970.2,
           "investment": 1435.5,
           "budget": 2079.0,
-          "budgetExecuted": 1704.8
+          "budgetExecuted": 1704.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -3603,16 +4861,20 @@
           "ebitda": 980.0,
           "investment": 1450.0,
           "budget": 2100.0,
-          "budgetExecuted": 1722.0
+          "budgetExecuted": 1722.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 3686.5,
-          "netIncome": 121.2,
-          "ebitda": 989.8,
+          "revenue": 2920.8,
+          "netIncome": 721.5,
+          "ebitda": 1460.1,
           "investment": 1464.5,
           "budget": 2121.0,
-          "budgetExecuted": 1739.2
+          "budgetExecuted": 1739.2,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -3759,8 +5021,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 3.3,
-        "revenuePerEmployee": 857326.0,
+        "netMargin": 24.7,
+        "revenuePerEmployee": 679256.0,
         "transparencyScore": 100,
         "budgetExecution": 82.0
       },
@@ -3773,8 +5035,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 0.74,
+          "meta": 0.76,
+          "alcance": 98.45,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 1.78,
+          "meta": 1.73,
+          "alcance": 103.05,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 5.25,
+          "meta": 3.9,
+          "alcance": 134.67,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 11.99,
+          "meta": 9.27,
+          "alcance": 129.4,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 24.7,
+          "meta": 18.55,
+          "alcance": 133.16,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 5.29,
+          "meta": 6.15,
+          "alcance": 85.99,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 2920.8,
+          "meta": 2930.3,
+          "alcance": 99.68,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 6016.6,
+          "meta": 5865.7,
+          "alcance": 102.57,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 13737.2,
+          "meta": 13937.9,
+          "alcance": 98.56,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 1460.1,
+          "meta": 1312.7,
+          "alcance": 111.23,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 979.1,
+          "meta": 1053.7,
+          "alcance": 92.92,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 721.5,
+          "meta": 543.6,
+          "alcance": 132.73,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 7720.6,
+          "meta": 8072.2,
+          "alcance": 95.64,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "electrocentro",
@@ -3801,7 +5156,9 @@
           "ebitda": 190.3,
           "investment": 112.8,
           "budget": 232.6,
-          "budgetExecuted": 202.4
+          "budgetExecuted": 202.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -3810,7 +5167,9 @@
           "ebitda": 200.9,
           "investment": 119.0,
           "budget": 245.5,
-          "budgetExecuted": 213.6
+          "budgetExecuted": 213.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -3819,7 +5178,9 @@
           "ebitda": 211.4,
           "investment": 125.3,
           "budget": 258.4,
-          "budgetExecuted": 224.8
+          "budgetExecuted": 224.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -3828,7 +5189,9 @@
           "ebitda": 221.7,
           "investment": 131.4,
           "budget": 270.9,
-          "budgetExecuted": 235.7
+          "budgetExecuted": 235.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -3837,7 +5200,9 @@
           "ebitda": 232.2,
           "investment": 137.6,
           "budget": 283.8,
-          "budgetExecuted": 246.9
+          "budgetExecuted": 246.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -3846,7 +5211,9 @@
           "ebitda": 224.1,
           "investment": 132.8,
           "budget": 273.9,
-          "budgetExecuted": 238.3
+          "budgetExecuted": 238.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -3855,7 +5222,9 @@
           "ebitda": 245.7,
           "investment": 145.6,
           "budget": 300.3,
-          "budgetExecuted": 261.3
+          "budgetExecuted": 261.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -3864,7 +5233,9 @@
           "ebitda": 259.2,
           "investment": 153.6,
           "budget": 316.8,
-          "budgetExecuted": 275.6
+          "budgetExecuted": 275.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -3873,7 +5244,9 @@
           "ebitda": 267.3,
           "investment": 158.4,
           "budget": 326.7,
-          "budgetExecuted": 284.2
+          "budgetExecuted": 284.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -3882,16 +5255,20 @@
           "ebitda": 270.0,
           "investment": 160.0,
           "budget": 330.0,
-          "budgetExecuted": 287.1
+          "budgetExecuted": 287.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 1191.8,
-          "netIncome": 92.9,
-          "ebitda": 272.7,
+          "revenue": 1026.7,
+          "netIncome": 172.7,
+          "ebitda": 313.5,
           "investment": 161.6,
           "budget": 333.3,
-          "budgetExecuted": 290.0
+          "budgetExecuted": 290.0,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -4038,8 +5415,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 7.8,
-        "revenuePerEmployee": 1083455.0,
+        "netMargin": 16.8,
+        "revenuePerEmployee": 933364.0,
         "transparencyScore": 55,
         "budgetExecution": 87.0
       },
@@ -4052,8 +5429,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 0.64,
+          "meta": 0.7,
+          "alcance": 91.8,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 2.12,
+          "meta": 2.06,
+          "alcance": 102.88,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 9.83,
+          "meta": 9.23,
+          "alcance": 106.49,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 18.59,
+          "meta": 17.92,
+          "alcance": 103.75,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 16.82,
+          "meta": 16.07,
+          "alcance": 104.69,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 2.64,
+          "meta": 2.87,
+          "alcance": 91.97,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 1026.7,
+          "meta": 1027.6,
+          "alcance": 99.91,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 928.8,
+          "meta": 921.2,
+          "alcance": 100.83,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 1756.1,
+          "meta": 1787.8,
+          "alcance": 98.23,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 313.5,
+          "meta": 302.0,
+          "alcance": 103.81,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 274.9,
+          "meta": 300.5,
+          "alcance": 91.48,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 172.7,
+          "meta": 165.1,
+          "alcance": 104.6,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 827.4,
+          "meta": 866.6,
+          "alcance": 95.48,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "enosa",
@@ -4080,7 +5550,9 @@
           "ebitda": 149.7,
           "investment": 85.6,
           "budget": 185.4,
-          "budgetExecuted": 133.5
+          "budgetExecuted": 133.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -4089,7 +5561,9 @@
           "ebitda": 158.1,
           "investment": 90.4,
           "budget": 195.8,
-          "budgetExecuted": 141.0
+          "budgetExecuted": 141.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -4098,7 +5572,9 @@
           "ebitda": 166.3,
           "investment": 95.0,
           "budget": 205.9,
-          "budgetExecuted": 148.2
+          "budgetExecuted": 148.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -4107,7 +5583,9 @@
           "ebitda": 174.5,
           "investment": 99.7,
           "budget": 216.1,
-          "budgetExecuted": 155.6
+          "budgetExecuted": 155.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -4116,7 +5594,9 @@
           "ebitda": 182.7,
           "investment": 104.4,
           "budget": 226.2,
-          "budgetExecuted": 162.9
+          "budgetExecuted": 162.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -4125,7 +5605,9 @@
           "ebitda": 176.4,
           "investment": 100.8,
           "budget": 218.4,
-          "budgetExecuted": 157.2
+          "budgetExecuted": 157.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -4134,7 +5616,9 @@
           "ebitda": 193.2,
           "investment": 110.4,
           "budget": 239.2,
-          "budgetExecuted": 172.2
+          "budgetExecuted": 172.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -4143,7 +5627,9 @@
           "ebitda": 203.7,
           "investment": 116.4,
           "budget": 252.2,
-          "budgetExecuted": 181.6
+          "budgetExecuted": 181.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -4152,7 +5638,9 @@
           "ebitda": 207.9,
           "investment": 118.8,
           "budget": 257.4,
-          "budgetExecuted": 185.3
+          "budgetExecuted": 185.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -4161,16 +5649,20 @@
           "ebitda": 210.0,
           "investment": 120.0,
           "budget": 260.0,
-          "budgetExecuted": 187.2
+          "budgetExecuted": 187.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 969.6,
-          "netIncome": 70.7,
-          "ebitda": 212.1,
+          "revenue": 811.4,
+          "netIncome": 39.9,
+          "ebitda": 143.1,
           "investment": 121.2,
           "budget": 262.6,
-          "budgetExecuted": 189.1
+          "budgetExecuted": 189.1,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -4317,8 +5809,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 7.3,
-        "revenuePerEmployee": 1182439.0,
+        "netMargin": 4.9,
+        "revenuePerEmployee": 989512.0,
         "transparencyScore": 55,
         "budgetExecution": 72.0
       },
@@ -4331,8 +5823,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 0.36,
+          "meta": 0.42,
+          "alcance": 87.78,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 1.45,
+          "meta": 1.49,
+          "alcance": 97.44,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 3.01,
+          "meta": 3.88,
+          "alcance": 77.6,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 9.65,
+          "meta": 11.77,
+          "alcance": 81.99,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 4.92,
+          "meta": 6.14,
+          "alcance": 80.1,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 6.36,
+          "meta": 5.8,
+          "alcance": 109.77,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 811.4,
+          "meta": 835.6,
+          "alcance": 97.1,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 413.5,
+          "meta": 435.9,
+          "alcance": 94.86,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 1324.1,
+          "meta": 1321.0,
+          "alcance": 100.23,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 143.1,
+          "meta": 152.7,
+          "alcance": 93.71,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 220.9,
+          "meta": 261.6,
+          "alcance": 84.44,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 39.9,
+          "meta": 51.3,
+          "alcance": 77.78,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 910.5,
+          "meta": 885.1,
+          "alcance": 102.87,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "ensa",
@@ -4359,7 +5944,9 @@
           "ebitda": 142.6,
           "investment": 78.4,
           "budget": 171.1,
-          "budgetExecuted": 157.4
+          "budgetExecuted": 157.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -4368,7 +5955,9 @@
           "ebitda": 150.6,
           "investment": 82.8,
           "budget": 180.7,
-          "budgetExecuted": 166.2
+          "budgetExecuted": 166.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -4377,7 +5966,9 @@
           "ebitda": 158.4,
           "investment": 87.1,
           "budget": 190.1,
-          "budgetExecuted": 174.9
+          "budgetExecuted": 174.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -4386,7 +5977,9 @@
           "ebitda": 166.2,
           "investment": 91.4,
           "budget": 199.4,
-          "budgetExecuted": 183.4
+          "budgetExecuted": 183.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -4395,7 +5988,9 @@
           "ebitda": 174.0,
           "investment": 95.7,
           "budget": 208.8,
-          "budgetExecuted": 192.1
+          "budgetExecuted": 192.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -4404,7 +5999,9 @@
           "ebitda": 168.0,
           "investment": 92.4,
           "budget": 201.6,
-          "budgetExecuted": 185.5
+          "budgetExecuted": 185.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -4413,7 +6010,9 @@
           "ebitda": 184.0,
           "investment": 101.2,
           "budget": 220.8,
-          "budgetExecuted": 203.1
+          "budgetExecuted": 203.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -4422,7 +6021,9 @@
           "ebitda": 194.0,
           "investment": 106.7,
           "budget": 232.8,
-          "budgetExecuted": 214.2
+          "budgetExecuted": 214.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -4431,7 +6032,9 @@
           "ebitda": 198.0,
           "investment": 108.9,
           "budget": 237.6,
-          "budgetExecuted": 218.6
+          "budgetExecuted": 218.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -4440,16 +6043,20 @@
           "ebitda": 200.0,
           "investment": 110.0,
           "budget": 240.0,
-          "budgetExecuted": 220.8
+          "budgetExecuted": 220.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 909.0,
-          "netIncome": 66.7,
-          "ebitda": 202.0,
+          "revenue": 560.9,
+          "netIncome": 21.9,
+          "ebitda": 89.5,
           "investment": 111.1,
           "budget": 242.4,
-          "budgetExecuted": 223.0
+          "budgetExecuted": 223.0,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -4596,8 +6203,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 7.3,
-        "revenuePerEmployee": 1165385.0,
+        "netMargin": 3.9,
+        "revenuePerEmployee": 719103.0,
         "transparencyScore": 80,
         "budgetExecution": 92.0
       },
@@ -4610,8 +6217,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 0.49,
+          "meta": 0.54,
+          "alcance": 89.54,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 1.67,
+          "meta": 1.74,
+          "alcance": 96.05,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 2.16,
+          "meta": 2.43,
+          "alcance": 88.9,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 5.36,
+          "meta": 5.69,
+          "alcance": 94.12,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 3.9,
+          "meta": 4.5,
+          "alcance": 86.79,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 6.78,
+          "meta": 6.96,
+          "alcance": 97.43,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 560.9,
+          "meta": 566.8,
+          "alcance": 98.96,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 408.6,
+          "meta": 447.8,
+          "alcance": 91.25,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 1015.8,
+          "meta": 1051.5,
+          "alcance": 96.6,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 89.5,
+          "meta": 86.7,
+          "alcance": 103.23,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 169.5,
+          "meta": 185.5,
+          "alcance": 91.37,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 21.9,
+          "meta": 25.5,
+          "alcance": 85.88,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 607.2,
+          "meta": 603.7,
+          "alcance": 100.58,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "electro-oriente",
@@ -4638,7 +6338,9 @@
           "ebitda": 153.3,
           "investment": 125.5,
           "budget": 209.1,
-          "budgetExecuted": 150.6
+          "budgetExecuted": 150.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -4647,7 +6349,9 @@
           "ebitda": 161.7,
           "investment": 132.3,
           "budget": 220.5,
-          "budgetExecuted": 158.8
+          "budgetExecuted": 158.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -4656,7 +6360,9 @@
           "ebitda": 170.1,
           "investment": 139.1,
           "budget": 231.9,
-          "budgetExecuted": 167.0
+          "budgetExecuted": 167.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -4665,7 +6371,9 @@
           "ebitda": 178.6,
           "investment": 146.2,
           "budget": 243.6,
-          "budgetExecuted": 175.4
+          "budgetExecuted": 175.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -4674,7 +6382,9 @@
           "ebitda": 187.0,
           "investment": 153.0,
           "budget": 255.0,
-          "budgetExecuted": 183.6
+          "budgetExecuted": 183.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -4683,7 +6393,9 @@
           "ebitda": 180.4,
           "investment": 147.6,
           "budget": 246.0,
-          "budgetExecuted": 177.1
+          "budgetExecuted": 177.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -4692,7 +6404,9 @@
           "ebitda": 198.0,
           "investment": 162.0,
           "budget": 270.0,
-          "budgetExecuted": 194.4
+          "budgetExecuted": 194.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -4701,7 +6415,9 @@
           "ebitda": 211.2,
           "investment": 172.8,
           "budget": 288.0,
-          "budgetExecuted": 207.4
+          "budgetExecuted": 207.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -4710,7 +6426,9 @@
           "ebitda": 217.8,
           "investment": 178.2,
           "budget": 297.0,
-          "budgetExecuted": 213.8
+          "budgetExecuted": 213.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -4719,16 +6437,20 @@
           "ebitda": 220.0,
           "investment": 180.0,
           "budget": 300.0,
-          "budgetExecuted": 216.0
+          "budgetExecuted": 216.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 1030.2,
-          "netIncome": 58.6,
-          "ebitda": 222.2,
+          "revenue": 906.4,
+          "netIncome": 70.3,
+          "ebitda": 162.7,
           "investment": 181.8,
           "budget": 303.0,
-          "budgetExecuted": 218.2
+          "budgetExecuted": 218.2,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -4875,8 +6597,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 5.7,
-        "revenuePerEmployee": 981143.0,
+        "netMargin": 7.8,
+        "revenuePerEmployee": 863238.0,
         "transparencyScore": 100,
         "budgetExecution": 72.0
       },
@@ -4889,8 +6611,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 0.9,
+          "meta": 1.37,
+          "alcance": 66.04,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 2.02,
+          "meta": 2.0,
+          "alcance": 100.88,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 5.23,
+          "meta": 3.48,
+          "alcance": 150.15,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 10.38,
+          "meta": 6.97,
+          "alcance": 148.85,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 7.76,
+          "meta": 5.33,
+          "alcance": 145.51,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 4.1,
+          "meta": 5.35,
+          "alcance": 76.59,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 906.4,
+          "meta": 881.8,
+          "alcance": 102.79,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 677.4,
+          "meta": 674.1,
+          "alcance": 100.49,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 1344.2,
+          "meta": 1349.4,
+          "alcance": 99.61,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 162.7,
+          "meta": 126.2,
+          "alcance": 128.92,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 282.2,
+          "meta": 349.4,
+          "alcance": 80.77,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 70.3,
+          "meta": 47.0,
+          "alcance": 149.57,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 666.8,
+          "meta": 675.3,
+          "alcance": 98.74,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "electro-sur-este",
@@ -4917,7 +6732,9 @@
           "ebitda": 144.5,
           "investment": 98.7,
           "budget": 190.3,
-          "budgetExecuted": 146.5
+          "budgetExecuted": 146.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -4926,7 +6743,9 @@
           "ebitda": 152.5,
           "investment": 104.2,
           "budget": 200.9,
-          "budgetExecuted": 154.7
+          "budgetExecuted": 154.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -4935,7 +6754,9 @@
           "ebitda": 160.5,
           "investment": 109.6,
           "budget": 211.4,
-          "budgetExecuted": 162.8
+          "budgetExecuted": 162.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -4944,7 +6765,9 @@
           "ebitda": 168.3,
           "investment": 114.9,
           "budget": 221.7,
-          "budgetExecuted": 170.7
+          "budgetExecuted": 170.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -4953,7 +6776,9 @@
           "ebitda": 176.3,
           "investment": 120.4,
           "budget": 232.2,
-          "budgetExecuted": 178.8
+          "budgetExecuted": 178.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -4962,7 +6787,9 @@
           "ebitda": 170.2,
           "investment": 116.2,
           "budget": 224.1,
-          "budgetExecuted": 172.6
+          "budgetExecuted": 172.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -4971,7 +6798,9 @@
           "ebitda": 186.6,
           "investment": 127.4,
           "budget": 245.7,
-          "budgetExecuted": 189.2
+          "budgetExecuted": 189.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -4980,7 +6809,9 @@
           "ebitda": 198.8,
           "investment": 135.8,
           "budget": 261.9,
-          "budgetExecuted": 201.7
+          "budgetExecuted": 201.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -4989,7 +6820,9 @@
           "ebitda": 202.9,
           "investment": 138.6,
           "budget": 267.3,
-          "budgetExecuted": 205.8
+          "budgetExecuted": 205.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -4998,16 +6831,20 @@
           "ebitda": 205.0,
           "investment": 140.0,
           "budget": 270.0,
-          "budgetExecuted": 207.9
+          "budgetExecuted": 207.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 949.4,
-          "netIncome": 72.7,
-          "ebitda": 207.1,
+          "revenue": 755.9,
+          "netIncome": 118.4,
+          "ebitda": 220.5,
           "investment": 141.4,
           "budget": 272.7,
-          "budgetExecuted": 210.0
+          "budgetExecuted": 210.0,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -5154,8 +6991,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 7.7,
-        "revenuePerEmployee": 1054889.0,
+        "netMargin": 15.7,
+        "revenuePerEmployee": 839889.0,
         "transparencyScore": 80,
         "budgetExecution": 77.0
       },
@@ -5168,8 +7005,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 0.63,
+          "meta": 0.72,
+          "alcance": 86.57,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 2.43,
+          "meta": 2.4,
+          "alcance": 101.4,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 9.23,
+          "meta": 8.41,
+          "alcance": 109.73,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 15.68,
+          "meta": 14.42,
+          "alcance": 108.68,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 15.66,
+          "meta": 14.48,
+          "alcance": 108.21,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 2.4,
+          "meta": 2.63,
+          "alcance": 91.18,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 755.9,
+          "meta": 761.3,
+          "alcance": 99.29,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 755.3,
+          "meta": 764.0,
+          "alcance": 98.86,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 1283.4,
+          "meta": 1310.8,
+          "alcance": 97.91,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 220.5,
+          "meta": 208.2,
+          "alcance": 105.91,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 150.8,
+          "meta": 181.3,
+          "alcance": 83.18,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 118.4,
+          "meta": 110.2,
+          "alcance": 107.44,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 528.1,
+          "meta": 546.9,
+          "alcance": 96.56,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "electro-puno",
@@ -5196,7 +7126,9 @@
           "ebitda": 66.4,
           "investment": 50.5,
           "budget": 108.3,
-          "budgetExecuted": 88.8
+          "budgetExecuted": 88.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -5205,7 +7137,9 @@
           "ebitda": 70.0,
           "investment": 53.3,
           "budget": 114.2,
-          "budgetExecuted": 93.6
+          "budgetExecuted": 93.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -5214,7 +7148,9 @@
           "ebitda": 73.7,
           "investment": 56.1,
           "budget": 120.2,
-          "budgetExecuted": 98.6
+          "budgetExecuted": 98.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -5223,7 +7159,9 @@
           "ebitda": 77.3,
           "investment": 58.8,
           "budget": 126.0,
-          "budgetExecuted": 103.3
+          "budgetExecuted": 103.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -5232,7 +7170,9 @@
           "ebitda": 81.0,
           "investment": 61.6,
           "budget": 132.0,
-          "budgetExecuted": 108.2
+          "budgetExecuted": 108.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -5241,7 +7181,9 @@
           "ebitda": 78.2,
           "investment": 59.5,
           "budget": 127.5,
-          "budgetExecuted": 104.5
+          "budgetExecuted": 104.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -5250,7 +7192,9 @@
           "ebitda": 85.6,
           "investment": 65.1,
           "budget": 139.5,
-          "budgetExecuted": 114.4
+          "budgetExecuted": 114.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -5259,7 +7203,9 @@
           "ebitda": 90.2,
           "investment": 68.6,
           "budget": 147.0,
-          "budgetExecuted": 120.5
+          "budgetExecuted": 120.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -5268,7 +7214,9 @@
           "ebitda": 91.1,
           "investment": 69.3,
           "budget": 148.5,
-          "budgetExecuted": 121.8
+          "budgetExecuted": 121.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -5277,16 +7225,20 @@
           "ebitda": 92.0,
           "investment": 70.0,
           "budget": 150.0,
-          "budgetExecuted": 123.0
+          "budgetExecuted": 123.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 484.8,
-          "netIncome": 24.2,
-          "ebitda": 92.9,
+          "revenue": 332.7,
+          "netIncome": 61.6,
+          "ebitda": 109.3,
           "investment": 70.7,
           "budget": 151.5,
-          "budgetExecuted": 124.2
+          "budgetExecuted": 124.2,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -5433,8 +7385,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 5.0,
-        "revenuePerEmployee": 932308.0,
+        "netMargin": 18.5,
+        "revenuePerEmployee": 639808.0,
         "transparencyScore": 30,
         "budgetExecution": 82.0
       },
@@ -5460,8 +7412,101 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 1.39,
+          "meta": 1.08,
+          "alcance": 127.82,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 2.16,
+          "meta": 2.08,
+          "alcance": 103.97,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 10.42,
+          "meta": 10.41,
+          "alcance": 100.1,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 19.38,
+          "meta": 20.04,
+          "alcance": 96.72,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 18.52,
+          "meta": 16.4,
+          "alcance": 112.9,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 2.5,
+          "meta": 2.53,
+          "alcance": 98.92,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 332.7,
+          "meta": 355.5,
+          "alcance": 93.59,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 317.8,
+          "meta": 290.9,
+          "alcance": 109.25,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 591.0,
+          "meta": 559.9,
+          "alcance": 105.55,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 109.3,
+          "meta": 106.5,
+          "alcance": 102.63,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 132.7,
+          "meta": 91.9,
+          "alcance": 144.4,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 61.6,
+          "meta": 58.3,
+          "alcance": 105.66,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 273.2,
+          "meta": 269.1,
+          "alcance": 101.52,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "electro-ucayali",
@@ -5488,7 +7533,9 @@
           "ebitda": 42.3,
           "investment": 30.7,
           "budget": 69.3,
-          "budgetExecuted": 49.9
+          "budgetExecuted": 49.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -5497,7 +7544,9 @@
           "ebitda": 44.7,
           "investment": 32.3,
           "budget": 73.2,
-          "budgetExecuted": 52.7
+          "budgetExecuted": 52.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -5506,7 +7555,9 @@
           "ebitda": 47.0,
           "investment": 34.0,
           "budget": 77.0,
-          "budgetExecuted": 55.4
+          "budgetExecuted": 55.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -5515,7 +7566,9 @@
           "ebitda": 49.3,
           "investment": 35.7,
           "budget": 80.8,
-          "budgetExecuted": 58.2
+          "budgetExecuted": 58.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -5524,7 +7577,9 @@
           "ebitda": 51.6,
           "investment": 37.4,
           "budget": 84.5,
-          "budgetExecuted": 60.8
+          "budgetExecuted": 60.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -5533,7 +7588,9 @@
           "ebitda": 49.9,
           "investment": 36.1,
           "budget": 81.7,
-          "budgetExecuted": 58.8
+          "budgetExecuted": 58.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -5542,7 +7599,9 @@
           "ebitda": 53.9,
           "investment": 39.1,
           "budget": 88.4,
-          "budgetExecuted": 63.6
+          "budgetExecuted": 63.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -5551,7 +7610,9 @@
           "ebitda": 56.8,
           "investment": 41.2,
           "budget": 93.1,
-          "budgetExecuted": 67.0
+          "budgetExecuted": 67.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -5560,7 +7621,9 @@
           "ebitda": 57.4,
           "investment": 41.6,
           "budget": 94.0,
-          "budgetExecuted": 67.7
+          "budgetExecuted": 67.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -5569,16 +7632,20 @@
           "ebitda": 58.0,
           "investment": 42.0,
           "budget": 95.0,
-          "budgetExecuted": 68.4
+          "budgetExecuted": 68.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 303.0,
-          "netIncome": 14.1,
-          "ebitda": 58.6,
+          "revenue": 270.1,
+          "netIncome": 24.4,
+          "ebitda": 47.2,
           "investment": 42.4,
           "budget": 96.0,
-          "budgetExecuted": 69.1
+          "budgetExecuted": 69.1,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -5725,8 +7792,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 4.7,
-        "revenuePerEmployee": 946875.0,
+        "netMargin": 9.0,
+        "revenuePerEmployee": 844062.0,
         "transparencyScore": 30,
         "budgetExecution": 72.0
       },
@@ -5752,8 +7819,101 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 1.39,
+          "meta": 1.42,
+          "alcance": 97.27,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 2.04,
+          "meta": 2.04,
+          "alcance": 99.89,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 4.93,
+          "meta": 3.72,
+          "alcance": 132.65,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 9.69,
+          "meta": 7.29,
+          "alcance": 132.8,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 9.03,
+          "meta": 6.67,
+          "alcance": 135.35,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 5.15,
+          "meta": 6.09,
+          "alcance": 84.57,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 270.1,
+          "meta": 268.2,
+          "alcance": 100.71,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 251.9,
+          "meta": 245.4,
+          "alcance": 102.65,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 495.1,
+          "meta": 481.8,
+          "alcance": 102.76,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 47.2,
+          "meta": 38.8,
+          "alcance": 121.65,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 134.1,
+          "meta": 122.2,
+          "alcance": 109.74,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 24.4,
+          "meta": 17.9,
+          "alcance": 136.31,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 243.2,
+          "meta": 236.4,
+          "alcance": 102.88,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "seal",
@@ -5780,7 +7940,9 @@
           "ebitda": 211.5,
           "investment": 133.9,
           "budget": 253.8,
-          "budgetExecuted": 233.5
+          "budgetExecuted": 233.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -5789,7 +7951,9 @@
           "ebitda": 223.2,
           "investment": 141.4,
           "budget": 267.8,
-          "budgetExecuted": 246.4
+          "budgetExecuted": 246.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -5798,7 +7962,9 @@
           "ebitda": 234.9,
           "investment": 148.8,
           "budget": 281.9,
-          "budgetExecuted": 259.3
+          "budgetExecuted": 259.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -5807,7 +7973,9 @@
           "ebitda": 246.3,
           "investment": 156.0,
           "budget": 295.6,
-          "budgetExecuted": 272.0
+          "budgetExecuted": 272.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -5816,7 +7984,9 @@
           "ebitda": 258.0,
           "investment": 163.4,
           "budget": 309.6,
-          "budgetExecuted": 284.8
+          "budgetExecuted": 284.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -5825,7 +7995,9 @@
           "ebitda": 249.0,
           "investment": 157.7,
           "budget": 298.8,
-          "budgetExecuted": 274.9
+          "budgetExecuted": 274.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -5834,7 +8006,9 @@
           "ebitda": 273.0,
           "investment": 172.9,
           "budget": 327.6,
-          "budgetExecuted": 301.4
+          "budgetExecuted": 301.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -5843,7 +8017,9 @@
           "ebitda": 291.0,
           "investment": 184.3,
           "budget": 349.2,
-          "budgetExecuted": 321.3
+          "budgetExecuted": 321.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -5852,7 +8028,9 @@
           "ebitda": 297.0,
           "investment": 188.1,
           "budget": 356.4,
-          "budgetExecuted": 327.9
+          "budgetExecuted": 327.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -5861,16 +8039,20 @@
           "ebitda": 300.0,
           "investment": 190.0,
           "budget": 360.0,
-          "budgetExecuted": 331.2
+          "budgetExecuted": 331.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 1292.8,
-          "netIncome": 105.0,
-          "ebitda": 303.0,
+          "revenue": 808.6,
+          "netIncome": 64.8,
+          "ebitda": 149.3,
           "investment": 191.9,
           "budget": 363.6,
-          "budgetExecuted": 334.5
+          "budgetExecuted": 334.5,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -6017,8 +8199,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 8.1,
-        "revenuePerEmployee": 1319184.0,
+        "netMargin": 8.0,
+        "revenuePerEmployee": 825102.0,
         "transparencyScore": 100,
         "budgetExecution": 92.0
       },
@@ -6031,8 +8213,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 0.67,
+          "meta": 0.72,
+          "alcance": 93.78,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 1.84,
+          "meta": 1.99,
+          "alcance": 92.34,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 6.78,
+          "meta": 6.8,
+          "alcance": 99.64,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 14.84,
+          "meta": 13.65,
+          "alcance": 108.7,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 8.01,
+          "meta": 8.05,
+          "alcance": 99.51,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 3.48,
+          "meta": 3.31,
+          "alcance": 105.21,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 808.6,
+          "meta": 808.4,
+          "alcance": 100.02,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 436.8,
+          "meta": 477.0,
+          "alcance": 91.57,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 956.4,
+          "meta": 957.4,
+          "alcance": 99.9,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 149.3,
+          "meta": 145.2,
+          "alcance": 102.82,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 247.5,
+          "meta": 235.9,
+          "alcance": 104.92,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 64.8,
+          "meta": 65.1,
+          "alcance": 99.54,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 519.6,
+          "meta": 480.3,
+          "alcance": 108.18,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "adinelsa",
@@ -6059,7 +8334,9 @@
           "ebitda": 31.0,
           "investment": 44.3,
           "budget": 81.2,
-          "budgetExecuted": 70.6
+          "budgetExecuted": 70.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -6068,7 +8345,9 @@
           "ebitda": 32.7,
           "investment": 46.7,
           "budget": 85.6,
-          "budgetExecuted": 74.5
+          "budgetExecuted": 74.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -6077,7 +8356,9 @@
           "ebitda": 34.4,
           "investment": 49.1,
           "budget": 90.1,
-          "budgetExecuted": 78.4
+          "budgetExecuted": 78.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -6086,7 +8367,9 @@
           "ebitda": 36.1,
           "investment": 51.6,
           "budget": 94.6,
-          "budgetExecuted": 82.3
+          "budgetExecuted": 82.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -6095,7 +8378,9 @@
           "ebitda": 37.8,
           "investment": 54.0,
           "budget": 99.0,
-          "budgetExecuted": 86.1
+          "budgetExecuted": 86.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -6104,7 +8389,9 @@
           "ebitda": 37.0,
           "investment": 52.8,
           "budget": 96.8,
-          "budgetExecuted": 84.2
+          "budgetExecuted": 84.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -6113,7 +8400,9 @@
           "ebitda": 39.5,
           "investment": 56.4,
           "budget": 103.4,
-          "budgetExecuted": 90.0
+          "budgetExecuted": 90.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -6122,7 +8411,9 @@
           "ebitda": 41.2,
           "investment": 58.8,
           "budget": 107.8,
-          "budgetExecuted": 93.8
+          "budgetExecuted": 93.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -6131,7 +8422,9 @@
           "ebitda": 41.6,
           "investment": 59.4,
           "budget": 108.9,
-          "budgetExecuted": 94.7
+          "budgetExecuted": 94.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -6140,16 +8433,20 @@
           "ebitda": 42.0,
           "investment": 60.0,
           "budget": 110.0,
-          "budgetExecuted": 95.7
+          "budgetExecuted": 95.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 161.6,
-          "netIncome": 18.2,
-          "ebitda": 42.4,
+          "revenue": 114.5,
+          "netIncome": 23.5,
+          "ebitda": 68.9,
           "investment": 60.6,
           "budget": 111.1,
-          "budgetExecuted": 96.7
+          "budgetExecuted": 96.7,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -6296,8 +8593,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 11.3,
-        "revenuePerEmployee": 897778.0,
+        "netMargin": 20.5,
+        "revenuePerEmployee": 636111.0,
         "transparencyScore": 55,
         "budgetExecution": 87.0
       },
@@ -6310,8 +8607,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 5.37,
+          "meta": 3.57,
+          "alcance": 150.44,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 2.74,
+          "meta": 2.78,
+          "alcance": 98.53,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 5.33,
+          "meta": 5.56,
+          "alcance": 95.98,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 8.4,
+          "meta": 8.68,
+          "alcance": 96.79,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 20.52,
+          "meta": 21.44,
+          "alcance": 95.72,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 2.34,
+          "meta": 2.94,
+          "alcance": 79.37,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 114.5,
+          "meta": 113.8,
+          "alcance": 100.62,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 279.7,
+          "meta": 281.1,
+          "alcance": 99.5,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 440.6,
+          "meta": 439.1,
+          "alcance": 100.34,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 68.9,
+          "meta": 53.7,
+          "alcance": 128.31,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 116.5,
+          "meta": 109.2,
+          "alcance": 106.68,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 23.5,
+          "meta": 24.4,
+          "alcance": 96.31,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 160.9,
+          "meta": 158.0,
+          "alcance": 101.84,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "petroperu",
@@ -6645,7 +9035,9 @@
           "ebitda": 35.4,
           "investment": 13.3,
           "budget": 88.6,
-          "budgetExecuted": 72.7
+          "budgetExecuted": 72.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -6654,7 +9046,9 @@
           "ebitda": 37.3,
           "investment": 14.0,
           "budget": 93.4,
-          "budgetExecuted": 76.6
+          "budgetExecuted": 76.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -6663,7 +9057,9 @@
           "ebitda": 39.3,
           "investment": 14.7,
           "budget": 98.3,
-          "budgetExecuted": 80.6
+          "budgetExecuted": 80.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -6672,7 +9068,9 @@
           "ebitda": 41.3,
           "investment": 15.5,
           "budget": 103.2,
-          "budgetExecuted": 84.6
+          "budgetExecuted": 84.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -6681,7 +9079,9 @@
           "ebitda": 43.2,
           "investment": 16.2,
           "budget": 108.0,
-          "budgetExecuted": 88.6
+          "budgetExecuted": 88.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -6690,7 +9090,9 @@
           "ebitda": 41.8,
           "investment": 15.7,
           "budget": 104.4,
-          "budgetExecuted": 85.6
+          "budgetExecuted": 85.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -6699,7 +9101,9 @@
           "ebitda": 45.1,
           "investment": 16.9,
           "budget": 112.8,
-          "budgetExecuted": 92.5
+          "budgetExecuted": 92.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -6708,7 +9112,9 @@
           "ebitda": 47.0,
           "investment": 17.6,
           "budget": 117.6,
-          "budgetExecuted": 96.4
+          "budgetExecuted": 96.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -6717,7 +9123,9 @@
           "ebitda": 47.5,
           "investment": 17.8,
           "budget": 118.8,
-          "budgetExecuted": 97.4
+          "budgetExecuted": 97.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -6726,16 +9134,20 @@
           "ebitda": 48.0,
           "investment": 18.0,
           "budget": 120.0,
-          "budgetExecuted": 98.4
+          "budgetExecuted": 98.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 262.6,
-          "netIncome": 22.2,
-          "ebitda": 48.5,
+          "revenue": 94.5,
+          "netIncome": 33.7,
+          "ebitda": 46.7,
           "investment": 18.2,
           "budget": 121.2,
-          "budgetExecuted": 99.4
+          "budgetExecuted": 99.4,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -6882,8 +9294,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 8.5,
-        "revenuePerEmployee": 423548.0,
+        "netMargin": 35.7,
+        "revenuePerEmployee": 152419.0,
         "transparencyScore": 100,
         "budgetExecution": 82.0
       },
@@ -6896,8 +9308,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 5.96,
+          "meta": 6.05,
+          "alcance": 98.63,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 3.97,
+          "meta": 3.97,
+          "alcance": 100.02,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 27.27,
+          "meta": 26.0,
+          "alcance": 104.88,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 36.43,
+          "meta": 34.7,
+          "alcance": 104.99,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 35.66,
+          "meta": 34.59,
+          "alcance": 103.11,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 0.67,
+          "meta": 0.69,
+          "alcance": 96.27,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 94.5,
+          "meta": 90.5,
+          "alcance": 104.42,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 92.5,
+          "meta": 90.2,
+          "alcance": 102.55,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 123.6,
+          "meta": 120.4,
+          "alcance": 102.66,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 46.7,
+          "meta": 43.8,
+          "alcance": 106.62,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 96.6,
+          "meta": 92.5,
+          "alcance": 104.43,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 33.7,
+          "meta": 31.3,
+          "alcance": 107.67,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 31.1,
+          "meta": 30.3,
+          "alcance": 102.64,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "amsac",
@@ -8696,7 +11201,9 @@
           "ebitda": 66.4,
           "investment": 43.3,
           "budget": 101.1,
-          "budgetExecuted": 72.8
+          "budgetExecuted": 72.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -8705,7 +11212,9 @@
           "ebitda": 70.0,
           "investment": 45.7,
           "budget": 106.5,
-          "budgetExecuted": 76.7
+          "budgetExecuted": 76.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -8714,7 +11223,9 @@
           "ebitda": 73.7,
           "investment": 48.1,
           "budget": 112.1,
-          "budgetExecuted": 80.7
+          "budgetExecuted": 80.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -8723,7 +11234,9 @@
           "ebitda": 77.3,
           "investment": 50.4,
           "budget": 117.6,
-          "budgetExecuted": 84.7
+          "budgetExecuted": 84.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -8732,7 +11245,9 @@
           "ebitda": 81.0,
           "investment": 52.8,
           "budget": 123.2,
-          "budgetExecuted": 88.7
+          "budgetExecuted": 88.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -8741,7 +11256,9 @@
           "ebitda": 78.2,
           "investment": 51.0,
           "budget": 119.0,
-          "budgetExecuted": 85.7
+          "budgetExecuted": 85.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -8750,7 +11267,9 @@
           "ebitda": 84.6,
           "investment": 55.2,
           "budget": 128.8,
-          "budgetExecuted": 92.7
+          "budgetExecuted": 92.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -8759,7 +11278,9 @@
           "ebitda": 89.2,
           "investment": 58.2,
           "budget": 135.8,
-          "budgetExecuted": 97.8
+          "budgetExecuted": 97.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -8768,7 +11289,9 @@
           "ebitda": 91.1,
           "investment": 59.4,
           "budget": 138.6,
-          "budgetExecuted": 99.8
+          "budgetExecuted": 99.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -8777,16 +11300,20 @@
           "ebitda": 92.0,
           "investment": 60.0,
           "budget": 140.0,
-          "budgetExecuted": 100.8
+          "budgetExecuted": 100.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
-          "revenue": 424.2,
-          "netIncome": 30.3,
-          "ebitda": 92.9,
+          "revenue": 291.9,
+          "netIncome": 26.8,
+          "ebitda": 61.5,
           "investment": 60.6,
           "budget": 141.4,
-          "budgetExecuted": 101.8
+          "budgetExecuted": 101.8,
+          "revenueReal": true,
+          "netIncomeReal": true
         }
       ],
       "periodic": {
@@ -8933,8 +11460,8 @@
         }
       ],
       "metrics": {
-        "netMargin": 7.1,
-        "revenuePerEmployee": 1178333.0,
+        "netMargin": 9.2,
+        "revenuePerEmployee": 810833.0,
         "transparencyScore": 55,
         "budgetExecution": 72.0
       },
@@ -8947,8 +11474,101 @@
       },
       "anomalies": [],
       "recommendations": [],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-fonafe",
+      "provenanceNote": "Último ejercicio con datos REALES de FONAFE (valor, meta y % de cumplimiento). Los años previos son modelo, marcados como estimado.",
+      "realIndicators": {
+        "Liquidez": {
+          "value": 1.12,
+          "meta": 1.38,
+          "alcance": 80.82,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Solvencia": {
+          "value": 2.09,
+          "meta": 2.23,
+          "alcance": 93.68,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "ROA": {
+          "value": 6.63,
+          "meta": 6.47,
+          "alcance": 102.55,
+          "period": 202512,
+          "unit": "%"
+        },
+        "ROE": {
+          "value": 12.71,
+          "meta": 11.72,
+          "alcance": 108.44,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Margen Neto": {
+          "value": 9.18,
+          "meta": 8.79,
+          "alcance": 104.41,
+          "period": 202512,
+          "unit": "%"
+        },
+        "Endeudamiento": {
+          "value": 3.14,
+          "meta": 2.86,
+          "alcance": 109.76,
+          "period": 202512,
+          "unit": "Ratio"
+        },
+        "Ingresos": {
+          "value": 291.9,
+          "meta": 290.0,
+          "alcance": 100.66,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Patrimonio Neto": {
+          "value": 210.9,
+          "meta": 217.6,
+          "alcance": 96.92,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Activos": {
+          "value": 404.1,
+          "meta": 394.3,
+          "alcance": 102.49,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "EBITDA": {
+          "value": 61.5,
+          "meta": 61.7,
+          "alcance": 99.68,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Capital de Trabajo": {
+          "value": 94.7,
+          "meta": 94.4,
+          "alcance": 100.32,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Utilidad Neta": {
+          "value": 26.8,
+          "meta": 25.5,
+          "alcance": 105.1,
+          "period": 202512,
+          "unit": "MM S/"
+        },
+        "Pasivos": {
+          "value": 193.2,
+          "meta": 176.6,
+          "alcance": 109.4,
+          "period": 202512,
+          "unit": "MM S/"
+        }
+      }
     },
     {
       "slug": "sedapar",
@@ -14712,59 +17332,108 @@
   "rankings": {
     "profitability": [
       {
-        "slug": "fondo-mivivienda",
-        "name": "Fondo MIVIVIENDA",
-        "acronym": "FMV",
-        "value": 29.6,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "banco-nacion",
-        "name": "Banco de la Nación",
-        "acronym": "BN",
-        "value": 21.3,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "electroperu",
-        "name": "Electroperú",
-        "acronym": "ELP",
-        "value": 20.7,
+        "slug": "enapu",
+        "name": "Empresa Nacional de Puertos",
+        "acronym": "ENAPU",
+        "value": 382.5,
         "unit": "% margen neto"
       },
       {
         "slug": "egemsa",
         "name": "Empresa de Generación Eléctrica Machupicchu",
         "acronym": "EGEMSA",
-        "value": 20.7,
+        "value": 50.4,
         "unit": "% margen neto"
       },
       {
         "slug": "egasa",
         "name": "Empresa de Generación Eléctrica de Arequipa",
         "acronym": "EGASA",
-        "value": 18.6,
+        "value": 50.3,
         "unit": "% margen neto"
       },
       {
-        "slug": "cofide",
-        "name": "Corporación Financiera de Desarrollo",
-        "acronym": "COFIDE",
-        "value": 15.3,
+        "slug": "agrobanco",
+        "name": "Banco Agropecuario",
+        "acronym": "Agrobanco",
+        "value": 35.9,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "editora-peru",
+        "name": "Editora Perú (El Peruano)",
+        "acronym": "Editora Perú",
+        "value": 35.7,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "banco-nacion",
+        "name": "Banco de la Nación",
+        "acronym": "BN",
+        "value": 34.0,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "egesur",
+        "name": "Empresa de Generación Eléctrica del Sur",
+        "acronym": "EGESUR",
+        "value": 28.5,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "sedapal",
+        "name": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "acronym": "SEDAPAL",
+        "value": 24.7,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "fondo-mivivienda",
+        "name": "Fondo MIVIVIENDA",
+        "acronym": "FMV",
+        "value": 22.1,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "electroperu",
+        "name": "Electroperú",
+        "acronym": "ELP",
+        "value": 22.1,
         "unit": "% margen neto"
       },
       {
         "slug": "adinelsa",
         "name": "Empresa de Administración de Infraestructura Eléctrica",
         "acronym": "ADINELSA",
-        "value": 11.3,
+        "value": 20.5,
         "unit": "% margen neto"
       },
       {
-        "slug": "enapu",
-        "name": "Empresa Nacional de Puertos",
-        "acronym": "ENAPU",
-        "value": 10.7,
+        "slug": "electro-puno",
+        "name": "Electro Puno",
+        "acronym": "ELPU",
+        "value": 18.5,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "electrocentro",
+        "name": "Electrocentro",
+        "acronym": "Electrocentro",
+        "value": 16.8,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "cofide",
+        "name": "Corporación Financiera de Desarrollo",
+        "acronym": "COFIDE",
+        "value": 16.0,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "electro-sur-este",
+        "name": "Electro Sur Este",
+        "acronym": "ELSE",
+        "value": 15.7,
         "unit": "% margen neto"
       },
       {
@@ -14775,66 +17444,31 @@
         "unit": "% margen neto"
       },
       {
-        "slug": "hidrandina",
-        "name": "Empresa Regional de Servicio Público de Electricidad",
-        "acronym": "Hidrandina",
-        "value": 9.0,
+        "slug": "electrosur",
+        "name": "Electrosur",
+        "acronym": "Electrosur",
+        "value": 9.2,
         "unit": "% margen neto"
       },
       {
-        "slug": "editora-peru",
-        "name": "Editora Perú (El Peruano)",
-        "acronym": "Editora Perú",
-        "value": 8.5,
+        "slug": "electro-ucayali",
+        "name": "Electro Ucayali",
+        "acronym": "ELUC",
+        "value": 9.0,
         "unit": "% margen neto"
       },
       {
         "slug": "seal",
         "name": "Sociedad Eléctrica del Sur Oeste",
         "acronym": "SEAL",
-        "value": 8.1,
+        "value": 8.0,
         "unit": "% margen neto"
       },
       {
-        "slug": "electrocentro",
-        "name": "Electrocentro",
-        "acronym": "Electrocentro",
+        "slug": "electro-oriente",
+        "name": "Electro Oriente",
+        "acronym": "ELOR",
         "value": 7.8,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "electro-sur-este",
-        "name": "Electro Sur Este",
-        "acronym": "ELSE",
-        "value": 7.7,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "egesur",
-        "name": "Empresa de Generación Eléctrica del Sur",
-        "acronym": "EGESUR",
-        "value": 7.3,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "enosa",
-        "name": "Electronoroeste",
-        "acronym": "ENOSA",
-        "value": 7.3,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "ensa",
-        "name": "Electronorte",
-        "acronym": "ENSA",
-        "value": 7.3,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "electrosur",
-        "name": "Electrosur",
-        "acronym": "Electrosur",
-        "value": 7.1,
         "unit": "% margen neto"
       },
       {
@@ -14845,24 +17479,10 @@
         "unit": "% margen neto"
       },
       {
-        "slug": "electro-oriente",
-        "name": "Electro Oriente",
-        "acronym": "ELOR",
-        "value": 5.7,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "electro-puno",
-        "name": "Electro Puno",
-        "acronym": "ELPU",
-        "value": 5.0,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "electro-ucayali",
-        "name": "Electro Ucayali",
-        "acronym": "ELUC",
-        "value": 4.7,
+        "slug": "enosa",
+        "name": "Electronoroeste",
+        "acronym": "ENOSA",
+        "value": 4.9,
         "unit": "% margen neto"
       },
       {
@@ -14873,10 +17493,10 @@
         "unit": "% margen neto"
       },
       {
-        "slug": "sedapal",
-        "name": "Servicio de Agua Potable y Alcantarillado de Lima",
-        "acronym": "SEDAPAL",
-        "value": 3.3,
+        "slug": "ensa",
+        "name": "Electronorte",
+        "acronym": "ENSA",
+        "value": 3.9,
         "unit": "% margen neto"
       },
       {
@@ -15006,6 +17626,20 @@
         "unit": "% margen neto"
       },
       {
+        "slug": "hidrandina",
+        "name": "Empresa Regional de Servicio Público de Electricidad",
+        "acronym": "Hidrandina",
+        "value": 2.8,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "corpac",
+        "name": "Corporación Peruana de Aeropuertos y Aviación Comercial",
+        "acronym": "CORPAC",
+        "value": 2.6,
+        "unit": "% margen neto"
+      },
+      {
         "slug": "silsa",
         "name": "Servicios Integrados de Limpieza",
         "acronym": "SILSA",
@@ -15027,20 +17661,6 @@
         "unit": "% margen neto"
       },
       {
-        "slug": "corpac",
-        "name": "Corporación Peruana de Aeropuertos y Aviación Comercial",
-        "acronym": "CORPAC",
-        "value": -5.3,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "serpost",
-        "name": "Servicios Postales del Perú",
-        "acronym": "SERPOST",
-        "value": -11.6,
-        "unit": "% margen neto"
-      },
-      {
         "slug": "san-gabriel",
         "name": "Empresa de Generación Eléctrica San Gabriel",
         "acronym": "San Gabriel",
@@ -15055,10 +17675,10 @@
         "unit": "% margen neto"
       },
       {
-        "slug": "agrobanco",
-        "name": "Banco Agropecuario",
-        "acronym": "Agrobanco",
-        "value": -25.0,
+        "slug": "serpost",
+        "name": "Servicios Postales del Perú",
+        "acronym": "SERPOST",
+        "value": -15.1,
         "unit": "% margen neto"
       },
       {
@@ -15081,28 +17701,7 @@
         "slug": "electroperu",
         "name": "Electroperú",
         "acronym": "ELP",
-        "value": 3225484.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "egasa",
-        "name": "Empresa de Generación Eléctrica de Arequipa",
-        "acronym": "EGASA",
-        "value": 2020000.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "egemsa",
-        "name": "Empresa de Generación Eléctrica Machupicchu",
-        "acronym": "EGEMSA",
-        "value": 1683333.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "seal",
-        "name": "Sociedad Eléctrica del Sur Oeste",
-        "acronym": "SEAL",
-        "value": 1319184.0,
+        "value": 4143871.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15113,31 +17712,10 @@
         "unit": "S/ por trabajador"
       },
       {
-        "slug": "enosa",
-        "name": "Electronoroeste",
-        "acronym": "ENOSA",
-        "value": 1182439.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "electrosur",
-        "name": "Electrosur",
-        "acronym": "Electrosur",
-        "value": 1178333.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "egesur",
-        "name": "Empresa de Generación Eléctrica del Sur",
-        "acronym": "EGESUR",
-        "value": 1169474.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "ensa",
-        "name": "Electronorte",
-        "acronym": "ENSA",
-        "value": 1165385.0,
+        "slug": "egemsa",
+        "name": "Empresa de Generación Eléctrica Machupicchu",
+        "acronym": "EGEMSA",
+        "value": 1175000.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15158,49 +17736,28 @@
         "slug": "hidrandina",
         "name": "Empresa Regional de Servicio Público de Electricidad",
         "acronym": "Hidrandina",
-        "value": 1084815.0,
+        "value": 1028074.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "enosa",
+        "name": "Electronoroeste",
+        "acronym": "ENOSA",
+        "value": 989512.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "egasa",
+        "name": "Empresa de Generación Eléctrica de Arequipa",
+        "acronym": "EGASA",
+        "value": 958571.0,
         "unit": "S/ por trabajador"
       },
       {
         "slug": "electrocentro",
         "name": "Electrocentro",
         "acronym": "Electrocentro",
-        "value": 1083455.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "electro-sur-este",
-        "name": "Electro Sur Este",
-        "acronym": "ELSE",
-        "value": 1054889.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "electro-oriente",
-        "name": "Electro Oriente",
-        "acronym": "ELOR",
-        "value": 981143.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "electro-ucayali",
-        "name": "Electro Ucayali",
-        "acronym": "ELUC",
-        "value": 946875.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "electro-puno",
-        "name": "Electro Puno",
-        "acronym": "ELPU",
-        "value": 932308.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "adinelsa",
-        "name": "Empresa de Administración de Infraestructura Eléctrica",
-        "acronym": "ADINELSA",
-        "value": 897778.0,
+        "value": 933364.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15211,10 +17768,38 @@
         "unit": "S/ por trabajador"
       },
       {
-        "slug": "sedapal",
-        "name": "Servicio de Agua Potable y Alcantarillado de Lima",
-        "acronym": "SEDAPAL",
-        "value": 857326.0,
+        "slug": "electro-oriente",
+        "name": "Electro Oriente",
+        "acronym": "ELOR",
+        "value": 863238.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "egesur",
+        "name": "Empresa de Generación Eléctrica del Sur",
+        "acronym": "EGESUR",
+        "value": 846316.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "electro-ucayali",
+        "name": "Electro Ucayali",
+        "acronym": "ELUC",
+        "value": 844062.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "electro-sur-este",
+        "name": "Electro Sur Este",
+        "acronym": "ELSE",
+        "value": 839889.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "seal",
+        "name": "Sociedad Eléctrica del Sur Oeste",
+        "acronym": "SEAL",
+        "value": 825102.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15225,10 +17810,45 @@
         "unit": "S/ por trabajador"
       },
       {
+        "slug": "electrosur",
+        "name": "Electrosur",
+        "acronym": "Electrosur",
+        "value": 810833.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "ensa",
+        "name": "Electronorte",
+        "acronym": "ENSA",
+        "value": 719103.0,
+        "unit": "S/ por trabajador"
+      },
+      {
         "slug": "san-gabriel",
         "name": "Empresa de Generación Eléctrica San Gabriel",
         "acronym": "San Gabriel",
         "value": 686667.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "sedapal",
+        "name": "Servicio de Agua Potable y Alcantarillado de Lima",
+        "acronym": "SEDAPAL",
+        "value": 679256.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "electro-puno",
+        "name": "Electro Puno",
+        "acronym": "ELPU",
+        "value": 639808.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "adinelsa",
+        "name": "Empresa de Administración de Infraestructura Eléctrica",
+        "acronym": "ADINELSA",
+        "value": 636111.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15278,13 +17898,6 @@
         "name": "Empresa Prestadora de Servicios Tacna",
         "acronym": "EPS Tacna",
         "value": 448889.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "editora-peru",
-        "name": "Editora Perú (El Peruano)",
-        "acronym": "Editora Perú",
-        "value": 423548.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15358,13 +17971,6 @@
         "unit": "S/ por trabajador"
       },
       {
-        "slug": "corpac",
-        "name": "Corporación Peruana de Aeropuertos y Aviación Comercial",
-        "acronym": "CORPAC",
-        "value": 342857.0,
-        "unit": "S/ por trabajador"
-      },
-      {
         "slug": "epsasa",
         "name": "Entidad Prestadora de Servicios de Saneamiento Ayacucho",
         "acronym": "EPSASA",
@@ -15386,13 +17992,6 @@
         "unit": "S/ por trabajador"
       },
       {
-        "slug": "enapu",
-        "name": "Empresa Nacional de Puertos",
-        "acronym": "ENAPU",
-        "value": 285586.0,
-        "unit": "S/ por trabajador"
-      },
-      {
         "slug": "banmat",
         "name": "Banco de Materiales (en liquidación)",
         "acronym": "BANMAT",
@@ -15400,10 +17999,17 @@
         "unit": "S/ por trabajador"
       },
       {
-        "slug": "serpost",
-        "name": "Servicios Postales del Perú",
-        "acronym": "SERPOST",
-        "value": 118750.0,
+        "slug": "corpac",
+        "name": "Corporación Peruana de Aeropuertos y Aviación Comercial",
+        "acronym": "CORPAC",
+        "value": 221667.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "editora-peru",
+        "name": "Editora Perú (El Peruano)",
+        "acronym": "Editora Perú",
+        "value": 152419.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15418,6 +18024,20 @@
         "name": "Servicios Integrados de Limpieza",
         "acronym": "SILSA",
         "value": 55263.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "serpost",
+        "name": "Servicios Postales del Perú",
+        "acronym": "SERPOST",
+        "value": 48938.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "enapu",
+        "name": "Empresa Nacional de Puertos",
+        "acronym": "ENAPU",
+        "value": 7862.0,
         "unit": "S/ por trabajador"
       }
     ],
@@ -33016,138 +35636,6 @@
         "value": -8.4,
         "meta": 28.1,
         "alcance": -29.89
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202501,
-        "month": "Enero",
-        "value": 2529.2,
-        "meta": 2440.9,
-        "alcance": 103.62
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202502,
-        "month": "Febrero",
-        "value": 2714.2,
-        "meta": 2440.9,
-        "alcance": 111.2
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202503,
-        "month": "Marzo",
-        "value": 2697.2,
-        "meta": 2440.9,
-        "alcance": 110.5
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202504,
-        "month": "Abril",
-        "value": 2701.2,
-        "meta": 2440.9,
-        "alcance": 110.66
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202505,
-        "month": "Mayo",
-        "value": 2849.4,
-        "meta": 2440.9,
-        "alcance": 116.74
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202506,
-        "month": "Junio",
-        "value": 2614.1,
-        "meta": 2440.9,
-        "alcance": 107.1
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202507,
-        "month": "Julio",
-        "value": 2800.0,
-        "meta": 2440.9,
-        "alcance": 114.71
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202508,
-        "month": "Agosto",
-        "value": 2810.1,
-        "meta": 2440.9,
-        "alcance": 115.13
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202509,
-        "month": "Septiembre",
-        "value": 2840.7,
-        "meta": 2440.9,
-        "alcance": 116.38
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202510,
-        "month": "Octubre",
-        "value": 2845.5,
-        "meta": 2440.9,
-        "alcance": 116.58
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202511,
-        "month": "Noviembre",
-        "value": 2911.8,
-        "meta": 2440.9,
-        "alcance": 119.29
-      },
-      {
-        "indicator": "Capital de Trabajo",
-        "unit": "MM S/",
-        "sector": "Defensa",
-        "year": 2025,
-        "idFecha": 202512,
-        "month": "Diciembre",
-        "value": 2782.2,
-        "meta": 2440.9,
-        "alcance": 113.98
       },
       {
         "indicator": "Capital de Trabajo",
