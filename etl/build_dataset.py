@@ -291,6 +291,9 @@ def main():
                          transparencyScore=score, budgetExecution=round(exec_factor * 100, 0)),
             transparency=dict(score=score, financials=f, memoria=m, directory=d, budget=p),
             anomalies=anomalies, recommendations=recs,
+            provenance="simulado",
+            provenanceNote="Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. "
+                           "Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales.",
         ))
 
     # --- Conciliación FFAA: SIMA/FAME/SEMAN desde el Observatorio de Defensa (fuente de verdad) ---

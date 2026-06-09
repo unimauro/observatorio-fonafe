@@ -339,7 +339,9 @@
         "budget": true
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "cofide",
@@ -616,7 +618,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "agrobanco",
@@ -917,7 +921,9 @@
           "action": "Reducir costos operativos no esenciales y revisar tarifas/subsidios cruzados; meta de EBITDA positivo en 12 meses.",
           "norma": "Convenio de Gestión FONAFE"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "fondo-mivivienda",
@@ -1194,7 +1200,9 @@
         "budget": true
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "electroperu",
@@ -1471,7 +1479,9 @@
         "budget": true
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "egasa",
@@ -1748,7 +1758,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "egemsa",
@@ -2025,7 +2037,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "egesur",
@@ -2315,7 +2329,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "hidrandina",
@@ -2592,7 +2608,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "corpac",
@@ -2882,7 +2900,9 @@
           "action": "Plan de reflotamiento con metas trimestrales; evaluar fusión, venta de activos o liquidación según viabilidad.",
           "norma": "D.L. 1031 (eficiencia de la actividad empresarial del Estado) · Ley 27170 (FONAFE)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "enapu",
@@ -3159,7 +3179,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "serpost",
@@ -3471,7 +3493,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "sedapal",
@@ -3748,7 +3772,9 @@
         "budget": true
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "electrocentro",
@@ -4025,7 +4051,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "enosa",
@@ -4302,7 +4330,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "ensa",
@@ -4579,7 +4609,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "electro-oriente",
@@ -4856,7 +4888,9 @@
         "budget": true
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "electro-sur-este",
@@ -5133,7 +5167,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "electro-puno",
@@ -5423,7 +5459,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "electro-ucayali",
@@ -5713,7 +5751,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "seal",
@@ -5990,7 +6030,9 @@
         "budget": true
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "adinelsa",
@@ -6267,7 +6309,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "petroperu",
@@ -6572,7 +6616,9 @@
           "action": "Reducir costos operativos no esenciales y revisar tarifas/subsidios cruzados; meta de EBITDA positivo en 12 meses.",
           "norma": "Convenio de Gestión FONAFE"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "editora-peru",
@@ -6849,7 +6895,9 @@
         "budget": true
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "amsac",
@@ -7126,7 +7174,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "enaco",
@@ -7416,7 +7466,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "silsa",
@@ -7706,7 +7758,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "esvicsac",
@@ -7996,7 +8050,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "banmat",
@@ -8308,7 +8364,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "san-gabriel",
@@ -8609,7 +8667,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "electrosur",
@@ -8886,7 +8946,9 @@
         "budget": false
       },
       "anomalies": [],
-      "recommendations": []
+      "recommendations": [],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "sedapar",
@@ -9176,7 +9238,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "sedalib",
@@ -9466,7 +9530,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "epsel",
@@ -9756,7 +9822,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "eps-grau",
@@ -10046,7 +10114,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "sedacusco",
@@ -10336,7 +10406,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "sedacaj",
@@ -10626,7 +10698,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "epsasa",
@@ -10916,7 +10990,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "emapica",
@@ -11206,7 +11282,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "sedam-huancayo",
@@ -11496,7 +11574,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "eps-tacna",
@@ -11786,7 +11866,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "seda-huanuco",
@@ -12076,7 +12158,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "emapa-sanmartin",
@@ -12366,7 +12450,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "emsapuno",
@@ -12656,7 +12742,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "eps-loreto",
@@ -12946,7 +13034,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "emapacop",
@@ -13236,7 +13326,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "emapat",
@@ -13526,7 +13618,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "eps-moquegua",
@@ -13816,7 +13910,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "emusap-amazonas",
@@ -14106,7 +14202,9 @@
           "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
-      ]
+      ],
+      "provenance": "simulado",
+      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
     },
     {
       "slug": "sima",

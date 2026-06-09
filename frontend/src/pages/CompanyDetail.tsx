@@ -121,7 +121,7 @@ export function CompanyDetail() {
         </a>
       </div>
 
-      {company.authoritativeSource && (
+      {company.authoritativeSource ? (
         <a href={company.authoritativeSource} target="_blank" rel="noopener"
            className="mb-5 flex items-start gap-2 rounded-lg border border-primary/30 bg-primary/10 p-3 text-sm hover:bg-primary/15">
           <ExternalLink className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
@@ -130,6 +130,13 @@ export function CompanyDetail() {
             {company.provenanceNote || 'Años marcados como estimado no son oficiales; vacío = sin datos.'}
           </span>
         </a>
+      ) : company.provenance === 'simulado' && (
+        <div className="mb-5 flex items-start gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 p-3 text-sm">
+          <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-amber-500" />
+          <span>
+            <b>Datos financieros simulados.</b> {company.provenanceNote || 'Cifras de modelo ilustrativo, no oficiales.'}
+          </span>
+        </div>
       )}
 
       <Tabs tabs={TABS} active={tab} onChange={setTab} className="mb-5" />
@@ -180,8 +187,11 @@ export function CompanyDetail() {
 
       {tab === 'financieros' && (
         <Card>
-          <CardHeader className="flex-row items-center justify-between">
-            <CardTitle>Estados financieros</CardTitle>
+          <CardHeader className="flex-row flex-wrap items-center justify-between gap-2">
+            <CardTitle className="flex items-center gap-2">Estados financieros
+              {company.provenance === 'simulado' && <Badge variant="warning">simulado</Badge>}
+              {company.authoritativeSource && <Badge variant="primary">real/estimado</Badge>}
+            </CardTitle>
             <Tabs active={gran} onChange={(v) => setGran(v as Gran)}
               tabs={[{ id: 'year', label: 'Año' }, { id: 'quarterly', label: 'Trim.' }, { id: 'monthly', label: 'Mes' }]} />
           </CardHeader>
