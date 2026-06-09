@@ -20,7 +20,9 @@ jobs:
           python-version: '3.12'
       - name: Instalar dependencias
         run: pip install -r etl/requirements.txt
-      - name: Ejecutar ETL (scrapea OCDS/OECE + acumula caché)
+      - name: Refrescar indicadores FONAFE (Observatorio Digital)
+        run: python etl/sources/fonafe_obd.py || true
+      - name: Ejecutar ETL (OCDS/OECE + indicadores + conciliación Defensa)
         run: python etl/build_dataset.py --with-contracts --scrape-pages 120
       - name: Commit de datos (si cambian)
         run: |

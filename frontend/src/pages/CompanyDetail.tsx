@@ -41,6 +41,7 @@ export function CompanyDetail() {
   const sim = useMemo(() => {
     if (!company) return null
     const f = company.financials[company.financials.length - 1]
+    if (!f || f.revenue == null || f.netIncome == null) return null
     const R0 = f.revenue, N0 = f.netIncome, cost0 = R0 - N0
     const labels = ['Hoy'], statusNet = [N0], scenNet = [N0]
     let rs = R0, cs = cost0, r = R0, c = cost0 * (1 - simCut / 100), be = -1
@@ -60,6 +61,10 @@ export function CompanyDetail() {
   if (!company) return <ErrorState error="Empresa no encontrada" />
 
   const fin = company.financials
+  const mny = (v: number | null | undefined, real?: boolean) =>
+    v == null
+      ? <span className="text-muted-foreground">sin datos</span>
+      : <span className={real === false ? 'text-amber-500' : ''} title={real === false ? 'estimado (no oficial)' : ''}>{soles(v)}{real === false ? ' ~' : ''}</span>
   const series = gran === 'year'
     ? fin.map((f) => ({ period: String(f.year), revenue: f.revenue, netIncome: f.netIncome, ebitda: f.ebitda }))
     : company.periodic[gran]
@@ -116,6 +121,17 @@ export function CompanyDetail() {
         </a>
       </div>
 
+      {company.authoritativeSource && (
+        <a href={company.authoritativeSource} target="_blank" rel="noopener"
+           className="mb-5 flex items-start gap-2 rounded-lg border border-primary/30 bg-primary/10 p-3 text-sm hover:bg-primary/15">
+          <ExternalLink className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+          <span>
+            <b>Fuente de verdad:</b> Observatorio de Defensa e Interior{company.rama ? ` · ${company.rama}` : ''}.{' '}
+            {company.provenanceNote || 'Años marcados como estimado no son oficiales; vacío = sin datos.'}
+          </span>
+        </a>
+      )}
+
       <Tabs tabs={TABS} active={tab} onChange={setTab} className="mb-5" />
 
       {tab === 'general' && (
@@ -123,9 +139,9 @@ export function CompanyDetail() {
           <Card><CardContent className="pt-5 text-sm leading-relaxed text-muted-foreground">{company.description}</CardContent></Card>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <Kpi label="RUC" value={company.ruc} />
-            <Kpi label="Trabajadores" value={num(company.employees)} />
-            <Kpi label="Margen neto" value={pct(company.metrics.netMargin)} tone={company.metrics.netMargin < 0 ? 'bad' : 'good'} />
-            <Kpi label="Transparencia" value={`${company.metrics.transparencyScore}/100`} tone="accent" />
+            <Kpi label="Trabajadores" value={company.employees ? num(company.employees) : 's/d'} />
+            <Kpi label="Margen neto" value={company.metrics.netMargin == null ? 's/d' : pct(company.metrics.netMargin)} tone={company.metrics.netMargin == null ? 'default' : company.metrics.netMargin < 0 ? 'bad' : 'good'} />
+            <Kpi label="Transparencia" value={company.metrics.transparencyScore == null ? 's/d' : `${company.metrics.transparencyScore}/100`} tone="accent" />
           </div>
           {(company.anomalies.length > 0 || company.recommendations.length > 0) && (
             <div className="grid gap-4 lg:grid-cols-2">
@@ -179,23 +195,42 @@ export function CompanyDetail() {
                   {fin.map((f) => (
                     <tr key={f.year} className="border-b border-border/60">
                       <td className="py-2 font-medium">{f.year}</td>
-                      <td>{soles(f.revenue)}</td>
-                      <td className={f.netIncome < 0 ? 'text-red-500' : ''}>{soles(f.netIncome)}</td>
-                      <td>{soles(f.ebitda)}</td>
-                      <td>{soles(f.investment)}</td>
+                      <td>{mny(f.revenue, f.revenueReal)}</td>
+                      <td className={f.netIncome != null && f.netIncome < 0 ? 'text-red-500' : ''}>{mny(f.netIncome, f.netIncomeReal)}</td>
+                      <td>{mny(f.ebitda)}</td>
+                      <td>{mny(f.investment)}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
+            {company.authoritativeSource && (
+              <p className="mt-3 text-xs text-muted-foreground">
+                <span className="text-amber-500">●</span> estimado (no oficial) · <span className="text-muted-foreground">sin datos</span> = no publicado.
+              </p>
+            )}
+            {company.sources && company.sources.length > 0 && (
+              <div className="mt-3 border-t border-border pt-3">
+                <div className="mb-1 text-xs font-semibold text-muted-foreground">Fuentes</div>
+                <div className="flex flex-col gap-1">
+                  {company.sources.map((s, i) => (
+                    <a key={i} href={s.url} target="_blank" rel="noopener" className="text-xs text-accent hover:underline">↗ {s.name}</a>
+                  ))}
+                </div>
+              </div>
+            )}
           </CardContent>
         </Card>
       )}
 
       {tab === 'presupuesto' && (
         <Card>
-          <CardHeader><CardTitle>Presupuesto vs ejecución · {company.metrics.budgetExecution}% ejecución</CardTitle></CardHeader>
-          <CardContent><Chart option={budgetOption} height={360} /></CardContent>
+          <CardHeader><CardTitle>Presupuesto vs ejecución{company.metrics.budgetExecution != null ? ` · ${company.metrics.budgetExecution}% ejecución` : ''}</CardTitle></CardHeader>
+          <CardContent>
+            {company.financials.some((f) => f.budget != null)
+              ? <Chart option={budgetOption} height={360} />
+              : <p className="py-6 text-center text-sm text-muted-foreground">Sin datos de presupuesto publicados para esta empresa.</p>}
+          </CardContent>
         </Card>
       )}
 
@@ -246,13 +281,16 @@ export function CompanyDetail() {
 
       {tab === 'indicadores' && (
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <Kpi label="Margen neto" value={pct(company.metrics.netMargin)} tone={company.metrics.netMargin < 0 ? 'bad' : 'good'} />
-          <Kpi label="Ingreso por trabajador" value={solesRaw(company.metrics.revenuePerEmployee)} />
-          <Kpi label="Transparencia" value={`${company.metrics.transparencyScore}/100`} tone="accent" />
-          <Kpi label="Ejecución presup." value={pct(company.metrics.budgetExecution, 0)} />
+          <Kpi label="Margen neto" value={company.metrics.netMargin == null ? 's/d' : pct(company.metrics.netMargin)} tone={company.metrics.netMargin == null ? 'default' : company.metrics.netMargin < 0 ? 'bad' : 'good'} />
+          <Kpi label="Ingreso por trabajador" value={company.metrics.revenuePerEmployee == null ? 's/d' : solesRaw(company.metrics.revenuePerEmployee)} />
+          <Kpi label="Transparencia" value={company.metrics.transparencyScore == null ? 's/d' : `${company.metrics.transparencyScore}/100`} tone="accent" />
+          <Kpi label="Ejecución presup." value={company.metrics.budgetExecution == null ? 's/d' : pct(company.metrics.budgetExecution, 0)} />
         </div>
       )}
 
+      {tab === 'simulador' && !sim && (
+        <Card><CardContent className="py-8 text-center text-sm text-muted-foreground">Simulador no disponible: esta empresa no tiene ingresos/utilidad suficientes (ver fuente de verdad).</CardContent></Card>
+      )}
       {tab === 'simulador' && sim && (
         <Card>
           <CardHeader><CardTitle>Simulador de reflotamiento · {company.acronym}</CardTitle></CardHeader>

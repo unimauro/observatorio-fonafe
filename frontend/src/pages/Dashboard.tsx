@@ -21,11 +21,11 @@ export function Dashboard() {
   const consolidated = useMemo(() => {
     if (!data) return []
     if (gran === 'year') {
-      return data.meta.years.map((y, i) => {
+      return data.meta.years.map((y) => {
         let rev = 0, net = 0, ebi = 0
         data.companies.forEach((c) => {
-          const f = c.financials[i]
-          if (f) { rev += f.revenue; net += f.netIncome; ebi += f.ebitda }
+          const f = c.financials.find((x) => x.year === y)
+          if (f) { rev += f.revenue || 0; net += f.netIncome || 0; ebi += f.ebitda || 0 }
         })
         return { period: String(y), rev: +rev.toFixed(1), net: +net.toFixed(1), ebi: +ebi.toFixed(1) }
       })
@@ -35,7 +35,7 @@ export function Dashboard() {
       let rev = 0, net = 0, ebi = 0
       data.companies.forEach((c) => {
         const x = c.periodic[gran][idx]
-        if (x) { rev += x.revenue; net += x.netIncome; ebi += x.ebitda }
+        if (x) { rev += x.revenue || 0; net += x.netIncome || 0; ebi += x.ebitda || 0 }
       })
       return { period: p.period, rev: +rev.toFixed(1), net: +net.toFixed(1), ebi: +ebi.toFixed(1) }
     })
@@ -58,23 +58,22 @@ export function Dashboard() {
     ],
   }
 
-  const byCompany = [...data.companies].sort(
-    (a, b) => b.financials[b.financials.length - 1].revenue - a.financials[a.financials.length - 1].revenue,
-  )
+  const lastRev = (c: typeof data.companies[number]) => c.financials[c.financials.length - 1]?.revenue || 0
+  const byCompany = [...data.companies].sort((a, b) => lastRev(b) - lastRev(a))
   const revByCompanyOption = {
     tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
     grid: { left: 90, right: 20, top: 10, bottom: 24 },
     xAxis: { type: 'value', name: 'S/ MM' },
     yAxis: { type: 'category', data: byCompany.map((c) => c.acronym).reverse() },
     series: [{
-      type: 'bar', data: byCompany.map((c) => c.financials[c.financials.length - 1].revenue).reverse(),
+      type: 'bar', data: byCompany.map((c) => lastRev(c)).reverse(),
       itemStyle: { borderRadius: [0, 4, 4, 0] },
     }],
   }
 
   const sectorMap: Record<string, number> = {}
   data.companies.forEach((c) => {
-    const inv = c.financials[c.financials.length - 1].investment
+    const inv = c.financials[c.financials.length - 1]?.investment || 0
     sectorMap[c.sector] = (sectorMap[c.sector] || 0) + inv
   })
   const investmentOption = {

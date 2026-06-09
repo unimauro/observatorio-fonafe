@@ -47,16 +47,16 @@
     "note": "Cifras ILUSTRATIVAS para demostración. Reemplazables por el ETL con datos oficiales."
   },
   "kpis": {
-    "companies": 51,
-    "totalRevenue": 51954.0,
-    "totalNetIncome": -576.3,
-    "totalEbitda": 6360.4,
-    "totalInvestment": 6651.2,
-    "totalBudget": 15367.9,
-    "totalBudgetExecuted": 12806.3,
-    "employees": 47245,
+    "companies": 52,
+    "totalRevenue": 52998.0,
+    "totalNetIncome": -597.0,
+    "totalEbitda": 6229.2,
+    "totalInvestment": 6538.3,
+    "totalBudget": 14984.9,
+    "totalBudgetExecuted": 12453.9,
+    "employees": 45567,
     "withLosses": 7,
-    "withProfits": 44,
+    "withProfits": 45,
     "year": 2025
   },
   "companies": [
@@ -3749,584 +3749,6 @@
       },
       "anomalies": [],
       "recommendations": []
-    },
-    {
-      "slug": "sima",
-      "name": "Servicios Industriales de la Marina",
-      "acronym": "SIMA",
-      "sector": "Industrial/Defensa",
-      "holding": "FONAFE",
-      "region": "Nacional",
-      "ruc": "20154308439",
-      "website": "https://www.sima.com.pe",
-      "employees": 2800,
-      "description": "Astilleros e industria naval/metalmecánica del Estado.",
-      "directors": [
-        {
-          "role": "Presidente del Directorio",
-          "name": "—"
-        }
-      ],
-      "financials": [
-        {
-          "year": 2015,
-          "revenue": 491.0,
-          "netIncome": 25.3,
-          "ebitda": 86.6,
-          "investment": 65.0,
-          "budget": 216.6,
-          "budgetExecuted": 199.3
-        },
-        {
-          "year": 2016,
-          "revenue": 517.5,
-          "netIncome": 26.6,
-          "ebitda": 91.3,
-          "investment": 68.5,
-          "budget": 228.3,
-          "budgetExecuted": 210.0
-        },
-        {
-          "year": 2017,
-          "revenue": 544.7,
-          "netIncome": 28.0,
-          "ebitda": 96.1,
-          "investment": 72.1,
-          "budget": 240.3,
-          "budgetExecuted": 221.1
-        },
-        {
-          "year": 2018,
-          "revenue": 571.2,
-          "netIncome": 29.4,
-          "ebitda": 100.8,
-          "investment": 75.6,
-          "budget": 252.0,
-          "budgetExecuted": 231.8
-        },
-        {
-          "year": 2019,
-          "revenue": 598.4,
-          "netIncome": 30.8,
-          "ebitda": 105.6,
-          "investment": 79.2,
-          "budget": 264.0,
-          "budgetExecuted": 242.9
-        },
-        {
-          "year": 2020,
-          "revenue": 578.0,
-          "netIncome": 29.8,
-          "ebitda": 102.0,
-          "investment": 76.5,
-          "budget": 255.0,
-          "budgetExecuted": 234.6
-        },
-        {
-          "year": 2021,
-          "revenue": 632.4,
-          "netIncome": 32.6,
-          "ebitda": 111.6,
-          "investment": 83.7,
-          "budget": 279.0,
-          "budgetExecuted": 256.7
-        },
-        {
-          "year": 2022,
-          "revenue": 659.6,
-          "netIncome": 33.9,
-          "ebitda": 116.4,
-          "investment": 87.3,
-          "budget": 291.0,
-          "budgetExecuted": 267.7
-        },
-        {
-          "year": 2023,
-          "revenue": 673.2,
-          "netIncome": 34.6,
-          "ebitda": 118.8,
-          "investment": 89.1,
-          "budget": 297.0,
-          "budgetExecuted": 273.2
-        },
-        {
-          "year": 2024,
-          "revenue": 680.0,
-          "netIncome": 35.0,
-          "ebitda": 120.0,
-          "investment": 90.0,
-          "budget": 300.0,
-          "budgetExecuted": 276.0
-        },
-        {
-          "year": 2025,
-          "revenue": 686.8,
-          "netIncome": 35.4,
-          "ebitda": 121.2,
-          "investment": 90.9,
-          "budget": 303.0,
-          "budgetExecuted": 278.8
-        }
-      ],
-      "periodic": {
-        "quarterly": [
-          {
-            "period": "2024-Q1",
-            "revenue": 156.4,
-            "netIncome": 8.1,
-            "ebitda": 27.6
-          },
-          {
-            "period": "2024-Q2",
-            "revenue": 170.0,
-            "netIncome": 8.8,
-            "ebitda": 30.0
-          },
-          {
-            "period": "2024-Q3",
-            "revenue": 176.8,
-            "netIncome": 9.1,
-            "ebitda": 31.2
-          },
-          {
-            "period": "2024-Q4",
-            "revenue": 176.8,
-            "netIncome": 9.1,
-            "ebitda": 31.2
-          },
-          {
-            "period": "2025-Q1",
-            "revenue": 158.0,
-            "netIncome": 8.1,
-            "ebitda": 27.9
-          },
-          {
-            "period": "2025-Q2",
-            "revenue": 171.7,
-            "netIncome": 8.8,
-            "ebitda": 30.3
-          },
-          {
-            "period": "2025-Q3",
-            "revenue": 178.6,
-            "netIncome": 9.2,
-            "ebitda": 31.5
-          },
-          {
-            "period": "2025-Q4",
-            "revenue": 178.6,
-            "netIncome": 9.2,
-            "ebitda": 31.5
-          }
-        ],
-        "monthly": [
-          {
-            "period": "2025-01",
-            "revenue": 51.5,
-            "netIncome": 2.7,
-            "ebitda": 9.1
-          },
-          {
-            "period": "2025-02",
-            "revenue": 48.1,
-            "netIncome": 2.5,
-            "ebitda": 8.5
-          },
-          {
-            "period": "2025-03",
-            "revenue": 58.4,
-            "netIncome": 3.0,
-            "ebitda": 10.3
-          },
-          {
-            "period": "2025-04",
-            "revenue": 54.9,
-            "netIncome": 2.8,
-            "ebitda": 9.7
-          },
-          {
-            "period": "2025-05",
-            "revenue": 58.4,
-            "netIncome": 3.0,
-            "ebitda": 10.3
-          },
-          {
-            "period": "2025-06",
-            "revenue": 58.4,
-            "netIncome": 3.0,
-            "ebitda": 10.3
-          },
-          {
-            "period": "2025-07",
-            "revenue": 61.8,
-            "netIncome": 3.2,
-            "ebitda": 10.9
-          },
-          {
-            "period": "2025-08",
-            "revenue": 58.4,
-            "netIncome": 3.0,
-            "ebitda": 10.3
-          },
-          {
-            "period": "2025-09",
-            "revenue": 58.4,
-            "netIncome": 3.0,
-            "ebitda": 10.3
-          },
-          {
-            "period": "2025-10",
-            "revenue": 61.8,
-            "netIncome": 3.2,
-            "ebitda": 10.9
-          },
-          {
-            "period": "2025-11",
-            "revenue": 58.4,
-            "netIncome": 3.0,
-            "ebitda": 10.3
-          },
-          {
-            "period": "2025-12",
-            "revenue": 58.4,
-            "netIncome": 3.0,
-            "ebitda": 10.3
-          }
-        ]
-      },
-      "news": [
-        {
-          "date": "2025-01-15",
-          "title": "Convenio de Gestión 2025 con FONAFE",
-          "url": "https://www.fonafe.gob.pe/"
-        },
-        {
-          "date": "2025-02-15",
-          "title": "Memoria anual 2025 publicada",
-          "url": "https://www.fonafe.gob.pe/"
-        },
-        {
-          "date": "2025-03-15",
-          "title": "Sesión de directorio — acuerdos 2025",
-          "url": "https://www.gob.pe/"
-        }
-      ],
-      "metrics": {
-        "netMargin": 5.2,
-        "revenuePerEmployee": 245286.0,
-        "transparencyScore": 55,
-        "budgetExecution": 92.0
-      },
-      "transparency": {
-        "score": 55,
-        "financials": true,
-        "memoria": true,
-        "directory": false,
-        "budget": false
-      },
-      "anomalies": [],
-      "recommendations": []
-    },
-    {
-      "slug": "fame",
-      "name": "Fábrica de Armas y Municiones del Ejército",
-      "acronym": "FAME",
-      "sector": "Industrial/Defensa",
-      "holding": "FONAFE",
-      "region": "Nacional",
-      "ruc": "20517182673",
-      "website": "https://www.fame.com.pe",
-      "employees": 520,
-      "description": "Industria de defensa; producción de armamento y municiones para FF.AA.",
-      "directors": [
-        {
-          "role": "Presidente del Directorio",
-          "name": "—"
-        }
-      ],
-      "financials": [
-        {
-          "year": 2015,
-          "revenue": 103.3,
-          "netIncome": -7.7,
-          "ebitda": 8.6,
-          "investment": 18.9,
-          "budget": 68.9,
-          "budgetExecuted": 63.4
-        },
-        {
-          "year": 2016,
-          "revenue": 109.0,
-          "netIncome": -8.2,
-          "ebitda": 9.1,
-          "investment": 20.0,
-          "budget": 72.6,
-          "budgetExecuted": 66.8
-        },
-        {
-          "year": 2017,
-          "revenue": 114.7,
-          "netIncome": -8.6,
-          "ebitda": 9.6,
-          "investment": 21.0,
-          "budget": 76.5,
-          "budgetExecuted": 70.4
-        },
-        {
-          "year": 2018,
-          "revenue": 120.4,
-          "netIncome": -9.0,
-          "ebitda": 10.0,
-          "investment": 22.1,
-          "budget": 80.2,
-          "budgetExecuted": 73.8
-        },
-        {
-          "year": 2019,
-          "revenue": 126.0,
-          "netIncome": -9.5,
-          "ebitda": 10.5,
-          "investment": 23.1,
-          "budget": 84.0,
-          "budgetExecuted": 77.3
-        },
-        {
-          "year": 2020,
-          "revenue": 122.4,
-          "netIncome": -9.2,
-          "ebitda": 10.2,
-          "investment": 22.4,
-          "budget": 81.6,
-          "budgetExecuted": 75.1
-        },
-        {
-          "year": 2021,
-          "revenue": 120.0,
-          "netIncome": -9.0,
-          "ebitda": 10.0,
-          "investment": 22.0,
-          "budget": 80.0,
-          "budgetExecuted": 73.6
-        },
-        {
-          "year": 2022,
-          "revenue": 120.0,
-          "netIncome": -9.0,
-          "ebitda": 10.0,
-          "investment": 22.0,
-          "budget": 80.0,
-          "budgetExecuted": 73.6
-        },
-        {
-          "year": 2023,
-          "revenue": 120.0,
-          "netIncome": -9.0,
-          "ebitda": 10.0,
-          "investment": 22.0,
-          "budget": 80.0,
-          "budgetExecuted": 73.6
-        },
-        {
-          "year": 2024,
-          "revenue": 120.0,
-          "netIncome": -9.0,
-          "ebitda": 10.0,
-          "investment": 22.0,
-          "budget": 80.0,
-          "budgetExecuted": 73.6
-        },
-        {
-          "year": 2025,
-          "revenue": 120.0,
-          "netIncome": -9.0,
-          "ebitda": 10.0,
-          "investment": 22.0,
-          "budget": 80.0,
-          "budgetExecuted": 73.6
-        }
-      ],
-      "periodic": {
-        "quarterly": [
-          {
-            "period": "2024-Q1",
-            "revenue": 27.6,
-            "netIncome": -2.1,
-            "ebitda": 2.3
-          },
-          {
-            "period": "2024-Q2",
-            "revenue": 30.0,
-            "netIncome": -2.2,
-            "ebitda": 2.5
-          },
-          {
-            "period": "2024-Q3",
-            "revenue": 31.2,
-            "netIncome": -2.3,
-            "ebitda": 2.6
-          },
-          {
-            "period": "2024-Q4",
-            "revenue": 31.2,
-            "netIncome": -2.3,
-            "ebitda": 2.6
-          },
-          {
-            "period": "2025-Q1",
-            "revenue": 27.6,
-            "netIncome": -2.1,
-            "ebitda": 2.3
-          },
-          {
-            "period": "2025-Q2",
-            "revenue": 30.0,
-            "netIncome": -2.2,
-            "ebitda": 2.5
-          },
-          {
-            "period": "2025-Q3",
-            "revenue": 31.2,
-            "netIncome": -2.3,
-            "ebitda": 2.6
-          },
-          {
-            "period": "2025-Q4",
-            "revenue": 31.2,
-            "netIncome": -2.3,
-            "ebitda": 2.6
-          }
-        ],
-        "monthly": [
-          {
-            "period": "2025-01",
-            "revenue": 9.0,
-            "netIncome": -0.7,
-            "ebitda": 0.8
-          },
-          {
-            "period": "2025-02",
-            "revenue": 8.4,
-            "netIncome": -0.6,
-            "ebitda": 0.7
-          },
-          {
-            "period": "2025-03",
-            "revenue": 10.2,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          },
-          {
-            "period": "2025-04",
-            "revenue": 9.6,
-            "netIncome": -0.7,
-            "ebitda": 0.8
-          },
-          {
-            "period": "2025-05",
-            "revenue": 10.2,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          },
-          {
-            "period": "2025-06",
-            "revenue": 10.2,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          },
-          {
-            "period": "2025-07",
-            "revenue": 10.8,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          },
-          {
-            "period": "2025-08",
-            "revenue": 10.2,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          },
-          {
-            "period": "2025-09",
-            "revenue": 10.2,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          },
-          {
-            "period": "2025-10",
-            "revenue": 10.8,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          },
-          {
-            "period": "2025-11",
-            "revenue": 10.2,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          },
-          {
-            "period": "2025-12",
-            "revenue": 10.2,
-            "netIncome": -0.8,
-            "ebitda": 0.9
-          }
-        ]
-      },
-      "news": [
-        {
-          "date": "2025-01-15",
-          "title": "Convenio de Gestión 2025 con FONAFE",
-          "url": "https://www.fonafe.gob.pe/"
-        },
-        {
-          "date": "2025-02-15",
-          "title": "Memoria anual 2025 publicada",
-          "url": "https://www.fonafe.gob.pe/"
-        },
-        {
-          "date": "2025-03-15",
-          "title": "Sesión de directorio — acuerdos 2025",
-          "url": "https://www.gob.pe/"
-        }
-      ],
-      "metrics": {
-        "netMargin": -7.5,
-        "revenuePerEmployee": 230769.0,
-        "transparencyScore": 0,
-        "budgetExecution": 92.0
-      },
-      "transparency": {
-        "score": 0,
-        "financials": false,
-        "memoria": false,
-        "directory": false,
-        "budget": false
-      },
-      "anomalies": [
-        {
-          "type": "recurring_losses",
-          "severity": "alta",
-          "description": "Pérdidas netas en 3 de los últimos 3 años."
-        },
-        {
-          "type": "low_transparency",
-          "severity": "media",
-          "description": "Bajo cumplimiento de transparencia (score 0/100)."
-        }
-      ],
-      "recommendations": [
-        {
-          "category": "Reflotamiento / reestructuración",
-          "priority": "alta",
-          "action": "Plan de reflotamiento con metas trimestrales; evaluar fusión, venta de activos o liquidación según viabilidad.",
-          "norma": "D.L. 1031 (eficiencia de la actividad empresarial del Estado) · Ley 27170 (FONAFE)"
-        },
-        {
-          "category": "Transparencia",
-          "priority": "media",
-          "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
-          "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
-        }
-      ]
     },
     {
       "slug": "electrocentro",
@@ -14685,6 +14107,508 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ]
+    },
+    {
+      "slug": "sima",
+      "name": "Servicios Industriales de la Marina",
+      "acronym": "SIMA",
+      "sector": "Industrial/Defensa",
+      "holding": "FONAFE",
+      "region": "Nacional",
+      "rama": "Marina de Guerra",
+      "ruc": "20100003351",
+      "website": "https://www.fonafe.gob.pe/",
+      "employees": 1569,
+      "description": "Astilleros e industria naval/metalmecánica del Estado. Construcción naval militar y comercial. Facturación por lotes (entrega de buques) → ingresos volátiles.",
+      "directors": [],
+      "financials": [
+        {
+          "year": 2018,
+          "revenue": 108.8,
+          "revenueReal": true,
+          "netIncome": 2.66,
+          "netIncomeReal": true,
+          "patrimonio": 140.1,
+          "activos": 780.0,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2019,
+          "revenue": 559.3,
+          "revenueReal": true,
+          "netIncome": 3.53,
+          "netIncomeReal": true,
+          "patrimonio": 143.6,
+          "activos": 881.4,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2020,
+          "revenue": 341.7,
+          "revenueReal": false,
+          "netIncome": 4.64,
+          "netIncomeReal": false,
+          "patrimonio": 137.3,
+          "activos": 926.1,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2021,
+          "revenue": 124.1,
+          "revenueReal": true,
+          "netIncome": 5.76,
+          "netIncomeReal": true,
+          "patrimonio": 131.0,
+          "activos": 970.8,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2022,
+          "revenue": 284.9,
+          "revenueReal": true,
+          "netIncome": 4.49,
+          "netIncomeReal": true,
+          "patrimonio": 135.5,
+          "activos": 875.9,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2023,
+          "revenue": 1818.7,
+          "revenueReal": true,
+          "netIncome": 4.49,
+          "netIncomeReal": false,
+          "patrimonio": 135.5,
+          "activos": 875.9,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2024,
+          "revenue": 1818.7,
+          "revenueReal": false,
+          "netIncome": 4.49,
+          "netIncomeReal": false,
+          "patrimonio": 135.5,
+          "activos": 875.9,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2025,
+          "revenue": 1818.7,
+          "revenueReal": false,
+          "netIncome": 4.49,
+          "netIncomeReal": false,
+          "patrimonio": 135.5,
+          "activos": 875.9,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2026,
+          "revenue": 1818.7,
+          "revenueReal": false,
+          "netIncome": 4.49,
+          "netIncomeReal": false,
+          "patrimonio": 135.5,
+          "activos": 875.9,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        }
+      ],
+      "periodic": {
+        "quarterly": [],
+        "monthly": []
+      },
+      "news": [],
+      "metrics": {
+        "netMargin": 0.2,
+        "revenuePerEmployee": 1159146.0,
+        "transparencyScore": null,
+        "budgetExecution": null
+      },
+      "transparency": {
+        "score": null,
+        "financials": true,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      "anomalies": [],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "EE.FF. Auditados SIMA 2019",
+          "url": "https://files.sima.com.pe/Transparencia/mapafonafesp/SIMA-PERU_II_77_Estados_Financieros_Auditados_2019.pdf"
+        },
+        {
+          "name": "EE.FF. Auditados SIMA 2022",
+          "url": "https://files.sima.com.pe/Transparencia/mapafonafesp/SIMA-PERU_II_77_Estados_Financieros_Auditados_2022.pdf"
+        },
+        {
+          "name": "FONAFE — ficha SIMA",
+          "url": "https://www.fonafe.gob.pe/empresasdelacorporacion/simaperusa"
+        }
+      ],
+      "authoritativeSource": "https://unimauro.github.io/observatorio-defensa-interior/",
+      "provenanceNote": "Datos del Observatorio de Defensa e Interior (fuente de verdad). Años marcados como estimado no son oficiales; vacío = sin datos publicados.",
+      "provenance": "ffaa-conciliado"
+    },
+    {
+      "slug": "seman",
+      "name": "Servicio de Mantenimiento de la Fuerza Aérea",
+      "acronym": "SEMAN",
+      "sector": "Industrial/Defensa",
+      "holding": "FONAFE",
+      "region": "Nacional",
+      "rama": "Fuerza Aérea",
+      "ruc": "20608861549",
+      "website": "https://www.fonafe.gob.pe/",
+      "employees": 0,
+      "description": "Mantenimiento, reparación y overhaul aeronáutico militar y comercial (MRO). Opera desde 2022 (Ley 30469). Empresa más rentable del trío.",
+      "directors": [],
+      "financials": [
+        {
+          "year": 2018,
+          "revenue": 13.15,
+          "revenueReal": false,
+          "netIncome": 2.96,
+          "netIncomeReal": false,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2019,
+          "revenue": 13.15,
+          "revenueReal": false,
+          "netIncome": 2.96,
+          "netIncomeReal": false,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2020,
+          "revenue": 13.15,
+          "revenueReal": false,
+          "netIncome": 2.96,
+          "netIncomeReal": false,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2021,
+          "revenue": 13.15,
+          "revenueReal": false,
+          "netIncome": 2.96,
+          "netIncomeReal": false,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2022,
+          "revenue": 13.15,
+          "revenueReal": true,
+          "netIncome": 2.96,
+          "netIncomeReal": true,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2023,
+          "revenue": 32.1,
+          "revenueReal": true,
+          "netIncome": 3.36,
+          "netIncomeReal": true,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2024,
+          "revenue": 32.1,
+          "revenueReal": false,
+          "netIncome": 3.36,
+          "netIncomeReal": false,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2025,
+          "revenue": 32.1,
+          "revenueReal": false,
+          "netIncome": 3.36,
+          "netIncomeReal": false,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2026,
+          "revenue": 32.1,
+          "revenueReal": false,
+          "netIncome": 3.36,
+          "netIncomeReal": false,
+          "patrimonio": 17.22,
+          "activos": 22.88,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        }
+      ],
+      "periodic": {
+        "quarterly": [],
+        "monthly": []
+      },
+      "news": [],
+      "metrics": {
+        "netMargin": 10.5,
+        "revenuePerEmployee": null,
+        "transparencyScore": null,
+        "budgetExecution": null
+      },
+      "transparency": {
+        "score": null,
+        "financials": true,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      "anomalies": [],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "EE.FF. auditados / FONAFE SEMAN",
+          "url": "https://www.fonafe.gob.pe/empresasdelacorporacion/semanperusa"
+        },
+        {
+          "name": "Ranking de Rentabilidad FONAFE AF-2024",
+          "url": "https://www.fonafe.gob.pe/"
+        }
+      ],
+      "authoritativeSource": "https://unimauro.github.io/observatorio-defensa-interior/",
+      "provenanceNote": "Datos del Observatorio de Defensa e Interior (fuente de verdad). Años marcados como estimado no son oficiales; vacío = sin datos publicados.",
+      "provenance": "ffaa-conciliado"
+    },
+    {
+      "slug": "fame",
+      "name": "Fábrica de Armas y Municiones del Ejército",
+      "acronym": "FAME",
+      "sector": "Industrial/Defensa",
+      "holding": "FONAFE",
+      "region": "Nacional",
+      "rama": "Ejército del Perú",
+      "ruc": "20522449271",
+      "website": "https://www.fonafe.gob.pe/",
+      "employees": 73,
+      "description": "Producción de armamento y municiones para FF.AA. y PNP. Reactivada desde 2023; en pérdidas y con contratos bajo observación de Contraloría.",
+      "directors": [],
+      "financials": [
+        {
+          "year": 2018,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": false,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2019,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": false,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2020,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": false,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2021,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": false,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2022,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": false,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2023,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": false,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2024,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": true,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2025,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": false,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        },
+        {
+          "year": 2026,
+          "revenue": null,
+          "revenueReal": null,
+          "netIncome": -2.2,
+          "netIncomeReal": false,
+          "patrimonio": null,
+          "activos": null,
+          "ebitda": null,
+          "investment": null,
+          "budget": null,
+          "budgetExecuted": null
+        }
+      ],
+      "periodic": {
+        "quarterly": [],
+        "monthly": []
+      },
+      "news": [],
+      "metrics": {
+        "netMargin": null,
+        "revenuePerEmployee": null,
+        "transparencyScore": null,
+        "budgetExecution": null
+      },
+      "transparency": {
+        "score": null,
+        "financials": true,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      "anomalies": [],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "FONAFE — ficha FAME",
+          "url": "https://www.fonafe.gob.pe/empresasdelacorporacion/famesac"
+        },
+        {
+          "name": "ComexPerú — FONAFE bajo la lupa",
+          "url": "https://www.comexperu.org.pe/"
+        }
+      ],
+      "authoritativeSource": "https://unimauro.github.io/observatorio-defensa-interior/",
+      "provenanceNote": "Datos del Observatorio de Defensa e Interior (fuente de verdad). Años marcados como estimado no son oficiales; vacío = sin datos publicados.",
+      "provenance": "ffaa-conciliado"
     }
   ],
   "rankings": {
@@ -14743,6 +14667,13 @@
         "name": "Empresa Nacional de Puertos",
         "acronym": "ENAPU",
         "value": 10.7,
+        "unit": "% margen neto"
+      },
+      {
+        "slug": "seman",
+        "name": "Servicio de Mantenimiento de la Fuerza Aérea",
+        "acronym": "SEMAN",
+        "value": 10.5,
         "unit": "% margen neto"
       },
       {
@@ -14820,13 +14751,6 @@
         "name": "Electro Oriente",
         "acronym": "ELOR",
         "value": 5.7,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "sima",
-        "name": "Servicios Industriales de la Marina",
-        "acronym": "SIMA",
-        "value": 5.2,
         "unit": "% margen neto"
       },
       {
@@ -14998,17 +14922,17 @@
         "unit": "% margen neto"
       },
       {
+        "slug": "sima",
+        "name": "Servicios Industriales de la Marina",
+        "acronym": "SIMA",
+        "value": 0.2,
+        "unit": "% margen neto"
+      },
+      {
         "slug": "corpac",
         "name": "Corporación Peruana de Aeropuertos y Aviación Comercial",
         "acronym": "CORPAC",
         "value": -5.3,
-        "unit": "% margen neto"
-      },
-      {
-        "slug": "fame",
-        "name": "Fábrica de Armas y Municiones del Ejército",
-        "acronym": "FAME",
-        "value": -7.5,
         "unit": "% margen neto"
       },
       {
@@ -15123,6 +15047,13 @@
         "name": "Fondo MIVIVIENDA",
         "acronym": "FMV",
         "value": 1160426.0,
+        "unit": "S/ por trabajador"
+      },
+      {
+        "slug": "sima",
+        "name": "Servicios Industriales de la Marina",
+        "acronym": "SIMA",
+        "value": 1159146.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15364,24 +15295,10 @@
         "unit": "S/ por trabajador"
       },
       {
-        "slug": "sima",
-        "name": "Servicios Industriales de la Marina",
-        "acronym": "SIMA",
-        "value": 245286.0,
-        "unit": "S/ por trabajador"
-      },
-      {
         "slug": "banmat",
         "name": "Banco de Materiales (en liquidación)",
         "acronym": "BANMAT",
         "value": 237500.0,
-        "unit": "S/ por trabajador"
-      },
-      {
-        "slug": "fame",
-        "name": "Fábrica de Armas y Municiones del Ejército",
-        "acronym": "FAME",
-        "value": 230769.0,
         "unit": "S/ por trabajador"
       },
       {
@@ -15530,13 +15447,6 @@
         "slug": "enapu",
         "name": "Empresa Nacional de Puertos",
         "acronym": "ENAPU",
-        "value": 55,
-        "unit": "/100"
-      },
-      {
-        "slug": "sima",
-        "name": "Servicios Industriales de la Marina",
-        "acronym": "SIMA",
         "value": 55,
         "unit": "/100"
       },
@@ -15741,13 +15651,6 @@
         "name": "Empresa Municipal de Servicios de Agua Potable Amazonas",
         "acronym": "EMUSAP Amazonas",
         "value": 30,
-        "unit": "/100"
-      },
-      {
-        "slug": "fame",
-        "name": "Fábrica de Armas y Municiones del Ejército",
-        "acronym": "FAME",
-        "value": 0,
         "unit": "/100"
       },
       {
@@ -19206,24 +19109,6 @@
         "budget": true
       },
       {
-        "company": "Servicios Industriales de la Marina",
-        "slug": "sima",
-        "score": 55,
-        "financials": true,
-        "memoria": true,
-        "directory": false,
-        "budget": false
-      },
-      {
-        "company": "Fábrica de Armas y Municiones del Ejército",
-        "slug": "fame",
-        "score": 0,
-        "financials": false,
-        "memoria": false,
-        "directory": false,
-        "budget": false
-      },
-      {
         "company": "Electrocentro",
         "slug": "electrocentro",
         "score": 55,
@@ -19546,9 +19431,36 @@
         "memoria": false,
         "directory": false,
         "budget": false
+      },
+      {
+        "company": "Servicios Industriales de la Marina",
+        "slug": "sima",
+        "score": null,
+        "financials": true,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      {
+        "company": "Servicio de Mantenimiento de la Fuerza Aérea",
+        "slug": "seman",
+        "score": null,
+        "financials": true,
+        "memoria": false,
+        "directory": false,
+        "budget": false
+      },
+      {
+        "company": "Fábrica de Armas y Municiones del Ejército",
+        "slug": "fame",
+        "score": null,
+        "financials": true,
+        "memoria": false,
+        "directory": false,
+        "budget": false
       }
     ],
-    "avgScore": 49.1
+    "avgScore": 50.0
   },
   "indicators": {
     "isReal": true,
@@ -33521,20 +33433,6 @@
       "description": "Bajo cumplimiento de transparencia (score 30/100)."
     },
     {
-      "company": "Fábrica de Armas y Municiones del Ejército",
-      "companySlug": "fame",
-      "type": "recurring_losses",
-      "severity": "alta",
-      "description": "Pérdidas netas en 3 de los últimos 3 años."
-    },
-    {
-      "company": "Fábrica de Armas y Municiones del Ejército",
-      "companySlug": "fame",
-      "type": "low_transparency",
-      "severity": "media",
-      "description": "Bajo cumplimiento de transparencia (score 0/100)."
-    },
-    {
       "company": "Electro Puno",
       "companySlug": "electro-puno",
       "type": "low_transparency",
@@ -33797,22 +33695,6 @@
     {
       "company": "Servicios Postales del Perú",
       "companySlug": "serpost",
-      "category": "Transparencia",
-      "priority": "media",
-      "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",
-      "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
-    },
-    {
-      "company": "Fábrica de Armas y Municiones del Ejército",
-      "companySlug": "fame",
-      "category": "Reflotamiento / reestructuración",
-      "priority": "alta",
-      "action": "Plan de reflotamiento con metas trimestrales; evaluar fusión, venta de activos o liquidación según viabilidad.",
-      "norma": "D.L. 1031 (eficiencia de la actividad empresarial del Estado) · Ley 27170 (FONAFE)"
-    },
-    {
-      "company": "Fábrica de Armas y Municiones del Ejército",
-      "companySlug": "fame",
       "category": "Transparencia",
       "priority": "media",
       "action": "Publicar EE.FF., memoria anual, directorio y presupuesto en el Portal de Transparencia Estándar dentro de 30 días.",

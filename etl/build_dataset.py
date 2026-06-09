@@ -225,6 +225,28 @@ def build_real_contracts(real, name_by_slug):
         byStage=sorted([{"stage": k, "count": v} for k, v in by_stage.items()], key=lambda x: x["count"], reverse=True))
 
 
+def build_override(o):
+    """Construye una empresa FFAA desde el Observatorio de Defensa (fuente de verdad)."""
+    fin = o["financials"]
+    last_rev = next((f["revenue"] for f in reversed(fin) if f.get("revenue") is not None), None)
+    last_net = next((f["netIncome"] for f in reversed(fin) if f.get("netIncome") is not None), None)
+    net_margin = round(last_net / last_rev * 100, 1) if (last_rev and last_net is not None and last_rev != 0) else None
+    rev_per_emp = round(last_rev * 1_000_000 / o["employees"], 0) if (last_rev and o.get("employees")) else None
+    return dict(
+        slug=o["slug"], name=o["name"], acronym=o["acronym"], sector=o["sector"],
+        holding=o["holding"], region="Nacional", rama=o.get("rama"),
+        ruc=o["ruc"], website=o["website"], employees=o.get("employees", 0),
+        description=o["description"],
+        directors=[], financials=fin, periodic={"quarterly": [], "monthly": []}, news=[],
+        metrics=dict(netMargin=net_margin, revenuePerEmployee=rev_per_emp,
+                     transparencyScore=None, budgetExecution=None),
+        transparency=dict(score=None, financials=True, memoria=False, directory=False, budget=False),
+        anomalies=[], recommendations=[],
+        sources=o.get("sources", []), authoritativeSource=o["authoritativeSource"],
+        provenanceNote=o["provenanceNote"], provenance="ffaa-conciliado",
+    )
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.date.today().isoformat())
@@ -271,9 +293,22 @@ def main():
             anomalies=anomalies, recommendations=recs,
         ))
 
+    # --- Conciliación FFAA: SIMA/FAME/SEMAN desde el Observatorio de Defensa (fuente de verdad) ---
+    try:
+        from sources import defensa
+        overrides = defensa.fetch()
+    except Exception as e:  # noqa: BLE001
+        overrides = []
+        print(f"[etl] aviso defensa: {e}")
+    if overrides:
+        ovr = {o["slug"] for o in overrides}
+        companies = [c for c in companies if c["slug"] not in ovr]
+        for o in overrides:
+            companies.append(build_override(o))
+
     last_year = YEARS[-1]
     def lastval(co, k):
-        return co["financials"][-1][k]
+        return (co["financials"][-1].get(k) if co["financials"] else None) or 0
     kpis = dict(
         companies=len(companies),
         totalRevenue=round(sum(lastval(c, "revenue") for c in companies), 1),
@@ -282,14 +317,14 @@ def main():
         totalInvestment=round(sum(lastval(c, "investment") for c in companies), 1),
         totalBudget=round(sum(lastval(c, "budget") for c in companies), 1),
         totalBudgetExecuted=round(sum(lastval(c, "budgetExecuted") for c in companies), 1),
-        employees=sum(c["employees"] for c in companies),
+        employees=sum(c.get("employees") or 0 for c in companies),
         withLosses=sum(1 for c in companies if lastval(c, "netIncome") < 0),
         withProfits=sum(1 for c in companies if lastval(c, "netIncome") >= 0),
         year=last_year,
     )
 
     def ranking(key, getter, unit, reverse=True):
-        rows = sorted(companies, key=getter, reverse=reverse)
+        rows = sorted([c for c in companies if getter(c) is not None], key=getter, reverse=reverse)
         return [dict(slug=c["slug"], name=c["name"], acronym=c["acronym"],
                      value=round(getter(c), 1), unit=unit) for c in rows]
     rankings = dict(
@@ -360,7 +395,8 @@ def main():
                                     financials=c["transparency"]["financials"], memoria=c["transparency"]["memoria"],
                                     directory=c["transparency"]["directory"], budget=c["transparency"]["budget"])
                                 for c in companies],
-                        avgScore=round(sum(c["transparency"]["score"] for c in companies) / len(companies), 1))
+                        avgScore=round(sum(s for c in companies if (s := c["transparency"]["score"]) is not None)
+                                       / max(1, sum(1 for c in companies if c["transparency"]["score"] is not None)), 1))
 
     dataset = dict(
         meta=dict(version=VERSION, generated_at=gen_date, is_illustrative=True,

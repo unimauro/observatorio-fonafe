@@ -23,22 +23,26 @@ export interface Kpis {
 }
 export interface Financial {
   year: number
-  revenue: number
-  netIncome: number
-  ebitda: number
-  investment: number
-  budget: number
-  budgetExecuted: number
+  revenue: number | null
+  netIncome: number | null
+  ebitda: number | null
+  investment: number | null
+  budget: number | null
+  budgetExecuted: number | null
+  revenueReal?: boolean
+  netIncomeReal?: boolean
+  patrimonio?: number | null
+  activos?: number | null
 }
 export interface Period { period: string; revenue: number; netIncome: number; ebitda: number }
 export interface Periodic { quarterly: Period[]; monthly: Period[] }
 export interface Director { role: string; name: string }
 export interface News { date: string; title: string; url: string }
 export interface Metrics {
-  netMargin: number
-  revenuePerEmployee: number
-  transparencyScore: number
-  budgetExecution: number
+  netMargin: number | null
+  revenuePerEmployee: number | null
+  transparencyScore: number | null
+  budgetExecution: number | null
 }
 export interface Transparency {
   score: number
@@ -69,7 +73,12 @@ export interface Company {
   sector: string
   holding: string
   region: string
+  rama?: string
   ruc: string
+  authoritativeSource?: string
+  provenanceNote?: string
+  provenance?: string
+  sources?: { name: string; url: string }[]
   website: string
   employees: number
   description: string

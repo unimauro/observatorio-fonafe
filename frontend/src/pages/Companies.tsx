@@ -87,13 +87,14 @@ export function Companies() {
                   </div>
                   <div className="rounded-md bg-muted/50 p-2">
                     <div className="text-muted-foreground">Margen neto</div>
-                    <div className={`font-semibold ${c.metrics.netMargin < 0 ? 'text-red-500' : 'text-emerald-500'}`}>
-                      {pct(c.metrics.netMargin)}
+                    <div className={`font-semibold ${c.metrics.netMargin == null ? 'text-muted-foreground' : c.metrics.netMargin < 0 ? 'text-red-500' : 'text-emerald-500'}`}>
+                      {c.metrics.netMargin == null ? 's/d' : pct(c.metrics.netMargin)}
                     </div>
                   </div>
                 </div>
-                <div className="mt-3 flex items-center gap-2">
-                  <Badge variant="accent">Transp. {c.metrics.transparencyScore}/100</Badge>
+                <div className="mt-3 flex flex-wrap items-center gap-2">
+                  {c.metrics.transparencyScore != null && <Badge variant="accent">Transp. {c.metrics.transparencyScore}/100</Badge>}
+                  {c.authoritativeSource && <Badge variant="primary">conciliado · Defensa</Badge>}
                   {c.anomalies.length > 0 && (
                     <Badge variant="warning"><AlertTriangle className="h-3 w-3" />{c.anomalies.length}</Badge>
                   )}
