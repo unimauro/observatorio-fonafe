@@ -356,6 +356,40 @@ def main():
                 c["metrics"]["revenuePerEmployee"] = round(last["revenue"] * 1_000_000 / c["employees"], 0)
         print(f"[etl] FONAFE real por empresa: {matched} empresas enriquecidas (último ejercicio)")
 
+    # --- Indicadores REALES de EPS de saneamiento (SUNASS Benchmarking) ---
+    try:
+        from sources import sunass
+        eps_real = sunass.load_cache()
+    except Exception as e:  # noqa: BLE001
+        eps_real = {}
+        print(f"[etl] aviso SUNASS: {e}")
+    if eps_real:
+        n_eps = 0
+        for c in companies:
+            v = eps_real.get(c["slug"])
+            if not v:
+                continue
+            n_eps += 1
+            def _ind(val):
+                return dict(value=val, meta=None, alcance=None, period=v["year"], unit="%")
+            c["realIndicators"] = {
+                "IGPSS (índice global)": _ind(v["igpss"]),
+                "Acceso a servicios": _ind(v["acceso"]),
+                "Calidad del servicio": _ind(v["calidad"]),
+                "Sostenibilidad financiera": _ind(v["sostFinanciera"]),
+                "Gobernabilidad": _ind(v["gobernabilidad"]),
+                "Gestión de riesgo": _ind(v["gestionRiesgo"]),
+                "Sostenibilidad ambiental": _ind(v["sostAmbiental"]),
+            }
+            c["provenance"] = "real-sunass"
+            c["provenanceNote"] = ("Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y "
+                                   "sub-índices, datos %s). Las cifras financieras son modelo (estimado)." % v["year"])
+            c["sources"] = [sunass.SOURCE]
+            for f in c["financials"]:
+                f["revenueReal"] = False
+                f["netIncomeReal"] = False
+        print(f"[etl] SUNASS real EPS: {n_eps} empresas")
+
     # --- Conciliación FFAA: SIMA/FAME/SEMAN desde el Observatorio de Defensa (fuente de verdad) ---
     try:
         from sources import defensa
@@ -468,6 +502,7 @@ def main():
                       dict(name="FONAFE — Portal de Transparencia", url="https://www.fonafe.gob.pe/", status="pendiente"),
                       dict(name="OECE/SEACE — API OCDS (contrataciones)", url="https://contratacionesabiertas.oece.gob.pe/api/v1", status=contracts_status),
                       dict(name="FONAFE Observatorio Digital (indicadores con metas)", url="https://observatoriodigital.fonafe.gob.pe/", status=indicators_status),
+                      dict(name="SUNASS — Benchmarking Regulatorio de EPS (IGPSS)", url="https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025", status="activo (real · EPS)" if eps_real else "pendiente"),
                       dict(name="MEF — Consulta Amigable", url="https://apps5.mineco.gob.pe/transparencia/", status="pendiente"),
                       dict(name="SMV — Estados financieros", url="https://www.smv.gob.pe/", status="pendiente"),
                   ],

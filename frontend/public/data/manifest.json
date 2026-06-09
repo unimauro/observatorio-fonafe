@@ -25,6 +25,11 @@
       "status": "activo (real · FONAFE)"
     },
     {
+      "name": "SUNASS — Benchmarking Regulatorio de EPS (IGPSS)",
+      "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025",
+      "status": "activo (real · EPS)"
+    },
+    {
       "name": "MEF — Consulta Amigable",
       "url": "https://apps5.mineco.gob.pe/transparencia/",
       "status": "pendiente"

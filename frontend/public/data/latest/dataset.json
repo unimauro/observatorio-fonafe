@@ -34,6 +34,11 @@
         "status": "activo (real · FONAFE)"
       },
       {
+        "name": "SUNASS — Benchmarking Regulatorio de EPS (IGPSS)",
+        "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025",
+        "status": "activo (real · EPS)"
+      },
+      {
         "name": "MEF — Consulta Amigable",
         "url": "https://apps5.mineco.gob.pe/transparencia/",
         "status": "pendiente"
@@ -11595,7 +11600,9 @@
           "ebitda": 69.1,
           "investment": 84.4,
           "budget": 230.3,
-          "budgetExecuted": 188.8
+          "budgetExecuted": 188.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -11604,7 +11611,9 @@
           "ebitda": 72.8,
           "investment": 89.0,
           "budget": 242.7,
-          "budgetExecuted": 199.0
+          "budgetExecuted": 199.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -11613,7 +11622,9 @@
           "ebitda": 76.7,
           "investment": 93.7,
           "budget": 255.5,
-          "budgetExecuted": 209.5
+          "budgetExecuted": 209.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -11622,7 +11633,9 @@
           "ebitda": 80.5,
           "investment": 98.4,
           "budget": 268.3,
-          "budgetExecuted": 220.0
+          "budgetExecuted": 220.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -11631,7 +11644,9 @@
           "ebitda": 84.2,
           "investment": 103.0,
           "budget": 280.8,
-          "budgetExecuted": 230.3
+          "budgetExecuted": 230.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -11640,7 +11655,9 @@
           "ebitda": 81.4,
           "investment": 99.5,
           "budget": 271.4,
-          "budgetExecuted": 222.5
+          "budgetExecuted": 222.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -11649,7 +11666,9 @@
           "ebitda": 87.0,
           "investment": 106.4,
           "budget": 290.2,
-          "budgetExecuted": 238.0
+          "budgetExecuted": 238.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -11658,7 +11677,9 @@
           "ebitda": 90.8,
           "investment": 111.0,
           "budget": 302.6,
-          "budgetExecuted": 248.1
+          "budgetExecuted": 248.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -11667,7 +11688,9 @@
           "ebitda": 92.7,
           "investment": 113.3,
           "budget": 308.9,
-          "budgetExecuted": 253.3
+          "budgetExecuted": 253.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -11676,7 +11699,9 @@
           "ebitda": 93.6,
           "investment": 114.4,
           "budget": 312.0,
-          "budgetExecuted": 255.8
+          "budgetExecuted": 255.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -11685,7 +11710,9 @@
           "ebitda": 94.5,
           "investment": 115.5,
           "budget": 315.1,
-          "budgetExecuted": 258.4
+          "budgetExecuted": 258.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -11859,8 +11886,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 91.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 88.42,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 85.14,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 86.43,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 87.08,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "sedalib",
@@ -11887,7 +11971,9 @@
           "ebitda": 54.5,
           "investment": 66.6,
           "budget": 181.5,
-          "budgetExecuted": 148.8
+          "budgetExecuted": 148.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -11896,7 +11982,9 @@
           "ebitda": 57.4,
           "investment": 70.2,
           "budget": 191.4,
-          "budgetExecuted": 156.9
+          "budgetExecuted": 156.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -11905,7 +11993,9 @@
           "ebitda": 60.4,
           "investment": 73.9,
           "budget": 201.5,
-          "budgetExecuted": 165.2
+          "budgetExecuted": 165.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -11914,7 +12004,9 @@
           "ebitda": 63.5,
           "investment": 77.6,
           "budget": 211.6,
-          "budgetExecuted": 173.5
+          "budgetExecuted": 173.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -11923,7 +12015,9 @@
           "ebitda": 66.4,
           "investment": 81.2,
           "budget": 221.4,
-          "budgetExecuted": 181.5
+          "budgetExecuted": 181.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -11932,7 +12026,9 @@
           "ebitda": 64.2,
           "investment": 78.5,
           "budget": 214.0,
-          "budgetExecuted": 175.5
+          "budgetExecuted": 175.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -11941,7 +12037,9 @@
           "ebitda": 68.6,
           "investment": 83.9,
           "budget": 228.8,
-          "budgetExecuted": 187.6
+          "budgetExecuted": 187.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -11950,7 +12048,9 @@
           "ebitda": 71.6,
           "investment": 87.5,
           "budget": 238.6,
-          "budgetExecuted": 195.7
+          "budgetExecuted": 195.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -11959,7 +12059,9 @@
           "ebitda": 73.1,
           "investment": 89.3,
           "budget": 243.5,
-          "budgetExecuted": 199.7
+          "budgetExecuted": 199.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -11968,7 +12070,9 @@
           "ebitda": 73.8,
           "investment": 90.2,
           "budget": 246.0,
-          "budgetExecuted": 201.7
+          "budgetExecuted": 201.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -11977,7 +12081,9 @@
           "ebitda": 74.5,
           "investment": 91.1,
           "budget": 248.5,
-          "budgetExecuted": 203.8
+          "budgetExecuted": 203.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -12151,8 +12257,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 79.99,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 83.61,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 48.09,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 91.31,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 88.24,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 93.96,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 67.86,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "epsel",
@@ -12179,7 +12342,9 @@
           "ebitda": 47.8,
           "investment": 58.4,
           "budget": 159.4,
-          "budgetExecuted": 114.8
+          "budgetExecuted": 114.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -12188,7 +12353,9 @@
           "ebitda": 50.4,
           "investment": 61.6,
           "budget": 168.0,
-          "budgetExecuted": 121.0
+          "budgetExecuted": 121.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -12197,7 +12364,9 @@
           "ebitda": 53.1,
           "investment": 64.9,
           "budget": 176.9,
-          "budgetExecuted": 127.4
+          "budgetExecuted": 127.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -12206,7 +12375,9 @@
           "ebitda": 55.7,
           "investment": 68.1,
           "budget": 185.8,
-          "budgetExecuted": 133.8
+          "budgetExecuted": 133.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -12215,7 +12386,9 @@
           "ebitda": 58.3,
           "investment": 71.3,
           "budget": 194.4,
-          "budgetExecuted": 140.0
+          "budgetExecuted": 140.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -12224,7 +12397,9 @@
           "ebitda": 56.4,
           "investment": 68.9,
           "budget": 187.9,
-          "budgetExecuted": 135.3
+          "budgetExecuted": 135.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -12233,7 +12408,9 @@
           "ebitda": 60.3,
           "investment": 73.7,
           "budget": 200.9,
-          "budgetExecuted": 144.6
+          "budgetExecuted": 144.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -12242,7 +12419,9 @@
           "ebitda": 62.9,
           "investment": 76.8,
           "budget": 209.5,
-          "budgetExecuted": 150.8
+          "budgetExecuted": 150.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -12251,7 +12430,9 @@
           "ebitda": 64.2,
           "investment": 78.4,
           "budget": 213.8,
-          "budgetExecuted": 153.9
+          "budgetExecuted": 153.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -12260,7 +12441,9 @@
           "ebitda": 64.8,
           "investment": 79.2,
           "budget": 216.0,
-          "budgetExecuted": 155.5
+          "budgetExecuted": 155.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -12269,7 +12452,9 @@
           "ebitda": 65.4,
           "investment": 80.0,
           "budget": 218.2,
-          "budgetExecuted": 157.1
+          "budgetExecuted": 157.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -12443,8 +12628,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 65.45,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 84.99,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 25.98,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 49.48,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 66.67,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 69.49,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 77.62,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "eps-grau",
@@ -12471,7 +12713,9 @@
           "ebitda": 62.4,
           "investment": 76.3,
           "budget": 208.1,
-          "budgetExecuted": 181.0
+          "budgetExecuted": 181.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -12480,7 +12724,9 @@
           "ebitda": 65.8,
           "investment": 80.4,
           "budget": 219.4,
-          "budgetExecuted": 190.9
+          "budgetExecuted": 190.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -12489,7 +12735,9 @@
           "ebitda": 69.3,
           "investment": 84.7,
           "budget": 231.0,
-          "budgetExecuted": 201.0
+          "budgetExecuted": 201.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -12498,7 +12746,9 @@
           "ebitda": 72.8,
           "investment": 88.9,
           "budget": 242.5,
-          "budgetExecuted": 211.0
+          "budgetExecuted": 211.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -12507,7 +12757,9 @@
           "ebitda": 76.1,
           "investment": 93.1,
           "budget": 253.8,
-          "budgetExecuted": 220.8
+          "budgetExecuted": 220.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -12516,7 +12768,9 @@
           "ebitda": 73.6,
           "investment": 90.0,
           "budget": 245.3,
-          "budgetExecuted": 213.4
+          "budgetExecuted": 213.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -12525,7 +12779,9 @@
           "ebitda": 78.7,
           "investment": 96.2,
           "budget": 262.3,
-          "budgetExecuted": 228.2
+          "budgetExecuted": 228.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -12534,7 +12790,9 @@
           "ebitda": 82.1,
           "investment": 100.3,
           "budget": 273.5,
-          "budgetExecuted": 237.9
+          "budgetExecuted": 237.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -12543,7 +12801,9 @@
           "ebitda": 83.8,
           "investment": 102.4,
           "budget": 279.2,
-          "budgetExecuted": 242.9
+          "budgetExecuted": 242.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -12552,7 +12812,9 @@
           "ebitda": 84.6,
           "investment": 103.4,
           "budget": 282.0,
-          "budgetExecuted": 245.3
+          "budgetExecuted": 245.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -12561,7 +12823,9 @@
           "ebitda": 85.4,
           "investment": 104.4,
           "budget": 284.8,
-          "budgetExecuted": 247.8
+          "budgetExecuted": 247.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -12735,8 +12999,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 61.95,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 86.4,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 31.03,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 32.26,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 70.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 77.07,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 54.72,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "sedacusco",
@@ -12763,7 +13084,9 @@
           "ebitda": 31.9,
           "investment": 39.0,
           "budget": 106.3,
-          "budgetExecuted": 97.8
+          "budgetExecuted": 97.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -12772,7 +13095,9 @@
           "ebitda": 33.6,
           "investment": 41.1,
           "budget": 112.0,
-          "budgetExecuted": 103.0
+          "budgetExecuted": 103.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -12781,7 +13106,9 @@
           "ebitda": 35.4,
           "investment": 43.2,
           "budget": 117.9,
-          "budgetExecuted": 108.5
+          "budgetExecuted": 108.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -12790,7 +13117,9 @@
           "ebitda": 37.2,
           "investment": 45.4,
           "budget": 123.8,
-          "budgetExecuted": 113.9
+          "budgetExecuted": 113.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -12799,7 +13128,9 @@
           "ebitda": 38.9,
           "investment": 47.5,
           "budget": 129.6,
-          "budgetExecuted": 119.2
+          "budgetExecuted": 119.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -12808,7 +13139,9 @@
           "ebitda": 37.6,
           "investment": 45.9,
           "budget": 125.3,
-          "budgetExecuted": 115.3
+          "budgetExecuted": 115.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -12817,7 +13150,9 @@
           "ebitda": 40.2,
           "investment": 49.1,
           "budget": 133.9,
-          "budgetExecuted": 123.2
+          "budgetExecuted": 123.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -12826,7 +13161,9 @@
           "ebitda": 41.9,
           "investment": 51.2,
           "budget": 139.7,
-          "budgetExecuted": 128.5
+          "budgetExecuted": 128.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -12835,7 +13172,9 @@
           "ebitda": 42.8,
           "investment": 52.3,
           "budget": 142.6,
-          "budgetExecuted": 131.2
+          "budgetExecuted": 131.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -12844,7 +13183,9 @@
           "ebitda": 43.2,
           "investment": 52.8,
           "budget": 144.0,
-          "budgetExecuted": 132.5
+          "budgetExecuted": 132.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -12853,7 +13194,9 @@
           "ebitda": 43.6,
           "investment": 53.3,
           "budget": 145.4,
-          "budgetExecuted": 133.8
+          "budgetExecuted": 133.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -13027,8 +13370,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 84.59,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 97.89,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 54.43,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 66.75,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 88.89,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 83.59,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "sedacaj",
@@ -13055,7 +13455,9 @@
           "ebitda": 17.3,
           "investment": 21.1,
           "budget": 57.6,
-          "budgetExecuted": 47.2
+          "budgetExecuted": 47.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -13064,7 +13466,9 @@
           "ebitda": 18.2,
           "investment": 22.3,
           "budget": 60.7,
-          "budgetExecuted": 49.8
+          "budgetExecuted": 49.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -13073,7 +13477,9 @@
           "ebitda": 19.2,
           "investment": 23.4,
           "budget": 63.9,
-          "budgetExecuted": 52.4
+          "budgetExecuted": 52.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -13082,7 +13488,9 @@
           "ebitda": 20.1,
           "investment": 24.6,
           "budget": 67.1,
-          "budgetExecuted": 55.0
+          "budgetExecuted": 55.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -13091,7 +13499,9 @@
           "ebitda": 21.1,
           "investment": 25.7,
           "budget": 70.2,
-          "budgetExecuted": 57.6
+          "budgetExecuted": 57.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -13100,7 +13510,9 @@
           "ebitda": 20.4,
           "investment": 24.9,
           "budget": 67.9,
-          "budgetExecuted": 55.7
+          "budgetExecuted": 55.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -13109,7 +13521,9 @@
           "ebitda": 21.8,
           "investment": 26.6,
           "budget": 72.5,
-          "budgetExecuted": 59.4
+          "budgetExecuted": 59.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -13118,7 +13532,9 @@
           "ebitda": 22.7,
           "investment": 27.7,
           "budget": 75.7,
-          "budgetExecuted": 62.1
+          "budgetExecuted": 62.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -13127,7 +13543,9 @@
           "ebitda": 23.2,
           "investment": 28.3,
           "budget": 77.2,
-          "budgetExecuted": 63.3
+          "budgetExecuted": 63.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -13136,7 +13554,9 @@
           "ebitda": 23.4,
           "investment": 28.6,
           "budget": 78.0,
-          "budgetExecuted": 64.0
+          "budgetExecuted": 64.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -13145,7 +13565,9 @@
           "ebitda": 23.6,
           "investment": 28.9,
           "budget": 78.8,
-          "budgetExecuted": 64.6
+          "budgetExecuted": 64.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -13319,8 +13741,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 74.47,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 88.32,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 41.18,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 53.17,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 89.86,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 56.1,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "epsasa",
@@ -13639,7 +14118,9 @@
           "ebitda": 19.9,
           "investment": 24.4,
           "budget": 66.4,
-          "budgetExecuted": 54.4
+          "budgetExecuted": 54.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -13648,7 +14129,9 @@
           "ebitda": 21.0,
           "investment": 25.7,
           "budget": 70.0,
-          "budgetExecuted": 57.4
+          "budgetExecuted": 57.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -13657,7 +14140,9 @@
           "ebitda": 22.1,
           "investment": 27.0,
           "budget": 73.7,
-          "budgetExecuted": 60.4
+          "budgetExecuted": 60.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -13666,7 +14151,9 @@
           "ebitda": 23.2,
           "investment": 28.4,
           "budget": 77.4,
-          "budgetExecuted": 63.5
+          "budgetExecuted": 63.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -13675,7 +14162,9 @@
           "ebitda": 24.3,
           "investment": 29.7,
           "budget": 81.0,
-          "budgetExecuted": 66.4
+          "budgetExecuted": 66.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -13684,7 +14173,9 @@
           "ebitda": 23.5,
           "investment": 28.7,
           "budget": 78.3,
-          "budgetExecuted": 64.2
+          "budgetExecuted": 64.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -13693,7 +14184,9 @@
           "ebitda": 25.1,
           "investment": 30.7,
           "budget": 83.7,
-          "budgetExecuted": 68.6
+          "budgetExecuted": 68.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -13702,7 +14195,9 @@
           "ebitda": 26.2,
           "investment": 32.0,
           "budget": 87.3,
-          "budgetExecuted": 71.6
+          "budgetExecuted": 71.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -13711,7 +14206,9 @@
           "ebitda": 26.7,
           "investment": 32.7,
           "budget": 89.1,
-          "budgetExecuted": 73.1
+          "budgetExecuted": 73.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -13720,7 +14217,9 @@
           "ebitda": 27.0,
           "investment": 33.0,
           "budget": 90.0,
-          "budgetExecuted": 73.8
+          "budgetExecuted": 73.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -13729,7 +14228,9 @@
           "ebitda": 27.3,
           "investment": 33.3,
           "budget": 90.9,
-          "budgetExecuted": 74.5
+          "budgetExecuted": 74.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -13903,8 +14404,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 71.85,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 91.78,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 42.53,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 16.55,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 78.33,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 73.7,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "sedam-huancayo",
@@ -13931,7 +14489,9 @@
           "ebitda": 26.6,
           "investment": 32.5,
           "budget": 88.6,
-          "budgetExecuted": 81.5
+          "budgetExecuted": 81.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -13940,7 +14500,9 @@
           "ebitda": 28.0,
           "investment": 34.2,
           "budget": 93.4,
-          "budgetExecuted": 85.9
+          "budgetExecuted": 85.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -13949,7 +14511,9 @@
           "ebitda": 29.5,
           "investment": 36.0,
           "budget": 98.3,
-          "budgetExecuted": 90.4
+          "budgetExecuted": 90.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -13958,7 +14522,9 @@
           "ebitda": 31.0,
           "investment": 37.8,
           "budget": 103.2,
-          "budgetExecuted": 94.9
+          "budgetExecuted": 94.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -13967,7 +14533,9 @@
           "ebitda": 32.4,
           "investment": 39.6,
           "budget": 108.0,
-          "budgetExecuted": 99.4
+          "budgetExecuted": 99.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -13976,7 +14544,9 @@
           "ebitda": 31.3,
           "investment": 38.3,
           "budget": 104.4,
-          "budgetExecuted": 96.0
+          "budgetExecuted": 96.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -13985,7 +14555,9 @@
           "ebitda": 33.5,
           "investment": 40.9,
           "budget": 111.6,
-          "budgetExecuted": 102.7
+          "budgetExecuted": 102.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -13994,7 +14566,9 @@
           "ebitda": 34.9,
           "investment": 42.7,
           "budget": 116.4,
-          "budgetExecuted": 107.1
+          "budgetExecuted": 107.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -14003,7 +14577,9 @@
           "ebitda": 35.6,
           "investment": 43.6,
           "budget": 118.8,
-          "budgetExecuted": 109.3
+          "budgetExecuted": 109.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -14012,7 +14588,9 @@
           "ebitda": 36.0,
           "investment": 44.0,
           "budget": 120.0,
-          "budgetExecuted": 110.4
+          "budgetExecuted": 110.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -14021,7 +14599,9 @@
           "ebitda": 36.4,
           "investment": 44.4,
           "budget": 121.2,
-          "budgetExecuted": 111.5
+          "budgetExecuted": 111.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -14195,8 +14775,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 70.97,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 97.05,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 52.31,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 60.21,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 84.44,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 21.98,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "eps-tacna",
@@ -14223,7 +14860,9 @@
           "ebitda": 21.3,
           "investment": 26.0,
           "budget": 70.8,
-          "budgetExecuted": 65.1
+          "budgetExecuted": 65.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -14232,7 +14871,9 @@
           "ebitda": 22.4,
           "investment": 27.4,
           "budget": 74.7,
-          "budgetExecuted": 68.7
+          "budgetExecuted": 68.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -14241,7 +14882,9 @@
           "ebitda": 23.6,
           "investment": 28.8,
           "budget": 78.6,
-          "budgetExecuted": 72.3
+          "budgetExecuted": 72.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -14250,7 +14893,9 @@
           "ebitda": 24.8,
           "investment": 30.3,
           "budget": 82.6,
-          "budgetExecuted": 76.0
+          "budgetExecuted": 76.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -14259,7 +14904,9 @@
           "ebitda": 25.9,
           "investment": 31.7,
           "budget": 86.4,
-          "budgetExecuted": 79.5
+          "budgetExecuted": 79.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -14268,7 +14915,9 @@
           "ebitda": 25.1,
           "investment": 30.6,
           "budget": 83.5,
-          "budgetExecuted": 76.8
+          "budgetExecuted": 76.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -14277,7 +14926,9 @@
           "ebitda": 26.8,
           "investment": 32.7,
           "budget": 89.3,
-          "budgetExecuted": 82.2
+          "budgetExecuted": 82.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -14286,7 +14937,9 @@
           "ebitda": 27.9,
           "investment": 34.1,
           "budget": 93.1,
-          "budgetExecuted": 85.7
+          "budgetExecuted": 85.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -14295,7 +14948,9 @@
           "ebitda": 28.5,
           "investment": 34.8,
           "budget": 95.0,
-          "budgetExecuted": 87.4
+          "budgetExecuted": 87.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -14304,7 +14959,9 @@
           "ebitda": 28.8,
           "investment": 35.2,
           "budget": 96.0,
-          "budgetExecuted": 88.3
+          "budgetExecuted": 88.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -14313,7 +14970,9 @@
           "ebitda": 29.1,
           "investment": 35.6,
           "budget": 97.0,
-          "budgetExecuted": 89.2
+          "budgetExecuted": 89.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -14487,8 +15146,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 79.55,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 94.42,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 58.77,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 70.85,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 60.74,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 82.71,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "seda-huanuco",
@@ -14515,7 +15231,9 @@
           "ebitda": 14.6,
           "investment": 17.9,
           "budget": 48.7,
-          "budgetExecuted": 39.9
+          "budgetExecuted": 39.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -14524,7 +15242,9 @@
           "ebitda": 15.4,
           "investment": 18.8,
           "budget": 51.3,
-          "budgetExecuted": 42.1
+          "budgetExecuted": 42.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -14533,7 +15253,9 @@
           "ebitda": 16.2,
           "investment": 19.8,
           "budget": 54.1,
-          "budgetExecuted": 44.4
+          "budgetExecuted": 44.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -14542,7 +15264,9 @@
           "ebitda": 17.0,
           "investment": 20.8,
           "budget": 56.8,
-          "budgetExecuted": 46.6
+          "budgetExecuted": 46.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -14551,7 +15275,9 @@
           "ebitda": 17.8,
           "investment": 21.8,
           "budget": 59.4,
-          "budgetExecuted": 48.7
+          "budgetExecuted": 48.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -14560,7 +15286,9 @@
           "ebitda": 17.2,
           "investment": 21.1,
           "budget": 57.4,
-          "budgetExecuted": 47.1
+          "budgetExecuted": 47.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -14569,7 +15297,9 @@
           "ebitda": 18.4,
           "investment": 22.5,
           "budget": 61.4,
-          "budgetExecuted": 50.3
+          "budgetExecuted": 50.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -14578,7 +15308,9 @@
           "ebitda": 19.2,
           "investment": 23.5,
           "budget": 64.0,
-          "budgetExecuted": 52.5
+          "budgetExecuted": 52.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -14587,7 +15319,9 @@
           "ebitda": 19.6,
           "investment": 24.0,
           "budget": 65.3,
-          "budgetExecuted": 53.5
+          "budgetExecuted": 53.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -14596,7 +15330,9 @@
           "ebitda": 19.8,
           "investment": 24.2,
           "budget": 66.0,
-          "budgetExecuted": 54.1
+          "budgetExecuted": 54.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -14605,7 +15341,9 @@
           "ebitda": 20.0,
           "investment": 24.4,
           "budget": 66.7,
-          "budgetExecuted": 54.7
+          "budgetExecuted": 54.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -14779,8 +15517,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 67.79,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 54.6,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 43.9,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 72.01,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 76.36,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 53.28,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "emapa-sanmartin",
@@ -14807,7 +15602,9 @@
           "ebitda": 17.3,
           "investment": 21.1,
           "budget": 57.6,
-          "budgetExecuted": 41.5
+          "budgetExecuted": 41.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -14816,7 +15613,9 @@
           "ebitda": 18.2,
           "investment": 22.3,
           "budget": 60.7,
-          "budgetExecuted": 43.7
+          "budgetExecuted": 43.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -14825,7 +15624,9 @@
           "ebitda": 19.2,
           "investment": 23.4,
           "budget": 63.9,
-          "budgetExecuted": 46.0
+          "budgetExecuted": 46.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -14834,7 +15635,9 @@
           "ebitda": 20.1,
           "investment": 24.6,
           "budget": 67.1,
-          "budgetExecuted": 48.3
+          "budgetExecuted": 48.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -14843,7 +15646,9 @@
           "ebitda": 21.1,
           "investment": 25.7,
           "budget": 70.2,
-          "budgetExecuted": 50.5
+          "budgetExecuted": 50.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -14852,7 +15657,9 @@
           "ebitda": 20.4,
           "investment": 24.9,
           "budget": 67.9,
-          "budgetExecuted": 48.9
+          "budgetExecuted": 48.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -14861,7 +15668,9 @@
           "ebitda": 21.8,
           "investment": 26.6,
           "budget": 72.5,
-          "budgetExecuted": 52.2
+          "budgetExecuted": 52.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -14870,7 +15679,9 @@
           "ebitda": 22.7,
           "investment": 27.7,
           "budget": 75.7,
-          "budgetExecuted": 54.5
+          "budgetExecuted": 54.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -14879,7 +15690,9 @@
           "ebitda": 23.2,
           "investment": 28.3,
           "budget": 77.2,
-          "budgetExecuted": 55.6
+          "budgetExecuted": 55.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -14888,7 +15701,9 @@
           "ebitda": 23.4,
           "investment": 28.6,
           "budget": 78.0,
-          "budgetExecuted": 56.2
+          "budgetExecuted": 56.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -14897,7 +15712,9 @@
           "ebitda": 23.6,
           "investment": 28.9,
           "budget": 78.8,
-          "budgetExecuted": 56.7
+          "budgetExecuted": 56.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -15071,8 +15888,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 72.21,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 79.81,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 36.91,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 44.43,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 51.06,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "emsapuno",
@@ -15099,7 +15973,9 @@
           "ebitda": 12.0,
           "investment": 14.6,
           "budget": 39.9,
-          "budgetExecuted": 34.7
+          "budgetExecuted": 34.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -15108,7 +15984,9 @@
           "ebitda": 12.6,
           "investment": 15.4,
           "budget": 42.0,
-          "budgetExecuted": 36.5
+          "budgetExecuted": 36.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -15117,7 +15995,9 @@
           "ebitda": 13.3,
           "investment": 16.2,
           "budget": 44.2,
-          "budgetExecuted": 38.5
+          "budgetExecuted": 38.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -15126,7 +16006,9 @@
           "ebitda": 13.9,
           "investment": 17.0,
           "budget": 46.4,
-          "budgetExecuted": 40.4
+          "budgetExecuted": 40.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -15135,7 +16017,9 @@
           "ebitda": 14.6,
           "investment": 17.8,
           "budget": 48.6,
-          "budgetExecuted": 42.3
+          "budgetExecuted": 42.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -15144,7 +16028,9 @@
           "ebitda": 14.1,
           "investment": 17.2,
           "budget": 47.0,
-          "budgetExecuted": 40.9
+          "budgetExecuted": 40.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -15153,7 +16039,9 @@
           "ebitda": 15.1,
           "investment": 18.4,
           "budget": 50.2,
-          "budgetExecuted": 43.7
+          "budgetExecuted": 43.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -15162,7 +16050,9 @@
           "ebitda": 15.7,
           "investment": 19.2,
           "budget": 52.4,
-          "budgetExecuted": 45.6
+          "budgetExecuted": 45.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -15171,7 +16061,9 @@
           "ebitda": 16.0,
           "investment": 19.6,
           "budget": 53.5,
-          "budgetExecuted": 46.5
+          "budgetExecuted": 46.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -15180,7 +16072,9 @@
           "ebitda": 16.2,
           "investment": 19.8,
           "budget": 54.0,
-          "budgetExecuted": 47.0
+          "budgetExecuted": 47.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -15189,7 +16083,9 @@
           "ebitda": 16.4,
           "investment": 20.0,
           "budget": 54.5,
-          "budgetExecuted": 47.4
+          "budgetExecuted": 47.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -15363,8 +16259,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 77.77,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 96.64,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 60.16,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 40.53,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 90.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 79.56,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 81.43,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "eps-loreto",
@@ -15391,7 +16344,9 @@
           "ebitda": 18.6,
           "investment": 22.7,
           "budget": 62.0,
-          "budgetExecuted": 44.6
+          "budgetExecuted": 44.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -15400,7 +16355,9 @@
           "ebitda": 19.6,
           "investment": 24.0,
           "budget": 65.4,
-          "budgetExecuted": 47.1
+          "budgetExecuted": 47.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -15409,7 +16366,9 @@
           "ebitda": 20.6,
           "investment": 25.2,
           "budget": 68.8,
-          "budgetExecuted": 49.5
+          "budgetExecuted": 49.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -15418,7 +16377,9 @@
           "ebitda": 21.7,
           "investment": 26.5,
           "budget": 72.2,
-          "budgetExecuted": 52.0
+          "budgetExecuted": 52.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -15427,7 +16388,9 @@
           "ebitda": 22.7,
           "investment": 27.7,
           "budget": 75.6,
-          "budgetExecuted": 54.4
+          "budgetExecuted": 54.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -15436,7 +16399,9 @@
           "ebitda": 21.9,
           "investment": 26.8,
           "budget": 73.1,
-          "budgetExecuted": 52.6
+          "budgetExecuted": 52.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -15445,7 +16410,9 @@
           "ebitda": 23.4,
           "investment": 28.6,
           "budget": 78.1,
-          "budgetExecuted": 56.2
+          "budgetExecuted": 56.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -15454,7 +16421,9 @@
           "ebitda": 24.4,
           "investment": 29.9,
           "budget": 81.5,
-          "budgetExecuted": 58.7
+          "budgetExecuted": 58.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -15463,7 +16432,9 @@
           "ebitda": 24.9,
           "investment": 30.5,
           "budget": 83.2,
-          "budgetExecuted": 59.9
+          "budgetExecuted": 59.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -15472,7 +16443,9 @@
           "ebitda": 25.2,
           "investment": 30.8,
           "budget": 84.0,
-          "budgetExecuted": 60.5
+          "budgetExecuted": 60.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -15481,7 +16454,9 @@
           "ebitda": 25.5,
           "investment": 31.1,
           "budget": 84.8,
-          "budgetExecuted": 61.1
+          "budgetExecuted": 61.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -15655,8 +16630,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 59.6,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 58.92,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 23.36,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 64.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 80.32,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 20.35,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "emapacop",
@@ -15683,7 +16715,9 @@
           "ebitda": 10.6,
           "investment": 13.0,
           "budget": 35.4,
-          "budgetExecuted": 30.8
+          "budgetExecuted": 30.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -15692,7 +16726,9 @@
           "ebitda": 11.2,
           "investment": 13.7,
           "budget": 37.3,
-          "budgetExecuted": 32.5
+          "budgetExecuted": 32.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -15701,7 +16737,9 @@
           "ebitda": 11.8,
           "investment": 14.4,
           "budget": 39.3,
-          "budgetExecuted": 34.2
+          "budgetExecuted": 34.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -15710,7 +16748,9 @@
           "ebitda": 12.4,
           "investment": 15.1,
           "budget": 41.3,
-          "budgetExecuted": 35.9
+          "budgetExecuted": 35.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -15719,7 +16759,9 @@
           "ebitda": 13.0,
           "investment": 15.8,
           "budget": 43.2,
-          "budgetExecuted": 37.6
+          "budgetExecuted": 37.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -15728,7 +16770,9 @@
           "ebitda": 12.5,
           "investment": 15.3,
           "budget": 41.8,
-          "budgetExecuted": 36.4
+          "budgetExecuted": 36.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -15737,7 +16781,9 @@
           "ebitda": 13.4,
           "investment": 16.4,
           "budget": 44.6,
-          "budgetExecuted": 38.8
+          "budgetExecuted": 38.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -15746,7 +16792,9 @@
           "ebitda": 14.0,
           "investment": 17.1,
           "budget": 46.6,
-          "budgetExecuted": 40.5
+          "budgetExecuted": 40.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -15755,7 +16803,9 @@
           "ebitda": 14.3,
           "investment": 17.4,
           "budget": 47.5,
-          "budgetExecuted": 41.3
+          "budgetExecuted": 41.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -15764,7 +16814,9 @@
           "ebitda": 14.4,
           "investment": 17.6,
           "budget": 48.0,
-          "budgetExecuted": 41.8
+          "budgetExecuted": 41.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -15773,7 +16825,9 @@
           "ebitda": 14.5,
           "investment": 17.8,
           "budget": 48.5,
-          "budgetExecuted": 42.2
+          "budgetExecuted": 42.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -15947,8 +17001,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 68.76,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 44.85,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 66.8,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 52.04,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 93.4,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 49.27,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "emapat",
@@ -15975,7 +17086,9 @@
           "ebitda": 7.3,
           "investment": 8.9,
           "budget": 24.4,
-          "budgetExecuted": 18.8
+          "budgetExecuted": 18.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -15984,7 +17097,9 @@
           "ebitda": 7.7,
           "investment": 9.4,
           "budget": 25.7,
-          "budgetExecuted": 19.8
+          "budgetExecuted": 19.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -15993,7 +17108,9 @@
           "ebitda": 8.1,
           "investment": 9.9,
           "budget": 27.0,
-          "budgetExecuted": 20.8
+          "budgetExecuted": 20.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -16002,7 +17119,9 @@
           "ebitda": 8.5,
           "investment": 10.4,
           "budget": 28.4,
-          "budgetExecuted": 21.9
+          "budgetExecuted": 21.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -16011,7 +17130,9 @@
           "ebitda": 8.9,
           "investment": 10.9,
           "budget": 29.7,
-          "budgetExecuted": 22.9
+          "budgetExecuted": 22.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -16020,7 +17141,9 @@
           "ebitda": 8.6,
           "investment": 10.5,
           "budget": 28.7,
-          "budgetExecuted": 22.1
+          "budgetExecuted": 22.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -16029,7 +17152,9 @@
           "ebitda": 9.2,
           "investment": 11.3,
           "budget": 30.7,
-          "budgetExecuted": 23.6
+          "budgetExecuted": 23.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -16038,7 +17163,9 @@
           "ebitda": 9.6,
           "investment": 11.7,
           "budget": 32.0,
-          "budgetExecuted": 24.6
+          "budgetExecuted": 24.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -16047,7 +17174,9 @@
           "ebitda": 9.8,
           "investment": 12.0,
           "budget": 32.7,
-          "budgetExecuted": 25.2
+          "budgetExecuted": 25.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -16056,7 +17185,9 @@
           "ebitda": 9.9,
           "investment": 12.1,
           "budget": 33.0,
-          "budgetExecuted": 25.4
+          "budgetExecuted": 25.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -16065,7 +17196,9 @@
           "ebitda": 10.0,
           "investment": 12.2,
           "budget": 33.3,
-          "budgetExecuted": 25.6
+          "budgetExecuted": 25.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -16239,8 +17372,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 72.61,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 68.49,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 44.45,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 65.07,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 90.21,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 55.54,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "eps-moquegua",
@@ -16267,7 +17457,9 @@
           "ebitda": 9.3,
           "investment": 11.4,
           "budget": 31.0,
-          "budgetExecuted": 25.4
+          "budgetExecuted": 25.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -16276,7 +17468,9 @@
           "ebitda": 9.8,
           "investment": 12.0,
           "budget": 32.7,
-          "budgetExecuted": 26.8
+          "budgetExecuted": 26.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -16285,7 +17479,9 @@
           "ebitda": 10.3,
           "investment": 12.6,
           "budget": 34.4,
-          "budgetExecuted": 28.2
+          "budgetExecuted": 28.2,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -16294,7 +17490,9 @@
           "ebitda": 10.8,
           "investment": 13.2,
           "budget": 36.1,
-          "budgetExecuted": 29.6
+          "budgetExecuted": 29.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -16303,7 +17501,9 @@
           "ebitda": 11.3,
           "investment": 13.9,
           "budget": 37.8,
-          "budgetExecuted": 31.0
+          "budgetExecuted": 31.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -16312,7 +17512,9 @@
           "ebitda": 11.0,
           "investment": 13.4,
           "budget": 36.5,
-          "budgetExecuted": 29.9
+          "budgetExecuted": 29.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -16321,7 +17523,9 @@
           "ebitda": 11.7,
           "investment": 14.3,
           "budget": 39.1,
-          "budgetExecuted": 32.1
+          "budgetExecuted": 32.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -16330,7 +17534,9 @@
           "ebitda": 12.2,
           "investment": 14.9,
           "budget": 40.7,
-          "budgetExecuted": 33.4
+          "budgetExecuted": 33.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -16339,7 +17545,9 @@
           "ebitda": 12.5,
           "investment": 15.2,
           "budget": 41.6,
-          "budgetExecuted": 34.1
+          "budgetExecuted": 34.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -16348,7 +17556,9 @@
           "ebitda": 12.6,
           "investment": 15.4,
           "budget": 42.0,
-          "budgetExecuted": 34.4
+          "budgetExecuted": 34.4,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -16357,7 +17567,9 @@
           "ebitda": 12.7,
           "investment": 15.6,
           "budget": 42.4,
-          "budgetExecuted": 34.8
+          "budgetExecuted": 34.8,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -16531,8 +17743,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 83.03,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 96.08,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 47.2,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 75.35,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 88.89,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 84.21,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 91.95,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "emusap-amazonas",
@@ -16559,7 +17828,9 @@
           "ebitda": 6.3,
           "investment": 7.8,
           "budget": 21.3,
-          "budgetExecuted": 15.3
+          "budgetExecuted": 15.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2016,
@@ -16568,7 +17839,9 @@
           "ebitda": 6.7,
           "investment": 8.2,
           "budget": 22.4,
-          "budgetExecuted": 16.1
+          "budgetExecuted": 16.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2017,
@@ -16577,7 +17850,9 @@
           "ebitda": 7.0,
           "investment": 8.7,
           "budget": 23.6,
-          "budgetExecuted": 17.0
+          "budgetExecuted": 17.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2018,
@@ -16586,7 +17861,9 @@
           "ebitda": 7.4,
           "investment": 9.1,
           "budget": 24.8,
-          "budgetExecuted": 17.9
+          "budgetExecuted": 17.9,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2019,
@@ -16595,7 +17872,9 @@
           "ebitda": 7.7,
           "investment": 9.5,
           "budget": 25.9,
-          "budgetExecuted": 18.6
+          "budgetExecuted": 18.6,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2020,
@@ -16604,7 +17883,9 @@
           "ebitda": 7.5,
           "investment": 9.2,
           "budget": 25.1,
-          "budgetExecuted": 18.1
+          "budgetExecuted": 18.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2021,
@@ -16613,7 +17894,9 @@
           "ebitda": 8.0,
           "investment": 9.9,
           "budget": 26.8,
-          "budgetExecuted": 19.3
+          "budgetExecuted": 19.3,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2022,
@@ -16622,7 +17905,9 @@
           "ebitda": 8.3,
           "investment": 10.3,
           "budget": 27.9,
-          "budgetExecuted": 20.1
+          "budgetExecuted": 20.1,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2023,
@@ -16631,7 +17916,9 @@
           "ebitda": 8.5,
           "investment": 10.5,
           "budget": 28.5,
-          "budgetExecuted": 20.5
+          "budgetExecuted": 20.5,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2024,
@@ -16640,7 +17927,9 @@
           "ebitda": 8.6,
           "investment": 10.6,
           "budget": 28.8,
-          "budgetExecuted": 20.7
+          "budgetExecuted": 20.7,
+          "revenueReal": false,
+          "netIncomeReal": false
         },
         {
           "year": 2025,
@@ -16649,7 +17938,9 @@
           "ebitda": 8.7,
           "investment": 10.7,
           "budget": 29.1,
-          "budgetExecuted": 21.0
+          "budgetExecuted": 21.0,
+          "revenueReal": false,
+          "netIncomeReal": false
         }
       ],
       "periodic": {
@@ -16823,8 +18114,65 @@
           "norma": "Ley 27806 (Transparencia y Acceso a la Información Pública)"
         }
       ],
-      "provenance": "simulado",
-      "provenanceNote": "Cifras financieras SIMULADAS (modelo ilustrativo determinista), no oficiales. Las contrataciones (OCDS/OECE) e indicadores FONAFE asociados sí son reales."
+      "provenance": "real-sunass",
+      "provenanceNote": "Indicadores REALES de SUNASS (Benchmarking Regulatorio: IGPSS y sub-índices, datos 2024). Las cifras financieras son modelo (estimado).",
+      "realIndicators": {
+        "IGPSS (índice global)": {
+          "value": 82.46,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Acceso a servicios": {
+          "value": 98.19,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Calidad del servicio": {
+          "value": 50.28,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad financiera": {
+          "value": 98.76,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gobernabilidad": {
+          "value": 100.0,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Gestión de riesgo": {
+          "value": 89.66,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        },
+        "Sostenibilidad ambiental": {
+          "value": 52.59,
+          "meta": null,
+          "alcance": null,
+          "period": 2024,
+          "unit": "%"
+        }
+      },
+      "sources": [
+        {
+          "name": "Benchmarking Regulatorio de las EPS 2025 — SUNASS",
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/7109489-benchmarking-regulatorio-de-las-eps-2025"
+        }
+      ]
     },
     {
       "slug": "sima",

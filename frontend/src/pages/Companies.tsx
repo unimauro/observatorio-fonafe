@@ -96,6 +96,7 @@ export function Companies() {
                   {c.metrics.transparencyScore != null && <Badge variant="accent">Transp. {c.metrics.transparencyScore}/100</Badge>}
                   {c.authoritativeSource && <Badge variant="primary">conciliado · Defensa</Badge>}
                   {c.provenance === 'real-fonafe' && <Badge variant="success">real · FONAFE</Badge>}
+                  {c.provenance === 'real-sunass' && <Badge variant="success">real · SUNASS</Badge>}
                   {c.provenance === 'simulado' && <Badge variant="warning">simulado</Badge>}
                   {c.anomalies.length > 0 && (
                     <Badge variant="warning"><AlertTriangle className="h-3 w-3" />{c.anomalies.length}</Badge>

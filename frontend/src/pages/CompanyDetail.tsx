@@ -138,6 +138,14 @@ export function CompanyDetail() {
             {company.provenanceNote || 'Los años previos son modelo (estimado).'}
           </span>
         </div>
+      ) : company.provenance === 'real-sunass' ? (
+        <div className="mb-5 flex items-start gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 p-3 text-sm">
+          <Target className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+          <span>
+            <b>Indicadores reales de SUNASS</b> (Benchmarking Regulatorio: IGPSS y sub-índices).{' '}
+            {company.provenanceNote || 'Las cifras financieras son modelo (estimado).'}
+          </span>
+        </div>
       ) : company.provenance === 'simulado' && (
         <div className="mb-5 flex items-start gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 p-3 text-sm">
           <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-amber-500" />
@@ -160,7 +168,7 @@ export function CompanyDetail() {
           </div>
           {company.realIndicators && (
             <Card>
-              <CardHeader><CardTitle className="flex items-center gap-2"><Target className="h-4 w-4 text-emerald-500" />Indicadores reales · FONAFE (último ejercicio)</CardTitle></CardHeader>
+              <CardHeader><CardTitle className="flex items-center gap-2"><Target className="h-4 w-4 text-emerald-500" />Indicadores reales · {company.provenance === 'real-sunass' ? 'SUNASS (Benchmarking)' : 'FONAFE (último ejercicio)'}</CardTitle></CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                   {Object.entries(company.realIndicators).map(([name, v]) => {

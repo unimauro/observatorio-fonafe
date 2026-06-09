@@ -1,0 +1,189 @@
+{
+  "sedapar": {
+    "epsName": "SEDAPAR S.A.",
+    "year": 2024,
+    "igpss": 91.0,
+    "acceso": 88.42,
+    "calidad": 85.14,
+    "sostFinanciera": 100.0,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 86.43,
+    "sostAmbiental": 87.08
+  },
+  "sedacusco": {
+    "epsName": "EPS SEDACUSCO S.A.",
+    "year": 2024,
+    "igpss": 84.59,
+    "acceso": 97.89,
+    "calidad": 54.43,
+    "sostFinanciera": 66.75,
+    "gobernabilidad": 88.89,
+    "gestionRiesgo": 100.0,
+    "sostAmbiental": 83.59
+  },
+  "sedalib": {
+    "epsName": "SEDALIB S.A.",
+    "year": 2024,
+    "igpss": 79.99,
+    "acceso": 83.61,
+    "calidad": 48.09,
+    "sostFinanciera": 91.31,
+    "gobernabilidad": 88.24,
+    "gestionRiesgo": 93.96,
+    "sostAmbiental": 67.86
+  },
+  "eps-tacna": {
+    "epsName": "EPS TACNA S.A.",
+    "year": 2024,
+    "igpss": 79.55,
+    "acceso": 94.42,
+    "calidad": 58.77,
+    "sostFinanciera": 70.85,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 60.74,
+    "sostAmbiental": 82.71
+  },
+  "epsel": {
+    "epsName": "EPSEL S.A.",
+    "year": 2024,
+    "igpss": 65.45,
+    "acceso": 84.99,
+    "calidad": 25.98,
+    "sostFinanciera": 49.48,
+    "gobernabilidad": 66.67,
+    "gestionRiesgo": 69.49,
+    "sostAmbiental": 77.62
+  },
+  "eps-grau": {
+    "epsName": "EPS GRAU S.A.",
+    "year": 2024,
+    "igpss": 61.95,
+    "acceso": 86.4,
+    "calidad": 31.03,
+    "sostFinanciera": 32.26,
+    "gobernabilidad": 70.0,
+    "gestionRiesgo": 77.07,
+    "sostAmbiental": 54.72
+  },
+  "eps-loreto": {
+    "epsName": "EPS SEDALORETO S.A.",
+    "year": 2024,
+    "igpss": 59.6,
+    "acceso": 58.92,
+    "calidad": 23.36,
+    "sostFinanciera": 64.0,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 80.32,
+    "sostAmbiental": 20.35
+  },
+  "emsapuno": {
+    "epsName": "EMSAPUNO S.A.",
+    "year": 2024,
+    "igpss": 77.77,
+    "acceso": 96.64,
+    "calidad": 60.16,
+    "sostFinanciera": 40.53,
+    "gobernabilidad": 90.0,
+    "gestionRiesgo": 79.56,
+    "sostAmbiental": 81.43
+  },
+  "sedacaj": {
+    "epsName": "EPS SEDACAJ S.A.",
+    "year": 2024,
+    "igpss": 74.47,
+    "acceso": 88.32,
+    "calidad": 41.18,
+    "sostFinanciera": 53.17,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 89.86,
+    "sostAmbiental": 56.1
+  },
+  "emapa-sanmartin": {
+    "epsName": "EMAPA SAN MARTÍN S.A.",
+    "year": 2024,
+    "igpss": 72.21,
+    "acceso": 79.81,
+    "calidad": 36.91,
+    "sostFinanciera": 44.43,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 100.0,
+    "sostAmbiental": 51.06
+  },
+  "emapica": {
+    "epsName": "EPS EMAPICA S.A.",
+    "year": 2024,
+    "igpss": 71.85,
+    "acceso": 91.78,
+    "calidad": 42.53,
+    "sostFinanciera": 16.55,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 78.33,
+    "sostAmbiental": 73.7
+  },
+  "sedam-huancayo": {
+    "epsName": "EPS SEDAM HUANCAYO S.A.",
+    "year": 2024,
+    "igpss": 70.97,
+    "acceso": 97.05,
+    "calidad": 52.31,
+    "sostFinanciera": 60.21,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 84.44,
+    "sostAmbiental": 21.98
+  },
+  "seda-huanuco": {
+    "epsName": "EPS SEDA HUANUCO S.A.",
+    "year": 2024,
+    "igpss": 67.79,
+    "acceso": 54.6,
+    "calidad": 43.9,
+    "sostFinanciera": 72.01,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 76.36,
+    "sostAmbiental": 53.28
+  },
+  "eps-moquegua": {
+    "epsName": "EPS MOQUEGUA S.A.",
+    "year": 2024,
+    "igpss": 83.03,
+    "acceso": 96.08,
+    "calidad": 47.2,
+    "sostFinanciera": 75.35,
+    "gobernabilidad": 88.89,
+    "gestionRiesgo": 84.21,
+    "sostAmbiental": 91.95
+  },
+  "emusap-amazonas": {
+    "epsName": "EPS EMUSAP ABANCAY S.A.C.",
+    "year": 2024,
+    "igpss": 82.46,
+    "acceso": 98.19,
+    "calidad": 50.28,
+    "sostFinanciera": 98.76,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 89.66,
+    "sostAmbiental": 52.59
+  },
+  "emapat": {
+    "epsName": "EPS EMAPAT S.A.",
+    "year": 2024,
+    "igpss": 72.61,
+    "acceso": 68.49,
+    "calidad": 44.45,
+    "sostFinanciera": 65.07,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 90.21,
+    "sostAmbiental": 55.54
+  },
+  "emapacop": {
+    "epsName": "EMAPACOP S.A.",
+    "year": 2024,
+    "igpss": 68.76,
+    "acceso": 44.85,
+    "calidad": 66.8,
+    "sostFinanciera": 52.04,
+    "gobernabilidad": 100.0,
+    "gestionRiesgo": 93.4,
+    "sostAmbiental": 49.27
+  }
+}
