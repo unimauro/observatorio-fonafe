@@ -121,6 +121,30 @@ export function Dashboard() {
         <Kpi label="Empresas con ganancias" value={num(k.withProfits)} icon={TrendingUp} tone="good" />
       </div>
 
+      {data.indicators?.realSummary && (() => {
+        const rs = data.indicators.realSummary!
+        const meses = ['', 'Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic']
+        const per = rs.period ? `${meses[+String(rs.period).slice(4)] || ''} ${String(rs.period).slice(0, 4)}` : ''
+        return (
+          <Card className="mt-6">
+            <CardHeader className="flex-row flex-wrap items-center justify-between gap-2">
+              <CardTitle>Indicadores financieros reales · FONAFE {per && `(${per})`}</CardTitle>
+              <Link to="/desempeno"><Badge variant="success">✓ datos reales · ver metas →</Badge></Link>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+                <Kpi label="Activos" value={solesCompact(rs.activos || 0)} />
+                <Kpi label="Patrimonio neto" value={solesCompact(rs.patrimonio || 0)} />
+                <Kpi label="Ingresos (mes)" value={solesCompact(rs.ingresos || 0)} />
+                <Kpi label="EBITDA (mes)" value={solesCompact(rs.ebitda || 0)} tone="good" />
+                <Kpi label="Utilidad neta (mes)" value={solesCompact(rs.utilidadNeta || 0)} tone={(rs.utilidadNeta || 0) >= 0 ? 'good' : 'bad'} />
+              </div>
+              <p className="mt-2 text-xs text-muted-foreground">Suma del último valor por sector (Observatorio Digital de FONAFE). Magnitudes en S/ MM.</p>
+            </CardContent>
+          </Card>
+        )
+      })()}
+
       <Card className="mt-6">
         <CardHeader className="flex-row items-center justify-between">
           <CardTitle>Evolución consolidada (ingresos · utilidad · EBITDA)</CardTitle>

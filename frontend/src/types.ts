@@ -110,12 +110,17 @@ export interface IndicatorPoint {
   indicator: string; unit: string; sector: string; year: number
   month: string; idFecha: number; value: number; meta: number | null; alcance: number | null
 }
+export interface RealSummary {
+  period?: number
+  ingresos?: number; ebitda?: number; utilidadNeta?: number; activos?: number; patrimonio?: number
+}
 export interface Indicators {
   isReal?: boolean
   source?: string
   items: IndicatorPoint[]
   indicatorList?: string[]
   sectorList?: string[]
+  realSummary?: RealSummary
 }
 export interface Dataset {
   meta: Meta

@@ -33460,7 +33460,15 @@
       "Salud",
       "Saneamiento",
       "Transportes y Comunicaciones"
-    ]
+    ],
+    "realSummary": {
+      "ingresos": 2776.4,
+      "period": 202601,
+      "ebitda": 546.3,
+      "utilidadNeta": 400.1,
+      "activos": 51098.9,
+      "patrimonio": 26310.5
+    }
   },
   "anomalies": [
     {

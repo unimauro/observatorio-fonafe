@@ -337,6 +337,22 @@ def main():
                 sectorList=sorted(set(p["sector"] for p in pts)),
             )
             indicators_status = "activo (real · FONAFE)"
+            # Consolidado financiero REAL: suma del último valor por sector (magnitudes en MM S/)
+            monetary = {"Ingresos": "ingresos", "EBITDA": "ebitda", "Utilidad Neta": "utilidadNeta",
+                        "Activos": "activos", "Patrimonio Neto": "patrimonio"}
+            rs = {}
+            for name, key in monetary.items():
+                bysec = {}
+                for p in pts:
+                    if p["indicator"] == name and p.get("value") is not None and p.get("idFecha"):
+                        s = p["sector"]
+                        if s not in bysec or p["idFecha"] > bysec[s][0]:
+                            bysec[s] = (p["idFecha"], p["value"])
+                if bysec:
+                    rs[key] = round(sum(v for _, v in bysec.values()), 1)
+                    rs["period"] = max(rs.get("period", 0), max(f for f, _ in bysec.values()))
+            if rs:
+                indicators["realSummary"] = rs
     except Exception as e:  # noqa: BLE001
         print(f"[etl] aviso indicadores FONAFE: {e}")
 

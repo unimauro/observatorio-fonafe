@@ -73,7 +73,7 @@ export function Layout() {
             <div className="rounded-lg border border-border p-2">
               <div>Versión {meta.version}</div>
               <div>Datos al {meta.generated_at}</div>
-              {meta.is_illustrative && <Badge variant="warning" className="mt-1">financieros ilustrativos · contratos reales</Badge>}
+              {meta.is_illustrative && <Badge variant="warning" className="mt-1">contratos + indicadores FONAFE reales · series por empresa modeladas</Badge>}
             </div>
           )}
         </div>
@@ -86,8 +86,8 @@ export function Layout() {
         </button>
         <div className="lg:hidden"><Brand /></div>
         <div className="ml-auto flex items-center gap-2">
-          {data?.contracts?.isReal && <Badge variant="success" className="hidden md:inline-flex">contratos: reales</Badge>}
-          {meta?.is_illustrative && <Badge variant="warning" className="hidden sm:inline-flex">financieros: ilustrativos</Badge>}
+          {(data?.contracts?.isReal || data?.indicators?.isReal) && <Badge variant="success" className="hidden md:inline-flex">reales: contratos + FONAFE</Badge>}
+          {meta?.is_illustrative && <Badge variant="warning" className="hidden sm:inline-flex">series x empresa: modeladas</Badge>}
           <button onClick={toggleTheme} aria-label="Tema" className="rounded-md p-2 hover:bg-muted">
             {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
