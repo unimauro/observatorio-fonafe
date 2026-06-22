@@ -1,13 +1,14 @@
 {
   "current": {
     "version": "0.1.0",
-    "generated_at": "2026-06-15",
+    "generated_at": "2026-06-22",
     "is_illustrative": true
   },
   "snapshots": [
     "2026-06-08",
     "2026-06-09",
-    "2026-06-15"
+    "2026-06-15",
+    "2026-06-22"
   ],
   "sources": [
     {

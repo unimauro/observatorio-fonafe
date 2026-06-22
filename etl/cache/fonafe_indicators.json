@@ -139,8 +139,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 1.79,
-    "meta": 10.48,
-    "alcance": 17.05
+    "meta": 10.82,
+    "alcance": 16.51
   },
   {
     "indicator": "ROA",
@@ -282,8 +282,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 0.26,
-    "meta": 1.47,
-    "alcance": 17.94
+    "meta": 1.54,
+    "alcance": 17.11
   },
   {
     "indicator": "Margen Neto",
@@ -425,8 +425,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 49.53,
-    "meta": 24.2,
-    "alcance": 204.65
+    "meta": 25.22,
+    "alcance": 196.37
   },
   {
     "indicator": "EBITDA",
@@ -568,8 +568,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 263.4,
-    "meta": 1609.5,
-    "alcance": 16.37
+    "meta": 1705.3,
+    "alcance": 15.45
   },
   {
     "indicator": "Utilidad Neta",
@@ -711,8 +711,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 193.4,
-    "meta": 1095.7,
-    "alcance": 17.65
+    "meta": 1124.3,
+    "alcance": 17.2
   },
   {
     "indicator": "Liquidez",
@@ -854,8 +854,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 26.4,
-    "meta": 26.3,
-    "alcance": 100.36
+    "meta": 27.0,
+    "alcance": 97.74
   },
   {
     "indicator": "Solvencia",
@@ -997,8 +997,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 85.23,
-    "meta": 85.97,
-    "alcance": 99.14
+    "meta": 85.75,
+    "alcance": 99.39
   },
   {
     "indicator": "Endeudamiento",
@@ -1140,8 +1140,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 577.1,
-    "meta": 612.65,
-    "alcance": 94.2
+    "meta": 601.77,
+    "alcance": 95.9
   },
   {
     "indicator": "Liquidez",
@@ -12161,9 +12161,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": 2.66,
+    "value": 2.61,
     "meta": 4.51,
-    "alcance": 58.93
+    "alcance": 57.76
   },
   {
     "indicator": "Solvencia",
@@ -12304,9 +12304,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": 1.14,
+    "value": 1.13,
     "meta": 1.25,
-    "alcance": 91.35
+    "alcance": 90.68
   },
   {
     "indicator": "ROA",
@@ -12447,9 +12447,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": -0.17,
+    "value": -0.13,
     "meta": 1.46,
-    "alcance": -11.46
+    "alcance": -8.79
   },
   {
     "indicator": "ROE",
@@ -12590,9 +12590,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": -1.34,
+    "value": -1.08,
     "meta": 7.28,
-    "alcance": -18.4
+    "alcance": -14.89
   },
   {
     "indicator": "Margen Neto",
@@ -12733,9 +12733,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": -9.26,
+    "value": -6.84,
     "meta": 6.83,
-    "alcance": -135.62
+    "alcance": -100.16
   },
   {
     "indicator": "Endeudamiento",
@@ -12876,9 +12876,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": -349.02,
+    "value": -492.8,
     "meta": 73.33,
-    "alcance": -475.93
+    "alcance": -671.99
   },
   {
     "indicator": "Ingresos",
@@ -13019,9 +13019,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": 60.5,
+    "value": 62.9,
     "meta": 550.9,
-    "alcance": 10.98
+    "alcance": 11.42
   },
   {
     "indicator": "Patrimonio Neto",
@@ -13162,9 +13162,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": 418.3,
+    "value": 396.9,
     "meta": 516.7,
-    "alcance": 80.96
+    "alcance": 76.81
   },
   {
     "indicator": "Activos",
@@ -13305,9 +13305,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": 3350.0,
+    "value": 3353.6,
     "meta": 2577.5,
-    "alcance": 129.97
+    "alcance": 130.11
   },
   {
     "indicator": "EBITDA",
@@ -13448,9 +13448,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": -8.4,
+    "value": -6.0,
     "meta": 28.1,
-    "alcance": -29.89
+    "alcance": -21.35
   },
   {
     "indicator": "Capital de Trabajo",
@@ -13591,9 +13591,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": 2771.3,
+    "value": 2774.9,
     "meta": 1965.7,
-    "alcance": 140.98
+    "alcance": 141.17
   },
   {
     "indicator": "Utilidad Neta",
@@ -13734,9 +13734,9 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": -5.6,
+    "value": -4.3,
     "meta": 37.6,
-    "alcance": -14.89
+    "alcance": -11.44
   },
   {
     "indicator": "Pasivos",
@@ -13877,8 +13877,8 @@
     "year": 2026,
     "idFecha": 202601,
     "month": "Enero",
-    "value": 2931.8,
+    "value": 2956.8,
     "meta": 2060.7,
-    "alcance": 142.27
+    "alcance": 143.49
   }
 ]
