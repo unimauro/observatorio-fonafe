@@ -10,6 +10,7 @@ import { useIsDark, toggleTheme } from './theme'
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import { SupportModal } from './SupportModal'
+import { AskBot } from './AskBot'
 import { Coffee } from 'lucide-react'
 
 const YAPE_QR = 'https://unimauro.github.io/salariosperu/yape.png'
@@ -96,6 +97,7 @@ export function Layout() {
   return (
     <div className="min-h-screen">
       <SupportModal open={support} onClose={() => setSupport(false)} />
+      <AskBot />
       {/* Sidebar desktop */}
       <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col border-r border-border bg-card/60 p-4 lg:flex">
         <Brand />
