@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { Bot, X, Send, KeyRound, Loader2, Sparkles } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { Bot, X, Send, KeyRound, Loader2, Sparkles, Trash2, Copy, Check, Square } from 'lucide-react'
 import { useData } from '@/data'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -7,13 +7,13 @@ import type { Dataset } from '@/types'
 
 /**
  * Asistente conversacional del Observatorio de Empresas Públicas del Perú.
- *
- * Cliente ligero (sin backend): inyecta un RESUMEN compacto del dataset del tablero
- * como contexto y consulta a Gemini Flash directamente desde el navegador.
- * La API key se pide al usuario y se guarda SOLO en localStorage (capa gratuita).
+ * Cliente ligero (sin backend): inyecta un RESUMEN compacto del dataset como contexto y
+ * consulta a Gemini Flash desde el navegador. La API key se guarda SOLO en localStorage.
  */
 const MODEL = 'gemini-2.0-flash'
 const KEY_STORAGE = 'gemini_api_key'
+const MSG_STORAGE = 'askbot_msgs_v1'
+const BASE = import.meta.env.BASE_URL
 
 type Msg = { role: 'user' | 'model'; text: string }
 
@@ -25,7 +25,8 @@ Procedencia de cada empresa (campo "fuente"):
 - "ffaa-conciliado": SIMA/FAME/SEMAN, fuente de verdad = Observatorio de Defensa (cada año marcado real o estimado; vacío = sin datos).
 - "simulado": cifras financieras de modelo ilustrativo (no oficiales). Ej.: Petroperú (su fuente real es SMV), empresas de servicios pequeñas, BANMAT.
 Las CONTRATACIONES son siempre REALES (estándar OCDS del OECE/SEACE).
-Reglas (anti-overclaiming): si un dato es simulado/estimado, acláralo; nunca lo presentes como oficial. Si no está en los datos, dilo; NUNCA inventes cifras. Cita la fuente cuando exista. Sé conciso y en español del Perú; montos en S/ MM.`
+Reglas (anti-overclaiming): si un dato es simulado/estimado, acláralo; nunca lo presentes como oficial. Si no está en los datos, dilo; NUNCA inventes cifras. Cita la fuente cuando exista.
+Formato: responde en español del Perú, conciso. Usa **negritas** para nombres y cifras clave y viñetas con "- " cuando enumeres. Menciona las empresas por su nombre o sigla exactos para que el tablero las enlace. Montos en S/ MM.`
 
 function buildContext(d: Dataset | null): string {
   if (!d) return '{}'
@@ -36,8 +37,8 @@ function buildContext(d: Dataset | null): string {
       ? Object.fromEntries(Object.entries(c.realIndicators).map(([k, v]) => [k, { v: v.value, meta: v.meta, alc: v.alcance, u: v.unit }]))
       : undefined
     return {
-      sigla: c.acronym, nombre: c.name, sector: c.sector, region: c.region,
-      holding: c.holding, fuente: c.provenance, empleados: c.employees,
+      sigla: c.acronym, nombre: c.name, sector: c.sector, region: c.region, holding: c.holding,
+      fuente: c.provenance, empleados: c.employees,
       ultimo: f ? { anio: f.year, ingresos: num(f.revenue), ingresosReal: f.revenueReal, utilidad: num(f.netIncome), utilidadReal: f.netIncomeReal, ebitda: num(f.ebitda) } : null,
       margenNeto: c.metrics.netMargin, transparencia: c.metrics.transparencyScore,
       indicadoresReales: ri,
@@ -46,22 +47,73 @@ function buildContext(d: Dataset | null): string {
   })
   const ct = d.contracts
   const ctx = {
-    meta: { version: d.meta.version, generado: d.meta.generated_at, anios: d.meta.years, nota: d.meta.note, fuentes: d.meta.sources },
-    kpis: d.kpis,
-    indicadoresConsolidados: d.indicators?.realSummary,
-    sectoresIndicadores: d.indicators?.sectorList,
+    meta: { version: d.meta.version, generado: d.meta.generated_at, anios: d.meta.years, fuentes: d.meta.sources },
+    kpis: d.kpis, indicadoresConsolidados: d.indicators?.realSummary, sectoresIndicadores: d.indicators?.sectorList,
     contrataciones: {
       esReal: ct.isReal, montoMM: ct.summary.totalAmount, total: ct.summary.totalContracts,
       entidades: ct.summary.entitiesCovered, topProveedor_pct: ct.summary.topProviderShare,
-      topProveedores: ct.topProviders?.slice(0, 8),
-      porEntidad: ct.byEntity?.slice(0, 12), porAnio: ct.byYear, porMetodo: ct.byMethod?.slice(0, 6),
+      topProveedores: ct.topProviders?.slice(0, 8), porEntidad: ct.byEntity?.slice(0, 12),
+      porAnio: ct.byYear, porMetodo: ct.byMethod?.slice(0, 6),
     },
     transparenciaPromedio: d.transparency.avgScore,
     rankings: { rentabilidad: d.rankings.profitability.slice(0, 8), eficiencia: d.rankings.efficiency.slice(0, 8), transparencia: d.rankings.transparency.slice(0, 8) },
-    anomalias: d.anomalies, recomendaciones: d.recommendations,
-    empresas: companies,
+    anomalias: d.anomalies, recomendaciones: d.recommendations, empresas: companies,
   }
-  return JSON.stringify(ctx).slice(0, 120_000)
+  return JSON.stringify(ctx).slice(0, 130_000)
+}
+
+const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+/** Renderiza texto del modelo: negritas, viñetas y auto-enlaces a las fichas de empresa. */
+function RichText({ text, terms }: { text: string; terms: { term: string; slug: string }[] }) {
+  const re = useMemo(() => (terms.length ? new RegExp(`(${terms.map((t) => esc(t.term)).join('|')})`, 'g') : null), [terms])
+  const slugOf = useMemo(() => {
+    const m: Record<string, string> = {}
+    terms.forEach((t) => { m[t.term.toLowerCase()] = t.slug })
+    return m
+  }, [terms])
+
+  function inline(s: string, key: string) {
+    // primero **negritas**, luego auto-enlaces dentro de cada trozo
+    const parts = s.split(/(\*\*[^*]+\*\*)/g)
+    return parts.map((p, i) => {
+      if (p.startsWith('**') && p.endsWith('**')) return <strong key={`${key}-b${i}`}>{linkify(p.slice(2, -2), `${key}-b${i}`)}</strong>
+      return <span key={`${key}-s${i}`}>{linkify(p, `${key}-s${i}`)}</span>
+    })
+  }
+  function linkify(s: string, key: string) {
+    if (!re) return s
+    const out: React.ReactNode[] = []
+    let last = 0, m: RegExpExecArray | null, idx = 0
+    re.lastIndex = 0
+    while ((m = re.exec(s)) !== null) {
+      if (m.index > last) out.push(s.slice(last, m.index))
+      const slug = slugOf[m[0].toLowerCase()]
+      out.push(<a key={`${key}-l${idx++}`} href={`${BASE}#/empresa/${slug}`} className="font-medium text-accent underline underline-offset-2 hover:opacity-80">{m[0]}</a>)
+      last = m.index + m[0].length
+      if (m.index === re.lastIndex) re.lastIndex++
+    }
+    if (last < s.length) out.push(s.slice(last))
+    return out
+  }
+
+  const lines = text.split('\n')
+  const blocks: React.ReactNode[] = []
+  let bullets: string[] = []
+  const flush = (k: string) => {
+    if (!bullets.length) return
+    blocks.push(<ul key={`u${k}`} className="my-1 list-disc space-y-0.5 pl-4">{bullets.map((b, i) => <li key={i}>{inline(b, `${k}-${i}`)}</li>)}</ul>)
+    bullets = []
+  }
+  lines.forEach((ln, i) => {
+    const t = ln.trim()
+    const mb = t.match(/^[-*•]\s+(.*)/) || t.match(/^\d+\.\s+(.*)/)
+    if (mb) { bullets.push(mb[1]); return }
+    flush(`${i}`)
+    if (t) blocks.push(<p key={`p${i}`} className="my-0.5">{inline(t, `p${i}`)}</p>)
+  })
+  flush('end')
+  return <>{blocks}</>
 }
 
 export function AskBot() {
@@ -72,12 +124,33 @@ export function AskBot() {
   const [msgs, setMsgs] = useState<Msg[]>([])
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState<string | null>(null)
+  const [copied, setCopied] = useState<number | null>(null)
   const scrollRef = useRef<HTMLDivElement>(null)
+  const abortRef = useRef<AbortController | null>(null)
 
-  useEffect(() => { setApiKey(localStorage.getItem(KEY_STORAGE) || '') }, [])
+  const terms = useMemo(() => {
+    if (!data) return []
+    const list: { term: string; slug: string }[] = []
+    data.companies.forEach((c) => {
+      if (c.acronym && c.acronym.length >= 3) list.push({ term: c.acronym, slug: c.slug })
+      if (c.name && c.name.length >= 4) list.push({ term: c.name, slug: c.slug })
+    })
+    return list.sort((a, b) => b.term.length - a.term.length)
+  }, [data])
+
+  useEffect(() => {
+    setApiKey(localStorage.getItem(KEY_STORAGE) || '')
+    try { const s = localStorage.getItem(MSG_STORAGE); if (s) setMsgs(JSON.parse(s)) } catch { /* ignore */ }
+  }, [])
+  useEffect(() => { try { localStorage.setItem(MSG_STORAGE, JSON.stringify(msgs.slice(-30))) } catch { /* ignore */ } }, [msgs])
   useEffect(() => { scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' }) }, [msgs, busy])
 
   function saveKey(v: string) { setApiKey(v); localStorage.setItem(KEY_STORAGE, v.trim()) }
+  function clearChat() { setMsgs([]); setErr(null); try { localStorage.removeItem(MSG_STORAGE) } catch { /* ignore */ } }
+  function stop() { abortRef.current?.abort(); setBusy(false) }
+  async function copy(text: string, i: number) {
+    try { await navigator.clipboard.writeText(text); setCopied(i); setTimeout(() => setCopied(null), 1500) } catch { /* ignore */ }
+  }
 
   async function ask(question: string) {
     const q = question.trim()
@@ -88,16 +161,18 @@ export function AskBot() {
     setMsgs(next)
     setInput('')
     setBusy(true)
+    const ctrl = new AbortController()
+    abortRef.current = ctrl
     try {
       const context = buildContext(data)
       const contents = [
         { role: 'user', parts: [{ text: `${SYSTEM}\n\n=== RESUMEN DEL TABLERO (JSON) ===\n${context}` }] },
         { role: 'model', parts: [{ text: 'Entendido. Responderé solo con base en estos datos, distinguiendo lo real de lo simulado/estimado.' }] },
-        ...next.map((m) => ({ role: m.role, parts: [{ text: m.text }] })),
+        ...next.slice(-8).map((m) => ({ role: m.role, parts: [{ text: m.text }] })),
       ]
       const res = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${encodeURIComponent(apiKey.trim())}`,
-        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ contents, generationConfig: { temperature: 0.3, maxOutputTokens: 1024 } }) },
+        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ contents, generationConfig: { temperature: 0.3, maxOutputTokens: 1024 } }), signal: ctrl.signal },
       )
       if (!res.ok) {
         const t = await res.text()
@@ -107,9 +182,10 @@ export function AskBot() {
       const text = json?.candidates?.[0]?.content?.parts?.map((p: { text?: string }) => p.text).join('') || 'Sin respuesta.'
       setMsgs((m) => [...m, { role: 'model', text }])
     } catch (e) {
-      setErr(e instanceof Error ? e.message : String(e))
+      if ((e as Error).name !== 'AbortError') setErr(e instanceof Error ? e.message : String(e))
     } finally {
       setBusy(false)
+      abortRef.current = null
     }
   }
 
@@ -131,11 +207,16 @@ export function AskBot() {
       </button>
 
       {open && (
-        <div className="fixed bottom-24 right-5 z-50 flex h-[min(70vh,560px)] w-[min(92vw,400px)] flex-col overflow-hidden rounded-xl border border-border bg-card shadow-2xl">
+        <div className="fixed bottom-24 right-5 z-50 flex h-[min(72vh,580px)] w-[min(92vw,400px)] flex-col overflow-hidden rounded-xl border border-border bg-card shadow-2xl">
           <div className="flex items-center gap-2 border-b border-border bg-muted/40 px-4 py-3">
             <Sparkles className="h-4 w-4 text-accent" />
             <div className="text-sm font-semibold">Asistente del Observatorio</div>
             <span className="ml-auto rounded bg-muted px-1.5 py-0.5 text-[10px] text-muted-foreground">Gemini Flash</span>
+            {msgs.length > 0 && (
+              <button onClick={clearChat} aria-label="Limpiar conversación" title="Limpiar" className="rounded p-1 text-muted-foreground hover:bg-muted hover:text-foreground">
+                <Trash2 className="h-3.5 w-3.5" />
+              </button>
+            )}
           </div>
 
           {!apiKey.trim() && (
@@ -165,10 +246,15 @@ export function AskBot() {
               </div>
             )}
             {msgs.map((m, i) => (
-              <div key={i} className={cn('flex', m.role === 'user' ? 'justify-end' : 'justify-start')}>
-                <div className={cn('max-w-[85%] whitespace-pre-wrap rounded-lg px-3 py-2 text-[13px] leading-relaxed', m.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted')}>
-                  {m.text}
+              <div key={i} className={cn('group flex flex-col', m.role === 'user' ? 'items-end' : 'items-start')}>
+                <div className={cn('max-w-[88%] rounded-lg px-3 py-2 text-[13px] leading-relaxed', m.role === 'user' ? 'whitespace-pre-wrap bg-primary text-primary-foreground' : 'bg-muted')}>
+                  {m.role === 'model' ? <RichText text={m.text} terms={terms} /> : m.text}
                 </div>
+                {m.role === 'model' && (
+                  <button onClick={() => copy(m.text, i)} className="mt-0.5 flex items-center gap-1 text-[10px] text-muted-foreground opacity-0 transition-opacity hover:text-foreground group-hover:opacity-100">
+                    {copied === i ? <><Check className="h-3 w-3" /> copiado</> : <><Copy className="h-3 w-3" /> copiar</>}
+                  </button>
+                )}
               </div>
             ))}
             {busy && <div className="flex items-center gap-2 text-xs text-muted-foreground"><Loader2 className="h-3.5 w-3.5 animate-spin" /> Pensando…</div>}
@@ -178,8 +264,11 @@ export function AskBot() {
           <form onSubmit={(e) => { e.preventDefault(); ask(input) }} className="flex items-center gap-2 border-t border-border px-3 py-2">
             <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="Escribe tu pregunta…"
               className="flex-1 rounded-md border border-border bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
-            <Button type="submit" size="icon" disabled={busy || !input.trim()} aria-label="Enviar"><Send className="h-4 w-4" /></Button>
+            {busy
+              ? <Button type="button" size="icon" variant="outline" onClick={stop} aria-label="Detener"><Square className="h-4 w-4" /></Button>
+              : <Button type="submit" size="icon" disabled={!input.trim()} aria-label="Enviar"><Send className="h-4 w-4" /></Button>}
           </form>
+          <p className="px-3 pb-2 text-[10px] text-muted-foreground">Puede equivocarse. Verifica con las fuentes citadas. Los nombres de empresa enlazan a su ficha.</p>
         </div>
       )}
     </>
