@@ -139,8 +139,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 1.79,
-    "meta": 10.82,
-    "alcance": 16.51
+    "meta": 11.0,
+    "alcance": 16.24
   },
   {
     "indicator": "ROA",
@@ -282,8 +282,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 0.26,
-    "meta": 1.54,
-    "alcance": 17.11
+    "meta": 1.58,
+    "alcance": 16.74
   },
   {
     "indicator": "Margen Neto",
@@ -425,8 +425,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 49.53,
-    "meta": 25.22,
-    "alcance": 196.37
+    "meta": 25.9,
+    "alcance": 191.25
   },
   {
     "indicator": "EBITDA",
@@ -568,8 +568,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 263.4,
-    "meta": 1705.3,
-    "alcance": 15.45
+    "meta": 1724.2,
+    "alcance": 15.28
   },
   {
     "indicator": "Utilidad Neta",
@@ -711,8 +711,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 193.4,
-    "meta": 1124.3,
-    "alcance": 17.2
+    "meta": 1146.6,
+    "alcance": 16.87
   },
   {
     "indicator": "Liquidez",
@@ -854,8 +854,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 26.4,
-    "meta": 27.0,
-    "alcance": 97.74
+    "meta": 26.9,
+    "alcance": 98.13
   },
   {
     "indicator": "Solvencia",
@@ -997,8 +997,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 85.23,
-    "meta": 85.75,
-    "alcance": 99.39
+    "meta": 85.67,
+    "alcance": 99.49
   },
   {
     "indicator": "Endeudamiento",
@@ -1140,8 +1140,8 @@
     "idFecha": 202601,
     "month": "Enero",
     "value": 577.1,
-    "meta": 601.77,
-    "alcance": 95.9
+    "meta": 597.89,
+    "alcance": 96.52
   },
   {
     "indicator": "Liquidez",
