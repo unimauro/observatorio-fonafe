@@ -10582,17 +10582,6 @@
     "alcance": 100.0
   },
   {
-    "indicator": "ROA",
-    "unit": "%",
-    "sector": "Salud",
-    "year": 2026,
-    "idFecha": 202601,
-    "month": "Enero",
-    "value": -0.05,
-    "meta": 1.42,
-    "alcance": -3.6
-  },
-  {
     "indicator": "ROE",
     "unit": "%",
     "sector": "Salud",
